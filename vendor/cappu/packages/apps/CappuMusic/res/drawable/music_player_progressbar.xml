@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <nine-patch android:src="@drawable/music_player_streaming_progressive_bg" android:dither="true" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/music_miniplayer_progress_bar" />
+    </item>
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="xxl_text_size">10.0dp</dimen>
+    <dimen name="xl_text_size">8.0dp</dimen>
+    <dimen name="l_text_size">6.0dp</dimen>
+    
+    <dimen name="dialog_padding">20.0dip</dimen>
+    <dimen name="dialog_item_height">60.0dip</dimen>
+
+</resources>

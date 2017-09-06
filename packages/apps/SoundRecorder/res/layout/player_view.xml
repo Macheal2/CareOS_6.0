@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp">
+
+        <SeekBar
+            android:id="@+id/play_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"           
+            android:progress="20" />
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play_seekbar"
+            android:layout_marginLeft="10dp"
+			android:layout_marginTop="-10dp"/>
+
+        <TextView
+            android:id="@+id/totle_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/play_seekbar"
+            android:layout_marginRight="10dp"
+			android:layout_marginTop="-10dp"/>
+    </RelativeLayout>
+	<!--style="?android:attr/buttonBarButtonStyle"-->
+    <ImageButton
+        android:id="@+id/play_control"
+		android:background="@null"
+		android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

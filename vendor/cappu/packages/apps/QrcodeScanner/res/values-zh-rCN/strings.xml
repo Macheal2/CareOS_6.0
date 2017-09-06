@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">扫一扫</string>
+    <string name="menu_settings">设置</string>
+	<string name="opencamera">打开相机扫描二维码</string>
+	<string name="result">扫描内容:</string>
+	<string name="inputhint">请输入内容</string>
+	<string name="createcode">生成二维码</string>
+	<string name="weixinerror">微信关注，请使用微信扫描</string>
+	<string name="back">退出</string>
+	<string name="scannerview">扫描界面</string>
+	<string name="scanfial">扫描失败，请重试一次！</string>
+	<string name="input_text">请输入内容</string>
+	<string name="savebitmap">保存完成</string>
+	<string name="copystring">复制</string>
+	<string name="openuri">打开链接</string>
+	<string name="openstring">文本文件</string>
+	<string name="sharestring">分享</string>
+	<string name="replicated">已复制</string>
+        <string name="nofindactivity">没有找到浏览器应用</string>
+</resources>

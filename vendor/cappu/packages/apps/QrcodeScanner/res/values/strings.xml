@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QRCode</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="opencamera">Open Camera</string>
+	<string name="result">Scan content:</string>
+	<string name="inputhint">Input defualt text</string>
+	<string name="createcode">Create qrcode</string>
+	<string name="weixinerror"> Please use the weixin scanning</string>
+	<string name="back">Quit</string>
+	<string name="scannerview">Scanner View</string>
+	<string name="scanfial">Scan failed,please try again！</string>
+	<string name="input_text">input text</string>
+	<string name="savebitmap">save bitmap</string>
+	<string name="copystring">Copy</string>
+	<string name="openuri">Open uri</string>
+	<string name="openstring">Open txt</string>
+	<string name="sharestring">Share</string>
+	<string name="replicated">replicated</string>
+	<string name="nofindactivity">Browser application not found</string>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="TopBarLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">@dimen/topbar_height</item>
+        <item name="android:background">@drawable/topbar_line</item>
+    </style>
+
+    <style name="TopBarTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="ReadMeItemStyle"> 
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="CareThemeNoTitle" parent="@android:style/Theme.Material.Light">
+         <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
+ 
+   
+

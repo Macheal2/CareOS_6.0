@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/I99DialogStyle_Title"
+        android:text="@string/i99_option" />
+    <Button
+        android:id="@+id/i99_dialog_edit"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_top_bg"
+        android:text="@string/i99_edit"/>
+
+    <View style="@style/I99HorizontalLine"/>
+
+    <!-- <Button
+        android:id="@+id/i99_ip_calls"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_middle_bg"
+        android:text="@string/i99_ip_calls"/>
+
+    <View style="@style/I99HorizontalLine"/> -->
+
+    <Button
+        android:id="@+id/i99_dialog_copy"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_bottom_bg"
+        android:text="@string/i99_copy_info"/>
+
+    <Button
+        android:id="@+id/i99_dialog_delete"
+        style="@style/I99DialogStyle_Button"
+        android:text="@string/i99_delete"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/i99_list_one_item_bg"/>
+
+</LinearLayout>

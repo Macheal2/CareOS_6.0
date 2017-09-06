@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+        style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/bookmark_add"
+    care:rightImage="@drawable/icon_save"/>
+    
+    <!-- <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_middle"
+            android:text="@string/bookmark_add" />
+
+        <ImageButton
+            android:id="@+id/save"
+            style="@style/ruyiui_tobbar_imagebutton_right"
+            android:src="@drawable/icon_save" />
+    </RelativeLayout> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/bookmark_add_name"
+                    android:textColor="@color/bg_black"
+                    android:textSize="28.0sp" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_selector"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingTop="5.0dip"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/url"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/bookmark_add_url"
+                    android:textColor="@color/bg_black"
+                    android:textSize="28.0sp" />
+
+                <EditText
+                    android:id="@+id/edit_url"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_selector"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingTop="5.0dip"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

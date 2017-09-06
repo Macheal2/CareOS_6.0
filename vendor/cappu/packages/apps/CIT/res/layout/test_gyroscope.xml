@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_gravity="center"
+	android:orientation="vertical" android:id="@+id/test_gyroscope"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TextView android:textSize="30.0dip" android:id="@+id/tv_gyroscope_info"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/test_gyroscope_info"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/gyroscope_tv_x"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/g_null_text" android:layout_below="@+id/tv_gyroscope_info"
+		android:layout_alignParentLeft="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/gyroscope_tv_y"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/g_null_text" android:layout_below="@id/gyroscope_tv_x"
+		android:layout_alignParentLeft="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/gyroscope_tv_z"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/g_null_text" android:layout_below="@id/gyroscope_tv_y"
+		android:layout_alignParentLeft="true" />
+
+
+
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

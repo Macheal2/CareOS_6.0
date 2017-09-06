@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+  <private-symbols package="com.cappu.internal" />
+  <java-symbol type="string" name="cappu" />
+  <java-symbol type="bool" name="config_cappu_monitor" />
+
+  <!-- caiji add for Care_OS shutdown screen(start) -->
+  <java-symbol type="drawable" name="i99_ic_shut_down" />
+  <java-symbol type="drawable" name="i99_ic_reboot" />
+  <java-symbol type="drawable" name="i99_power_top_item_bg" />
+  <java-symbol type="drawable" name="i99_power_middle_item_bg" />
+  <java-symbol type="drawable" name="i99_power_bootom_bg" />
+  <java-symbol type="drawable" name="i99_power_bottom_left_bg" />
+  <java-symbol type="drawable" name="i99_power_bottom_right_bg" />
+  <java-symbol type="drawable" name="i99_power_bottom_right_bg" />
+  <java-symbol type="drawable" name="i99_bottom_bg" />
+  <java-symbol type="drawable" name="i99_bottom_left_bg" />
+  <java-symbol type="drawable" name="i99_bottom_right_bg" />
+    
+  <java-symbol type="layout" name="i99_global_actions_item" />
+  <java-symbol type="layout" name="care_shut_down_dialog" />
+  <java-symbol type="layout" name="care_shut_down_select_dialog" />
+  <java-symbol type="layout" name="select_dialog_multichoice_holo" />
+  <java-symbol type="layout" name="select_dialog_singlechoice_holo" />
+  <java-symbol type="layout" name="select_dialog_item_holo" />
+  <java-symbol type="layout" name="i99_global_actions_silent_mode" />
+    <java-symbol type="layout" name="i99_dialog"/>
+    
+  <java-symbol type="string" name="power_reboot" />
+  <java-symbol type="string" name="reboot_confirm" />
+  <java-symbol type="string" name="reboot_confirm_question" />
+  <java-symbol type="string" name="reboot_progress" />
+  <java-symbol type="string" name="global_action_reboot" />
+  <java-symbol type="string" name="yes" />
+  <java-symbol type="string" name="no" />
+
+  <java-symbol type="id" name="icon" />
+  <java-symbol type="id" name="parentPanel" />
+  <java-symbol type="id" name="leftSpacer" />
+  <java-symbol type="id" name="rightSpacer" />
+  <java-symbol type="id" name="title_template" />
+  <java-symbol type="id" name="custom" />
+  <java-symbol type="id" name="status" />
+  <java-symbol type="id" name="option1" />
+  <java-symbol type="id" name="option2" />
+  <java-symbol type="id" name="option3" />
+  <java-symbol type="id" name="i99_dialog_bottom_view" />
+  <java-symbol type="id" name="i99_dialog_content" />
+  <java-symbol type="id" name="i99_dialog_controls" />
+  <java-symbol type="id" name="i99_dialog_title" />
+  <java-symbol type="id" name="i99_dialog_progress" />
+  <java-symbol type="id" name="i99_dialog_message" />
+  <java-symbol type="id" name="i99_dialog_ok" />
+  <java-symbol type="id" name="i99_line" />
+  <java-symbol type="id" name="i99_list" />
+  <java-symbol type="id" name="i99_dialog_cancel" />
+  
+  <java-symbol type="dimen" name="i99_dialog_content_mini_height" />
+  
+  <java-symbol type="style" name="I99DialogStyle" />
+  <java-symbol type="style" name="I99VerticalLine" />
+  <java-symbol type="style" name="i99TextStyle" />
+  <java-symbol type="style" name="i99TextStyle_black" />
+
+  <!-- caiji add for Care_OS shutdown screen(end) -->
+    <!-- zhaogangzhu@20150911 dataconn secretcode begin-->
+    <java-symbol type="layout" name="data_conn_secret_code" />
+    <java-symbol type="drawable" name="dataconn_edit_bg" />
+    <java-symbol type="id" name="edit_password" />
+    <java-symbol type="id" name="ck_showpassword" />
+    <java-symbol type="string" name="dataconn_title" />
+    <java-symbol type="string" name="dataconn_ok" />
+    <java-symbol type="string" name="dataconn_cancel" />
+    <java-symbol type="string" name="dataconn_edit_hint" />
+    <java-symbol type="string" name="dataconn_checkbox_txt" />
+    <java-symbol type="string" name="dataconn_password_error" />
+    <!-- zhaogangzhu@20150911 dataconn secretcode end-->
+</resources>

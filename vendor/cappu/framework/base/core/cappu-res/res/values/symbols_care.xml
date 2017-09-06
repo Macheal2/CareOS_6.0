@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2015 The yuhaiyang Android Source Project
+ *
+ * Licensed under the yuhaiyang License, (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://coding.net/yuhaiyang/License.git
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @data: 2015年6月26日 下午4:59:16 
+ * @author: y.haiyang@qq.com
+-->
+<resources>
+    <private-symbols package="com.cappu.internal" />
+
+    <java-symbol type="attr" name="text" />
+    <java-symbol type="attr" name="textSize" />
+    <java-symbol type="attr" name="textColor" />
+    <java-symbol type="attr" name="topbarStyle" />
+    <java-symbol type="attr" name="subText" />
+    <java-symbol type="attr" name="subTextSize" />
+    <java-symbol type="attr" name="subTextColor" />
+    <java-symbol type="attr" name="dialogTitleStyle" />
+    <java-symbol type="attr" name="dialogMessageStyle" />
+    <java-symbol type="attr" name="dialogButtonStyle" />
+    <java-symbol type="attr" name="dialogButtonBackgrounds" />
+    <java-symbol type="attr" name="dialogLayouts" />
+    <java-symbol type="attr" name="dialogMainLayout" />
+    <java-symbol type="attr" name="dialogListLayout" />
+    <java-symbol type="attr" name="dialogMultiChoiceItem" />
+    <java-symbol type="attr" name="dialogSingleChoiceItem" />
+    <java-symbol type="attr" name="dialogListItem" />
+    <java-symbol type="attr" name="leftBackground" />
+    <java-symbol type="attr" name="rightBackground" />
+    <java-symbol type="attr" name="middleBackground" />
+    <java-symbol type="attr" name="wholeBackground" />
+
+    <java-symbol type="attr" name="clickable" />
+    <java-symbol type="attr" name="secretable" />
+    <java-symbol type="attr" name="leftImage" />
+    <java-symbol type="attr" name="rightImage" />
+    <java-symbol type="attr" name="leftVisibility" />
+    <java-symbol type="attr" name="rightVisibility" />
+
+    <java-symbol type="color" name="care_menu_item_color" />
+
+    <java-symbol type="dimen" name="care_menu_item_height" />
+    <java-symbol type="dimen" name="topbar_height" />
+    <java-symbol type="dimen" name="topbar_default_text_size" />
+    <java-symbol type="dimen" name="topbar_default_sub_text_size" />
+
+    <java-symbol type="drawable" name="button_bg" />
+    <java-symbol type="drawable" name="care_menu_item_bg" />
+    <java-symbol type="drawable" name="care_menu_item_bottom_bg" />
+    <java-symbol type="drawable" name="care_menu_item_middle_bg" />
+    <java-symbol type="drawable" name="care_menu_item_top_bg" />
+    <java-symbol type="drawable" name="option_divider" />
+    <java-symbol type="drawable" name="topbar_default_bg" />
+    <java-symbol type="drawable" name="topbar_line" />
+    <java-symbol type="drawable" name="ic_back" />
+    <java-symbol type="drawable" name="ic_ok" />
+    <java-symbol type="drawable" name="ic_option" />
+    <java-symbol type="drawable" name="shape_green" />
+    <java-symbol type="drawable" name="shape_green_normal" />
+    <java-symbol type="drawable" name="shape_green_pressed" />
+
+    <java-symbol type="id" name="alertTitle" />
+    <java-symbol type="id" name="button1" />
+    <java-symbol type="id" name="button2" />
+    <java-symbol type="id" name="button3" />
+    <java-symbol type="id" name="buttonPanel" />
+    <java-symbol type="id" name="contentPanel" />
+    <java-symbol type="id" name="custom" />
+    <java-symbol type="id" name="customPanel" />
+    <java-symbol type="id" name="content" />
+    <java-symbol type="id" name="message" />
+    <java-symbol type="id" name="scrollView" />
+    <java-symbol type="id" name="title" />
+    <java-symbol type="id" name="titleDivider" />
+    <java-symbol type="id" name="topPanel" />
+    <java-symbol type="id" name="topbar_title" />
+    <java-symbol type="id" name="topbar_left_button" />
+    <java-symbol type="id" name="topbar_right_button" />
+
+    <java-symbol type="layout" name="dialog" />
+    <java-symbol type="layout" name="select_dialog" />
+    <java-symbol type="layout" name="select_dialog_multichoice" />
+    <java-symbol type="layout" name="select_dialog_singlechoice" />
+    <java-symbol type="layout" name="select_dialog_item" />
+    <java-symbol type="layout" name="care_menu" />
+    <java-symbol type="layout" name="care_menu_group_root" />
+
+    <java-symbol type="layout" name="care_preference_list_fragment" />
+    <java-symbol type="style" name="CareTheme" />
+    <java-symbol type="style" name="CareTheme.NoActionBar" />
+    <java-symbol type="style" name="CareTheme.NoActionBar.Fullscreen" />
+    <java-symbol type="style" name="CareTheme.Dialog" />
+    <java-symbol type="style" name="CareMenuStyle" />
+    <java-symbol type="style" name="CareMenuAnim" />
+
+    <!--added by yzs for CareSettingItem begin -->
+    <java-symbol type="attr" name="item_icon" />
+    <java-symbol type="attr" name="item_title" />
+    <java-symbol type="attr" name="item_textcolor" />
+    <java-symbol type="attr" name="item_checked" />
+    <java-symbol type="attr" name="item_style" />
+    <java-symbol type="attr" name="item_type" />  
+    <java-symbol type="drawable" name="checkbox_bg" />
+    <java-symbol type="drawable" name="list_corner_round_bg" />
+    <java-symbol type="drawable" name="list_corner_round_class" />
+    <java-symbol type="drawable" name="list_corner_round_top_class" />
+    <java-symbol type="drawable" name="list_corner_round_mid_class" />
+    <java-symbol type="drawable" name="list_corner_round_bottom_class" />
+    <java-symbol type="drawable" name="list_switch_style" />
+    <java-symbol type="drawable" name="care_line_v" />
+    <java-symbol type="dimen" name="item_height_other" />  
+    <java-symbol type="dimen" name="item_height_check" />  
+    <java-symbol type="dimen" name="item_padding_left_right" />  
+    <java-symbol type="dimen" name="default_text_size" />  
+    <java-symbol type="dimen" name="tipview_size" />  
+    <java-symbol type="dimen" name="iconview_size" />
+    <java-symbol type="mipmap" name="setting_switch_icon_tip" /> 
+<java-symbol type="string" name="default_string" />
+    <!--added by yzs for CareSettingItem end -->
+</resources>

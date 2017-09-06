@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/i99_surname_bg">
+
+    <LinearLayout
+        android:id="@+id/surname_title"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/i99_suename_filter_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/surname_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"/>
+
+        <ImageButton
+            android:id="@+id/surname_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/i99_surname_delate_bg"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/surname_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="1dp">
+    </ListView>
+
+    <GridView
+        android:id="@+id/surname_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="3"
+        android:padding="2dp"
+        android:visibility="gone">
+    </GridView>
+
+</LinearLayout>

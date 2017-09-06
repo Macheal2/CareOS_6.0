@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+  	<TextView 
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize"
+        android:text="@string/result"
+        android:visibility="gone" />
+	<TextView
+	android:id="@+id/tv_scan_result"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="@dimen/button_size"
+	android:scrollbars="vertical"
+	android:maxLines="10"
+	android:textSize="@dimen/textsize"
+	android:gravity="center"
+	android:layout_margin="@dimen/margin"
+	android:textColor="@android:color/black"/>
+    <Button 
+        android:id="@+id/openstring"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/button_bg"
+        android:textSize="@dimen/textsize"
+        android:text="@string/openuri"
+        android:textColor="@android:color/black"/>
+   <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+	    android:orientation="horizontal" >
+	    <!--  yuan tong qin add -->
+	    <Button
+	        android:id="@+id/sharestring"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/button_menu_bg"
+	        android:drawableStart="@drawable/share"
+	        android:text="@string/sharestring"
+                android:textSize="@dimen/textsize"
+            	android:visibility="gone"
+	        android:textColor="@android:color/black" />
+	    <Button
+	        android:id="@+id/copystring"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_right"
+	        android:layout_toLeftOf="@+id/sharestring"
+	        android:background="@drawable/button_menu_bg"
+	        android:drawableStart="@drawable/copy"
+	        android:text="@string/copystring"
+                android:textSize="@dimen/textsize"
+	        android:textColor="@android:color/black" />
+   	</RelativeLayout>
+</LinearLayout>

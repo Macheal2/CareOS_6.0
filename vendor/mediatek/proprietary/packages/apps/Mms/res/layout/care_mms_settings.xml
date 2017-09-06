@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#FCF9FA"
+    android:orientation="vertical" >
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@style/I99Style_TopBar"
+        care:rightVisibility="invisible"
+        care:text="@string/care_mms_settings"/>
+
+    <LinearLayout
+        android:id="@+id/sms_settings"
+        android:layout_marginTop="@dimen/i99_dialog_text_padding"
+        style="@style/CareMMsSettings_Container"
+        android:background="@drawable/item_top_bg">
+        <ImageView
+            android:src="@drawable/ic_menu_settings_sms"
+            style="@style/CareMmsSettings_ImaView"/>
+        <TextView
+            android:text="@string/pref_setting_sms"
+            style="@style/CareMMSSettings_Text"/>
+    </LinearLayout>
+    
+    <View
+        style="@style/CareMmsSettings_devid"/>
+
+    <LinearLayout
+        android:id="@+id/mms_settings"
+        style="@style/CareMMsSettings_Container"
+        android:background="@drawable/item_middle_bg">
+        <ImageView
+            android:src="@drawable/ic_menu_settings_mms"
+            style="@style/CareMmsSettings_ImaView"/>
+        <TextView
+            android:text="@string/pref_setting_mms"
+            style="@style/CareMMSSettings_Text"/>
+    </LinearLayout>
+
+    <View
+        style="@style/CareMmsSettings_devid"/>
+
+    <LinearLayout
+        android:id="@+id/notification_settings"        
+        style="@style/CareMMsSettings_Container"
+        android:background="@drawable/item_middle_bg">
+        <ImageView
+            android:src="@drawable/ic_menu_settings_notification"
+            style="@style/CareMmsSettings_ImaView"/>
+        <TextView
+            android:text="@string/pref_setting_notification"
+            style="@style/CareMMSSettings_Text"/>
+    </LinearLayout>
+
+    <View
+        style="@style/CareMmsSettings_devid"/>
+
+    <LinearLayout
+        android:id="@+id/general_settings"
+        style="@style/CareMMsSettings_Container"
+        android:background="@drawable/item_bottom_bg">
+        <ImageView
+            android:src="@drawable/ic_menu_settings_genral"
+            style="@style/CareMmsSettings_ImaView"/>
+        <TextView
+            android:text="@string/pref_setting_general"
+            style="@style/CareMMSSettings_Text"/>
+    </LinearLayout>
+</LinearLayout>

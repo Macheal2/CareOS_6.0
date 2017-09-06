@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d6d3d3"
+    android:orientation="vertical" >
+  
+    <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+        style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/desktop_title_browser"
+    care:rightVisibility="invisible"/>      
+    
+    <!-- <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/bookmark"
+            style="@style/topbar_middle"
+            android:text="@string/desktop_title_browser" />
+    </RelativeLayout> -->
+
+    <GridView
+        android:id="@+id/bookmark_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:listSelector="#10000000"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+
+    <!-- 颜色和不透明度 (alpha) 值以十六进制表示法表示。任何一种颜色的值范围都是 0 到 255(00 到 ff)。对于 alpha，00 表示完全透明，ff 表示完全不透明。表达式顺序是“aabbggrr”，其中“aa=alpha”(00 到 ff);“bb=blue”(00 到 ff);“gg=green”(00 到 ff);“rr=red”(00 到 ff)。例如，如果您希望对某叠加层应用不透明度为 50% 的蓝色，则应指定以下值：7fff0000  -->
+    <!-- android:listSelector="#10000000" -->    
+</LinearLayout>

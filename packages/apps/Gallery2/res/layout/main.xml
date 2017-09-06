@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/gl_root_group"/>
+    <FrameLayout android:id="@+id/header"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/footer"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+	    
+<!--//modify by even C687 start *******important-->	    
+   <FrameLayout
+       	android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/magcomm_ic_bg"   
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+	        <Button
+	            android:id="@+id/camera_button"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:layout_gravity="center"
+	            android:text="@string/tab_photos"
+	            android:textSize="20dp"			
+	            android:drawableTop="@drawable/tab_camera_selected_focused"
+	            android:background="#00000000" />
+	        <Button
+	            android:id="@+id/gallery_button"        
+	            android:layout_gravity="center"         
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:text="@string/tab_albums"
+	            android:textSize="20dp"
+	            android:drawableTop="@drawable/tab_albums"
+	            android:background="#00000000"/>
+       </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

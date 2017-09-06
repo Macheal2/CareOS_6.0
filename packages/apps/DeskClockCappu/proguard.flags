@@ -1,0 +1,14 @@
+-keepclassmembers class com.android.deskclock.DeskClock {
+  *** clockButtonsOnClick(...);
+}
+-keep class com.android.deskclock.timer.TimerListItem {
+  *** setAnimatedHeight(...);
+}
+
+-keep class com.android.deskclock.widget.multiwaveview.* {
+  *;
+}
+
+-keep class com.android.deskclock.widget.fall.**$* {
+  public <fields>;
+}

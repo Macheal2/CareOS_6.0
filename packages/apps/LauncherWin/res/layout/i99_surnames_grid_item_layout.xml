@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/name"
+        android:layout_width="@dimen/i99_surname_button_size"
+        android:layout_height="@dimen/i99_surname_button_size"
+        android:background="@drawable/i99_gray_button_bg"
+        android:layout_marginTop="1.4px"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/i99_black"/>
+
+</LinearLayout>

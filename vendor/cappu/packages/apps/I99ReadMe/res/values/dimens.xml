@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="topbar_height">85dp</dimen>
+    <dimen name="readme_item_padding">7dp</dimen>
+</resources>

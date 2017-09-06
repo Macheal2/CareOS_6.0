@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialtacts_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="13"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/digits_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <com.cappu.launcherwin.contacts.widget.DigitsEditText
+            android:id="@+id/digits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:nextFocusRight="@+id/deleteButton"
+            android:paddingLeft="6dip"
+            android:singleLine="true"
+            android:textAppearance="@style/DialtactsDigitsTextAppearance"
+            android:textCursorDrawable="@null" />
+        <!-- android:textColor="@android:color/holo_green_dark" -->
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="48dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/description_delete_button"
+            android:nextFocusLeft="@id/digits"
+            android:src="@drawable/i99_dialpad_delate_bg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 数字拨号盘 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <!-- line 1  1-2-3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/one"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_1" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/two"
+                style="@style/i99_dialpad_number_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/i99_number_2" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/three"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_3" />
+        </LinearLayout>
+        <!-- line 2  4-5-6 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/four"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_4" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/five"
+                style="@style/i99_dialpad_number_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/i99_number_5" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/six"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_6" />
+        </LinearLayout>
+        <!-- line 3  7-8-9 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/seven"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_7" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/eight"
+                style="@style/i99_dialpad_number_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/i99_number_8" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/nine"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_9" />
+        </LinearLayout>
+        <!-- line 4 *-0-# -->
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/star"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_star" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/zero"
+                style="@style/i99_dialpad_number_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/i99_number_0" />
+
+            <com.cappu.launcherwin.contacts.widget.DialpadImageButton
+                android:id="@+id/pound"
+                style="@style/i99_dialpad_number_style"
+                android:src="@drawable/i99_number_pound" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 下面拨号一排 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:background="@color/i99_dialpad_additional_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- we show set  hide view which default need -->
+
+        <ImageButton
+            android:id="@+id/dialpadButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/videoDialButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/addToContact"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/overflow_menu"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/i99_dialpad_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/i99_dialpad_addcontact" />
+
+        <ImageButton
+            android:id="@+id/dialButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/i99_call_button_bg"
+            android:src="@drawable/i99_number_phone" />
+
+        <ImageButton
+            android:id="@+id/i99_dialpad_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/i99_diapad_message" />
+    </LinearLayout>
+
+</LinearLayout>

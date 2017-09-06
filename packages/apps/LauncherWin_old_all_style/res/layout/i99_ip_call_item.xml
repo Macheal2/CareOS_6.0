@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/i99_gray_color_bg"
+        android:layout_height="@dimen/i99_dialog_item_height_x"
+        style="@style/i99TextStyle_black"/>
+
+</LinearLayout>

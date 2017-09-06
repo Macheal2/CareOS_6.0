@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LockScreenViewActivity!</string>
+    <string name="app_name">Hall window ui</string>
+    <string name="lunar_string">农历</string>
+    <string name="hall_window_title">Hall window</string>
+    <string name="hall_window_settings">Hall window settings</string>
+    <string name="hall_window_toggle">Hall window</string>
+    <string name="hall_window_time">Time window</string>
+    <string name="hall_window_alarm">Alarm window</string>
+    <string name="hall_window_call">Call window</string>
+</resources>

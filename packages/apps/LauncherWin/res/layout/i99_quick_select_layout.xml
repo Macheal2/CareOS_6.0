@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/i99_bg">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/i99_topbar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/i99_topbar_bg"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <ImageButton
+            android:id="@+id/i99_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/i99_topbar_button_bg"
+            android:src="@drawable/i99_icon_back" />
+
+        <View style="@style/I99TopBarLine"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/i99_quick_select_title"
+            style="@style/i99TextStyle_topbar"/>
+
+    </LinearLayout>
+
+    <!--1-->
+    <LinearLayout android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/i99_gray_button_bg"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/create_contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i99_create_contact"
+            style="@style/i99TextStyle_black"/>
+
+        <TextView
+            android:id="@+id/create_contact_summery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i99_add_quick_contacts_summery"
+            style="@style/i99TextStyle_black_summery"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/select_contact"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/i99_gray_button_bg"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/select_contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i99_select"
+            style="@style/i99TextStyle_black"/>
+
+        <TextView
+            android:id="@+id/select_contact_summery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i99_select_quick_contacts_summery"
+            style="@style/i99TextStyle_black_summery"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_info"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/i99_add_quick_info"
+        style="@style/i99TextStyle_black_summery"
+        android:textSize="30dp"/>
+</LinearLayout>

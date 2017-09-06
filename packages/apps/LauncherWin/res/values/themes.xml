@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+<!--      @android:style/Theme.Material.Light     android:Theme.Light.NoTitleBar  -->
+     <style name="Theme"  parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        
+        <!-- 下面这两个属性为true时状态栏透明可以动态改变颜色   有个缺陷就是activity顶部与状态栏重合   这两个属性必须做android 4.4以后才能使用-->
+         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        
+        <!-- <item name="android:colorPrimaryDark">#009dde</item> -->
+        <item name="android:windowNoTitle">true</item> 
+        
+       <!--  <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+     
+    <style name="KookDialog"/>
+    <style name="TopBarStlye" />
+    
+    
+    <!-- 默认主题 经典主题 -->
+    <style name="Theme.Default">
+        <item name="topbarStyle">@style/TopBarStlye.Default</item>
+        <item name="KookDialog">@style/KookDialog.Default</item>
+        <item name="hotseat">@drawable/shape_blue</item>
+        
+         <!-- 应用主题 -->
+        <item name="title_bg">@drawable/topbar_red</item>
+        <item name="title_font_color">#ffffffff</item>
+        <item name="title_font_size">@dimen/Medium_text_size</item>
+        <item name="title_icon_width">@dimen/title_icon_width</item>
+        <item name="title_icon_height">@dimen/title_icon_height</item>
+        <item name="item_font_color">#ff454545</item>
+        <item name="item_font_size">@dimen/Medium_text_size</item>
+        <item name="item_icon_width">@dimen/item_icon_width</item>
+        <item name="item_icon_height">@dimen/item_icon_height</item>
+        <!-- 应用主题 end-->
+    </style>
+    <style name="KookDialog.Default">
+        <item name="dialogTitleBackground">@drawable/care_dialog_title_bg</item>
+    </style>
+    <style name="TopBarStlye.Default">
+        <!-- <item name="titleBackground">@drawable/topbar_bg</item> -->
+        <item name="titleBackground">@drawable/shape_blue</item>
+        <item name="titleColor">@android:color/white</item>
+        <item name="titleTextSize">@dimen/normal_topbar</item>
+        <item name="subTextSize">@dimen/normal_topbar_sub</item>
+        <item name="leftImage">@drawable/icon_back</item>
+        <item name="rightImage">@drawable/icon_option</item>
+    </style>
+    
+    <!-- 古典主题 -->
+    <style name="Theme.Classical">
+        <item name="topbarStyle">@style/TopBarStlye.Classical</item>
+        <item name="KookDialog">@style/KookDialog.Classical</item>
+        <item name="hotseat">@drawable/shape_green</item>
+        <!-- 应用主题 -->
+        <item name="title_bg">@drawable/topbar_red</item>
+        <item name="title_font_color">#ffffffff</item>
+        <item name="title_font_size">@dimen/Medium_text_size</item>
+        <item name="title_icon_width">@dimen/title_icon_width</item>
+        <item name="title_icon_height">@dimen/title_icon_height</item>
+        <item name="item_font_color">#ff454545</item>
+        <item name="item_font_size">@dimen/Medium_text_size</item>
+        <item name="item_icon_width">@dimen/item_icon_width</item>
+        <item name="item_icon_height">@dimen/item_icon_height</item>
+        <!-- 应用主题 end-->
+    </style>
+    <style name="KookDialog.Classical">
+        <item name="dialogTitleBackground">@drawable/shape_circle_green_normal</item>
+    </style>
+    <style name="TopBarStlye.Classical">
+        <item name="titleBackground">@drawable/shape_green</item>
+        <item name="titleColor">@android:color/white</item>
+        <item name="subTextSize">@dimen/normal_topbar_sub</item>
+        <item name="leftImage">@drawable/icon_back</item>
+        <item name="rightImage">@drawable/icon_option</item>
+    </style>
+    <!-- wangyang@20160822  ChineseStyle begin -->
+    <!-- 中国风主题 -->
+    <style name="Theme.ChineseStyle">
+        <item name="topbarStyle">@style/TopBarStlye.Default</item>
+        <item name="KookDialog">@style/KookDialog.Default</item>
+        <!-- <item name="WorkspaceMainWidget">@drawable/workspace_widget_bg_1</item> -->
+        <item name="hotseat">@drawable/shape_blue</item>
+
+        <!-- 应用主题 -->
+        <item name="title_bg">@drawable/topbar_red</item>
+        <item name="title_font_color">#ffffffff</item>
+        <item name="title_font_size">@dimen/Medium_text_size</item>
+        <item name="title_icon_width">@dimen/title_icon_width</item>
+        <item name="title_icon_height">@dimen/title_icon_height</item>
+        <item name="item_font_color">#ff454545</item>
+        <item name="item_font_size">@dimen/Medium_text_size</item>
+        <item name="item_icon_width">@dimen/item_icon_width</item>
+        <item name="item_icon_height">@dimen/item_icon_height</item>
+        <!-- 应用主题 end -->
+    </style>
+
+    <style name="KookDialog.ChineseStyle">
+        <item name="dialogTitleBackground">@drawable/shape_circle_beige_normal</item>
+    </style>
+
+    <style name="TopBarStlye.ChineseStyle">
+        <item name="titleBackground">@drawable/shape_beige</item>
+        <item name="titleColor">@android:color/white</item>
+        <item name="subTextSize">@dimen/normal_topbar_sub</item>
+        <item name="leftImage">@drawable/icon_back</item>
+        <item name="rightImage">@drawable/icon_option</item>
+    </style>
+
+    <!-- 简约风主题 -->
+    <style name="Theme.SimplenessStyle">
+        <item name="topbarStyle">@style/TopBarStlye.Default</item>
+        <item name="KookDialog">@style/KookDialog.Default</item>
+        <item name="hotseat">@drawable/shape_blue</item>
+        <!-- 应用主题 -->
+        <item name="title_bg">@drawable/topbar_red</item>
+        <item name="title_font_color">#ffffffff</item>
+        <item name="title_font_size">@dimen/Medium_text_size</item>
+        <item name="title_icon_width">@dimen/title_icon_width</item>
+        <item name="title_icon_height">@dimen/title_icon_height</item>
+        <item name="item_font_color">#ff454545</item>
+        <item name="item_font_size">@dimen/Medium_text_size</item>
+        <item name="item_icon_width">@dimen/item_icon_width</item>
+        <item name="item_icon_height">@dimen/item_icon_height</item>
+        <!-- 应用主题 end -->
+
+    </style>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<View
+	    android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_marginBottom="9dip"
+        android:background="@drawable/assembly_select_bg"
+        android:layout_alignParentBottom="true"
+	    />
+	 <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="9dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginBottom="70dip"
+        android:layout_alignParentBottom="true" />
+	 <View
+	    android:id="@+id/select_control"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/assembly_content_bg"
+        android:layout_marginBottom="60dip"
+	    />
+    <RadioGroup
+        android:id="@+id/rg_radio"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_marginBottom="9dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/rd_left_bg"
+            android:text="@string/cloud_album"
+            android:textColor="#2c2c2c"
+            android:textSize="46px" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/rd_middle_bg"
+            android:checked="true"
+            android:text="@string/cappu_health"
+            android:textColor="@android:color/white"
+            android:textSize="46px" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/rd_right_bg"
+            android:text="@string/cappu_classroom"
+            android:textColor="#2c2c2c"
+            android:textSize="46px" >
+        </RadioButton>
+    </RadioGroup>
+
+</RelativeLayout>

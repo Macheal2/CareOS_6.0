@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<string-array name="CommonTestStrings">
+		<item>T卡</item>
+		<item>检测UIM</item>
+		<item>后置摄像头测试</item>
+		<item>充电测试</item>
+		<item>睡眠/唤醒</item>
+		<item>LED测试</item>
+		<item>话筒回路测试</item>
+		<item>耳机测试</item>
+		<item>键盘测试</item>
+		<item>重力传感器</item>
+		<item>磁场感应器</item>
+		<item>WLAN测试</item>
+		<item>蓝牙测试</item>
+		<item>LCD</item>
+		<item>闪光灯测试</item>
+		<item>温度</item>
+		<item>GPS测试</item>
+		<item>收音机</item>
+		<item>恢复出厂设置</item>
+		<item>版本</item>
+		<item>光传感器</item>
+		<item>距离传感器</item>
+		<item>SIM卡,存储卡,振动和扬声器</item>
+		<item>前置摄像头测试</item>
+		<item>电子罗盘</item>
+		<item>指南针</item>
+		<item>TP测试</item>
+		<item>键盘灯测试</item>
+		<item>触屏</item>
+		<item>背光测试</item>
+		<item>REC测试</item>
+		<item>指南针测试</item>
+		<item>振动测试</item>
+		<item>扬声器测试</item>
+		<item>霍尔器件</item>
+		<item>来电闪测试</item>
+		<item>双Mic测试</item>
+		<item>双Speaker测试</item>
+		<item>气压计测试</item>
+		<item>OTG测试</item>
+		<item>HDMI测试</item>
+		<item>陀螺仪测试</item>
+        <item>指纹识别测试</item>
+       <!-- dengying add heart rate -->
+       <item>心率测试</item>
+	</string-array>
+
+	<string-array name="MainTest">
+		<!-- <item>PCBA测试</item> -->
+		<item>整机测试</item>
+		<item>版本</item>
+		<item>电池信息</item>
+	</string-array>
+
+	<string-array name="PCBATest">
+		<item>PCBA自动测试</item>
+		<item>PCBA传感器自动测试</item>
+		<item>PCBA单项测试</item>
+	</string-array>
+
+	<string-array name="MachineTest">
+		<item>整机自动测试</item>
+		<item>整机传感器自动测试</item>
+		<item>整机单项测试</item>
+		<item>WBG测试</item>
+		<item>Run In测试</item>
+	</string-array>
+
+	<string-array name="PCBAAutoTestStrings">
+		<item>版本</item>
+		<item>SIM卡,存储卡,振动和扬声器</item>
+		<item>LCD</item>
+		<!--item>睡眠/唤醒</item>-->
+		<item>背光测试</item>
+		<item>照相机</item>
+		<item>闪光灯测试</item>
+		<item>话筒回路测试</item>
+		<item>耳机测试</item>
+		<item>键盘测试</item>
+		<item>充电测试</item>
+		<!--<item>前置摄像头测试</item> 
+        <item>收音机</item> 
+        <item>WLAN测试</item> 
+        <item>蓝牙测试</item>  
+        <item>TP测试</item> 
+        <item>触屏</item> -->
+	</string-array>
+
+	<string-array name="PCBAItemStrings">
+		<item>重力传感器</item>
+		<item>距离传感器</item>
+		<item>光传感器</item>
+		<item>版本</item>
+		<item>LCD</item>
+		<item>闪光灯测试</item>
+		<item>收音机</item>
+		<!--
+		<item>WLAN测试</item>
+		<item>蓝牙测试</item>
+		-->
+		<item>GPS测试</item>
+		<!-- <item>T卡</item> -->
+		<item>检测UIM</item>
+		<item>后置摄像头测试</item>
+		<item>前置摄像头测试</item>
+		<item>背光测试</item>
+		<item>充电测试</item>
+		<!--item>睡眠/唤醒</item>-->
+		<item>振动测试</item>
+		<item>话筒回路测试</item>
+		<item>耳机测试</item>
+		<item>键盘测试</item>
+		<item>恢复出厂设置</item>
+		<item>触屏</item>
+		<item>TP测试</item>
+		<!--<item>键盘灯测试</item>-->
+	</string-array>
+	
+	<string-array name="MachineItemStrings">
+		<item>重力传感器</item>
+		<item>距离传感器</item>
+		<item>光传感器</item>
+		<!--<item>磁场感应器</item>-->
+        <!--<item>气压计测试</item>-->
+		<item>版本</item>
+		<item>LCD</item>
+		<item>TP测试</item>
+		<!--<item>触屏</item>-->
+		<!--<item>键盘灯测试</item>-->
+		<item>背光测试</item>   
+		<item>闪光灯测试</item>
+        <item>LED测试</item>
+		<item>REC测试</item>
+        <item>扬声器测试</item>
+        <item>话筒回路测试</item>
+		<item>振动测试</item>
+        <item>耳机测试</item>
+		<item>键盘测试</item>
+		<item>后置摄像头测试</item>
+		<item>前置摄像头测试</item>
+		<item>收音机</item>
+		<item>WLAN测试</item>
+		<item>蓝牙测试</item>
+		<item>GPS测试</item>
+		<!-- <item>T卡</item> -->
+		<item>检测UIM</item>
+		<item>充电测试</item>
+		<!--item>睡眠/唤醒</item>-->		             
+        <!--<item>恢复出厂设置</item>-->
+        <!--<item>指纹识别测试</item>-->
+        <!-- dengying add heart rate -->
+        <item>心率测试</item>
+	</string-array>
+
+	<string-array name="MachineAutoTestStrings">
+		<item>重力传感器</item>
+		<item>距离传感器</item>
+		<item>光传感器</item>
+        <!-- dengying add heart rate -->
+        <item>心率测试</item>		
+		<!--<item>磁场感应器</item>-->
+        <!--<item>气压计测试</item>-->
+		<item>版本</item>
+		<item>LCD</item>
+		<item>TP测试</item>
+		<!--<item>触屏</item>-->
+		<!--<item>键盘灯测试</item>-->
+		<item>背光测试</item>   
+		<item>闪光灯测试</item>
+        <item>LED测试</item>
+		<item>REC测试</item>
+        <item>扬声器测试</item>
+        <item>话筒回路测试</item>
+		<item>振动测试</item>
+        <item>耳机测试</item>
+		<item>键盘测试</item>
+		<item>后置摄像头测试</item>
+		<item>前置摄像头测试</item>
+		<item>收音机</item>
+		<item>WLAN测试</item>
+		<item>蓝牙测试</item>
+		<item>GPS测试</item>
+		<!-- <item>T卡</item> -->
+		<item>检测UIM</item>
+		<item>充电测试</item>
+		<!--item>睡眠/唤醒</item>-->		             
+        <!--<item>恢复出厂设置</item>-->
+        <!--<item>指纹识别测试</item>-->
+	</string-array>
+
+	<string-array name="MachineSensorTestStrings">
+		<item>重力传感器</item>
+		<!--<item>指南针测试</item>-->
+		<item>距离传感器</item>
+		<item>光传感器</item>
+        <!--<item>气压计测试</item>-->
+        <!-- dengying add heart rate -->
+        <item>心率测试</item>        
+	</string-array>
+
+	<string-array name="PCBASensorTestStrings">
+		<item>重力传感器</item>
+		<item>磁场感应器</item>
+		<item>距离传感器</item>
+		<item>光传感器</item>
+	</string-array>
+
+	<string-array name="WBGTestStrings">
+		<item>WLAN测试</item>
+		<item>蓝牙测试</item>
+		<item>GPS测试</item>
+	</string-array>
+
+	<string-array name="DeputyTestString">
+		<item>话筒回路测试</item>
+		<item>扬声器测试</item>
+		<item>振动测试</item>
+	</string-array>
+
+	<string-array name="TestKeys">
+		<item>volume up</item>
+		<item>volume down</item>
+		<item>menu</item>	
+                <item>back</item>	
+                <item>home</item>
+                <item>torch</item><!--add by zxy for torch-->
+	</string-array>
+
+	<string-array name="AllKeys">
+		<!--<item>camera</item>-->
+		<item>volume up</item>
+		<item>volume down</item>
+		<item>menu</item>
+		<item>back</item>
+		<item>home</item>
+		<!--<item>search</item>-->
+		<!--<item>earPhone</item>-->
+                <item>torch</item><!--add by zxy for torch-->
+	</string-array>
+
+	<string-array name="runin_diruction">
+		<item>4</item>
+		<item>8</item>
+		<item>12</item>
+		<item>16</item>
+		<item>24</item>
+		<item>48</item>
+	</string-array>
+
+
+</resources>

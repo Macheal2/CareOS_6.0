@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="care_contact">Contacts</string>
+    <string name="care_contact_all">All contacts</string>
+    <string name="customer_service_name">CAPPU Customer</string>
+    <string name="care_contact_detail">Contact Detail</string>
+    <string name="no_name_number_warning">Warning</string>
+    <string name="contact_name_too_long">Name too long！</string>  
+    <string name="contact_no_name_number">The name or number is empty! Continue Cancel</string>
+ <!--add by y.haiyang for i99 (start)-->
+    <string name="i99_ok">OK</string>
+    <string name="i99_cancel">Cancel</string>
+    <string name="i99_delete">Delete</string>
+    <string name="i99_deleting">Deleting...</string>
+    <string name="i99_share">Share</string>
+    <string name="i99_replace">Replace</string>
+    <string name="i99_edit">Edit</string>
+    <string name="i99_search">Search</string>
+    <string name="i99_name">Name:</string>
+    <string name="i99_phone">Phone:</string>
+    <string name="i99_group">Group:</string>
+    <string name="i99_title_group">Grouping contacts</string>    
+    <string name="i99_photo">Photo:</string>
+    <string name="i99_create_contact">Create</string>
+    <string name="i99_select">Select</string>
+    <string name="i99_launcher">I99Dial</string>
+    <string name="i99_keyboard">Dialpad</string>
+    <string name="i99_contacts">Contacts</string>
+    <string name="i99_test_size">Size</string>
+    <string name="i99_call_log_delete_group">Clear call records in this group</string>
+    <string name="i99_clear_calllog_title">Clear calllogs</string>
+    <string name="i99_clear_calllog_content">Whether to clear the group call records?</string>
+    <string name="i99_calllog">Call log</string>
+    <string name="i99_call">Call</string>
+    <string name="i99_message">Message</string>
+    <string name="i99_option">Option</string>
+    <string name="i99_new_contact">New Contact</string>
+    <string name="i99_save_contact">Save Contact</string>
+    <string name="i99_view_contact">View contact</string>
+    <string name="i99_delete_contact">Delete contacts</string>
+    <string name="i99_clear_contact_call_log">Empty who call records</string>
+    <string name="i99_select_group">Select group</string>
+    <string name="i99_no_group">Ungrouped</string>
+    <string name="i99_contacts_detail">Detail</string>
+    <string name="i99_share_message">SMS Share</string>
+    <string name="i99_copy_info">Copy information</string>
+    <string name="i99_recent">Recent</string>
+    <string name="i99_all">All</string>
+    <string name="copy_title">Copy success</string>
+    <string name="copy_content">Information is copied to the pasteboard successfully, you can long press in the input box, select the option and adhesive applicators.</string>
+    <string name="i99_all_name">Surnames</string>
+    <string name="i99_phone_book">Phonebook</string>
+    <string name="i99_group_select_member">Select<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_group_remove_member">Remove<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_remove_member_title">Remove Contacts</string>
+    <string name="i99_quick_select_title">Quick Contacts</string>
+    <string name="i99_add_quick_contacts_summery">Add a new Quick Contacts</string>
+    <string name="i99_select_quick_contacts_summery">Select an existing contact from the phone book</string>
+    <string name="i99_add_quick_info">When set, can be fast and convenient to the contact calls and send text message.</string>
+    <string name="i99_select_header">Select Avatar</string>
+    <string name="i99_gallery">Gallery</string>
+    <string name="i99_camera">Camera</string>
+    <string name="i99_store_to_phone">Phone</string>
+    <string name="i99_sim">SIM</string>
+    <string name="i99_sim1">SIM1</string>
+    <string name="i99_sim2">SIM2</string>
+    <string name="i99_add">Add</string>
+    <string name="i99_adding">Adding...</string>
+    <string name="i99_remove">Remove</string>
+    <string name="i99_load">Load</string>
+    <string name="i99_loading">Loading...</string>
+    <plurals name="i99_ok_count">
+        <item quantity="zero">OK</item>
+        <item quantity="one">OK(1)</item>
+        <item quantity="other">OK(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <plurals name="i99_delete_count">
+        <item quantity="zero">Delete</item>
+        <item quantity="one">Delete(1)</item>
+        <item quantity="other">Delete(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="i99_family">Family</string>
+    <string name="i99_relatives">Relatives</string>
+    <string name="i99_friend">Friend</string>
+    <string name="i99_community">Community</string>
+    <string name="i99_contacts_already_delete">This contact has been deleted and can not be operated！</string>
+    <string name="i99_warning">Warning</string>
+    <string name="i99_contact_no_name_number">The name or number is empty!</string>
+    <string name="i99_restore">Restore</string>
+    <string name="i99_confirm_save_contact">Whether to save the contact?</string>
+    <string name="i99_confirm_clear_calllog">You sure you want to empty this person call records?</string>
+    <string name="i99_call_settings">Call Settings</string>
+    <string name="i99_import_export_contacts">Import/Export Contacts</string>
+    <string name="i99_ip_calls">IP Calls</string>
+    <string name="i99_no_numbers">No numbers!</string>
+    <string name="i99_select_number">Select Number</string>
+    
+    <string name="delete_calllogs">Delete CallLogs</string>
+    <string name="care_selected_item_count">Select:<xliff:g id="count">%d</xliff:g>个</string>
+    <string name="all_contact">All contacts</string>
+	<string name="phone_contact">Phone contacts</string>
+	<string name="custom_contact">Custom contacts</string>
+    <string name="others_contact"><xliff:g id="account">%1$s</xliff:g>Contact</string>
+    <string name="mult_contact">Multiple contacts</string>
+    <string name="i99_customer_call_me">Contact us: </string>
+    <string name="i99_customer_concern">WeChat attention: </string>
+    <string name="customer_service_number_show">400-900-8960</string>
+    <!--add by y.haiyang for i99 (end)-->   
+    
+</resources>

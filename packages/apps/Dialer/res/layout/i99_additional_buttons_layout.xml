@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/i99_dialpad_additional_bg"
+    android:gravity="center_vertical" >
+    <!--we show set  hide view which default need-->
+    <ImageButton
+        android:id="@+id/dialpadButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <ImageButton
+        android:id="@+id/videoDialButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <ImageButton
+        android:id="@+id/addToContact"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>  
+    <ImageButton
+        android:id="@+id/overflow_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+                          
+    <ImageButton
+        android:id="@+id/i99_dialpad_add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/i99_dialpad_addcontact"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/dialButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/i99_number_phone"
+        android:textAllCaps="false"
+        android:background="@drawable/i99_call_button_bg" />
+
+    <ImageButton
+        android:id="@+id/i99_dialpad_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/i99_diapad_message"
+        android:background="@android:color/transparent" />
+        
+
+</LinearLayout>

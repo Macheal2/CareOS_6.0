@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dengying@20160822 lockscreen -->
+<com.cappu.keyguard.CappuLockScreenView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cappu_lock_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cappu_default_wallpaper2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+	    android:layout_marginTop="@dimen/cappu_lock_time_margintop"
+        android:background="@drawable/cappu_lock_screen_time_bg" >
+
+        <LinearLayout
+	        android:layout_width="match_parent"
+            android:orientation="horizontal"
+	        android:layout_height="wrap_content">
+            <RelativeLayout
+	            android:id="@+id/cappu_hour"
+                android:layout_weight="0.5"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cappu_lock_hour_marginleft"
+                android:layout_marginTop="@dimen/cappu_lock_hour_margintop">
+	            <ImageView
+		            android:id="@+id/cappu_hour_left"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:src="@drawable/cappu_scrond_time_0"/>
+	            <ImageView
+                    android:layout_toRightOf="@id/cappu_hour_left"
+		            android:id="@+id/cappu_hour_right"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:src="@drawable/cappu_scrond_time_0"/>
+            </RelativeLayout>
+            <RelativeLayout
+	            android:id="@+id/cappu_minute"
+                android:layout_weight="0.5"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cappu_lock_hour_marginleft"
+                android:layout_marginTop="@dimen/cappu_lock_hour_margintop">
+	            <ImageView
+		            android:id="@+id/cappu_minute_left"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/cappu_minute_right"
+                	android:src="@drawable/cappu_scrond_time_0"/>
+	            <ImageView
+		            android:id="@+id/cappu_minute_right"
+                    android:layout_alignParentRight="true"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:src="@drawable/cappu_scrond_time_0"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cappu_am_or_pm"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:textColor="#303030"
+            android:textSize="@dimen/cappu_lock_am_or_pm_text_size" />
+        <TextView
+            android:id="@+id/cappu_lock_screen_calendar_lunar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+	        android:textSize="@dimen/cappu_lock_screen_calendar_solar_week_text_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_marginTop="195dp" >
+        <com.cappu.keyguard.WaterWaveProgress
+            android:id="@+id/cappu_keyguard_waterprogress"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            slider:progress2WaterWidth="1px"
+            android:background="@drawable/cappu_keyguard_waterwaver"
+            slider:waterWaveColor="#DD009900"
+            slider:maxProgress="100" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cappu_calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/cappu_lock_screen_calendar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/cappu_lock_screen_calendar_layout_margintop"
+            android:background="@drawable/cappu_lock_screen_calendar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cappu_mouth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="70dip"
+	            android:textSize="22sp"
+                android:singleLine="true"
+                android:textColor="#ffffffff" /> 
+            <!-- #795329 -->
+
+            <!--@dimen/cappu_hour_minute_width"
+                @dimen/cappu_hour_minute_height
+                -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/cappu_lock_screen_day_margintop"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+                
+                <ImageView
+                    android:id="@+id/cappu_date_mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cappu_scrond_date_0" />
+
+                <ImageView
+                    android:id="@+id/cappu_date_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cappu_scrond_date_0" />
+            </LinearLayout>
+
+            <TextView
+	            android:id="@+id/cappu_week"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/cappu_lock_screen_calendar_solar_week_margintop"
+	            android:gravity="center_horizontal"
+	            android:singleLine="true"
+	            android:textColor="#ffb27604"
+	            android:textSize="@dimen/cappu_lock_screen_calendar_solar_week_text_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.cappu.keyguard.BounceView
+        android:id="@+id/cappu_unread_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="20dp"
+        slider:bounce_src="@drawable/cappu_msg_unread"
+    />
+
+    <com.cappu.keyguard.BounceView
+        android:id="@+id/cappu_unread_phone"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        slider:bounce_src="@drawable/cappu_phone_unread"
+    />
+    <!--<include layout="@layout/cappu_unlock_layout" />-->
+    
+    <!--  dengying@20160816 begin -->
+    <RelativeLayout
+        android:id="@+id/layout_animation_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"  
+        android:gravity="center"      
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160px" >
+
+		<ImageView
+		android:id="@+id/img_animation_person"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/animation_person" />
+        
+		<TextView
+		android:id="@+id/txt_pedometer"
+		android:layout_toRightOf="@id/img_animation_person"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/cappu_lock_screen_calendar_solar_week_text_size" />
+
+    </RelativeLayout>
+<!--  dengying@20160816 end -->
+        
+    <RelativeLayout
+        android:id="@+id/cappu_unlock_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0px"
+        android:background="@drawable/cappu_floor_bottom_bg" >
+        <com.cappu.keyguard.CappuSlideView
+            android:id="@+id/cappu_slidingTabLock"
+            android:layout_width="420dip"
+            android:layout_height="@dimen/cappu_slidingtablock_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cappu_empty"
+            slider:effectiveLength="75dp"
+            slider:effectiveVelocity="1300dp"
+            slider:maskText="@string/cappu_slide_to_unlock"
+            slider:maskTextMarginLeft="95dp"
+            slider:maskTextMarginTop="45dp"
+            slider:maskTextSize="@dimen/cappu_slidingtablock_text_size"
+            slider:slidableLength="208dp"
+            slider:slider="@drawable/cappu_jog_tab_left_normal"
+            slider:sliderMarginLeft="0dp"
+            slider:sliderMarginTop="-3dp"/>
+
+        <ImageView
+            android:id="@+id/cappu_camera_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cappu_camera_bg" />
+    </RelativeLayout>
+</com.cappu.keyguard.CappuLockScreenView>

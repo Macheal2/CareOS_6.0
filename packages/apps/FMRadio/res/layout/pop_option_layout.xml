@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_menu_background"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout android:id="@+id/audio_switch"
+        style="@style/popButtonStyle" >
+
+        <ImageView
+            android:id="@+id/audio_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_headset" />
+
+        <TextView
+            android:id="@+id/audio_text"
+            style="@style/popTextStyle"
+            android:text="@string/optmenu_earphone" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fm_list"
+        style="@style/popButtonStyle" >
+
+        <ImageView
+            android:id="@+id/fm_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_list" />
+
+        <TextView
+            android:id="@+id/fm_list_text"
+            style="@style/popTextStyle"
+            android:text="@string/fm_ch_list" />
+    </LinearLayout>
+
+</LinearLayout>

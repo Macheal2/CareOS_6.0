@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/expandable_list_margin_top"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recommend_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:layout_marginBottom="@dimen/expandable_list_item_icon_margin_bottom"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+
+        <!-- android:background="@drawable/uu_item_click_selector" -->
+
+        <ImageView
+            android:id="@+id/recommend_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/onlinefolder_app_icon_default" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recommend_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="@dimen/expandable_list_margin_bottom"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|top"
+        android:lines="2"
+        android:textColor="@color/expandable_list_text_color"
+        android:textSize="@dimen/expandable_list_item_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@drawable/magcomm_video_shots_bg" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/camera_shutter"
+        style="@style/ShutterGroup"
+        android:splitMotionEvents="false" >
+
+        <!-- this invisible ShutterButton Target have Space start -->
+        <!--
+   >
+   <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_video_state"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/magcomm_video_pause"
+        android:contentDescription="@string/accessibility_video_shutter_button"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>  
+	  
+    <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_video"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_video"
+        android:contentDescription="@string/accessibility_video_shutter_button"
+	android:layout_marginBottom="10dp"/>
+	
+    <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_photo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_photo"
+        android:contentDescription="@string/accessibility_shutter_button"/>
+	
+    <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/magcomm_video_pause"
+        android:layout_marginTop="10dp"/>
+        -->
+
+        <com.android.camera.ui.ShutterButton
+            android:id="@+id/shutter_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/magcomm_video_pause"
+            android:visibility="gone" />
+
+        
+     <!--zhouhua begin add ==shutter_button_photo-->
+       <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_photo1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/btn_photo"
+        android:layout_marginTop="55dp"
+        android:contentDescription="@string/accessibility_shutter_button"
+         android:visibility="gone"
+ />
+     <!--zhouhua end 20160618-->
+           
+        <com.android.camera.ui.ShutterButton
+            android:id="@+id/shutter_button_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/accessibility_shutter_button"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_photo" />
+
+        <!-- zhouhua begin     add == shutter_button_video 20160618 -->
+
+        <com.android.camera.ui.ShutterButton
+            android:id="@+id/shutter_button_video1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/accessibility_video_shutter_button"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_video" />
+        <!-- zhouhua end 20160618 -->
+        
+        <com.android.camera.ui.ShutterButton
+            android:id="@+id/shutter_button_video_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/accessibility_video_shutter_button"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/magcomm_video_pause"
+            android:visibility="gone" /> <!-- zhouhua add  android:layout_marginRight="10dp" -->
+    </LinearLayout>
+
+    <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_video"
+        style="@style/ShutterGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/thumbnail_margin"
+        android:clickable="true"
+        android:contentDescription="@string/accessibility_video_shutter_button"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_video" />
+
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/folder_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="@color/text_bg_color"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:maxLines="1"
+            android:text="@string/new_inventory"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:id="@+id/modify_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_below="@id/dialog_title"
+            android:background="@android:color/white" >
+
+            <ImageView
+                android:id="@+id/folder_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/append_add_def" />
+
+            <EditText
+                android:id="@+id/folder_edit"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:paddingLeft="2dip"
+                android:layout_toRightOf="@id/folder_icon"
+                android:background="@drawable/edit_bg"
+                android:cursorVisible="true"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/icon_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/modify_layout"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/text_bg_color" />
+
+            <Gallery
+                android:id="@+id/icon_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:background="#ffffff"
+                android:spacing="10dp"
+                android:unselectedAlpha="1.0" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dip"
+            android:layout_below="@id/icon_select_layout"
+            android:background="@android:color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/text_bg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                 >
+
+               
+                <!-- yuan tong qin button update textview -->
+                <TextView
+                    android:id="@+id/confirm_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/dialog_button_left_bg"
+                    android:paddingLeft="48dip"
+                    android:paddingRight="24dip"
+                    android:gravity="center"
+                    android:text="@string/confirm_button"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="#b7b7b7" />
+
+                
+                <TextView
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="24dip"
+                    android:paddingRight="48dip"
+                    android:text="@string/cancel_button"
+                    android:background="@drawable/dialog_button_right_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

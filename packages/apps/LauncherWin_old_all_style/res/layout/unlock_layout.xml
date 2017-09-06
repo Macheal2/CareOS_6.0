@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res/com.cappu.launcherwin"
+    android:id="@+id/unlock_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0px"
+    android:background="@drawable/floor_bottom_bg"
+    android:orientation="horizontal" >
+
+<!--     <com.cappu.launcherwin.lockscreen.SlidingTabLock
+        android:id="@+id/slidingTabLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:background="@drawable/empty" >
+
+        <ImageView
+            android:id="@+id/un_lock_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jog_tab_left" />
+    </com.cappu.launcherwin.lockscreen.SlidingTabLock>
+
+    <TextView
+        android:id="@+id/tv_slide_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:text="@string/slide_to_unlock"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="40px" /> -->
+    
+    <com.cappu.launcherwin.lockscreen.SlideView
+            android:id="@+id/slidingTabLock"
+            android:layout_width="420dp"
+            android:layout_height="111px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/empty"
+            slider:effectiveLength="190dp"
+            slider:effectiveVelocity="1300dp"
+            slider:maskText="@string/slide_to_unlock"
+            slider:maskTextMarginLeft="108dp"
+            slider:maskTextMarginTop="45dp"
+            slider:maskTextSize="40px"
+            slider:slidableLength="208dp"
+            slider:slider="@drawable/jog_tab_left_normal"
+            slider:sliderMarginLeft="0dp"
+            slider:sliderMarginTop="2dp" />
+
+    <ImageView
+        android:id="@+id/camera_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/camera_bg" />
+
+</RelativeLayout>

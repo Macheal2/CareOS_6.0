@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="hello">Hello World, Launcher!</string>
+    <string name="app_name">CAPPU Desktop</string>
+    <string name="No_SIM_card">No SIM card</string>
+    <string name="all_app_name">all application name</string>
+    <string name="tools">Tools</string>
+    <string name="Wireless_local_area_network">WLAN</string>
+    <string name="open">on</string>
+    <string name="close">off</string>
+    <string name="Mobile_Internet">GPRS</string>
+    <string name="textsize_title">Text size</string>
+    <string name="launcher_workspace_font_size">Launcher font</string>
+    <string name="font_level_big">Default</string>
+    <string name="font_level_small">small</string>
+    <string name="font_level_big_most">Bigger</string>
+    <string name="quickset_theme">theme</string>
+   <!-- <string name="The_TAB_setting">The TAB setting</string>-->
+    <string name="security">Security help</string>
+    <string name="general">general</string>
+    <string name="ring_setting">Ringtone setting</string>
+    <string name="cancel">cancel</string>
+    <string name="voice">Voice</string>
+    <string name="workspase_lock">Desktop Lock</string>
+    <string name="workspase_lock_info">Desktop lock can not replace the desktop application and the background color of the magnetic block</string>
+    <string name="Desktop_lock_screen_calls">desktop/lockscreen/calls</string>
+    <string name="textsize_default">the default</string>
+    <string name="desktop_title_mode">mode</string>
+    <string name="Parents_full_version">Parents complete version</string>
+    <string name="Family_account">Family account</string>
+    <string name="menu_system">menu setting</string>
+    <string name="android_system">Android setting</string>
+    <string name="setting_aboutapk">about software</string>
+    <string name="desktop_title_original">return to android</string>
+    <string name="setting">Setting</string>
+    <string name="system_setting">System setting</string>
+    <string name="workspace_edit">Desktop edit</string>
+    <string name="weather">Weather</string>
+    <string name="weather_speech">Weather Speech</string>
+    <string name="quickopen_tool">Tools</string>
+    <string name="Close_the_WLAN_network">just turn off WLAN</string>
+    <string name="prompt">prompt</string>
+    <string name="Disconnect_the_wireless_network">\u0009 Then shut down and disconnect from the wireless network connection, when need to connect in time, click the Internet switch to connect to the Internet </string>
+    <string name="Specific_opening_way">\u0009In the absence of a wireless network, you can through the mobile data network on the Internet, the premise is need to open the mobile Internet traffic monthly package, and specific measures for opening please consult children or local communications operators.</string>
+    <string name="Turn_on_WLAN_switch">I.turn on WLAN switch</string>
+    <string name="Connect_to_the_wireless_network">II. connect wireless network needs the follewing operation</string>
+    <string name="Select_the_network">1.Select the network that you want to connect</string>
+    <string name="Enter_the_password">2.Input the password</string>
+    <string name="connection_is_successful">3.Connection success</string>
+    <string name="operation_of_the_network">\u0009 After setting success,you can carry out operations that need the Internet just like suffing the Internet,searching the weather forecast, watching video, listening to music, downloading applications and games online 。</string>
+    <string name="Assist_complete">\u0009 If you don\'t understand how to setting，you can complete that with the help of your children</string>
+    <string name="Enter_the_wireless_network_Settings">Enter the wlan</string>
+    <string name="free_internet">WLAN</string>
+    <string name="open_wifi"> open wlan</string>
+    <string name="phone_gprs">GPRS</string>
+    <string name="popu_title">Selections</string>
+    <string name="run">running</string>
+    <string name="replace">replace</string>
+    <string name="replace_app">replace the app</string>
+    <string name="edit_cell">Edit cell backgroud</string>
+    <!--  <string name="font_level_small">delicate </string>-->
+    <string name="font_level_default">normal</string>
+    <string name="font_up">font up</string>
+    <string name="big">big</string>
+    <string name="maximum">maximum</string>
+    <string name="font_info">The last two adjustment applies only to calls, short messages, contacts, and the phone book. </string>
+    <string name="quickset_textsize">Text size</string>
+    <string name="weather_notify">Please click on the specified location</string>
+    <string name="alarm_size">Clock </string>
+    <string name="desktop_title_calendar">The Calendar </string>
+    <string name="desktop_title_gallery">Family Clbum </string>
+    <string name="desktop_title_contacts">The Contacts</string>
+    <string name="desktop_title_phonebook">The Phone Book </string>
+    <string name="desktop_title_yuequpingshu">QuLe And Ballad Singing </string>
+    <string name="desktop_title_life">Encyclopedia of Life </string>
+    <string name="activity_not_found">"You did not install any application on your mobile phone."</string>
+    <string name="app_default_title">Reset</string>
+    <string name="dialog_confirm">confirm</string>
+    <string name="dialog_cancel">cancle</string>
+    <string name="gprs_open_confirm_title">Wanning</string>
+    <string name="gprs_open_confirm_message">Suf the Internet with SIM card will produce traffic fees,whether or not to continue?</string>
+    <string name="load_wait">"Loading\u2026"</string>
+    <string name="tips">Your device has been accelerated!</string>
+    <string name="pushtopass">Push To Pass</string>
+    <string name="clearapp">"clear <xliff:g id="count">%s</xliff:g>  app"</string>
+    <string name="totalmemory">"Storage<xliff:g id="total">%s</xliff:g>  MB"</string>
+    <string name="availmemory">"Available<xliff:g id="avail">%s</xliff:g> MB"</string>
+    <string name="setting_cell_background">setting cell background</string>
+    <string name="launcher_phone">Phone</string>
+    <string name="launcher_mms">Mail</string>
+    <string name="launcher_clock">Clock</string>
+    <string name="launcher_time_setting">Time Setting</string>
+    <string name="launcher_ararm_clock">Alarm Clock</string>
+    <string name="launcher_weather">Weather</string>
+    <string name="protection_show_password">Show the password(the origin password:9999)</string>
+    <string name="privacy_init_pwd_hint_again">Enter your new password again</string>
+    <string name="privacy_init_pwd_hint">Create password of 1 to 12 numbers </string>
+    <string name="btn_default">default</string>
+    <string name="privacy_forget_password"><u>forget the password？</u></string>
+    <string name="privacy_protection_pwd_hint">Enter your old password</string>
+    <string name="privacy_change_pwd_hint_again">Enter your new password</string>
+    <string name="privacy_change_pwd_hint">Enter your password</string>
+    <string name="gprs_on_pwd_title">GPRS Password</string>
+    <string name="gprs_on_pwd_state">Turn Password On</string>
+    <string name="privacy_set_password">Setting Password</string>
+    <string name="privacy_modify_password">Require Password</string>
+    <string name="privacy_change_pwd_error">Password Incorrect</string>
+    <string name="privacy_reset_password">Reset Password</string>
+    <string name="privacy_reset_password_message">Do you want to reset your password</string>
+    <string name="Success">Success</string>
+    <string name="privacy_check_pwd">Confirm Password</string>
+    <string name="add">Add</string>
+    <string name="option">Option</string>
+    <string name="slide_to_unlock">slide to unlock</string>
+    <string name="week_1">Monday</string>
+    <string name="lunar_1">The lunar calendar in February twenty-five</string>
+    <string name="lunar">The Lunar Calendar</string>
+    <string name="i99_year">Year</string>
+    <string name="i99_month">Month</string>
+    <string name="i99_date">Date</string>
+    <string name="i99_leap">Leap</string>
+    <string name="i99_date_10">the tenth</string>
+    <string name="i99_date_20">the twentieth</string>
+    <string name="i99_date_30">the thirtieth</string>
+    <string name="i99_sos_title">Emergency(SOS)</string>
+    <string name="i99_sos_no_contact">No Emergency Contact</string>
+
+    <string name="network_01">The first wireless network connection of the wireless settings click on the bottom</string>
+    <string name="network_02">The second open WLAN switch</string>
+    <string name="network_03">The third click on your home wireless network</string>
+    <string name="network_04">The fourth enter your home WiFi password click "connection"</string>
+    <string name="network_05">The fifth connect successfully</string>
+    <string name="network_06">The sixth Wireless network connection is used for the first time the need to manually enter the password, the subsequent use will automatically connect (network password change except)</string>
+
+    <string-array name="i99_lunar_month">
+        <item>正</item>
+        <item>正</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="i99_date_0">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+        <item></item>
+    </string-array>
+    <string-array name="i99_date_1">
+        <item>date</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+    </string-array>
+    <string-array name="i99_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string name="abbrev_wday_month_day_no_year">M 月 d  日</string>
+    <string name="widget_initial_text">"touch to select music"</string>
+    <string name="databaseloading">click to read</string>
+    <string name="start_intent_error">"Please comfirm that Gallery or Gallery3D install success"</string>
+    <string name="configure_style1_text">Gradient</string>
+    <string name="configure_style2_text">Left Shift</string>
+    <string name="configure_style3_text">Shrink</string>
+    <string name="configure_style4_text">Rotation</string>
+    <string name="tap_select_album">click to select am album</string>
+    <string name="album_missing">the album you selected is missing</string>
+    <string name="no_storage">No SD card</string>
+    <string name="no_animation">Please select at least one animation effect</string>
+    <string name="speech_setting">Broadcast</string>
+    <string name="launcher_speech">Launcher Speech</string>
+    <string name="mms_speech">Message Speech</string>
+    <string name="contacts_speech">Contacts Speech</string>
+    <string name="dialpad_speech">Dialpad Speech</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="month">Month</string>
+    <string name="news">News</string>
+    <string name="health">Health</string>
+    <string name="travel">travel</string>
+    <string name="finances">finances</string>
+    <string name="channellife">life channel</string>
+    <string name="life">Life</string>
+    <string name="uri_error">Uri Error</string>
+    <string name="favicons">Favicons</string>
+    <string name="faviconslist">FaviconsList</string>
+    <string name="favicons_ing">collecting</string>
+    <string name="favicons_cancle">cancel</string>
+    <string name="favicons_cancle_success">cancled</string>
+    <string name="delete">"delete"</string>
+    <string name="delete_success">delete success</string>
+    <string name="favorites_success">success</string>
+    <string name="delete_news_tip">The news had been collected,cancle the collection to delete.</string>
+    <string name="delete_health_tip">The health tip had been collected,cancle the collection to delete.</string>
+    <string name="delete_net_tip">This article<xliff:g id="name">%s</xliff:g>Has been collected, delete please remove the collection</string>
+    <string name="favicons_list">Favicons List</string>
+    <string name="setting_ringtone">Setting The Phone Ring</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_ice">ice</string>
+    <string name="weather_thunder">Thunder</string>
+    <string name="weather_big">heavy</string>
+    <string name="weather_storm">torrential</string>
+    <string name="weather_moderate">moderate</string>
+    <string name="weather_other">other</string>
+    <string name="weather_overcast">Overcast</string>
+    <string name="weather_cloud">Cloudy</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_haze">Haze</string>
+    <string name="weather_dust">Dust</string>
+    <string name="weather_sand">Sand</string>
+    <string name="alis_download_center">Download Center</string>
+    <string name="alis_album">Album</string>
+    <string name="alis_almanac">Almanac</string>
+    <string name="help_notes">Notes</string>
+    <string name="help_notes_info1">\u0009 ★News and health tips thrity days ago would be delete,if you want to keep the Message,long press the item,select the favicon.</string>
+    <string name="help_notes_info2">\u0009 ★Click the star on the right of News and Health,enter the conllection list</string>
+    <string name="help_notes_info3">\u0009 ★News and Health tip collected can not delete,Long press the item is the collection list and selete delete.</string>
+    <!--modify by even-->
+    <string name="dialect_settings">Dialect setting</string>
+    <string name="more_baidumssp">more</string>
+
+    <string name="insert_sd_card">Insert SD card</string>
+    <string name="call_button_string">Dial</string>
+    <string name="i99_copy_successed">The short message copied!</string>
+    <string name="i99_dialog_left">cancle</string>
+    <string name="i99_dialog_right">sure</string>
+    <string name="i99_dialog_middle">not sure</string>
+    <string name="i99_dialog_delete_title">delete title</string>
+    <string name="i99_dialog_confirm_title">Warm Prompt</string>
+    <string name="i99_dialog_confirm_restore">The application isn\'t intalled,long press switch application or click download app</string>
+    <string name="i99_dialog_confirm_restore_tip">The software isn\'t installed,confirm begin to download</string>
+    <string name="i99_save_failmessage_to_drafts">Sending Message failed,the Message has been saved in draft box,edit again and send! </string>
+    <string name="i99_fail_forward_undownload">The Message haven\'t been downloaded,cann\'t be forwarded!</string>
+    <string name="i99_string_draft">Draft</string>
+    <string name="open_app">Open</string>
+    <string name="download">Download</string>
+    <string name="wait">Wait...</string>
+    <string name="download_center">System Update Center</string>
+    <string name="check">Check</string>
+    <string name="install">Install</string>
+    <string name="update">Update</string>
+    <string name="app_name_camera">Camera</string>
+    <string name="app_name_contact">Contacts</string>
+    <string name="app_name_album">Gallery</string>
+    <string name="app_name_music_widget">Music</string>
+    <string name="app_name_radio">Radio</string>
+    <string name="app_name_deskclock">Deskclock</string>
+    <string name="app_name_video">Video</string>
+    <string name="app_name_music">Music</string>
+    <string name="app_name_calendar">Almanac</string>
+    <string name="app_name_applications">Application</string>
+    <string name="app_name_dazhihui">Great Wisdom</string>
+    <string name="app_name_game">Game</string>
+    <string name="app_name_wechart">WeChat</string>
+    <string name="app_name_sos">SOS</string>
+    <string name="app_name_instructions">Instructions</string>
+    <string name="app_name_calculator">Calculator</string>
+    <string name="app_name_downloadcenter">Download</string>
+    <string name="app_name_internet_navigation">Internet</string>
+    <string name="get_net_config">refresh the list</string>
+    <string name="onclick_refresh">click to refresh</string>
+    <string name="contact_is_no_number">Contact number is not exist</string>
+    <string name="item_count">"No.1,   "</string>
+    <string name="first">"The fist,   "</string>
+    <string name="second">"The second,   "</string>
+    <string name="third">"The third,   "</string>
+    <string name="fourth">"The fourth,   "</string>
+    <string name="fifth">"The fifth,   "</string>
+    <string name="mian_menu_switch">Main Screen Setting</string>
+    <string name="mian_menu_infinite_loop">Infinite sliding</string>
+    <string name="launcher_screen_manager">Home screen management</string>  
+    <string name="launcher_backgroud_style">Background style</string>   
+    <string name="mian_menu_back_loop">Back key to turn the page</string>
+    <string name="fillet_switch">Fillet Switch</string>
+    <string name="about_care_os">About Care Os</string>
+    <string name="about_version_format">"Version Format: %1$s"</string>
+    <string name="about_checking_newest_version">Checking</string>
+    <string name="about_checking_newest_version_too">Check again</string>
+    <string name="about_net_error">Nerwork Error</string>
+    <string name="about_have_a_newer_version">New Version(%1$s)</string>
+    <string name="about_file_error">File Storage Error</string>
+    <string name="about_unexpected">Check failed</string>
+    <string name="about_newest">the newest Version</string>
+    <string name="about_downloading_hint">downloading..</string>
+    <string name="about_downloaded_hint">the new version has downloaded.</string>
+    <string name="about_vertion_install_failed">the new version save error</string>
+    <string name="about_install">install now</string>
+    <string name="about_download">update now</string>
+    <string name="care_os_update">Software update</string>
+    <string name="about_ok">ok</string>
+    <string name="gadget_error_text">"Little widget loaded error"</string>
+    <string name="mode_select">Mode</string>
+    <string name="mode_select_common">Common Mode</string>
+    <string name="mode_select_simple">Simple Mode</string>
+    <string name="mode_select_minimalist">Minimalist Mode</string>
+    <string name="theme_select">Theme</string>
+    <string name="theme_select_default">The Default</string>
+    <string name="theme_select_classical">Simple style</string>
+    <string name="theme_select_chinesestyle">Chinese style</string>
+    <string name="theme_select_simpleness">Simpleness style</string>
+    <string name="theme_select_pattern">Pattern</string>
+    <!-- hejianfeng add start -->
+    <string name="theme_select_twelve_grids">twelve grids style</string>
+	<string name="theme_select_nine_grids">nine grids style</string>
+    <!-- hejianfeng add end -->
+
+    <!-- add by hehangjun for i99 (start) -->
+    <string name="i99_ok">Ok</string>
+    <string name="i99_cancel">Cancle</string>
+    <string name="i99_delete">Delete</string>
+    <string name="i99_deleting">Deleting...</string>
+    <string name="i99_share">Share</string>
+    <string name="i99_replace">Replace</string>
+    <string name="i99_edit">Edit</string>
+    <string name="i99_search">Search</string>
+    <string name="i99_name">Name:</string>
+    <string name="i99_phone">Phone:</string>
+    <string name="i99_group">Group:</string>
+    <string name="i99_title_group">Group Contacts</string>
+    <string name="i99_photo">Head portrait :</string>
+    <string name="i99_create_contact">Create</string>
+    <string name="i99_select">Select</string>
+    <string name="i99_launcher">I99 Dial</string>
+    <string name="i99_keyboard">Keyboard</string>
+    <string name="i99_contacts">Contacts</string>
+    <string name="i99_test_size">Text Size</string>
+    <string name="i99_call_log_delete_group">Clean the Call records group</string>
+    <string name="i99_clear_calllog_title">Clean The Records</string>
+    <string name="i99_clear_calllog_content">Are you sure to delete this group of call records?</string>
+    <string name="i99_calllog">Call Records</string>
+    <string name="i99_call">Call</string>
+    <string name="i99_message">Send Message</string>
+    <string name="i99_option">Options</string>
+    <string name="i99_new_contact">Create Contact</string>
+    <string name="i99_save_contact">Save Contact</string>
+    <string name="i99_view_contact">Search Contact</string>
+    <string name="i99_delete_contact">Delete Contact</string>
+    <string name="i99_clear_contact_call_log">clean the call reords of the contact</string>
+    <string name="i99_select_group">Select Group</string>
+    <string name="i99_no_group">No Group</string>
+    <string name="i99_contacts_detail">Detail</string>
+    <string name="i99_share_message">Share Message</string>
+    <string name="i99_copy_info">Copy Information</string>
+    <string name="i99_recent">Recents</string>
+    <string name="i99_all">All</string>
+    <string name="copy_title">Copy Success</string>
+    <string name="copy_content">Information to successfully copied to the paste board, you can long press in the input box, select paste options and paste .</string>
+    <string name="i99_all_name">The book of family names</string>
+    <string name="i99_phone_book">Phone Book</string>
+    <string name="i99_group_select_member">Select<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_group_remove_member">Remove<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_remove_member_title">Remove Contacts</string>
+    <string name="i99_quick_select_title">Quick Contacts</string>
+    <string name="i99_add_quick_contacts_summery">add a new quick contact</string>
+    <string name="i99_select_quick_contacts_summery">add from phone book</string>
+    <string name="i99_add_quick_info">You can call and send message to the people that are quick contact more convenient.</string>
+    <string name="i99_select_header">Select Head Portrait</string>
+    <string name="i99_gallery">Gallery</string>
+    <string name="i99_camera">Camera</string>
+    <string name="i99_store_to_phone">Phone</string>
+    <string name="i99_sim">SIM card</string>
+    <string name="i99_sim1">card  1</string>
+    <string name="i99_sim2">card  2</string>
+    <string name="i99_add">add</string>
+    <string name="i99_adding">adding...</string>
+    <string name="i99_remove">remove</string>
+    <string name="i99_load">load</string>
+    <string name="i99_loading">loading...</string>
+
+    <plurals name="i99_ok_count">
+        <item quantity="zero">confirm</item>
+        <item quantity="one">confirm(1)</item>
+        <item quantity="other">confirm(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <plurals name="i99_delete_count">
+        <item quantity="zero">delete</item>
+        <item quantity="one">delete(1)</item>
+        <item quantity="other">delete(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+
+    <string name="i99_family">Family</string>
+    <string name="i99_relatives">Relatives</string>
+    <string name="i99_friend">Friends</string>
+    <string name="i99_community">Community</string>
+    <string name="i99_contacts_already_delete">The contact has been deleted,can\'n be operated</string>
+    <string name="i99_warning">Warning</string>
+    <string name="i99_contact_no_name_number">Name and number cannot be blank</string>
+    <string name="i99_restore">Restore</string>
+    <string name="i99_confirm_save_contact">Are you sure to save the contact?</string>
+    <string name="i99_confirm_clear_calllog">Are you sure to clean the call records?</string>
+    <string name="i99_call_settings">Call Setting</string>
+    <string name="i99_import_export_contacts">Import/Export Contacts</string>
+    <string name="i99_ip_calls">IP Call</string>
+    <string name="i99_no_numbers">no Number！</string>
+    <string name="i99_select_number">Select Number</string>
+    <string name="i99_customer_service">Customer Service Phone</string>
+    <string name="loading">Loading...</string>
+    <string name="menu_select_none" msgid="7093222469852132345">"Select None"</string>
+    <string name="menu_select_all" msgid="621719255150713545">"Select All"</string>
+    <string name="i99_contact_exit">"The contact number has been added, the add will be invalid"</string>
+    <string name="No_Number_Phone">Phone  numbers can not be empty</string>
+    <string name="i99_contact_function_warning">"Sorry"</string>
+    <string name="i99_contact_function_under">"This  function requires a cappuccino phone support"</string>
+    <string name="delete_calllog">Delete call</string>
+    <string name="group_edit_field_hint_text">"Group Name"</string>
+    <string name="description_delete_button" msgid="6263102114033407382">"Backspace"</string>
+    <string name="call_log">Call log</string>
+    <string name="contact">Contacts</string>
+    <string name="dialpad">Dialpad</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="no_call_log">No  call log</string>
+    <string name="no_found_activity">Found no usable application!</string>
+    <string name="time">time: <xliff:g id="time">%s</xliff:g></string>
+    <string name="times">The number of calls: <xliff:g id="count">%s</xliff:g></string>
+    <string name="call_times">Talk time: <xliff:g id="duration">%s</xliff:g></string>
+    <string name="missed_call">Missed call · Bell<xliff:g id="count">%s</xliff:g>Sound</string>
+    <string name="rings">Bell: <xliff:g id="count">%s</xliff:g>s</string>
+    <string name="no_answer">The other did not answer</string>
+    <string name="select_all">Select</string>
+    <string name="select_none">Clear All</string>
+    <string name="unknown_number">Unknown Number</string>
+    <string name="number_null">Number is empty！</string>
+    <string name="call">Phone</string>
+    <string name="message">Mms</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="view_contact">View a contact</string>
+    <string name="spacer"> · </string>
+    <string name="h">H</string>
+    <string name="m">M</string>
+    <string name="s">S</string>
+    <string name="ip_call">IP call</string>
+    <string name="remove_all_calls">Clear All Records</string>
+    <string name="test">Test</string>
+    <string name="starredList">"Starred  content"</string>
+    <string name="frequentList">"Regular contact"</string>
+    <string name="strequentList">"收藏"</string>
+    <string name="all_contact">"全部联系人"</string>
+    <string name="sim_contact">"SIM卡联系人"</string>
+    <string name="phone_contact">"手机联系人"</string>
+    <string name="sur_names">"百家姓"</string>
+    <string name="search">"搜索"</string>
+    <string name="no_contacts">"没有联系人"</string>
+    <string name="contacts_show">"联系人显示"</string>
+    <string name="contact_detail">"详情"</string>
+    <string name="phone_number">"电话号码"</string>
+
+    <plurals name="delete">
+        <item quantity="zero">删除</item>
+        <item quantity="one">删除(1)</item>
+        <item quantity="other">删除(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+
+    <string name="action_settings">Settings</string>
+    <string name="more">More</string>
+    <string name="uninstall_app">Uninstall app</string>
+    <string name="total">Total app</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="modify">Modify Location</string>
+    <string name="added">Added</string>
+    <string name="removed">Not Added</string>
+    <string name="dlg_add">add the app?</string>
+    <string name="dlg_remove">remove the app?</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="bluetooth_hid_lable">Self-Timer Remote Controller</string>
+    <string name="number_picker_decrement_button" msgid="476050778386779067">"reducement"</string>
+    <string name="number_picker_increment_button" msgid="2412072272832284313">"increment"</string>
+    <string name="ganzhiyear">壬辰年</string>
+    <string name="ganzhiday">戊戌月丙寅日</string>
+    <string name="Jump">Jump</string>
+    <string name="today">today</string>
+    <string name="contactsList">Contacts</string>
+    <string name="year">年</string>
+    <string name="day">日</string>
+    <string name="number_picker_increment_scroll_action" msgid="9101473045891835490">"向上滑动可增大数值，向下滑动可减小数值。"</string>
+    <string name="time_picker_increment_minute_button" msgid="8865885114028614321">"增大分钟值"</string>
+    <string name="time_picker_decrement_minute_button" msgid="6246834937080684791">"减小分钟值"</string>
+    <string name="time_picker_increment_hour_button" msgid="3652056055810223139">"增大小时值"</string>
+    <string name="time_picker_decrement_hour_button" msgid="1377479863429214792">"减小小时值"</string>
+    <string name="time_picker_increment_set_pm_button" msgid="4147590696151230863">"设置下午时间"</string>
+    <string name="time_picker_decrement_set_am_button" msgid="8302140353539486752">"设置上午时间"</string>
+    <string name="date_picker_increment_month_button" msgid="5369998479067934110">"增大月份值"</string>
+    <string name="date_picker_decrement_month_button" msgid="1832698995541726019">"减小月份值"</string>
+    <string name="date_picker_increment_day_button" msgid="7130465412308173903">"增大日期值"</string>
+    <string name="date_picker_decrement_day_button" msgid="4131881521818750031">"减小日期值"</string>
+    <string name="date_picker_increment_year_button" msgid="6318697384310808899">"增大年份值"</string>
+    <string name="date_picker_decrement_year_button" msgid="4482021813491121717">"减小年份值"</string>
+    <string name="time_picker_dialog_title" msgid="8349362623068819295">"设置时间"</string>
+    <string name="date_picker_dialog_title" msgid="5879450659453782278">"设置日期"</string>
+    <string name="date_time_done" msgid="2507683751759308828">"完成"</string>
+    <string name="playback_failed" msgid="4477832192645009774">抱歉，打开文件失败。</string>
+    <string name="audiofocus_request_failed_message">通话中无法播放音乐.</string>
+    <string name="unknown_artist_name" msgid="5567811106415855219">"未知艺术家"</string>
+    <string name="fail_to_start_stream">"无法播放所请求的音频流。"</string>
+    <string name="function_is_not_supported_tip">该功能不支持、请购专业版手机</string>
+    <string name="resolution_not_exist">该软件不支持小屏手机,请更换540x960以上分辨率手机、确定进入卡布手机网</string>
+    <string name="sdcarderror">SDCard  does not exist or write-protected</string>
+    <string name="restoration_app_tip">Application does not exist, revert to the default application</string>
+    <string name="weather_name">CAPPU Weather</string>
+    <string name="weather_search_city_hint">Search the city (Chinese)</string>
+    <string name="select_city_title">Add city</string>
+    <string name="hit_city_title">Hot City</string>
+    <string name="get_city_weather_fail">Get weather failed, please try again</string>
+    <string name="net_err">Network suck</string>
+    <string name="widget_12_hours_format" translatable="false">h&#58; mm&#8202; <b><font face="sans-serif-condensed" size="14">a</font></b></string>
+    <string name="location_err">"Positioning  fails, manually select a city"</string>
+    <string name="widget_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="see_all">View all &#8230;</string>
+    <string name="selected">The default City</string>
+    <string name="all_rights_reserved">Copyright © 2014 CAPPU. All Rights Reserved.</string>
+    <string name="weather_update_running">Updating &#8230; </string>
+    <string name="weather_location_running"> Locating &#8230; </string>
+    <string name="weather_location">Automatic positioning</string>
+    <string name="weather_add_city">Add city</string>
+    <string name="humidity">Humidity:" </string>
+    <string name="release">Refresh</string>
+    <string name="start_update">Start the update weather</string>
+    <string name="update_success">The weather update success</string>
+    <string name="update_failed">The weather update failed</string>
+    <string name="update_style">Update mode</string>
+    <string name="start_update_time">Start update time</string>
+    <string name="stop_update_time">Stop update time</string>
+    <string name="setting_start_update_time">Setting start update time</string>
+    <string name="setting_stop_update_time">Setting stop update time</string>
+    <string name="update_interval_time">Update interval</string>
+    <string name="tomorrow">"Tomorrow"</string>
+    <string name="set_selected">Set as default city？</string>
+    <string name="city_exist">City exist</string>
+    <string name="is_delete">Do you want to remove this city?</string>
+    <string name="is_prompt">We must keep a city</string>
+    <!-- begin: edit by hmq 20141215 Modify for 自定义壁纸 -->
+    <string name="lockscreen_wp_title">Lock Screen Wallpaper</string>
+    <!-- end: edit by hmq 20141215 Modify for 自定义壁纸 -->
+    
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="third_day">"后天 "</string> 
+        <string name="yesterday_weather">"Yesterday "</string>
+    <!--add by y.haiyang for local speech (start)-->
+    <string name="local_speech_tital">Select dialect</string>
+    <!--add by y.haiyang for local speech (end)-->
+   <!--zhouhua-->
+   <string name="bootaudio_setting">BootAudio</string> 
+   <string name="wireless_update">Wireless Update</string> 
+  
+    <string name="movement">Cappu Nurse</string>
+   <string name="time_picker_separator">:</string>
+
+    <string name="gooduse_android_setting">Android Settings</string>
+    <string name="gooduse_baidu_search">Baidu Search</string>
+    <string name="gooduse_dialor">phone</string>
+
+     <!--Calls inquiry begin-->
+    <string name="phone_util">Calls inquiry</string>
+    <string name="inquiry_wait">Query, please wait for a moment......</string>
+    <string name="telephone_inquiry_button">Calls inquiries, please click on the "call button"</string>
+    <string name="send_fail">Fail in send</string>
+    <string name="sim_fail">SIM card exception, please check...</string>
+    <string name="current_balance">Current balance</string>
+    <string name="checkSIM">Please check whether the SIM card is normal</string>
+    <!--Calls inquiry end-->
+
+
+    <!--added by yzs begin for CareSms-->
+    <string name="care_edit">Edit</string>
+    <string name="care_copy">Copy</string>
+    <string name="care_detail">Detail</string>
+    <string name="care_copy_successed">Successed！</string>
+    <string name="message_details_title">Details</string>
+    <string name="message_saved_as_draft">Message saved as draft.</string>
+    <string name="discard_message_reason">Your message will be discarded because it has no valid recipients.</string>
+    <string name="hidden_sender_address">Hide Sender</string>
+    <string name="care_sms_forward">Forward</string>
+    <!--added by yzs end for CareSms-->
+    
+     <!-- dengying speaker -->
+     <string name="speaker">Receiver Stronger</string> 
+
+    <!-- dengying home_key_wake_up -->
+    <string name="home_key_wake_up">Home Wake Up</string>      
+
+    <!-- liukun indicator_light -->
+    <string name="indicator_light">Indicator Light</string>
+     
+    <!--added by yzs for talktime begin-->
+    <string name="care_talking_time">Is now a Beijing time</string>
+    <string name="care_talking_time_end">.</string>
+    <!--added by yzs for talktime end-->
+    
+   
+    <string name="launcher_speech_time">Weather broadcast time setting</string>
+    <string name="current_time">Current broadcast time</string>
+    
+
+    <string name="net_not_info_tips">Your mobile phone message, need to continue to receive relevant information to connect to the network after a period of time</string>
+    <string name="photoPickerNotFoundText" product="default" msgid="431331662154342581">"There is no photo on the phone."</string>
+    <!-- added by yzs for low battery woring begin -->
+    <string name="low_battery_worring">Low Battery Woring</string>
+    <string name="low_battery_enable">Enable</string>
+    <string name="low_battery_default">Default</string>
+    <string name="low_battery_one">Low Battery One</string>
+    <string name="low_battery_two">Low Battery Two</string>
+    <string name="low_battery_three">Low Battery Three</string>
+    <string name="low_battery_four">Low Battery Four</string>
+    <string name="low_battery_five">Low Battery Five</string>
+    <string name="low_battery_six">Low Battery Six</string>
+    <string name="confirm_message">Prompt have chang,save it？</string>
+    <!-- added by yzs for low battery woring end -->
+    <!--added by yzs for talk time begin -->
+    <string name="talktime_speech">Talk time</string>
+    <!--added by yzs for talk time end --> 
+    <string name="iflytek_tips">you have uninstall iflytek,please download and install it</string>
+    <string name="i99_dialog_confirm_set_ring">Before closing speech to Set the bell effect</string>
+    
+    <string name="converse_people">return call </string>
+    <string name="converse_record">Call records </string>
+    
+    <!--    added by wangyang begin --> 
+    <string name="aifenxiang">IShare</string>
+    <string name="preferTheme">PreferTheme</string>
+    <string name="disktop_theme">Disktop Theme</string>
+    <string name="theme_used">Theme Used</string>
+    <string name="theme_chinese">Chinese Theme</string>
+    <string name="theme_defualt">Defualt Theme</string>
+    <string name="theme_current">Current Theme</string>
+    <string name="theme_current_used">Current Theme Used</string>
+    <string name="web_collection">Web Collection</string>
+    <string name="web_share">Web Share</string>
+    <string name="web_share_at">Share To</string>
+    <string name="wechar_friend">Wechar Friend</string>
+    <string name="web_share_message">Message</string>
+    <string name="wechar">Wechar</string>
+    <string name="web_share_qq">Mobile QQ</string>
+    <string name="web_share_copy">Copy Connect</string>
+    <string name="web_share_zone">QQ Zone</string>
+    <string name="theme_xuan_cai">Xuan Cai Ni Hong</string>
+    <!--    added by wangyang end --> 
+    <!-- hejianfeng add start -->
+    <string name="btn_camera">camera</string>
+    <string name="btn_gallery">gallery</string>
+    <string name="txt_wallpaper_preview">Theme preview</string>
+    <string name="set_wallpaper">setting</string>
+    <string name="setting_wallpaper">wallpaper</string>
+	<string name="care_sms_successed">Message sent successfully!</string>
+    <string name="transmission_transiently_failed">Message sending failed!</string>
+    <string name="add_one_screen">add a screen</string>
+    <string name="remove_one_screen">delete a screen</string>
+    <string name="negative_screen">Negative two screen</string>
+    <string name="cloud_album">Cloud album</string>
+    <string name="cappu_health">Cloud health</string>
+    <string name="cappu_classroom">Cloud classroom</string>
+    
+    <string name="health_step_title">Current step</string>
+    <string name="health_heart_title">Average heart rate</string>
+    <string name="health_step">step</string>
+    <string name="health_heart">BPM</string>
+    <string name="health_step_num">1796</string>
+    <string name="health_heart_num">80</string>
+    <string name="no_net_reload">Reload</string>
+    <string name="no_net_prompt">The network is wrong. Please click the button to reload</string>
+    <string name="no_net_title">Load failed</string>
+    <string name="vital_index_review_title">It is time to go</string>
+    <string name="vital_index_review">Only health is the most important thing in one is life.</string>
+    <!-- hejianfeng add end -->
+    
+    <!-- added by jiangyan start -->
+
+    <string name="clock_setting">Cover clock Settings</string>
+    <string name="clock_title">Cover clock</string>
+    <string name="clock_start">Open the cover clock</string>
+    <string name="clock_style_choice">Select the cover case clock style</string>
+    <string name="analog_clock">analog clock</string>
+    <string name="digital_clock">digital_clock</string>
+    <string name="clock_selected_button">using</string>
+    <string name="clock_unselected_button">use</string>
+    <string name="analog_clock_tip">analog clock is using</string>
+    <string name="digital_clock_tip">digital clock is using</string>
+    <!-- added by jiangyan end -->
+</resources>

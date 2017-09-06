@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <array name="app_items_string">
+        <item>@string/str_cache_title</item>
+        <item>@string/str_pic_title</item>
+        <item>@string/str_wechat_title</item>
+        <item>@string/str_soft_title</item>
+    </array>
+
+    <array name="app_items_drawable">
+        <item>@drawable/ic_phone_cache</item>
+        <item>@drawable/ic_phone_pic</item>
+        <item>@drawable/ic_phone_wechat</item>
+        <item>@drawable/ic_phone_soft</item>
+    </array>-->
+    <array name="app_items">
+        <item>@array/app_items_id</item>
+        <item>@array/app_items_drawable</item>
+        <item>@array/app_items_string</item>
+    </array>
+
+    <string-array name="app_items_id">
+        <item>cache</item>
+        <item>pic</item>
+        <item>wechat</item>
+        <item>soft</item>
+    </string-array>
+
+    <array name="app_items_string">
+        <item>@string/str_cache_title</item>
+        <item>@string/str_pic_title</item>
+        <item>@string/str_wechat_title</item>
+        <item>@string/str_soft_title</item>
+    </array>
+
+    <array name="app_items_drawable">
+        <item>@drawable/ic_phone_cache</item>
+        <item>@drawable/ic_phone_pic</item>
+        <item>@drawable/ic_phone_wechat</item>
+        <item>@drawable/ic_phone_soft</item>
+    </array>
+</resources>

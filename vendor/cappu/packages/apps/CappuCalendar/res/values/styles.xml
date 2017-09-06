@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+    
+    <style name="Scale" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/activity_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_scale_out</item>
+    </style>
+    
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearanceDialogWindowTitle</item>
+    </style>
+    
+    <style name="ThemeDialogAlertCappu">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="textAppearanceListItem">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="textAppearanceListItemSmall">@android:style/TextAppearance.Large.Inverse</item>
+    </style>
+    
+    <style name="huangli_title_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff8c582a</item>
+    </style>
+
+    <style name="huangli_des_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff8c7d70</item>
+    </style>
+    
+    <style name="CareDialogButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">75dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/care_dialog_button_text_color</item>
+    </style>
+    
+    <style name="TextAppearanceDialogWindowTitle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="Transparent" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="menushow">
+        <item name="android:windowEnterAnimation">@anim/menu_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_out</item>
+    </style>
+
+    <style name="option_dialog_title">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/menu_item_height</item>
+        <item name="android:layout_marginLeft">@dimen/menu_margin</item>
+        <item name="android:layout_marginRight">@dimen/menu_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    
+    <style name="cell_info_text">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/menu_item_height</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+</resources>

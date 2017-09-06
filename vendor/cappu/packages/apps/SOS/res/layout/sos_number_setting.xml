@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5" >
+
+   <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+    style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/phone"
+    care:rightVisibility="invisible"/>     
+    
+<!--     <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_middle" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/Words_write_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/number_choose"
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="85.0dip"
+                android:layout_gravity="top"
+                android:background="@drawable/button_choose_contacts_selector"
+                android:text="@string/contact_choose_info"
+                android:textColor="@android:color/black"
+                android:textSize="32.0dip" />            
+            
+            <EditText
+                android:id="@+id/number_editor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/cancel_complete_layout"
+                android:layout_marginBottom="@dimen/ruyi_margin"
+                android:layout_marginLeft="@dimen/ruyi_margin"
+                android:layout_marginRight="@dimen/ruyi_margin"
+                android:layout_marginTop="10dip"
+                android:maxLength="13" 
+                android:layout_weight="1.0"
+                android:background="@drawable/edittext_selector"
+                android:gravity="top"
+                android:textColorHint="#FFC0C0C0"
+                android:hint="@string/Enter_a_single_telephone_number"
+                android:imeOptions="actionSend"
+                android:padding="@dimen/ruyi_margin"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="30.0dip" />
+
+<!--             <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200.0dip"
+                android:layout_marginLeft="@dimen/ruyi_margin" >
+
+                <Button
+                    android:id="@+id/number_choose"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_main_contact"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_complete_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin" >
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:textAllCaps="false"
+                style="@style/shadow_white"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_common_gray_selector"
+                android:text="@string/cancel"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:textAllCaps="false"
+                style="@style/shadow_white"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/ruyi_margin"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_common_gray_selector"
+                android:text="@string/determine"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

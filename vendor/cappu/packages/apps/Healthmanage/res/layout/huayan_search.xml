@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear_edittext_search"
+        android:background="#999999"
+       
+        >
+        <EditText 
+            android:id="@+id/huayan_editext_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="4dp"
+            android:hint="@string/search_content"
+            android:textSize="26sp"
+           />
+         
+        <Button 
+          	android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/Search"
+            android:background="@drawable/button_shape"
+            android:layout_margin="4dp"
+            />
+    </LinearLayout>
+     <TextView 
+         android:id="@+id/search_text_chaxunjiegu"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="@string/no_query_results"
+         android:textSize="30sp"
+         android:gravity="center"
+         />
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_listview" />
+
+</LinearLayout>

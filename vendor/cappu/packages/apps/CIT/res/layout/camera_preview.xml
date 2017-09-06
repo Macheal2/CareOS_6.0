@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<Button android:id="@+id/capture_btn"
+		android:layout_alignParentTop="true" android:gravity="center"
+		android:layout_width="100dip" android:layout_height="50dip"
+		android:text="@string/takepicture">
+	</Button>
+	<sim.android.mtkcit.testitem.PreviewFrameLayout
+		android:id="@+id/frame_layout" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:layout_weight="1">
+
+		<FrameLayout android:id="@+id/frame" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<!-- <sim.android.mtkcit.testitem.CameraPreview android:id="@+id/camera_preview" 
+				android:layout_width="match_parent" android:layout_height="match_parent" 
+				/> -->
+
+			<SurfaceView android:id="@+id/camera_preview"
+				android:layout_width="match_parent" android:layout_height="match_parent" />
+		</FrameLayout>
+
+	</sim.android.mtkcit.testitem.PreviewFrameLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_gravity="bottom" android:gravity="center">
+
+		<LinearLayout android:id="@+id/listLinearLayout"
+			android:gravity="center_horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+
+			<Button android:id="@+id/btn_success" android:layout_width="100dip"
+				android:layout_height="50dip" android:text="@string/success"
+				android:clickable="true" android:layout_x="20dip" android:layout_y="250dip">
+			</Button>
+			<Button android:id="@+id/btn_fail" android:layout_width="100dip"
+				android:layout_height="50dip" android:text="@string/fail"
+				android:clickable="true" android:layout_x="100dip" android:layout_y="250dip">
+			</Button>
+
+		</LinearLayout>
+	</LinearLayout>
+
+
+</FrameLayout>

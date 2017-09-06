@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="cappu_slide_to_unlock">Move to Unlock</string>    
+
+    <string name="week_1">Monday</string>
+    <string name="lunar_1">Lunar New Year on February 25</string>
+    
+    <string name="lunar">农历</string>
+    <string name="i99_year">/</string>
+    <string name="i99_month">/</string>
+    <string name="i99_date"> </string>
+    <string name="i99_leap">Intercalary</string>
+    <string name="i99_date_10">初十</string>
+    <string name="i99_date_20">二十</string>
+    <string name="i99_date_30">三十</string>
+    <string name="i99_sos_title">Emergency(SOS)</string>
+    <string name="i99_sos_no_contact">Not set emergency contacts</string>
+    <string-array name="i99_lunar_month">
+        <item>正</item>
+        <item>正</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="i99_date_0">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+        <item> </item>
+    </string-array>
+    <string-array name="i99_date_1">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+    </string-array>
+    <!--<string-array name="i99_weak">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>-->
+       <string-array name="array_week">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tu</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    
+    <string name="cappu_month">"/"</string>
+    <string name="cappu_day">/</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    
+    <string name="i99_ok">OK</string>
+    <string name="i99_cancel">cancel</string>
+    <string name="cappu_framework_unlock_set_unlock_title">Cappu Unlock</string>
+    <string name="cappu_framework_unlock_set_unlock_none_title">Pattern</string>
+
+    <string name="magcomm_keyguard_alarm">"Alarm:"</string>
+    <string name="magcomm_keyguard_charge_charger">connected to charger</string>
+    <string name="magcomm_keyguard_charge_usb">Connected to USB</string>
+    <string name="magcomm_keyguard_charge_connect">Connected to connect</string>
+    <string name="magcomm_keyguard_charge_full">charging full</string>
+    <string name="magcomm_keyguard_charge_fell">Please Connect your charger.</string>
+    <string name="magcomm_keyguard_charge_value">.</string>
+    <string name="magcomm_keyguard_charge_health">"health:"</string>
+    <string name="magcomm_keyguard_charge_health_unknow">unknow</string>
+    <string name="magcomm_keyguard_charge_health_good">good</string>
+    <string name="magcomm_keyguard_charge_health_subhealthy">subhealthy</string>
+    <string name="magcomm_keyguard_charge_health_bad">bad</string>
+    <plurals name="magcomm_keyguard_unread_dial">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> missed call</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> missed calls</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_msg">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread message</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread messages</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_email">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread E-mail</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread E-mails</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_calendar">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread calendar</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread calendars</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_RCS">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread chat</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread chat</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_CTS">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread ANDROID CTS</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread ANDROID CTS</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_MTK_CTS">
+        <item quantity="one">You have <xliff:g id="NUMBER">%d</xliff:g> unread MTK CTS</item>
+        <item quantity="other">You have <xliff:g id="NUMBER">%d</xliff:g> unread MTK CTS</item>
+    </plurals>
+
+    <string name="magcomm_keyguard_notice_text">Slide to UnLock</string>
+
+    <string name="magcomm_lunar_unlock">农历</string>
+
+    <string-array translatable="false" name="magcomm_lunarcal_month">
+        <item>正月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+
+    <string-array translatable="false" name="magcomm_lunarcal_day">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+        <item>卅一</item>
+    </string-array>
+    
+    <string name="dismiss_power_on">Dismiss and power on</string>   
+    <string name="dismiss_power_off">Dismiss and power off</string>
+    
+    <!-- dengying@20160816  -->
+    <string name="step">step</string>
+</resources>

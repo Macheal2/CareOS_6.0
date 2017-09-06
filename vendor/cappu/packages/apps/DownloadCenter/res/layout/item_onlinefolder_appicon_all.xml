@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="92.0dip"
+    android:layout_height="100.0dip"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@id/uu_folder_icon_bg_panel"
+        android:layout_width="@dimen/plus_icon_panel_width"
+        android:layout_height="@dimen/plus_icon_panel_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/uu_icon_margintop"
+        android:background="@drawable/uu_item_click_selector" >
+
+        <ImageView
+            android:id="@id/uu_folder_icon_imageview"
+            android:layout_width="@dimen/plus_icon_width"
+            android:layout_height="@dimen/plus_icon_width"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="60.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uu_folder_icon_bg_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-13.0dip"
+        android:background="@drawable/uu_item_click_shadow_selector"
+        android:hapticFeedbackEnabled="true" />
+
+    <TextView
+        android:id="@id/uu_folder_icon_title"
+        style="@style/UUFolder.AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uu_folder_icon_bg_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxEms="5"
+        android:paddingTop="5.0dip"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@id/uu_folder_plus_flag_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/uu_delete_marginright"
+        android:background="@drawable/uu_folder_selected"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

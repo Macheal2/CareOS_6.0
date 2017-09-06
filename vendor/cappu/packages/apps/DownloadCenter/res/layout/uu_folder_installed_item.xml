@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uucun.android.folder.view.UUFolderInstalledView android:layout_gravity="center" android:orientation="vertical" android:id="@id/uu_folder_icon_panel" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="92.0dip" android:layout_height="98.0dip" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/uu_folder_icon_bg_panel" android:background="@drawable/uu_item_click_selector" android:layout_width="@dimen/plus_icon_panel_width" android:layout_height="@dimen/plus_icon_panel_width" android:layout_marginTop="@dimen/uu_icon_margintop" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/uu_folder_icon_imageview" android:layout_width="@dimen/plus_icon_width" android:layout_height="@dimen/plus_icon_width" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:id="@id/uu_folder_icon_shadow" android:background="@drawable/uu_item_click_shadow_selector" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="-13.0dip" android:layout_below="@id/uu_folder_icon_bg_panel" android:layout_centerHorizontal="true" android:hapticFeedbackEnabled="true" android:contentDescription="@null" />
+        <TextView android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/uu_folder_icon_title" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="5" android:singleLine="true" android:layout_below="@id/uu_folder_icon_bg_panel" android:layout_centerHorizontal="true" style="@style/UUFolder.AppTitle" />
+        <ImageView android:id="@id/uu_folder_delete_flag_imageview" android:background="@drawable/uu_folder_delete_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/uu_delete_marginright" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</com.uucun.android.folder.view.UUFolderInstalledView>

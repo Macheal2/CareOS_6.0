@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">卡布桌面</string>
+    <string name="No_SIM_card">无SIM卡</string>
+    <string name="all_app_name">所有应用</string>
+    <string name="tools">工具箱</string>
+    <string name="Wireless_local_area_network">无线局域网</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="Mobile_Internet">手机移动网络</string>
+    <string name="textsize_title">文字大小</string>
+    <string name="launcher_workspace_font_size">桌面字体</string>
+    <string name="font_level_big">默认</string>
+    <string name="font_level_small">小号</string>
+    <string name="font_level_big_most">更大</string>
+    <string name="quickset_theme">主题</string>
+    <string name="The_TAB_setting">情景模式</string>
+    <string name="security">安全求助</string>
+    <string name="general">通用</string>
+    <string name="ring_setting">铃声设置</string>
+    <string name="cancel">取消</string>
+    <string name="voice">语音</string>
+    <string name="workspase_lock">桌面锁定</string>
+    <string name="workspase_lock_info">桌面锁定后不能替换桌面应用及磁块背景颜色</string>
+    <string name="Desktop_lock_screen_calls">桌面/锁屏/来电</string>
+    <string name="textsize_default">默认</string>
+    <string name="desktop_title_mode">模式切换</string>
+    <string name="Parents_full_version">父母完整版</string>
+    <string name="Family_account">家庭帐号</string>
+    <string name="menu_system">系统设置</string>
+    <string name="android_system">安卓设置</string>
+    <string name="setting_aboutapk">关于软件</string>
+    <string name="desktop_title_original">返回安卓</string>
+    <string name="setting">设置</string>
+    <string name="system_setting">系统设置</string>
+    <string name="workspace_edit">桌面编辑</string>
+    <string name="weather">天气</string>
+    <string name="quickopen_tool">工具</string>
+    <string name="Close_the_WLAN_network">关闭WLAN网络即可</string>
+    <string name="prompt">提示</string>
+    <string name="Disconnect_the_wireless_network">\u0009关闭后即可断开与无线网络的连接，当需要在次连接时，点击上网开关连接网络。</string>
+    <string name="Specific_opening_way">\u0009在没有无线网络的情况下，您可以通过手机数据网络上网，前提是需要开通手机上网流量包月套餐，具体开通办法请咨询子女或当地通信运营商。</string>
+    <string name="Turn_on_WLAN_switch">一、打开WLAN开关</string>
+    <string name="Connect_to_the_wireless_network">二、首次连接该无线网络需要以下操作</string>
+    <string name="Select_the_network">1、选择要连接的网络</string>
+    <string name="Enter_the_password">2、输入密码</string>
+    <string name="connection_is_successful">3、连接成功</string>
+    <string name="operation_of_the_network">\u0009设置完成后您可以进行上网、查看天气预报、在线看视频、在线听歌、下载应用游戏等需要联网的操作。</string>
+    <string name="Assist_complete">\u0009如果您不会设置，请在子女或者他人的协助下完成</string>
+    <string name="Enter_the_wireless_network_Settings">进入无线网络设置</string>
+    <string name="free_internet">WIFI上网</string>
+    <string name="open_wifi"> 打开无线网络</string>
+    <string name="phone_gprs">SIM卡上网</string>
+    <string name="popu_title">选项</string>
+    <string name="run">运行</string>
+    <string name="replace">替换</string>
+    <string name="replace_app">替换应用</string>
+    <string name="edit_cell">编辑磁块背景</string>
+    <!--  <string name="font_level_small">精致</string>-->
+    <string name="font_level_default">正常</string>
+    <string name="font_up">放大字体</string>
+    <string name="big">大</string>
+    <string name="maximum">最大</string>
+    <string name="font_info">后两项调整仅适用于电话、短信、联系人及记事本。</string>
+    <string name="quickset_textsize">文字大小</string>
+    <string name="weather_notify">请点击指定位置</string>
+    <string name="alarm_size">闹钟</string>
+    <string name="desktop_title_calendar">黄历</string>
+    <string name="desktop_title_gallery">家庭相册</string>
+    <string name="desktop_title_contacts">联系人</string>
+    <string name="desktop_title_phonebook">电话薄</string>
+    <string name="desktop_title_yuequpingshu">乐曲评书</string>
+    <string name="desktop_title_life">生活百科</string>
+    <string name="activity_not_found">"您的手机上未安装应用程序。"</string>
+    <string name="app_default_title">恢复默认</string>
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="gprs_open_confirm_title">提醒</string>
+    <string name="gprs_open_confirm_message">开启手机卡上网将会产生流量费用，是否继续？</string>
+    <string name="load_wait">"加载中\u2026"</string>
+    <string name="tips">你的设备已加速！</string>
+    <string name="pushtopass">一键加速</string>
+    <string name="clearapp">"清理 <xliff:g id="count">%s</xliff:g>  程序"</string>
+    <string name="totalmemory">"总内存 <xliff:g id="total">%s</xliff:g>  MB"</string>
+    <string name="availmemory">"可用内存 <xliff:g id="avail">%s</xliff:g> MB"</string>
+    
+    <string name="setting_cell_background">设置你磁块的背景</string>
+
+    <string name="channellife">生活频道</string>
+
+    <string name="launcher_phone">电话</string>
+    <string name="launcher_mms">信息</string>
+    <string name="launcher_clock">时钟</string>
+    <string name="launcher_time_setting">时钟</string>
+    <string name="launcher_ararm_clock">闹钟</string>
+    <string name="launcher_weather">天气</string>
+    
+    <string name="protection_show_password">显示密码(出厂密码:9999)</string>
+    <string name="privacy_init_pwd_hint_again">请再次输入密码</string>
+    <string name="privacy_init_pwd_hint">请创建1-12位密码</string>
+    <string name="btn_default">默认</string>
+    <string name="privacy_forget_password"><u>忘记密码？</u></string>
+    <string name="privacy_protection_pwd_hint">请输入密码</string>
+    <string name="privacy_change_pwd_hint_again">输入新密码</string>
+     <string name="privacy_change_pwd_hint">请输入密码</string> 
+    
+    
+    <string name="gprs_on_pwd_title">移动上网密码</string>
+    <string name="gprs_on_pwd_state">启用密码</string>
+    <string name="privacy_set_password">设置密码</string>
+    <string name="privacy_modify_password">修改密码</string>
+    <string name="privacy_change_pwd_error">密码错误</string>
+    <string name="privacy_reset_password">重置密码</string>
+    <string name="privacy_reset_password_message">是否重置密码？</string>
+    <string name="Success">成功</string>
+    <string name="privacy_check_pwd">验证密码</string>
+    
+    <string name="add">添加</string>
+    <string name="option">选项</string>
+    
+    <string name="slide_to_unlock">移动滑块解锁</string>
+    <string name="week_1">星期一</string>
+    <string name="lunar_1">农历二月二十五</string>
+    
+    <string name="lunar">农历</string>
+    <string name="i99_year">年</string>
+    <string name="i99_month">月</string>
+    <string name="i99_date">日</string>
+    <string name="i99_leap">闰</string>
+    <string name="i99_date_10">初十</string>
+    <string name="i99_date_20">二十</string>
+    <string name="i99_date_30">三十</string>
+    <string name="i99_sos_title">紧急求救(SOS)</string>
+    <string name="i99_sos_no_contact">未设置紧急联系人</string>
+    <string-array name="i99_lunar_month">
+        <item>正</item>
+        <item>正</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="i99_date_0">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+        <item> </item>
+    </string-array>
+    <string-array name="i99_date_1">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+    </string-array>
+    <string-array name="i99_week">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    
+    <string name="abbrev_wday_month_day_no_year">M 月 d 日 E</string>
+    
+    
+    <string name="widget_initial_text" >"触摸可选择音乐。"</string>
+    
+    <string name="databaseloading">点击读取</string>
+    <string name="start_intent_error">"请确定Gallery或是Gallery3D成功安装"</string>
+    <string name="configure_style1_text">渐变</string> 
+    <string name="configure_style2_text">左移</string>
+    <string name="configure_style3_text">收缩</string>
+    <string name="configure_style4_text">转动</string>
+    <string name="tap_select_album">点击以选择一个相册</string>
+    <string name="album_missing">你所选择的相册已丢失</string>
+    <string name="no_storage">请插入一张存储卡</string>
+    <string name="no_animation">请为幻灯片至少选择一种动画效果</string>
+    
+    <string name="speech_setting">语音播报</string>
+    <string name="launcher_speech">桌面菜单播报</string>
+    <string name="mms_speech">信息播报</string>
+    <string name="contacts_speech">来电播报</string>
+    <string name="weather_speech">天气播报</string>
+    <string name="dialpad_speech">拨号盘播报</string>
+    
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    
+    <string name="month">月</string>
+    
+    <string name="news">新闻</string>
+    <string name="health">健康</string>
+    <string name="travel">旅游</string>
+    <string name="finances">财经</string>
+    <string name="life">生活</string>
+    
+    <string name="uri_error">链接地址出错</string>
+    
+    <string name="favicons">点击收藏</string>
+    <string name="faviconslist">收藏列表</string>
+    <string name="favicons_ing">已收藏</string>
+    <string name="favicons_cancle">取消收藏</string>
+    <string name="favicons_cancle_success">取消收藏成功</string>
+    <string name="delete">"删        除"</string>
+    <string name="net_shar">"分        享"</string>
+    <string name="delete_success">删除成功</string>
+    <string name="favorites_success">收藏成功</string>
+    <string name="delete_news_tip">此条新闻已经收藏,删除请取消收藏</string>
+    <string name="delete_health_tip">此条健康信息已经收藏,删除请取消收藏</string>
+     <string name="delete_net_tip">此条<xliff:g id="name">%s</xliff:g>已经收藏,删除请取消收藏</string>
+    
+    <string name="favicons_list">收藏列表</string>
+    
+    <string name="setting_ringtone">设置来电铃声</string>
+    
+    <string name="weather_rain">雨</string>
+    <string name="weather_snow">雪</string>
+    <string name="weather_ice">冰</string>
+    <string name="weather_thunder">雷</string>
+    <string name="weather_big">大</string>
+    <string name="weather_storm">暴</string>
+    <string name="weather_moderate">中</string>
+    <string name="weather_other">其他</string>
+    
+    <string name="weather_overcast">阴</string>
+    <string name="weather_cloud">云</string>
+    
+    <string name="weather_fog">雾</string>
+    <string name="weather_haze">䨪</string>
+    <string name="weather_dust">尘</string>
+    <string name="weather_sand">沙</string>
+    
+    <string name="alis_download_center">下载中心</string>
+    <string name="alis_album">相册</string>
+    <string name="alis_almanac">黄历</string>
+    
+    <string name="help_notes">帮助说明</string>
+    
+    <string name="help_notes_info1">\u0009 ★系统将自动为您删除三十天以前的新闻与健康信息，若是您需要保留的信息，请长按信息条目，选择收藏。</string>
+    <string name="help_notes_info2">\u0009 ★点击新闻与健康界面右上角的五角星，可进入收藏列表。</string>
+    <string name="help_notes_info3">\u0009 ★已收藏的信息在新闻及健康信息列表中无法删除，需要到收藏列表中长按信息条目，选择删除。</string>
+
+    <!--modify by even-->
+    <string name="dialect_settings">方言设置</string>
+    <string name="more_baidumssp">更多</string>
+    
+    <string name="insert_sd_card">请插入SD卡</string>
+    
+    <string name="call_button_string">拨号</string>
+    <string name="i99_copy_successed">短信复制成功！</string>
+    <string name="i99_dialog_left">取 消</string>
+    <string name="i99_dialog_right">确 定</string>
+    <string name="i99_dialog_middle">不确定</string>
+    <string name="i99_dialog_delete_title">删除记录</string>
+    <string name="i99_dialog_confirm_title">温馨提示</string>
+    <string name="i99_dialog_confirm_restore">应用未安装、请长按替换应用或点击下载应用</string>
+    <string name="i99_dialog_confirm_restore_tip">软件未安装、确认开始下载</string>
+    <string name="i99_save_failmessage_to_drafts">信息发送失败，已保存至草稿箱，请重新编辑发送！</string>
+    <string name="i99_fail_forward_undownload">信息未下载，无法转发！</string>
+    <string name="i99_string_draft">草稿</string>
+    
+    <string name="open_app">打开</string>
+    <string name="download">下载</string>
+    <string name="wait">等待...</string>
+    <string name="download_center">系统升级中心 </string>
+    <string name="check">查看</string>
+    <string name="install">安装</string>
+    <string name="update">升级</string>
+    
+    <string name="app_name_camera">相机</string>
+    <string name="app_name_contact">联系人</string>
+    <string name="app_name_album">相册</string>
+    <string name="app_name_music_widget">音乐</string>
+    <string name="app_name_CaiYiDaDao">才艺大道</string>
+    <string name="app_name_deskclock">时钟</string>
+    <string name="app_name_video">视频</string>
+    <string name="app_name_music">曲艺杂坛</string>
+    <string name="app_name_calendar">黄历</string>
+    <string name="app_name_applications">应用</string>
+    <string name="app_name_dazhihui">大智慧</string>
+    <string name="app_name_game">游戏</string>
+    <string name="app_name_wechart">微信</string>
+    <string name="app_name_sos">安全求助</string>
+    <string name="app_name_instructions">帮助说明</string>
+    <string name="app_name_calculator">计算器</string>
+    <string name="app_name_downloadcenter">下载中心</string>
+    <string name="app_name_internet_navigation">上网导航</string>
+    <string name="app_name_helper">卡布助手</string>
+    <string name="app_name_naquba">拿趣吧</string>
+    <string name="app_name_tool">工具</string>
+    <string name="app_name_scan">扫一扫</string>
+   <string name="app_name_clean">一键清理</string>
+ 
+
+    <string name="get_net_config">列表刷新</string>
+    <string name="onclick_refresh">单击刷新</string>
+    
+    <string name="contact_is_no_number">联系人号码不存在</string>
+    
+    <string name="item_count">"第%1$s条,   "</string>
+<!--     <string name="netfirst">"第一条,   "</string>
+    <string name="second">"第二条,   "</string>
+    <string name="third">"第三条,   "</string>
+    <string name="fourth">"第四条,   "</string>
+    <string name="fifth">"第五条,   "</string> -->
+    
+    <string name="mian_menu_switch">主屏幕设置</string>
+    <string name="mian_menu_infinite_loop">主屏幕无限滑动</string>
+    <string name="mian_menu_back_loop">返回键翻页</string>
+    
+    <string name="fillet_switch">磁块圆角开关</string>
+    <string name="about_care_os">关于卡布</string>
+    <string name="about_version_format">"当前版本: %1$s"</string>
+    <string name="about_checking_newest_version">正在检测</string>
+    <string name="about_checking_newest_version_too">再次在检测</string>
+    <string name="about_net_error">网络错误</string>
+    <string name="about_have_a_newer_version">检测到有新版本(%1$s)</string>
+    <string name="about_file_error">文件存储错误</string>
+    <string name="about_unexpected">检查失败</string>
+    <string name="about_newest">已是最新版本</string>
+    <string name="about_downloading_hint">正在下载..</string>
+    <string name="about_downloaded_hint">新版本下载完毕</string>
+    <string name="about_vertion_install_failed">新版本保存失败</string>
+    <string name="about_install">现在安装</string>
+    <string name="about_download">立即更新</string>
+    <string name="care_os_update">软件更新</string>
+    <string name="about_ok">知道了</string>
+    
+    <string name="gadget_error_text" >"载入窗口小部件时出现问题"</string>
+    
+    <string name="mode_select">界面样式</string>
+    <string name="mode_select_common">经典</string>
+    <string name="mode_select_simple">标准</string>
+    <string name="mode_select_minimalist">极简</string>
+    
+    <string name="theme_select">桌面主题</string>
+    <string name="theme_select_default">经典</string>
+    <string name="theme_select_classical">极简风</string>
+    <string name="theme_select_chinesestyle">中国风</string>
+    <string name="theme_select_simpleness">简约风</string>
+    <string name="theme_select_pattern">格局主题</string>
+    <!-- hejianfeng add start -->
+    <string name="theme_select_twelve_grids">十二宫格</string>
+	<string name="theme_select_nine_grids">时尚风</string>
+    <!-- hejianfeng add end -->
+    <!--add by hehangjun for i99 (start)-->
+    <string name="i99_ok">确定</string>
+    <string name="i99_cancel">取消</string>
+    <string name="i99_delete">删除</string>
+    <string name="i99_deleting">正在删除...</string>
+    <string name="i99_share">分享</string>
+    <string name="i99_replace">替换</string>
+    <string name="i99_edit">编辑</string>
+    <string name="i99_search">搜索</string>
+    <string name="i99_name">姓名:</string>
+    <string name="i99_phone">电话:</string>
+    <string name="i99_group">分组:</string>
+    <string name="i99_title_group">分组联系人</string>    
+    <string name="i99_photo">头像:</string>
+    <string name="i99_create_contact">新建</string>
+    <string name="i99_select">选择</string>
+    <string name="i99_launcher">I99拨号</string>
+    <string name="i99_keyboard">拨号盘</string>
+    <string name="i99_contacts">联系人</string>
+    <string name="i99_test_size">大小</string>
+    <string name="i99_call_log_delete_group">清除本组通话记录</string>
+    <string name="i99_clear_calllog_title">清除记录</string>
+    <string name="i99_clear_calllog_content">是否清除本组通话记录？</string>
+    <string name="i99_calllog">通话记录</string>
+    <string name="i99_call">打电话</string>
+    <string name="i99_message">发短信</string>
+    <string name="i99_option">选项</string>
+    <string name="i99_new_contact">新建联系人</string>
+    <string name="i99_save_contact">保存联系人</string>
+    <string name="i99_view_contact">查看联系人</string>
+    <string name="i99_delete_contact">删除联系人</string>
+    <string name="i99_clear_contact_call_log">清空此人通话记录</string>
+    <string name="i99_select_group">选择分组</string>
+    <string name="i99_no_group">未分组</string>
+    <string name="i99_contacts_detail">详情</string>
+    <string name="i99_share_message">短信分享</string>
+    <string name="i99_copy_info">复制信息</string>
+    <string name="i99_recent">最近使用</string>
+    <string name="i99_all">全部</string>
+    <string name="copy_title">复制成功</string>
+    <string name="copy_content">信息以成功复制到粘帖板,您可以在输入框内长按,选择黏贴选项并进行黏贴.</string>
+    <string name="i99_all_name">百家姓</string>
+    <string name="i99_phone_book">电话簿</string>
+    <string name="i99_group_select_member">选择<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_group_remove_member">移除<xliff:g id="name">%s</xliff:g></string>
+    <string name="i99_remove_member_title">移除联系人</string>
+    <string name="i99_quick_select_title">快捷联系人</string>
+    <string name="i99_add_quick_contacts_summery">添加一个新的快捷联系人</string>
+    <string name="i99_select_quick_contacts_summery">从通讯录中选择已有的联系人</string>
+    <string name="i99_add_quick_info">设置为快捷联系人后可方便的与该联系人打电话,发短信</string>
+    <string name="i99_select_header">选择头像</string>
+    <string name="i99_gallery">图库</string>
+    <string name="i99_camera">拍照</string>
+    <string name="i99_store_to_phone">电话</string>
+    <string name="i99_sim">SIM卡</string>
+    <string name="i99_sim1">卡  1</string>
+    <string name="i99_sim2">卡  2</string>
+    <string name="i99_add">添加</string>
+    <string name="i99_adding">正在添加...</string>
+    <string name="i99_remove">移除</string>
+    <string name="i99_load">加载</string>
+    <string name="i99_loading">加载中...</string>
+    <plurals name="i99_ok_count">
+        <item quantity="zero">确定</item>
+        <item quantity="one">确定(1)</item>
+        <item quantity="other">确定(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <plurals name="i99_delete_count">
+        <item quantity="zero">删除</item>
+        <item quantity="one">删除(1)</item>
+        <item quantity="other">删除(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="i99_family">家庭</string>
+    <string name="i99_relatives">亲戚</string>
+    <string name="i99_friend">老友</string>
+    <string name="i99_community">社区</string>
+    <string name="i99_contacts_already_delete">此联系人已经被删除,无法进行操作！</string>
+    <string name="i99_warning">警告</string>
+    <string name="i99_contact_no_name_number">姓名或者号码不能为空！</string>
+    <string name="i99_restore">恢复</string>
+    <string name="i99_confirm_save_contact">是否保存联系人？</string>
+    <string name="i99_confirm_clear_calllog">确定要清空通话记录吗？</string>
+    <string name="i99_call_settings">通话设置</string>
+    <string name="i99_import_export_contacts">导入/导出联系人</string>
+    <string name="i99_ip_calls">IP通话</string>
+    <string name="i99_no_numbers">没有号码！</string>
+    <string name="i99_select_number">选择号码</string>
+    <string name="i99_customer_service">客服电话</string>
+    
+    <string name="loading">加载中...</string>
+    <string name="menu_select_none" msgid="7093222469852132345">"取消全选"</string>
+    <string name="menu_select_all" msgid="621719255150713545">"全选"</string>
+    
+    <string name="i99_contact_exit" >"该联系人的号码已添加,此次添加将无效"</string>
+    <string name="No_Number_Phone">电话号码不能为空</string>
+    <string name="i99_contact_function_warning" >"抱歉"</string>
+    <string name="i99_contact_function_under" >"该功能暂未开放,仅卡布奇诺手机支持"</string>
+    <string name="delete_calllog">删除通话</string>
+     <string name="group_edit_field_hint_text" >"群组名称"</string>
+     <string name="description_delete_button" msgid="6263102114033407382">"退格"</string>
+     <string name="call_log">通话记录</string>
+     <string name="contact">联系人</string>
+     <string name="dialpad">拨号盘</string>
+     <string name="yesterday">昨天</string>
+     <string name="no_call_log">无通话记录</string>
+     <string name="no_found_activity">没有发现可用应用！</string>
+     <string name="time">时间: <xliff:g id="time">%s</xliff:g></string>
+    <string name="times">通话次数: <xliff:g id="count">%s</xliff:g></string>
+    <string name="call_times">通话时长: <xliff:g id="duration">%s</xliff:g></string>
+    <string name="missed_call">未接电话 · 响铃<xliff:g id="count">%s</xliff:g>声</string>
+    <string name="rings">响铃: <xliff:g id="count">%s</xliff:g>秒</string>
+    <string name="no_answer">对方没有接听</string>
+    <string name="select_all">全选</string>
+    <string name="select_none">全不选</string>
+    <string name="unknown_number">未知号码</string>
+    <string name="number_null">号码为空！</string>
+    <string name="call">打电话</string>
+    <string name="message">发短信</string>
+    <string name="save_contact">保存联系人</string>
+    <string name="view_contact">查看联系人</string>
+    <string name="spacer"> · </string>
+    <string name="h">时</string>
+    <string name="m">分</string>
+    <string name="s">秒</string>
+    <string name="ip_call">IP通话</string>
+    <string name="remove_all_calls">清空全部记录</string>
+    <string name="test">测试</string>
+    <string name="starredList" >"已加星标的内容"</string>
+    <string name="frequentList" >"经常联系"</string>
+    <string name="strequentList" >"收藏"</string>
+    <string name="all_contact" >"全部联系人"</string>
+    <string name="sim_contact" >"SIM卡联系人"</string>
+    <string name="phone_contact" >"手机联系人"</string>
+    <string name="sur_names" >"百家姓"</string>
+    <string name="search" >"搜索"</string>
+    <string name="no_contacts" >"没有联系人"</string>
+    <string name="contacts_show" >"联系人显示"</string>
+    <string name="contact_detail" >"详情"</string>
+    <string name="phone_number" >"电话号码"</string>
+    <plurals name="delete">
+        <item quantity="zero">删除</item>
+        <item quantity="one">删除(1)</item>
+        <item quantity="other">删除(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <!--add by hehangjun for i99 (end)-->
+    
+    <!-- 应用的字符 -->
+    <string name="action_settings">设置</string> <!--选项-->
+    <string name="more">更多应用</string>
+    <string name="uninstall_app">卸载应用</string>
+    <string name="total">所有应用</string>
+    <string name="uninstall">卸载</string>
+    <!-- <string name="run">运行</string> -->
+    <!-- <string name="del">移除</string> -->
+    <string name="modify">调整位置</string>
+    <!-- <string name="cancel">退出</string> -->
+    <string name="added">已添加</string>
+    <string name="removed">未添加</string>
+    <!-- <string name="tools">工具</string> -->
+    <string name="dlg_add">添加应用?</string>
+    <string name="dlg_remove">移除应用?</string>
+    <string name="dlg_ok">确定</string>
+    <string name="dlg_cancel">取消</string>
+    <string name="bluetooth_hid_lable">自拍遥控器</string>
+    <!-- 应用的字符 end-->
+    
+    <string name="number_picker_decrement_button" msgid="476050778386779067">"减小"</string>
+    <string name="number_picker_increment_button" msgid="2412072272832284313">"增大"</string>
+    <string name="ganzhiyear">壬辰年</string>
+    <string name="ganzhiday">戊戌月丙寅日</string>
+    <string name="Jump">跳转</string>
+    <string name="today">今天</string>
+    <string name="contactsList">联系人</string>
+    
+    <string name="chongsha">冲煞</string>
+    <string name="wuxing">五行</string>
+    <string name="taishen">胎神</string>
+    
+    <string name="year">年</string>
+    <string name="day">日</string>
+    <string name="number_picker_increment_scroll_action" msgid="9101473045891835490">"向上滑动可增大数值，向下滑动可减小数值。"</string>
+    <string name="time_picker_increment_minute_button" msgid="8865885114028614321">"增大分钟值"</string>
+    <string name="time_picker_decrement_minute_button" msgid="6246834937080684791">"减小分钟值"</string>
+    <string name="time_picker_increment_hour_button" msgid="3652056055810223139">"增大小时值"</string>
+    <string name="time_picker_decrement_hour_button" msgid="1377479863429214792">"减小小时值"</string>
+    <string name="time_picker_increment_set_pm_button" msgid="4147590696151230863">"设置下午时间"</string>
+    <string name="time_picker_decrement_set_am_button" msgid="8302140353539486752">"设置上午时间"</string>
+    <string name="date_picker_increment_month_button" msgid="5369998479067934110">"增大月份值"</string>
+    <string name="date_picker_decrement_month_button" msgid="1832698995541726019">"减小月份值"</string>
+    <string name="date_picker_increment_day_button" msgid="7130465412308173903">"增大日期值"</string>
+    <string name="date_picker_decrement_day_button" msgid="4131881521818750031">"减小日期值"</string>
+    <string name="date_picker_increment_year_button" msgid="6318697384310808899">"增大年份值"</string>
+    <string name="date_picker_decrement_year_button" msgid="4482021813491121717">"减小年份值"</string>
+    
+    <string name="time_picker_dialog_title" msgid="8349362623068819295">"设置时间"</string>
+    <string name="date_picker_dialog_title" msgid="5879450659453782278">"设置日期"</string>
+    <string name="date_time_done" msgid="2507683751759308828">"完成"</string>
+    
+     <string name="playback_failed" msgid="4477832192645009774">抱歉，打开文件失败。</string>
+    <string name="audiofocus_request_failed_message">通话中无法播放音乐.</string>
+    <string name="unknown_artist_name" msgid="5567811106415855219">"未知艺术家"</string>
+    <string name="fail_to_start_stream">"无法播放所请求的音频流。"</string>
+    
+    <string name="function_is_not_supported_tip">该功能不支持、请购专业版手机</string>
+    <string name="resolution_not_exist">该软件不支持小屏手机,请更换540x960以上分辨率手机、确定进入卡布手机网</string>
+    
+    <string name="sdcarderror">SDCard不存在或者写保护</string>
+    
+    <string name="restoration_app_tip">应用不存在,恢复成默认应用</string>
+    
+    <!-- 天气 -->
+    <string name="weather_name">卡布天气</string>
+    <string name="weather_search_city_hint">搜索全国城市(中文)</string>
+    <string name="select_city_title">添加城市</string>
+    <string name="hit_city_title">热门城市</string>
+    <string name="get_city_weather_fail">"获取天气失败，请重试"</string>
+    <string name="net_err">网络不给力,请连接网络</string>
+    <string name="weather_widget_name">天气4x2</string>
+    <string name="location_err">"定位失败,请手动选择城市"</string>
+    <string name="widget_24_hours_format" >kk&#58;mm</string>
+    <string name="widget_12_hours_format" >h&#58;mm&#8202;<b><font size="14" face="sans-serif-condensed">a</font></b></string>
+    <string name="see_all">查看全部&#8230;</string>
+    <string name="selected">默认城市</string>
+    <string name="all_rights_reserved">Copyright © 2014 CAPPU. All Rights Reserved.</string>
+    <string name="weather_update_running">正在更新&#8230;</string>
+    <string name="weather_location_running">正在定位&#8230;</string>
+    <string name="weather_location">自动定位</string>
+    <string name="weather_add_city">请添加城市</string>
+    <string name="humidity">"湿度:"</string>
+    <string name="release">刷新</string>
+    <string name="start_update">开始更新天气</string>
+    <string name="update_success">天气更新成功</string>
+    <string name="update_failed">天气更新失败</string>
+    
+    <string name="update_style">更新方式</string>
+    <string name="start_update_time">开始更新时间</string>
+    <string name="stop_update_time">结束更新时间</string>
+    <string name="setting_start_update_time">设置开始更新时间</string>
+    <string name="setting_stop_update_time">设置结束更新时间</string>
+    <string name="update_interval_time">更新时间间隔</string>
+    <string name="yesterday_weather">"昨天 "</string>
+    <string name="tomorrow">"明天 "</string>
+    <string name="set_selected">设置为默认城市？</string>
+    <string name="is_delete">是否要删除这个城市?</string>
+    <string name="is_prompt">必须保留一个城市</string>
+    <string name="city_exist">城市已添加</string>
+    <string name="third">"后天 "</string>
+    <!-- 天气 end-->
+    <!-- begin: edit by hmq 20141215 Modify for 自定义壁纸 -->
+    <string name="lockscreen_wp_title">锁屏壁纸</string>
+    <!-- end: edit by hmq 20141215 Modify for 自定义壁纸 -->
+
+    <!--add by y.haiyang for local speech (start)-->
+    <string name="local_speech_tital">选择方言</string>
+    <!--add by y.haiyang for local speech (end)-->
+    <!--zhouhua by xunfei 20170223-->
+    <string name="xun_fei_hint">温馨提示：本机讯飞语音为定制版本，禁止升级操作</string>
+    <!--zhouhua by xunfei 20170223-->
+
+      <!--zhouhua -->
+     <string name="bootaudio_setting">开机铃声</string>
+     <string name="about_phone">关于手机</string>
+    
+     <string name="movement">卡布看护</string> 
+     
+     <!-- dengying speaker -->
+     <string name="speaker">听筒增强</string> 
+          
+     <!-- dengying home_key_wake_up -->
+     <string name="home_key_wake_up">桌面键亮屏</string>  
+
+     <!-- liukun indicator_light -->
+     <string name="indicator_light">通知指示灯</string>
+         
+          <!-- 天气 -->
+     <string-array name="update_style_entries">
+      <item>手动更新</item>
+      <item>自动更新</item>
+    </string-array>
+    <string-array name="update_interval_entries">
+      <item>30 分钟</item>
+      <item>1 小时</item>
+      <item>2 小时</item>
+      <item>3 小时</item>
+    </string-array>
+    
+    <string name="launcher_screen_manager">主屏幕管理</string>
+    <string name="launcher_backgroud_style">桌面背景主题</string>
+    
+    <string name="launcher_speech_time">天气播报时间设置</string>
+    <string name="current_time">当前播报时间</string>
+    
+    <string name="network_01">一、首次连接无线网络时点击底部进行无线设置</string>
+    <string name="network_02">二、打开WLAN开关</string>
+    <string name="network_03">三、点击您家的无线网络</string>
+    <string name="network_04">四、输入你家的wifi密码点击“连接</string>
+    <string name="network_05">连接成功</string>
+    <string name="network_06">无线网络连接只需要首次使用输入密码，以后都不要在输入。（网络密码更改除外）</string>
+    
+    
+    <!-- 信息 -->
+    <string name="caremms">卡布信息</string>
+    <string name="care_add_new_message">写信息</string>
+    <string name="care_sms_del">删  除</string>
+    <string name="confirm_dialog_title">确认删除吗</string>
+    <string name="care_warm_notice">温馨提示</string>
+    <string name="care_option">选  项</string>
+    <string name="care_sel_del">删除信息</string>
+    <string name="care_sel_all">全  选</string>
+    <string name="care_sel_unall">取消全选</string>
+    <string name="multichoice_contacts_limit">所选联系人数目过多。</string>
+    <string name="care_cancel">取  消</string>
+    <string name="care_input_hint">请输入短信内容</string>
+    <string name="care_send">发  送</string>
+    <string name="care_reply">回  复</string>
+    <string name="care_recipent_hint">添加联系人</string>
+    <string name="care_delete_no_item">没有选中要删除的信息。</string>
+    <string name="no_application_response">程序无响应</string>
+    <string name="care_sms_successed">信息发送成功！</string>
+    <string name="transmission_transiently_failed">信息发送失败</string>
+    <string name="care_sms_delived">对方已接收</string>
+    <string name="care_recipents_null">收件人不能为空</string>
+    <string name="care_recipents_error">收件人号码格式不正确</string>
+    <string name="care_delete_dialog_title">温馨提示</string>
+    <string name="care_delete_dialog_content">确定删除所选中到信息吗？</string>
+    <string name="care_delete_ok">确 定</string>
+    <string name="care_delete_cancel">取 消</string>
+    <string name="url_dialog_choice_title">信息</string>
+    <string name="url_dialog_choice_message">将打开浏览器，是否继续?</string>
+    <string name="select_link_title">选择操作！</string>
+    <string name="error_state">"状态不一致"</string>
+    <string name="yes">是</string>
+    <string name="cb_default_channel_name">来自通道</string>
+    <string name="new_sim">新 Sim</string>
+    <string name="low_memory">内存过低</string>
+    <string name="no_subject_view">没有主题</string>
+    <string name="deleting">正在删除</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="messagelist_sender_self">"我"</string>
+    <string name="error_state_text">"会话邮件集和收件人的状态不一致。请为错误截图，并通过 http://go/droidanizer 向我们报告这一问题"</string>
+    <string name="care_sms_loading">信息加载中...</string>
+    <plurals name="confirm_delete_conversation">
+        <item quantity="one">"系统将会删除 1 个会话"</item>
+        <item quantity="other">"系统将会删除 <xliff:g id="NUMBER">%1$s</xliff:g> 个会话。"</item>
+    </plurals>
+    <string name="delete_unlocked">"删除锁定信息"</string>
+    <string name="too_many_recipients">联系人太多</string>
+    <string name="care_worm_message">手机号码格式非法</string>
+    <string name="confirm_delete_all_conversations">所有会话将被删除</string>
+    <string name="care_search"> 搜索</string>
+    <string name="care_all_name">百家姓</string>
+    <string name="mult_contact">多选联系人</string>
+    <string name="care_none_select">没有选中到项目</string>
+    <plurals name="recipient_count">
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> 人 </item>
+    </plurals>
+
+    <string name="cannot_send_message">消息无法发送</string>
+    <string name="try_to_send">继续发送</string>
+    <string name="invalid_recipient_message">收信人号码中有误</string>
+    <string name="cannot_send_message_reason">请确认接收者号码格式是否正确！</string>
+    <string-array name="empty_subject_strings">
+        <item>无主题</item>
+    </string-array>
+    <string name="done">Done</string>
+    <string name="copy_email">Copy Email</string>
+    <string name="copy_number">Copy Number</string>
+     <string name="more_string">More</string>
+     <string name="message_queued">Queued</string>
+     <string name="unknown_sender">Unknow</string>
+     <string name="type_to_compose_text_enter_to_send">Type</string>
+     <string name="open_keyboard_to_compose_message">Open KeyBoard</string>
+     <string name="adding_recipients">Adding</string>
+    <!-- 信息 end -->
+    
+    <string name="gooduse_android_setting">安卓设置</string>
+    <string name="gooduse_baidu_search">手机百度</string>
+    <string name="gooduse_dialor">电话</string>
+    
+    <!-- 话费查询 -->
+    <string name="phone_util">话费查询</string>
+    <string name="inquiry_wait">查询中请稍等......</string>
+    <string name="telephone_inquiry_button">话费查询，请点击下面的"话费查询按钮"</string>
+    <string name="send_fail">发送失败</string>
+    <string name="sim_fail">SIM卡异常,请检查...</string>
+    <string name="current_balance">当前余额</string>
+    <string name="checkSIM">请检查SIM卡是否正常</string>
+                                   
+    <!-- 话费查询 end -->
+    
+    <string name="hide">隐藏</string>
+    <string name="net_not_info_tips">您的手机暂无信息，需持续连接网络一段时间后才能收到相关信息</string>
+    <string name="photoPickerNotFoundText" product="default" msgid="431331662154342581">"手机上没有照片。"</string>
+    
+    
+    <string name="news_health">新闻健康</string>
+    <string name="push_running"            >push运行状况  :</string>
+    <string name="push_settings"           >当前push设置  :</string>
+    <string name="push_list_time_interval" >push心跳间隔  :</string>
+    <string name="push_current_day_num"    >当日push个数  :</string>
+    <string name="push_current_day_num_max">每日push上限  :</string>
+    <string name="push_list_next_time"     >下次心跳时间  :</string>
+    <string name="push_next_time"          >下次启动时间  :</string>
+    <string name="push_list"               >当前push列表  :</string>
+    
+    <string name="fount_change_tips">在部分机型上无效</string>
+    
+    <string name="all_contacts">所有人</string>
+    <string name="save">保存</string>
+    
+    <!-- added by yzs end for CareSms begin 20150629 --> 
+    <string name="message_saved_as_draft">"信息已存为草稿。"</string>
+    <string name="discard_message_reason">"您的信息没有有效的接收者，将被舍弃。"</string>
+    <string name="care_edit">编辑信息</string>
+    <string name="care_copy">复制信息</string>
+    <string name="care_detail">查看详情</string>
+    <string name="care_copy_successed">信息复制成功！</string>
+    <string name="message_details_title">信息详情</string>
+    <string name="hidden_sender_address">隐藏发件人地址</string>   
+    <string name="care_sms_forward">转  发</string>
+    <!-- added by yzs end for CareSms end 20150629 -->
+
+    <!--added by yzs for talktime begin-->
+    <string name="care_talking_time">现在是北京时间</string>
+    <string name="care_talking_time_end">整</string>
+    <!--added by yzs for talktime end-->
+   <string name="i99_dialog_confirm_set_ring">设置铃声，需手动关闭语音播报，铃声设置才会生效</string>
+   
+   <string name="iflytek_tips">讯飞播报程序被你删除,请下载</string>
+    <!-- added by yzs for low battery woring begin -->
+    <string name="low_battery_worring">低电量提醒</string>
+    <string name="low_battery_enable">开启提醒</string>
+    <string name="low_battery_default">经典默认</string>
+    <string name="low_battery_one">奶奶我饿了</string>
+    <string name="low_battery_two">帮我补充能量吧</string>
+    <string name="low_battery_three">我在这儿呢</string>
+    <string name="low_battery_four">爷爷我没电了</string>
+    <string name="low_battery_five">快给我充点电吧</string>
+    <string name="low_battery_six">在这儿呢</string>
+    <string name="confirm_message">提示音已修改，是否保存？</string>
+    <!-- added by yzs for low battery woring end -->
+
+    <!--added by yzs for talk time begin -->
+    <string name="talktime_speech">整点播报</string>
+    <!--added by yzs for talk time end -->
+    
+<!--     通话中选择 -->
+    <string name="converse_people">返回通话</string>
+    <string name="converse_record">通话记录</string>
+    
+    <!--    added by wangyang begin --> 
+    <string name="aifenxiang">爱分享</string>
+    <string name="preferTheme">请选择喜欢的主题</string>
+    <string name="disktop_theme">桌面主题</string>
+    <string name="theme_used">应用</string>
+    <string name="theme_chinese">中国风主题</string>
+    <string name="theme_defualt">经典主题</string>
+    <string name="theme_current">当前</string>
+    <string name="theme_current_used">正在使用</string>
+    <string name="web_collection">收藏</string>
+    <string name="web_share">分享</string>
+    <string name="web_share_at">分享到</string>
+    <string name="wechar_friend">微信朋友圈</string>
+    <string name="web_share_message">手机短信</string>
+    <string name="wechar">微信</string>
+    <string name="web_share_qq">手机QQ</string>
+    <string name="web_share_copy">复制链接</string>
+    <string name="web_share_zone">空间</string>
+    <string name="theme_xuan_cai">炫彩风</string>
+    <!--    added by wangyang end --> 
+    <!-- hejianfeng add start -->
+    <string name="btn_camera">拍照</string>
+    <string name="btn_gallery">图库</string>
+    <string name="txt_wallpaper_preview">主题背景预览</string>
+    <string name="set_wallpaper">设定</string>
+    <string name="setting_wallpaper">壁纸</string>
+    <string name="add_one_screen">添加一页屏幕</string>
+    <string name="remove_one_screen">删除一页屏幕</string>
+    
+    <string name="negative_screen">联系人第二屏</string>
+    
+    <string name="cloud_album">云相册</string>
+    <string name="cappu_health">云健康</string>
+    <string name="cappu_classroom">云课堂</string>
+    
+    <string name="health_step_title">当前步数</string>
+    <string name="health_heart_title">平均心率</string>
+    <string name="health_step"> 步</string>
+    <string name="health_heart"> 次/分</string>
+    <string name="health_step_num">1796</string>
+    <string name="health_heart_num">80</string>
+    <string name="vital_index_review_title">该走走啦！</string>
+    <string name="vital_index_review">只有健康才是人的一生最重要的东西。</string>
+    <string name="no_net_reload">重新加载</string>
+    <string name="no_net_prompt">网络出错啦，请点击按钮重新加载</string>
+    <string name="no_net_title">加载失败</string>
+    <!-- hejianfeng add end -->
+    
+    <string name="about_model_text">型号</string>
+    <string name="about_careos_text">CareOS</string>    
+    <string name="about_android_text">Android版本</string>
+    <string name="about_soft_text">软件版本</string>
+    
+    <string name="about_model_value">C687</string>
+    <string name="about_careos_value">V.5.0.0</string>      
+    <string name="about_android_value">6.0</string>
+    <string name="about_soft_value">C687_CareOS5_V03_20170616</string>
+
+    <!-- added by jiangyan start -->
+
+    <string name="clock_setting">皮套时钟设置</string>
+    <string name="clock_title">皮套时钟</string>
+    <string name="clock_start">开启皮套时钟</string>
+    <string name="clock_style_choice">选择皮套时钟样式</string>
+    <string name="analog_clock">模拟时钟</string>
+    <string name="digital_clock">数字时钟</string>
+    <string name="clock_selected_button">正在使用</string>
+    <string name="clock_unselected_button">应用</string>
+    <string name="analog_clock_tip">模拟时钟正在使用</string>
+    <string name="digital_clock_tip">数字时钟正在使用</string>
+    <!-- added by jiangyan end -->
+
+</resources>

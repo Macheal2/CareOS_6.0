@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icare_sms_main_background_default"
+    android:orientation="vertical" >
+
+    <com.cappu.launcherwin.widget.TopBar
+        android:id="@+id/care_topbar"
+        android:layout_width="match_parent"
+        care:rightImage="@drawable/care_bt_unselect"
+        android:layout_height="wrap_content"
+        care:titleText="@string/caremms" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_topbar_height" >
+        <Button
+		    android:id="@+id/care_del_button"
+		    android:layout_width="match_parent"
+		    android:alpha="0.6"
+		    android:clickable="false"
+            android:gravity="center"
+		    android:enabled="false"
+		    android:text="@string/care_sms_del"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/care_normal_topbar" 
+		    android:layout_height="@dimen/care_topbar_height"
+		    android:background="@drawable/care_sms_del"/>
+    </RelativeLayout>
+
+</LinearLayout>

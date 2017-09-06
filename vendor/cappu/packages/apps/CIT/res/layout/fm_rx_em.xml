@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://FMTransmitter.mediatek.com/custom"  
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    <TextView  
+    android:id = "@+id/FMR_Freq_text"
+    android:layout_marginTop = "6dip"
+	android:layout_marginLeft = "5dip"
+    android:layout_width="110dip" 
+    android:layout_height="wrap_content" 
+    android:text="@string/FMR_Freq_text"
+    />
+    
+	<EditText 
+	 	android:id = "@+id/FMR_Freq_edit"
+	 	android:layout_marginTop = "6dip"
+	    android:layout_width="96dip" 
+	    android:layout_height="48dip" 	    	   
+	    android:singleLine = "true"
+	    android:maxLength = "10"
+	    android:layout_centerHorizontal = "true"
+	    />
+	<Button  
+		android:id = "@+id/FMR_Freq_tune"
+		android:layout_marginTop = "6dip"
+	    android:layout_width="84dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/FMR_Freq_tune"
+	    />
+</LinearLayout>
+
+<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="vertical">
+  	    <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Antenna_text">
+		</TextView>
+		
+		<RadioGroup
+		  android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="30dip"
+	      android:orientation="horizontal"
+	       android:id="@+id/FMR_Antenna_type">
+	        <RadioButton
+	          android:text="@string/FMR_Antenna_short"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id="@+id/FMR_Antenna_short">
+	        </RadioButton>
+	        <RadioButton
+	          android:text="@string/FMR_Antenna_long"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id="@+id/FMR_Antenna_long"
+	          android:layout_marginLeft="30dip">
+	        </RadioButton>
+		</RadioGroup>
+</LinearLayout>
+
+<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="vertical">
+  	    <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_Stereomono_text">
+		</TextView>
+		
+		<RadioGroup
+		  android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="30dip"
+	      android:orientation="horizontal"
+	       android:id="@+id/FMR_Stereomono_type">
+	        <RadioButton
+	          android:text="@string/FMR_Stereomono_stereo"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id="@+id/FMR_Stereomono_stereo">
+	        </RadioButton>
+	        <RadioButton
+	          android:text="@string/FMR_Stereomono_mono"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id="@+id/FMR_Stereomono_mono"
+	          android:layout_marginLeft="30dip">
+	        </RadioButton>
+		</RadioGroup>
+</LinearLayout>
+
+<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="vertical"
+  	  android:background="#001515">
+  	    <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_text">
+		</TextView>
+		
+	 <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_Stereomono_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_Stereomono"
+	      android:id="@+id/FMR_Status_Stereomono">
+		</TextView>			
+        </LinearLayout>
+        
+	 <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_RSSI_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_RSSI"
+	      android:id="@+id/FMR_Status_RSSI">
+		</TextView>			
+        </LinearLayout>
+        
+	 <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_Caparray_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_Status_Caparray"
+	      android:id="@+id/FMR_Status_Caparray">
+		</TextView>			
+        </LinearLayout>	
+	
+</LinearLayout>
+
+
+<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="vertical"
+  	  android:background="#151500">
+  	    <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_text">
+		</TextView>		
+	 
+        
+	 <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_Ratio_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_Ratio"
+	      android:id="@+id/FMR_RDS_Ratio">
+		</TextView>			
+        </LinearLayout>	
+        
+      <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_PS_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_PS"
+	      android:id="@+id/FMR_RDS_PS">
+		</TextView>			
+        </LinearLayout>	
+        
+        
+      <LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:padding="10dip"
+  	  android:orientation="horizontal">
+  	    <TextView
+		  android:layout_width="120dip"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_RT_text">
+		</TextView>
+		 <TextView
+		  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/FMR_RDS_RT"
+	      android:id="@+id/FMR_RDS_RT">
+		</TextView>			
+        </LinearLayout>	       
+        
+	
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/mag_incoming_call_end_bg"
+    android:clickable="true"
+    android:gravity="center" >
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/mag_ic_incoming_call_end"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mag_incoming_call_end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        style="@style/MagIncomingCallButtonTextStyle" />
+   
+
+</LinearLayout>

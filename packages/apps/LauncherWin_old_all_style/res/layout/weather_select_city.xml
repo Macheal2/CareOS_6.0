@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_city_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_main_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/list_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_title_bg" >
+
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_title_btn_bg"
+                android:src="@drawable/ic_actionbar_back_normal" />
+
+            <ImageView
+                android:id="@+id/title_image"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/title_back"
+                android:background="@color/grey"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/title_add"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/title_image"
+                android:background="@drawable/ic_title_btn_bg"
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/title_name"
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/title_add"
+                android:gravity="center_vertical"
+                android:text="@string/select_city_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_size" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/cities_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            layout="@layout/weather_cities_list" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/weather_search_box" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_box"
+            android:background="@android:color/white" >
+
+            <FrameLayout
+                android:id="@+id/city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/hit_city_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_separator_bg"
+                        android:gravity="center"
+                        android:text="@string/hit_city_title"
+                        android:textColor="#ff545454"
+                        android:textSize="@dimen/hit_city_title_text_size" />
+
+                    <GridView
+                        android:id="@+id/citys_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnWidth="5dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="3dip"
+                        android:listSelector="@drawable/ic_city_list_item_bg_selector"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dip" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/search_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:focusableInTouchMode="true"
+                    android:listSelector="@drawable/ic_city_list_item_bg_selector"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/ic_weather_selectcity_empty"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

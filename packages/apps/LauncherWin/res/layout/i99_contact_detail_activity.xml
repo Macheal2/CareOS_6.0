@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i99_bg"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/i99_topbar_contact_details_id"
+        layout="@layout/i99_topbar_contact_details" />
+
+    <LinearLayout
+        android:id="@+id/base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i99_topbar_contact_details_id"
+        android:background="@drawable/i99_background_white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/i99_photo_size"
+            android:layout_height="@dimen/i99_photo_size"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/i99TextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/i99_text_summary_size_default" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_below="@id/base_layout"
+            android:layout_height="@dimen/i99_topbar_height"
+            android:gravity="center"
+            style="@style/i99TextStyle_black" />
+    
+    <LinearLayout
+        android:layout_below="@id/number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/i99_topbar_height"
+        android:background="@color/i99_gray_pressed_color"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/i99_action_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/i99TextStyle"
+            android:background="@drawable/i99_green_button_bg"
+            android:text="@string/i99_call" />
+
+        <Button
+            android:id="@+id/i99_action_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            style="@style/i99TextStyle"
+            android:background="@drawable/i99_yellow_button_bg"
+            android:text="@string/i99_message" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/i99_topbar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/i99_share"
+            style="@style/i99TextStyle_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/i99_bottom_button_bg"
+            android:text="@string/i99_share" />
+
+        <View style="@style/I99VerticalLine" />
+
+        <Button
+            android:id="@+id/i99_edit"
+            style="@style/i99TextStyle_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/i99_bottom_button_bg"
+            android:text="@string/i99_edit" />
+    </LinearLayout>
+
+</RelativeLayout>

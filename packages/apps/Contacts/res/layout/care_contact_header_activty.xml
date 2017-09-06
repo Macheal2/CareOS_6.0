@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:text="@string/i99_select_header"
+        care:leftVisibility="gone"
+        care:rightVisibility="gone"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="2px"
+        android:verticalSpacing="2px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:numColumns="3" />
+
+    <LinearLayout
+        android:id="@+id/i99_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_footer_height"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/i99_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/BottomButtonStyle"
+            android:text="@string/i99_camera" />
+
+        <View style="@style/I99VerticalLine"/>
+
+        <Button
+            android:id="@+id/i99_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/BottomButtonStyle"
+            android:text="@string/i99_gallery" />
+    </LinearLayout>
+
+</LinearLayout>

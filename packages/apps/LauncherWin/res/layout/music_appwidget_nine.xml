@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.kookview.MusicRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY" >
+    <LinearLayout
+        android:id="@+id/album_appwidget_lyric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/txt_lyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dip"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#FFFFFF" />
+     </LinearLayout>   
+    <LinearLayout
+        android:id="@+id/album_appwidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/album_appwidget_lyric"
+        android:gravity="center"
+        android:orientation="horizontal" >
+		 <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dip"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dip"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:text="@string/app_name_music"
+            android:focusable="true" 
+            android:singleLine="true"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/turntable_bg_nine"
+        android:layout_marginTop="25dip" >
+        <ImageView
+            android:id="@+id/turntable_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/turntable_nine"
+            android:scaleType="matrix" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/music_play_needle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/widget_music_play_needle" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_option_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" 
+        android:layout_marginTop="25dip" >
+
+        <ImageView
+            android:id="@+id/control_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/music_widget_control_play_btn_nine" />
+
+        <ImageView
+            android:id="@+id/control_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/control_play"
+            android:layout_marginRight="72dp"
+            android:src="@drawable/music_widget_control_prev_btn_nine" />
+
+        <ImageView
+            android:id="@+id/control_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/control_play"
+            android:layout_marginLeft="72dp"
+            android:src="@drawable/music_widget_control_next_btn_nine" />
+    </RelativeLayout>
+
+
+
+</com.cappu.launcherwin.kookview.MusicRelativeLayout>

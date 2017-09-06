@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.cappu.launcherwin.weather.widget.DragSortListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cappu.launcherwin"
+    android:id="@+id/cities_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerHeight="1px"
+    android:clipToPadding="false"
+    android:cacheColorHint="#00000000"
+    android:listSelector="@drawable/ic_city_list_item_bg_selector"
+    android:fastScrollEnabled="true"
+    app:float_background_color="@android:color/transparent"
+    app:drag_enabled="true"
+    app:collapsed_height="1px"
+    app:drag_scroll_start="0.33"
+    app:float_alpha="0.6"
+    app:slide_shuffle_speed="0.3"
+ />

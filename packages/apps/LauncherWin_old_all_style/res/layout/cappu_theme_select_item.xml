@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theme_position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/theme_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp" >
+
+        <ImageView
+            android:id="@+id/image_theme_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/theme_small_background" />
+
+        <ImageView
+            android:id="@+id/image_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/theme_defult" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/theme_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/theme_icon"
+        android:text="@string/theme_select_default"
+        android:textColor="#ff40434a"
+        android:textSize="20sp" />
+    
+    <!-- android:layout_below="@id/theme_text" -->
+    <TextView
+        android:id="@+id/current_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/theme_text"
+        android:layout_toRightOf="@id/theme_icon"
+        android:textColor="#ff878c96"
+        android:text="@string/theme_current"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/theme_next" />
+
+    <ImageView
+        android:id="@+id/view_one_spit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/care_div_height"
+        android:layout_alignParentTop="true"
+        android:background="#ffd3d7da" />
+
+    <ImageView
+        android:id="@+id/view_two_spit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_div_height"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff" />
+
+</RelativeLayout>

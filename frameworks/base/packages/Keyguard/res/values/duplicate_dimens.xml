@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <dimen name="cappu_lock_hour_marginleft">58dip</dimen>
+    <dimen name="cappu_lock_hour_margintop">30dip</dimen>
+    <dimen name="cappu_lock_hour_text_size">124px</dimen>
+    
+    <dimen name="cappu_lock_minute_marginleft">140dp</dimen>
+    <dimen name="cappu_lock_minute_margintop">27dp</dimen>
+    <dimen name="cappu_lock_minute_text_size">124px</dimen>
+    
+    <dimen name="cappu_lock_am_or_pm_marginleft">375px</dimen>
+    <dimen name="cappu_lock_am_or_pm_margintop">30px</dimen>
+    <dimen name="cappu_lock_am_or_pm_text_size">35px</dimen>
+    
+    <dimen name="cappu_lock_screen_calendar_layout_margintop">230dip</dimen>
+    <dimen name="cappu_lock_screen_calendar_lunar_margintop">75dp</dimen>
+    <dimen name="cappu_lock_screen_calendar_lunar_text_size">18sp</dimen>
+    
+    
+    <dimen name="cappu_lock_screen_calendar_solar_layout_height">515dp</dimen>
+    <dimen name="cappu_lock_screen_calendar_solar_mouth_margintop">90dp</dimen>
+    <dimen name="cappu_lock_screen_calendar_solar_mouth_text_size">20sp</dimen>
+    
+    <dimen name="cappu_lock_screen_calendar_solar_week_margintop">5dp</dimen>
+    <dimen name="cappu_lock_screen_calendar_solar_week_marginright">180dp</dimen>
+    <dimen name="cappu_lock_screen_calendar_solar_week_text_size">18sp</dimen>
+    
+    <dimen name="cappu_lock_screen_calendar_solar_date_margintop">50dip</dimen>
+    <dimen name="cappu_lock_screen_day_margintop">20dip</dimen>
+    
+    <dimen name="cappu_lock_screen_rope_height">100px</dimen>
+    <dimen name="cappu_lock_screen_rope_margintop">215dip</dimen>
+    
+    <dimen name="cappu_slidingtablock_height">70dip</dimen>
+    <dimen name="cappu_slidingtablock_text_size">28sp</dimen>
+    
+    <dimen name="cappu_mask_text_size">28dp</dimen>
+    <dimen name="cappu_mask_text_margin_left">100dp</dimen>
+    <dimen name="cappu_mask_text_margin_top">60dp</dimen>
+    <dimen name="cappu_slider_margin_left">20dp</dimen>
+    <dimen name="cappu_slider_margin_top">30dp</dimen>
+    <dimen name="cappu_slidable_length">210dp</dimen>
+    <dimen name="cappu_effective_length">75dp</dimen>
+    <dimen name="cappu_effective_velocity">1300dp</dimen>
+    <dimen name="cappu_hour_minute_width">90dip</dimen>
+    <dimen name="cappu_hour_minute_height">120dip</dimen>
+    <dimen name="cappu_lock_time_margintop">55dip</dimen>
+</resources>

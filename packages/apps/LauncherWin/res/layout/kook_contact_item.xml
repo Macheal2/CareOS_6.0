@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <!-- android:descendantFocusability="blocksDescendants" 让list 的item获取焦点在list之后-->
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:textSize="30dip"
+        android:paddingTop="5dip"
+        android:textColor="#454545" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/i99_item_bg"
+        android:gravity="center_vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/call_customer"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/i99_ic_action_call_bg" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/i99TextStyle_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:maxLength="5"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/call_customer"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip"
+            android:text="@string/i99_customer_service" />
+
+       <CheckBox android:id="@+id/select_cb"
+           android:layout_width="wrap_content"
+           android:layout_marginRight="30.0dip"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:button="@drawable/i99_checked_bg"/>
+    </RelativeLayout>
+
+</LinearLayout>

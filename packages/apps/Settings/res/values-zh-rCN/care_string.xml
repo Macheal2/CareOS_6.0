@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_cappu">卡布解锁</string>
+    <string name="unlock_set_unlock_mode_cappu_default">默认</string>
+    <string name="unlock_set_unlock_mode_magcomm">上滑解锁</string>
+
+    <!-- begin: edit by hmq 20161108 Modify for cappu pictorial -->
+    <string name="auto_pictorial_title">锁屏画报</string>
+    <string name="auto_pictorial_summary">需要网络支持，在数据流量的环境下会产生资费，资费请咨询运营商</string>
+    <string name="pictorial_enabled_summaryOn">画报已启用</string>
+    <string name="pictorial_enabled_summaryOff">画报未启用</string>
+    <string name="random_pictorial_title">画报随机显示</string>
+    <string name="random_pictorial_enabled_summaryOn">随机已启用</string>
+    <string name="random_pictorial_enabled_summaryOff">随机未启用</string>
+    <!-- end: edit by hmq 20161108 Modify for cappu pictorial -->
+     <!-- hejianfeng add start for anti touch -->
+   <string name="anti_touch_mode_title">"防误触模式"</string>
+   <string name="hall_ui_title">"霍尔界面显示"</string>
+   <string name="hall_ui_summary">"打开显示数字时钟，关闭显示模拟时钟"</string>
+	<!-- hejianfeng add end -->
+   <!-- modify by even hejianfeng@20150601 start for hall_lock menu -->  
+    <string name="unlock_set_unlock_hall_title">霍尔解锁</string>
+    <string name="hall_title">启动霍尔</string>
+    <string name="hall_summary_on">关闭霍尔</string>
+    <string name="hall_summary_off">打开霍尔</string>
+   <!-- modify by even hejianfeng@20150601 end for hall_lock menu -->
+</resources>

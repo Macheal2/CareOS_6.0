@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@android:color/white"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+	    <Button
+	        android:id="@+id/btn_scan_barcode"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:text="@string/opencamera"/>
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_marginTop="2dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	    </LinearLayout>
+	    <EditText 
+	        android:id="@+id/et_qr_string"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:hint="@string/inputhint"/>
+	    <Button
+	        android:id="@+id/btn_add_qrcode"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/createcode" />
+	    <ImageView 
+	        android:id="@+id/iv_qr_image"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"/>
+	</LinearLayout>
+	    <LinearLayout 
+	        android:id="@+id/textlinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@android:color/white"
+		    android:orientation="vertical"
+		    android:visibility="gone" >
+	   	    <TextView 
+		       	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/black"
+		        android:textSize="@dimen/textsize"
+		        android:text="@string/result" />
+	        <TextView 
+		        android:id="@+id/tv_scan_result"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:textSize="@dimen/textsize"
+		       	android:textColor="@android:color/black"/>
+	        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="5"
+			    android:orientation="horizontal" >
+			    <Button 
+			        android:id="@+id/openstring"
+			    	android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/openstring"
+			        android:layout_weight="3"
+			        android:textColor="@android:color/black"/>
+			    <Button 
+			        android:id="@+id/copystring"
+			    	android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/copystring"
+			        android:layout_weight="1"
+			        android:textColor="@android:color/black"/>
+			    <Button 
+			        android:id="@+id/sharestring"
+			    	android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sharestring"
+			        android:layout_weight="1"
+			        android:textColor="@android:color/black"/>
+		    </LinearLayout>
+	</LinearLayout>
+</FrameLayout>

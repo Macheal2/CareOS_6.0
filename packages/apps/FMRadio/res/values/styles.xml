@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorPrimaryDark">@color/theme_primarydark_color</item>
+        <item name="android:colorPrimary">@color/theme_primary_color</item>
+        <item name="android:windowBackground">@color/theme_windowBackground</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/FmOverflowButtonStyle</item>
+    </style>
+
+    <style name="LightTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:textColorPrimary">@color/theme_title_color</item>
+        <item name="android:colorPrimaryDark">@color/theme_primarydark_color</item>
+        <item name="android:colorPrimary">@color/theme_primary_color</item>
+        <item name="android:windowBackground">@color/white_color</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <!-- The more menu icon in Light theme is black, change it to white -->
+    <style name="FmOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_material</item>
+    </style>
+
+    <style name="popButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/fm_pop_buttong_bg</item>
+    </style>
+
+    <style name="popTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="pop_option_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_option_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_option_anim_out</item>
+    </style>
+    
+    <style name="FmStatusBarTitle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FmStatusBarContent">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14dp</item>
+    </style>  
+    
+</resources>

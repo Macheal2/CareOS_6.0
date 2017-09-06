@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.Hotseat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_hotseat"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ly_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imgv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+        	android:layout_marginLeft="6dip"
+            android:tag="com.android.mms/com.android.mms.ui.BootActivity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom" >
+
+        <ImageView
+            android:id="@+id/imgv_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:tag="com.android.dialer/com.android.dialer.calllog.CallLogActivity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_middle_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgv_middle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right|bottom"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imgv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+        	android:layout_marginRight="6dip"
+            android:tag="com.mediatek.camera/com.android.camera.CameraLauncher" />
+    </LinearLayout>
+
+</com.cappu.launcherwin.Hotseat>

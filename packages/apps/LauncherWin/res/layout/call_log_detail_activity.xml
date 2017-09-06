@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/res/com.cappu.launcherwin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option"/>
+    <include layout="@layout/feature_buttons_layout"/>
+
+
+    <com.cappu.launcherwin.contacts.callLog.widget.HeaderListView
+        android:id="@+id/call_log_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null" />
+
+</LinearLayout>

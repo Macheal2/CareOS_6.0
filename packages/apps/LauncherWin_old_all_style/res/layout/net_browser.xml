@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="967px" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/net_browser"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="101px"
+        android:orientation="horizontal"
+        android:background="@drawable/web_collection_share" >
+
+        <RelativeLayout
+            android:id="@+id/web_collection"
+            android:layout_width="359px"
+            android:layout_height="match_parent"
+            android:background="@drawable/web_collection_share" >
+
+            <ImageView
+                android:id="@+id/web_collection_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="115px"
+                android:src="@drawable/news_collection_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/web_collection_image"
+                android:paddingLeft="3dp"
+                android:text="@string/web_collection"
+                android:textSize="21sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1px"
+            android:background="@drawable/web_collec_midd_share" />
+
+        <RelativeLayout
+            android:id="@+id/web_share"
+            android:layout_width="359px"
+            android:layout_height="match_parent"
+            android:background="@drawable/web_collection_share" >
+
+            <ImageView
+                android:id="@+id/web_share_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="115px"
+                android:src="@drawable/news_share_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/web_share_image"
+                android:paddingLeft="3dp"
+                android:text="@string/web_share"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

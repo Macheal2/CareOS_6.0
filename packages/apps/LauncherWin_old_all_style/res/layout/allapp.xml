@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.cappu.launcherwin.contacts.widget.ClearEditText
+            android:id="@+id/kook_search"
+            style="@style/i99TextStyle_black"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/i99_topbar_input"
+            android:hint="@string/i99_search"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <com.cappu.launcherwin.widget.KookListView
+                android:id="@+id/allapplist"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:scrollbars="none"
+                android:layout_marginTop="2px"
+                android:divider="@drawable/dividing_h"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="54.0dip"
+                android:visibility="invisible" />
+
+            <com.cappu.launcherwin.contacts.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

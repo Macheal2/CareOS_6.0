@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--add by y.haiyang for care configure (start)-->
+    <declare-styleable name="TopBar">
+      <attr name="background" format="reference"  />
+
+		  <attr name="titleText" format="string" />
+		  <attr name="titleColor" format="color" />
+		  <attr name="titleTextSize" format="dimension" />
+		  <attr name="titleClickable" format="boolean" />
+		  <attr name="secretable" format="boolean" />
+
+		  <attr name="subText" format="string" />
+		  <attr name="subTextSize" format="dimension" />
+
+		  <attr name="leftImage" format="reference" />
+		  <attr name="rightImage" format="reference" />
+
+		  <attr name="leftVisibility">
+		      <enum name="visible" value="0" />
+		      <enum name="invisible" value="4" />
+		      <enum name="gone" value="8" />
+		  </attr>
+
+		  <attr name="rightVisibility">
+		      <enum name="visible" value="0" />
+		      <enum name="invisible" value="4" />
+		      <enum name="gone" value="8" />
+		  </attr>
+    </declare-styleable>
+    <!--add by y.haiyang for care configure (end)-->
+</resources>

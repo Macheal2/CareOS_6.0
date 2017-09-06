@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/whole_layout"
+    style="@style/option_dialog_layout" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/bookmark_del"
+        android:textColor="#FFCC00"
+        android:textSize="24.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FFCC00" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/dialog_margin"
+        android:text="@string/bookmark_del_message"
+        android:textColor="@android:color/black"
+        android:textSize="24.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FFCC00" />
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/done"
+            style="@style/option_dialog_button_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:text="@string/OK" />
+        
+        <Button
+            android:id="@+id/cancel"
+            style="@style/option_dialog_button_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:text="@string/Cancel" />        
+    </LinearLayout>
+
+</LinearLayout>

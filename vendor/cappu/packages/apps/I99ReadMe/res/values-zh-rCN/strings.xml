@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">帮助说明</string>
+    <string name="title_user_manual">用户手册</string>
+    <string name="title_weixin">微信</string>
+
+    <string-array name="user_manual_list">
+        <item>电话短信</item>
+        <item>常用工具</item>
+        <item>手机上网</item>
+        <item>常规设置</item>
+        <item>安全求助</item>
+        <item>客服电话</item>
+    </string-array>
+
+    <string-array name="user_manual_icons">
+        <item>ic_phone_mms</item>
+        <item>ic_tools</item>
+        <item>ic_gprs</item>
+        <item>ic_settings</item>
+        <item>ic_sos</item>
+        <item>ic_customer</item>
+    </string-array>
+
+    <string-array name="weixin_list">
+        <item>登陆界面</item>
+        <item>聊天简介</item>
+        <item>发现简介</item>
+        <item>通讯录简介</item>
+        <item>聊天界面</item>
+        <item>发送表情</item>
+        <item>发送语音信息</item>
+        <item>发送照片和视频聊天</item>
+        <item>朋友圈</item>
+        <item>个人相册(个人分享)</item>
+        <item>添加朋友</item>
+        <item>设置字体大小</item>
+    </string-array>
+
+    <string-array name="weixin_icons">
+        <item>ic_weixin_login</item>
+        <item>ic_weixin_chat</item>
+        <item>ic_weixin_found</item>
+        <item>ic_weixin_contact</item>
+        <item>ic_weixin_chat_screen</item>
+        <item>ic_weixin_emo</item>
+        <item>ic_weixin_voice</item>
+        <item>ic_weixin_photo</item>
+        <item>ic_weixin_friends_circle</item>
+        <item>ic_weixin_gallery</item>
+        <item>ic_weixin_add_friends</item>
+        <item>ic_weixin_font</item>
+    </string-array>
+
+</resources>

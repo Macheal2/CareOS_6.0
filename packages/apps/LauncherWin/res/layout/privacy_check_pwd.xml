@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_privacy_page"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout"
+        android:background="@drawable/bg_cell_green"
+         >
+<!-- android:background="@drawable/bg_privacy_green" -->
+        <!-- <ImageButton
+            android:id="@id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" /> -->
+
+        <TextView
+            android:id="@id/title"
+            style="@style/ruyiui_tobbar_textview_cancel_title_2" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pwd_reset_private_space"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="15.0dip"
+                android:textColor="#ff414142"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/marker_dialog_bg"
+                android:hint="@string/privacy_protection_pwd_hint"
+                android:inputType="textPassword|number"
+                android:numeric="integer"
+                android:textColor="#000000"
+                android:cursorVisible="true"
+                android:digits="1234567890"
+                android:padding="10.0dip"
+                android:textSize="16.0sp" />
+<!-- textPassword -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/show_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:checked="true"
+                    android:text="@string/protection_show_password"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/dark" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/forget_pwd"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:text="@string/privacy_forget_password"
+                    android:textColor="@drawable/selector_privacy_forget"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/btns_black" />
+
+</LinearLayout>

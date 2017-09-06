@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <style name="CareTextStyle_Button" parent="@android:attr/buttonBarButtonStyle">
+        <item name="android:textSize">@dimen/care_text_size_default</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="CareTextStyle_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/care_text_size_default_title</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="CareTextStyle_title_gray" parent="CareTextStyle_title">
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    
+    <style name="I99SurnameAnim">
+        <item name="android:windowEnterAnimation">@anim/surname_right_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/surname_right_anim_out</item>
+    </style>
+    <style name="i99_dialpad_number_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/i99_number_button_bg</item>
+    </style>
+    <style name="i99TextStyle_topbar" parent="CareTextStyle">
+        <item name="android:textSize">@dimen/i99_text_topbar_size_default</item>
+    </style>
+    <style name="i99TextStyle_black" parent="CareTextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="i99TextStyle_black_summery" parent="i99TextStyle_black">
+        <item name="android:textSize">@dimen/i99_text_summary_size_default</item>
+    </style>
+    <style name="i99ButtonTextStyle" parent="i99TextStyle_black">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="i99_call_detail_text_style">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">@dimen/i99_text_size_default</item>
+    </style>
+
+    <style name="I99DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/i99_popup_bg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+    <style name="I99DialogStyle2" parent="I99DialogStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+    <style name="I99DialogStyle_Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/care_text_size_default_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="I99DialogStyle_Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/i99_text_size_default</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="I99DialogStyle_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">@dimen/i99_text_size_default</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:minHeight">60dp</item>
+	 <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/i99_list_one_item_bg</item>
+    </style>
+    <style name="I99DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/care_bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/care_bottom_anim_out</item>
+    </style>
+
+    <style name="CareGroupBuStyle">
+        <item name="android:background">@drawable/i99_group_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/i99_text_size_default</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="I99StoreToButtonStyle">
+        <item name="android:background">@drawable/i99_gray_color_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/i99_list_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/i99_text_size_default</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="I99TopBarLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">@dimen/care_topbar_height</item>
+        <item name="android:background">@drawable/i99_topbar_line</item>
+    </style>
+    <style name="I99ConcernButtonStyle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="EmptyTextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/empty_text_color</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="CareTextStyle.ListItem" parent="CareTextStyle" >
+        <item name="android:textSize">@dimen/list_item</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+
+    <style name="CareTextStyle.QuickContactTitle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="CareTextStyle.QuickContactSummery">
+        <item name="android:textColor">@color/gay_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CareTheme.Semipermeable" parent="@android:style/Theme.Material.Light">
+         <item name="android:windowNoTitle">true</item>
+         <item name="android:windowIsTranslucent">true</item>
+         <item name="@android:windowBackground">@color/semipermeable</item>
+         <item name="@android:windowAnimationStyle">@style/CareAnimationActivity</item>
+         <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
+    </style>
+    <style name="CareTheme.Semipermeable.QuickContact" parent="@android:style/Theme.Light">
+         <item name="android:windowNoTitle">true</item>
+         <item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowBackground">@color/semipermeable</item>
+         <item name="android:windowAnimationStyle">@style/CareAnimationActivity</item>
+    </style>
+    <style name="Care.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/care_topbar_bg</item>
+        <item name="android:backgroundStacked">@null</item>
+    </style>
+    <style name="CareAnimationActivity" >
+        <item name="android:activityOpenEnterAnimation">@anim/care_right_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/care_right_anim_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/care_left_anim_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/care_left_anim_out</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CarePopupAnimation">          
+        <item name="android:windowEnterAnimation">@anim/care_bottom_anim_in</item>     
+        <item name="android:windowExitAnimation">@anim/care_bottom_anim_out</item>     
+    </style>  
+     <style name="CareTheme" parent="android:Theme.Holo.Light" >
+         <item name="android:windowBackground">@drawable/care_window_background</item>
+         <item name="android:windowAnimationStyle">@style/CareAnimationActivity</item>
+         <item name="android:actionBarSize">@dimen/care_topbar_height</item>
+         <item name="android:actionBarStyle">@style/Care.ActionBar</item>
+    </style>
+    <style name="CareTheme.NoActionBar" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="@android:windowAnimationStyle">@style/CareAnimationActivity</item>
+        <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

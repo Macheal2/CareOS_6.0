@@ -1,0 +1,293 @@
+<resources>
+
+    <style name="AppTheme">
+        <item name="android:windowAnimationStyle">@style/CareAnimation</item>
+        <item name="android:windowNoTitle">true</item>        
+    </style>
+    <style name="AppThemeSOS">
+        <item name="android:windowAnimationStyle">@style/CareAnimation</item>
+        <item name="android:windowNoTitle">true</item>    
+         <item name="android:background">@color/background</item>
+    </style>
+    
+    <style name="ruyiui_tobbar_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80dip</item>
+        <item name="android:background">@drawable/butt_bottom_option</item>
+    </style>    
+
+    <style name="ruyiui_tobbar_imagebutton">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_topbar_left_selector</item>
+        <item name="android:padding">15.0dip</item>
+        <item name="android:layout_width">@dimen/title_layout_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/icon_back</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="ruyiui_tobbar_imagebutton_right">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_topbar_right_selector</item>
+        <item name="android:padding">15.0dip</item>
+        <item name="android:layout_width">@dimen/title_layout_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="ruyiui_tobbar_textview_2">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>    
+    
+    <style name="shadow_white">
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    
+    <style name="topbar_layout">
+        <item name="android:background">@drawable/topbar_red</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_layout_height</item>
+    </style>    
+    
+<!--         <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item> -->
+    
+    <style name="topbar_middle">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/title_layout_height</item>
+        <item name="android:layout_marginRight">@dimen/title_layout_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyisetting_info_sytle">
+        <item name="android:textSize">@dimen/ruyi_setting_info_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="ruyisetting_rightlayout_sytle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyisetting_openoff_sytle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/setting_switch_on</item>
+        <item name="android:layout_width">64.0dip</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyisetting_content_sytle">
+        <item name="android:textSize">@dimen/ruyi_setting_state_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyisetting_arrow_sytle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/setting_switch_icon_tip</item>
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyisetting_content_sytle_1">
+        <item name="android:textSize">@dimen/ruyi_setting_state_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="option_dialog_layout">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/popup_default</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>    
+    
+    <style name="option_dialog_title">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dialog_item_height</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_margin</item>
+        <item name="android:layout_marginRight">@dimen/dialog_margin</item>
+        <item name="android:text">@string/option_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>    
+    
+    <style name="option_dialog_editlayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_margin</item>
+        <item name="android:layout_marginRight">@dimen/dialog_margin</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_margin</item>
+    </style>    
+    
+    <style name="option_dialog_button_confirm">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/dialog_only_selector</item>
+        <item name="android:paddingLeft">@dimen/dialog_padding</item>
+        <item name="android:paddingRight">@dimen/dialog_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dialog_item_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>    
+    
+    <style name="ruyiui_tobbar_textview_cancel_title_2">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>    
+    
+    <style name="ruyiui_buttonbar_textview_right">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    
+    <style name="ruyiui_personal_horizontal_divider">
+        <item name="android:background">@drawable/line_horizontal_h2px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0px</item>
+    </style>    
+    
+    <style name="ruyiui_personal_item_layout">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ruyi_margin</item>
+        <item name="android:layout_marginRight">@dimen/ruyi_margin</item>
+        <item name="android:layout_marginBottom">@dimen/ruyi_margin</item>
+    </style>    
+    
+    <!-- <item name="android:enabled">false</item> -->
+    <style name="ruyiui_personal_info_key"> 
+        <item name="android:textSize">30.0sp</item>        
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/ruyi_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>    
+    
+    <style name="ruyiui_personal_vertical_divider">
+        <item name="android:background">@drawable/line_vertical_w2px</item>
+        <item name="android:layout_width">2.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/ruyi_margin</item>
+    </style>    
+    
+    <style name="ruyiui_tobbar_textview_only">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>    
+    
+    <style name="ruyiui_buttonbar_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_layout_height</item>
+    </style>    
+    
+    <style name="shadow_black">
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>    
+    
+    <style name="CareAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/right_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/right_anim_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_anim_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/left_anim_out</item>        
+        <item name="android:taskOpenEnterAnimation">@anim/right_anim_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/right_anim_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/left_anim_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/left_anim_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/right_anim_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/right_anim_out</item>
+        <item name="android:taskToBackEnterAnimation">@anim/left_anim_in</item>
+        <item name="android:taskToBackExitAnimation">@anim/left_anim_out</item>
+        <item name="android:windowEnterAnimation">@anim/right_anim_in</item>
+    </style>      
+    
+</resources>

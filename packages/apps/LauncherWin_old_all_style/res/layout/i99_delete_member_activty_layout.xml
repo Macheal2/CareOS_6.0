@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i99_bg"
+    android:orientation="vertical" >
+
+     <LinearLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/i99_topbar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/i99_topbar_bg"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <ImageButton
+            android:id="@+id/i99_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/i99_topbar_button_bg"
+            android:src="@drawable/i99_icon_back" />
+
+        <View style="@style/I99TopBarLine"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/i99_remove_member_title"
+            style="@style/i99TextStyle_topbar"/>
+
+        <View style="@style/I99TopBarLine"/>
+
+        <ImageButton
+            android:id="@+id/i99_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/i99_topbar_button_bg"
+            android:src="@drawable/i99_icon_ok"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/i99_line">
+    </ListView>
+
+</LinearLayout>

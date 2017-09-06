@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="uu_download_download_number">2</integer>
+    <integer name="uu_folder_grid_columns">4</integer>
+    <integer name="uu_folder_gird_max_page_num">16</integer>
+</resources>

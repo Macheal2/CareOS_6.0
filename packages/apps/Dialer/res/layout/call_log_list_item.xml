@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/call_log_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/call_log_day_group_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/care_item_top_normal"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="?attr/call_log_secondary_text_color"
+        android:textSize="@dimen/call_log_secondary_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/care_line_h" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/call_log_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:baselineAligned="false"
+        app:cardBackgroundColor="@android:color/transparent"  
+        app:cardElevation="0dp" 
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/primary_action_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_log_background"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@+id/quick_contact_photo"
+                android:nextFocusRight="@+id/call_back_action"
+                android:orientation="horizontal" >
+
+                <QuickContactBadge
+                    android:id="@+id/quick_contact_photo"
+                    android:layout_width="0dip"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:focusable="true"
+                    android:nextFocusRight="@id/primary_action_view"
+                    android:paddingTop="2dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/calllog_item_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/calllog_item_info_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/imageview_contact_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/i99_call_outgoing_pressed" />
+
+                        <LinearLayout
+                            android:id="@+id/name_count"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/call_location_and_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" >
+
+                            <ViewStub
+                                android:id="@+id/checkbox_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout="@layout/mtk_call_log_list_item_checkbox_i99" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- yuan tong qin add bu ju wenjian jieshu end -->
+                    <!-- android:id="@+id/name" -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/call_log_name_margin_bottom"
+                        android:layout_marginEnd="@dimen/call_log_icon_margin"
+                        android:singleLine="true"
+                        android:textColor="?attr/call_log_primary_text_color"
+                        android:textSize="@dimen/call_log_primary_text_size"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/voicemail_transcription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/call_log_icon_margin"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:textColor="?attr/call_log_secondary_text_color"
+                        android:textSize="@dimen/call_log_secondary_text_size"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/call_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <!-- 几个小图片 -->
+
+                        <view
+                            android:id="@+id/call_type_icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/call_log_icon_margin"
+                            class="com.android.dialer.calllog.CallTypeIconsView" />
+
+                        <!-- 时间 -->
+                        <!-- android:id="@+id/call_location_and_date" -->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/call_log_icon_margin"
+                            android:singleLine="true"
+                            android:textColor="?attr/call_log_secondary_text_color"
+                            android:textSize="@dimen/call_log_secondary_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/call_account_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="@dimen/call_log_icon_margin"
+                        android:singleLine="true"
+                        android:textColor="?attr/call_log_secondary_text_color"
+                        android:textSize="@dimen/call_log_secondary_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/primary_action_button"
+                    android:layout_width="@dimen/call_log_list_item_primary_action_dimen"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/call_log_icon_margin"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:scaleType="center"
+                    android:tint="@color/call_log_list_item_primary_action_icon_tint"
+                    android:visibility="gone" />
+
+                <!-- M: for [Multi-Delete] CallLog LandScape UI @{ -->
+
+                <ImageView
+                    android:id="@+id/selected_icon"
+                    android:layout_width="@dimen/call_log_call_action_width"
+                    android:layout_height="0dp"
+                    android:background="@drawable/mtk_item_select"
+                    android:clickable="false"
+                    android:paddingBottom="@dimen/call_log_inner_margin"
+                    android:paddingEnd="@dimen/call_log_inner_margin"
+                    android:paddingStart="@dimen/call_log_inner_margin"
+                    android:paddingTop="@dimen/call_log_inner_margin"
+                    android:scaleType="center"
+                    android:visibility="gone" />
+                <!-- @} -->
+            </LinearLayout>
+
+            <!-- Viewstub with additional expandable actions for a call log entry -->
+            <!-- 重播 ip拨号 详情布局文件 -->
+
+            <ViewStub
+                android:id="@+id/call_log_entry_actions_stub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inflatedId="@+id/call_log_entry_actions"
+                android:layout="@layout/call_log_list_item_actions"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/font_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+            <!-- 经典主题 默认 -->
+
+            <RelativeLayout
+                android:id="@+id/default_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:gravity="center"
+                    android:text="@string/theme_select_default"
+                    android:textColor="#505050"
+                    android:textSize="33.0sp" />
+                <!-- 34.0sp @dimen/xl_text_size -->
+
+                <CheckBox
+                    android:id="@+id/default_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21.0dip"
+                    android:button="@drawable/i99_checked_bg"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+
+            <!--古典主题-->
+
+            <RelativeLayout
+                android:id="@+id/classical_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:gravity="center"
+                    android:text="@string/theme_select_classical"
+                    android:textColor="#505050"
+                    android:textSize="33.0sp" />
+                <!-- 38.0sp @dimen/xxl_text_size -->
+
+                <CheckBox
+                    android:id="@+id/classical_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21.0dip"
+                    android:button="@drawable/i99_checked_bg"
+                    android:gravity="center" />
+            </RelativeLayout>
+            
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+            
+            <!--中国风主题-->
+
+            <RelativeLayout
+                android:id="@+id/chinesestyle_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:gravity="center"
+                    android:text="@string/theme_select_chinesestyle"
+                    android:textColor="#505050"
+                    android:textSize="33.0sp" />
+                <!-- 38.0sp @dimen/xxl_text_size -->
+
+                <CheckBox
+                    android:id="@+id/chinesestyle_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21.0dip"
+                    android:button="@drawable/i99_checked_bg"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <!-- 格局主题 -->
+<!--             <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+
+            <RelativeLayout
+                android:id="@+id/pattern_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:gravity="center"
+                    android:text="@string/theme_select_pattern"
+                    android:textColor="#505050"
+                    android:textSize="33.0sp" />
+                38.0sp @dimen/xxl_text_size
+
+                <CheckBox
+                    android:id="@+id/pattern_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21.0dip"
+                    android:button="@drawable/i99_checked_bg"
+                    android:gravity="center" />
+            </RelativeLayout> -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

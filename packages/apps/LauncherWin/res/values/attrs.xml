@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Cappu">
+        <attr name="cellX" format="integer" />
+        <attr name="cellY" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Favorite">
+        <attr name="modeSelect" format="string" />
+        <attr name="className" format="string" />
+        <attr name="packageName" format="string" />
+        <attr name="container" format="string" />
+        <attr name="screen" format="string" />
+        <attr name="x" format="string" />
+        <attr name="y" format="string" />
+        <attr name="spanX" format="string" />
+        <attr name="spanY" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="aliasTitle" format="string" />
+        <attr name="cellDefImage" format="string" />
+        <attr name="aliasTitleBackground" format="string" />
+        <attr name="uri" format="string" />
+        <attr name="background" format="string" />
+        <attr name="viewName" format="string" />
+        
+        <attr name="AppName" format="string" />
+        <attr name="AppNameCN" format="string" />
+        <attr name="AppIconName" format="string" />
+        <attr name="AppIconphoneNumberUrl" format="string" />
+        <attr name="DownloadUrl" format="string" />
+        <attr name="Version" format="string" />
+        <attr name="phoneNumber" format="string"/>
+        <attr name="contactName" format="string" />
+        
+    </declare-styleable>
+    <declare-styleable name="SlideView">
+        <attr name="maskText" format="string" />
+        <attr name="maskTextSize" format="dimension" />
+        <attr name="maskTextMarginLeft" format="dimension" />
+        <attr name="maskTextMarginTop" format="dimension" />
+        <attr name="slider" format="reference" />
+        <attr name="sliderMarginLeft" format="dimension" />
+        <attr name="sliderMarginTop" format="dimension" />
+        <attr name="slidableLength" format="dimension" />
+        <attr name="effectiveLength" format="dimension" />
+        <attr name="effectiveVelocity" format="dimension" />
+    </declare-styleable>
+
+    <!-- The preferred TextAppearance for the primary text of list items. -->
+    <attr name="textAppearanceListItem" format="reference" />
+    <!-- The preferred TextAppearance for the primary text of small list items. -->
+    <attr name="textAppearanceListItemSmall" format="reference" />
+    <attr name="alertDialogTheme" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- NumberPicker style. -->
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="DatePicker">
+
+        <!--
+             The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.}
+        -->
+        <attr name="startYear" format="integer" />
+        <!--
+             The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.}
+        -->
+        <attr name="endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="spinnersShown" format="boolean" />
+        <!-- Whether the calendar view is shown. -->
+        <attr name="calendarViewShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="minDate" format="string" />
+        <!-- The maximal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="maxDate" format="string" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="internalLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TimePicker">
+
+        <!-- @hide The layout of the time picker. -->
+        <attr name="internalLayout" />
+    </declare-styleable>
+
+    <!-- The TimePicker style. -->
+    <attr name="timePickerStyle" format="reference" />
+    <!-- The DatePicker style. -->
+    <attr name="datePickerStyle" format="reference" />
+
+    <!-- 主题 -->
+    <attr name="featureBackground" format="reference|color" />
+    <attr name="featureTextColor" format="reference|color" />
+    <attr name="leftFeatureBackground" format="reference|color" />
+    <attr name="rightFeatureBackground" format="reference|color" />
+    <attr name="item_bg" format="reference|color" />
+    <attr name="item_top_bg" format="reference|color" />
+    <attr name="item_bottom_bg" format="reference|color" />
+    <attr name="item_middle_bg" format="reference|color" />
+    <attr name="title_color" format="reference|color" />
+    <attr name="sub_title_color" format="reference|color" />
+    <attr name="sub_title_text_size" format="dimension" />
+    <attr name="item_text_size" format="dimension" />
+    <attr name="item_header_text_size" format="dimension" />
+    <attr name="item_sub_text_size" format="dimension" />
+    <attr name="button_text_size" format="dimension" />
+    <attr name="list_empty_text_size" format="dimension" />
+    <attr name="dialog_message_text_size" format="dimension" />
+    <attr name="title_text_size" format="dimension" />
+    <attr name="topbarStyle" format="reference" />
+    <attr name="KookDialog" format="reference" />
+    <attr name="WorkspaceMainWidget" format="reference|color" />
+    <attr name="hotseat" format="reference|color" />
+
+    <declare-styleable name="CareStyle">
+        <attr name="titleBackground" format="reference|color" />
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleClickable" format="boolean" />
+        <attr name="secretable" format="boolean" />
+        <attr name="subText" format="string" />
+        <attr name="subTextSize" format="dimension" />
+        <attr name="leftImage" format="reference" />
+        <attr name="rightImage" format="reference" />
+        <attr name="leftVisibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="rightVisibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="dialogTitleBackground" format="reference|color" />
+
+        <!-- 应用参数 -->
+        <attr name="title_bg" format="reference" />
+        <attr name="title_font_color" format="reference|color" />
+        <attr name="title_font_size" format="dimension" />
+        <attr name="title_icon_width" format="dimension" />
+        <attr name="title_icon_height" format="dimension" />
+        <attr name="context_bg" format="reference" />
+        <attr name="item_font_color" format="reference|color" />
+        <attr name="item_font_size" format="dimension" />
+        <attr name="item_icon_width" format="dimension" />
+        <attr name="item_icon_height" format="dimension" />
+        <!-- 应用参数 end -->
+    </declare-styleable>
+    <!-- 主题 end -->
+
+
+    <!-- 天气 -->
+    <declare-styleable name="ActionBar">
+        <attr name="title" format="string" localization="suggested" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference" />
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference" />
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CirclePageIndicator">
+
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" format="boolean" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <attr name="radiusPage" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" format="dimension" />
+ -                                <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+    <declare-styleable name="DragSortListView">
+        <attr name="collapsed_height" format="dimension" />
+        <attr name="drag_scroll_start" format="float" />
+        <attr name="max_drag_scroll_speed" format="float" />
+        <attr name="float_background_color" format="color" />
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0" />
+            <enum name="flingRemove" value="1" />
+        </attr>
+        <attr name="track_drag_sort" format="boolean" />
+        <attr name="float_alpha" format="float" />
+        <attr name="slide_shuffle_speed" format="float" />
+        <attr name="remove_animation_duration" format="integer" />
+        <attr name="drop_animation_duration" format="integer" />
+        <attr name="drag_enabled" format="boolean" />
+        <attr name="sort_enabled" format="boolean" />
+        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0" />
+            <enum name="onMove" value="1" />
+            <enum name="onLongPress" value="2" />
+        </attr>
+        <attr name="drag_handle_id" format="integer" />
+        <attr name="fling_handle_id" format="integer" />
+        <attr name="click_remove_id" format="integer" />
+        <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+    <!-- 天气 -->
+    
+    <!-- 圆角 imageview 控件-->
+     <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="health" value="2" />
+        <enum name="news" value="1" />
+    </attr> 
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <!-- 圆角 imageview 控件   end -->
+    
+    <!-- 圆形调色板 -->
+    <declare-styleable name="color_picker">
+         <!-- 背景圆的半径 -->
+         <attr name="circle_radius" format="dimension" />
+         <!-- 可滑动小球的半径 -->
+         <attr name="center_radius" format="dimension" />
+         <!-- 可滑动小球的颜色 -->
+         <attr name="center_color" format="color" />
+     </declare-styleable>
+     <!-- 圆形调色板 end-->
+
+    <declare-styleable name="FontTextView">
+        <attr name="typeFontText" format="string" />
+    </declare-styleable>
+</resources>

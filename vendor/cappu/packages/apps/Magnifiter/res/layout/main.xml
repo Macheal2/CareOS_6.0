@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/camera_background" >
+
+        <ImageView
+            android:id="@+id/reduce"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="30dip"
+            android:src="@drawable/reduce" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="130dip"
+            android:src="@drawable/flash_close_normal" />        
+        
+        <ImageView
+            android:id="@+id/increase"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="230dip"
+            android:src="@drawable/increase" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dip"
+            android:layout_marginLeft="30dip"
+            android:progressDrawable="@drawable/seekbar_style" />
+    </RelativeLayout>
+
+</RelativeLayout>

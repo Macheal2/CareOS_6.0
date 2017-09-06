@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/weather_today_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+            android:id="@+id/city"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/weather_text_city_name_size"
+            android:visibility="invisible" />
+
+        <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+            android:id="@+id/time"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/weather_text_update_time_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/today_weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/temperature"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_temperature_size" />
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/climate"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_current_city_name_size" />
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/week_today"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_size" />
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/lunar_calendar"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_size" />
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/wind"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_size" />
+
+            <com.cappu.launcherwin.widget.AutoAjustSizeTextView
+                android:id="@+id/humidity"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/weather_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

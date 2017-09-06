@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">push</string>
+    <string name="push_activation">激活设备</string>
+    <string name="push_setting">推送设置</string>
+    <string name="push_list">推送列表</string>
+    <string name="push_detail">推送详情</string>
+    <string name="push_detail_icon">推送详情Icon</string>
+    <string name="push_detail_banner">推送详情Banner</string>
+    <string name="news">新闻</string>
+    <string name="health">健康</string>
+    <string name="travel">旅游</string>
+    <string name="finances">财经</string>
+    <string name="life">生活</string>
+    <string name="uri_error">链接地址出错</string>
+    <string name="favicons">点击收藏</string>
+    <string name="favicons_ing">已收藏</string>
+    <string name="favicons_cancle">取消收藏</string>
+    <string name="favicons_cancle_success">取消收藏成功</string>
+    <string name="delete">"删        除"</string>
+    <string name="net_shar">"分        享"</string>
+    <string name="delete_success">删除成功</string>
+    <string name="favorites_success">收藏成功</string>
+    <string name="delete_news_tip">此条新闻已经收藏,删除请取消收藏</string>
+    <string name="delete_health_tip">此条健康信息已经收藏,删除请取消收藏</string>
+    <string name="delete_net_tip">此条<xliff:g id="name">%s</xliff:g>已经收藏,删除请取消收藏</string>
+    <string name="favicons_list">收藏列表</string>
+    <string name="net_not_info_tips">您的手机暂无信息，需持续连接网络一段时间后才能收到相关信息</string>
+
+    <string name="help_notes">帮助说明</string>
+    <string name="help_notes_info1">\u0009 ★系统将自动为您删除三十天以前的新闻与健康信息，若是您需要保留的信息，请长按信息条目，选择收藏。</string>
+    <string name="help_notes_info2">\u0009 ★点击新闻与健康界面右上角的五角星，可进入收藏列表。</string>
+    <string name="help_notes_info3">\u0009 ★已收藏的信息在新闻及健康信息列表中无法删除，需要到收藏列表中长按信息条目，选择删除。</string>
+    
+    <string name="push_download_apk_list">推送apk列表</string>
+</resources>

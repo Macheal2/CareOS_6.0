@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_topbar_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:src="@drawable/about_careos_logo" />
+
+        <LinearLayout
+            android:id="@+id/version_format_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dip" >
+
+            <TextView
+                android:id="@+id/text_version"
+                style="@style/AboutVersionDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_topbar"
+        android:background="@drawable/about_bottomtop_bg"
+        android:orientation="vertical"
+        ><!-- android:padding="@dimen/about_bottom_bar_padding"  -->
+
+        <LinearLayout
+            android:id="@+id/layout_checking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/image_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/about_ico_loading" />
+
+            <TextView
+                android:id="@+id/text_loading"
+                style="@style/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30.0dip"
+                android:text="@string/about_checking_newest_version" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_version_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/about_bottom_bar_padding"
+            android:layout_marginRight="@dimen/about_bottom_bar_padding"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_action"
+                style="@style/AboutText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/about_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_version_info_hint"
+                style="@style/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/btn_action"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/inc_activity_cover" />
+
+</RelativeLayout>

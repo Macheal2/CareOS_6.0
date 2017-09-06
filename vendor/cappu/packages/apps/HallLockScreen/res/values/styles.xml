@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bird_image_clock_number_style">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/bird_image_clock_number_width</item>
+        <item name="android:layout_height">@dimen/bird_image_clock_number_height</item>
+        <item name="android:src">@drawable/zzz_zero</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="bird_image_clock_dot_style" parent="@style/bird_image_clock_number_style">
+        <item name="android:layout_width">@dimen/bird_image_clock_dot_width</item>
+        <item name="android:src">@drawable/zzz_dot</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

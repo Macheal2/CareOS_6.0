@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 是否居中显示 -->
+    <bool name="default_circle_indicator_centered">false</bool>
+
+    <!-- 选中时的颜色 -->
+    <color name="default_circle_indicator_fill_color">#ff33b5e5</color>
+    <!-- 未选中时的颜色 -->
+    <color name="default_circle_indicator_page_color">#ffaaaaaa</color>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+	<!-- 选中时的圆点的半径大小 -->
+    <dimen name="default_circle_indicator_fill_radius">5dp</dimen>
+    <!-- 未选中时的圆点的半径大小 -->
+    <dimen name="default_circle_indicator_page_radius">4dp</dimen>
+	<!-- 选择false时会有滑动动画 -->
+    <bool name="default_circle_indicator_snap">true</bool>
+	<!-- 未选中时周围圈的颜色 -->
+    <color name="default_circle_indicator_stroke_color">#FF000000</color>
+ <!-- 未选中时周围圈的宽度 -->
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+</resources>

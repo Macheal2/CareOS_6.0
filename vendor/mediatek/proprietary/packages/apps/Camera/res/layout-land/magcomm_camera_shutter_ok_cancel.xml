@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_shutter"
+    style="@style/ShutterGroup"
+    android:splitMotionEvents="false"
+    android:paddingBottom="10dp">
+
+    <com.android.camera.ui.RotateImageView
+        android:id="@+id/btn_cancel"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:contentDescription="@android:string/cancel"
+        android:src="@drawable/magcomm_cancel_bg" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+
+    <com.android.camera.ui.RotateImageView
+        android:id="@+id/btn_done"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:contentDescription="@android:string/ok"
+        android:src="@drawable/magcomm_ok_bg" />
+</LinearLayout>
+

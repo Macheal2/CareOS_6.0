@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Dialpad in the Phone app. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad"
+    android:layout_width="@dimen/mag_incall_dialpad_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:clipChildren="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+        <include layout="@layout/mag_incall_dialpad_key_one" />
+        <include layout="@layout/mag_incall_dialpad_key_two" />
+        <include layout="@layout/mag_incall_dialpad_key_three" />
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+        <include layout="@layout/mag_incall_dialpad_key_four" />
+        <include layout="@layout/mag_incall_dialpad_key_five" />
+        <include layout="@layout/mag_incall_dialpad_key_six" />
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+        <include layout="@layout/mag_incall_dialpad_key_seven" />
+        <include layout="@layout/mag_incall_dialpad_key_eight" />
+        <include layout="@layout/mag_incall_dialpad_key_nine" />
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+        <include layout="@layout/mag_incall_dialpad_key_star" />
+        <include layout="@layout/mag_incall_dialpad_key_zero" />
+        <include layout="@layout/mag_incall_dialpad_key_pound" />
+        <!--Space style="@style/DialpadSpaceStyle" /-->
+    </LinearLayout>
+    <!--Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialpad_bottom_key_height" /-->
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+<LinearLayout android:orientation="vertical" android:id="@+id/test_gps"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	-->
+<RelativeLayout android:layout_gravity="center"
+	android:orientation="vertical" android:id="@+id/test_gps"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/tv_st_info" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/tv_st_info" />
+	<TextView android:id="@+id/tv_st_1" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_info" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_2" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_1" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_3" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_2" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_4" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_3" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_5" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_4" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_6" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_5" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_7" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_6" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_8" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_7" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_9" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_8" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_10" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_9" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_11" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_10" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_12" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_11" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<!--<TextView android:id="@+id/tv_st_13" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_12" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_14" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_13" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_15" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_14" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_16" android:layout_width="wrap_content"
+		android:layout_below="@+id/tv_st_15" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+	<TextView android:id="@+id/tv_st_17" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" /> 
+		<TextView android:id="@+id/tv_st_18" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" /> 
+		<TextView android:id="@+id/tv_st_19" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" /> 
+		<TextView android:id="@+id/tv_st_20" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:text="@string/g_null_text" /> -->
+	<TextView android:textSize="20.0dip" android:id="@+id/tv_st_success"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_st_12" android:layout_alignParentLeft="true"
+		android:text="@string/tv_st_success" />
+	<TextView android:textSize="20.0dip" android:id="@+id/tv_st_time"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_st_12" android:layout_alignParentRight="true"
+		android:text="@string/g_null_text" />
+		
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_weight="1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+<!-- </LinearLayout> -->

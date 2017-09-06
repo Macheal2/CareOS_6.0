@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LockScreenViewActivity!</string>
+    <string name="app_name">皮套UI</string>
+    <string name="lunar_string">农历</string>
+    <string name="hall_window_title">皮套窗口</string>
+    <string name="hall_window_settings">皮套窗口设置</string>
+    <string name="hall_window_toggle">皮套窗口</string>
+    <string name="hall_window_time">时间窗口</string>
+    <string name="hall_window_alarm">闹钟窗口</string>
+    <string name="hall_window_call">通话窗口</string>
+</resources>

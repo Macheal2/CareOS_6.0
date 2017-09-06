@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/CareDialogStyle_Title"
+        android:text="@string/care_option" />
+
+    <!--<Button
+        android:id="@+id/care_mms_new"
+        style="@style/CareDialogStyle_Button"
+        android:text="@string/new_message"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/care_list_top_bg"/>-->
+    
+    <Button
+        android:id="@+id/care_mms_settings"
+        style="@style/CareDialogStyle_Button"
+        android:text="@string/care_mms_settings"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/care_list_top_bg"/>
+
+    <Button
+        android:id="@+id/care_mms_delete"
+        style="@style/CareDialogStyle_Button"
+        android:text="@string/care_multiterm_delete"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/care_list_bottom_bg"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i99_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <ListView
+        android:id="@+id/ring_tone_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/i99_line_h"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="@dimen/i99_topbar_height" 
+        android:dividerHeight="1dp"
+        android:fadingEdge="none" />
+
+    <LinearLayout
+        android:id="@+id/i99_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/i99_topbar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/i99_cancel"
+            style="@style/i99TextStyle_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/i99_bottom_button_bg"
+            android:text="@string/i99_cancel" />
+
+        <View style="@style/I99VerticalLine" />
+
+        <Button
+            android:id="@+id/i99_ok"
+            style="@style/i99TextStyle_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/i99_bottom_button_bg"
+            android:text="@string/i99_ok" />
+    </LinearLayout>
+
+</RelativeLayout>

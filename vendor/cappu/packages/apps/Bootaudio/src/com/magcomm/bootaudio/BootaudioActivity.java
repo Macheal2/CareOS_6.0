@@ -1,0 +1,39 @@
+package com.cappu.bootaudio;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.os.SystemProperties;
+
+public class BootaudioActivity extends Activity {
+    
+    private final String BOOTAUDIO_PROPERTY = "persist.sys.bootaudio";
+    private final String SELECT_PROPERTY_ON = "1";
+    private final String SELECT_PROPERTY_OFF = "0";
+
+    private String TAG = "BootaudioActivity";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Intent intent =  getIntent();
+        boolean isOpen = intent.getBooleanExtra("isOpen", true);
+        Log.i(TAG, "BootaudioActivity isOpen:"+isOpen);
+        setBootAudioSystemProperities(isOpen);
+        finish();
+    }
+
+    private void setBootAudioSystemProperities(boolean isOpen){
+        if (isOpen) {
+            SystemProperties.set(BOOTAUDIO_PROPERTY, SELECT_PROPERTY_ON);
+        } else {
+            SystemProperties.set(BOOTAUDIO_PROPERTY, SELECT_PROPERTY_OFF);
+        }
+    }
+    
+    private String getBootAudioSystemProperities(){
+            return SystemProperties.get(BOOTAUDIO_PROPERTY,"1");
+    }
+
+
+}

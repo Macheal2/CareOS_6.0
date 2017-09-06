@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_gravity="center"
+	android:orientation="vertical" android:id="@+id/test_motionsenor"
+	android:background="@drawable/white" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TextView android:textSize="30.0dip" android:id="@+id/ms_tv_motionsensorinfo"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/test_motionsensor_info" android:textColor="#000000"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/ms_tv_x"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#000000" android:text="@string/g_null_text"
+		android:layout_below="@id/ms_tv_motionsensorinfo"
+		android:layout_alignParentLeft="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/ms_tv_y"
+		android:textColor="#000000" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/g_null_text"
+		android:layout_below="@id/ms_tv_x" android:layout_alignParentLeft="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/ms_tv_z"
+		android:textColor="#000000" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/g_null_text"
+		android:layout_below="@id/ms_tv_y" android:layout_alignParentLeft="true" />
+	<Button android:id="@+id/btn_horizontalCalibration"
+		android:textColor="#000000" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/horizontalCalibration"
+		android:clickable="true" android:layout_below="@id/ms_tv_z"
+		android:layout_alignParentLeft="true" />
+
+	<ImageView android:id="@+id/ms_arrow_down"
+		android:visibility="invisible" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/ms_draw_down"
+		android:layout_centerInParent="true" />
+
+	<ImageView android:id="@+id/ms_arrow_up" android:visibility="invisible"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/ms_draw_up" android:layout_centerInParent="true" />
+
+	<ImageView android:id="@+id/ms_arrow_left"
+		android:visibility="invisible" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/ms_draw_left"
+		android:layout_centerInParent="true" />
+	<ImageView android:id="@+id/ms_arrow_right"
+		android:visibility="invisible" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/ms_draw_right"
+		android:layout_centerInParent="true" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/ms_proximity"
+		android:textColor="#000000" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/g_null_text"
+		android:layout_above="@+id/ms_lightsensor" />
+
+	<TextView android:textSize="24.0dip" android:id="@+id/ms_lightsensor"
+		android:textColor="#000000" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/g_null_text" />
+
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

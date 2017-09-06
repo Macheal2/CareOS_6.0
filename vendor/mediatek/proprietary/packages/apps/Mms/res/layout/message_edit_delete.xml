@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--added by yzs begin-->
+    <!--<include layout="@layout/vivo_message_title" />-->
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@style/I99Style_TopBar"
+        care:rightImage="@drawable/i99_title_bt_select"
+        care:text="@string/app_label"/>
+    <!--added by yzs end-->  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+    <ListView android:id="@android:id/list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:scrollbarStyle="insideOverlay"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/white"
+        android:fadingEdgeLength="16dip"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:background="@drawable/vivo_gray_background"
+        android:layout_weight="8" >
+<!-- oldguy-->
+<!-- modify message delete button-->
+        <Button 
+            android:id="@+id/bnEditDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:text="@string/delete"
+            android:textSize="28sp"
+            android:textColor="@color/title_color"
+            android:background="@drawable/vivo_red_button_bg"
+            android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

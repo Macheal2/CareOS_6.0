@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <RelativeLayout
+        android:id="@+id/colorpick_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <TextView
+            android:id="@+id/inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color_picker_view"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phone_util_btn"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="@string/phone_util"
+            android:textColor="@android:color/white"
+            android:textSize="27dp" />
+        
+        <TextView 
+            android:id="@+id/phone_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/phone_info"
+            android:layout_above="@id/inquiry"
+            />
+         <TextView
+            android:id="@+id/telephone_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/phone_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text ="@string/telephone_inquiry_button"
+            android:background="@drawable/setting_list_frame_onlyone_normal"
+            android:gravity="top"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        
+        <TextView
+            android:id="@+id/showing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/phone_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/setting_list_frame_onlyone_normal"
+            android:gravity="top"
+            android:padding="10dp"
+            android:textSize="20dp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

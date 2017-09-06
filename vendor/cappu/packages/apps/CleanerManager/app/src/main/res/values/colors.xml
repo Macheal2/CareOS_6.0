@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+
+    <color name="colorPrimary">#9698a3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorOrange">#ff9900</color>
+    <color name="topbarColor">#009EDE</color>
+
+    <color name="activication_notification_first_text">#FF505457</color>
+    <color name="activication_notification_second_text">#FFB7B7B7</color>
+
+    <color name="expandable_title_text_color">#FF0A0A0A</color>
+    <color name="expandable_title_bg_color">#00FFFFFF</color>
+    <color name="expandable_title_divide_line_color">#FFE5E5E5</color>
+    <color name="expandable_list_bg_color">#00FFFFFF</color>
+    <color name="expandable_list_text_color">#FF656565</color>
+
+    <color name="baseTextColor">#FFFFFFFF</color>
+
+    <color name="about_us_bg">#F6F5FA</color>
+    <color name="about_us_main_text">#282828</color>
+    <color name="divider_bg">#E7E7EA</color>
+    <color name="button_press_bg">#EDEDED</color>
+    <color name="button_nomal_bg">#ffffff</color>
+    <color name="copyright_notice_text">#B3B3B3</color>
+</resources>

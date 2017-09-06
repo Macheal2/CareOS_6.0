@@ -1,0 +1,62 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:background="@color/touchInterceptor_list_item_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 布局文件中的TabWidget的id必须定义为：android:id="@android:id/tabs"，FrameLayout的id必须定义为：android:id="@android:id/tabcontent" 其它控件没有限制，否则报错 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/touchInterceptor_list_item_bg" >
+        </TabWidget>
+
+        <RelativeLayout
+            android:id="@+id/play_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="false" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/nowplaying_parent" >
+
+                <fragment
+                    android:id="@+id/play_fragment"
+                    android:name="com.cappu.music.PlayFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <fragment
+                    android:id="@+id/folder_fragment"
+                    android:name="com.cappu.music.FolderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                
+            </FrameLayout>
+
+            <include layout="@layout/nowplaying" />
+
+            <LinearLayout
+                android:id="@+id/dialog_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</TabHost>

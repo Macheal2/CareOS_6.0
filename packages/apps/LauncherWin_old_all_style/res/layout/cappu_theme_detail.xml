@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_top"
+        layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="134px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/theme_text_used"
+        android:gravity="center"
+        android:text="@string/theme_used"
+        android:textColor="#ffffffff"
+        android:textSize="28sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_view"
+        android:layout_below="@id/title_top"
+        android:layout_centerHorizontal="true" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" >
+
+        <LinearLayout
+            android:id="@+id/all_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

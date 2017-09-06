@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout android:id="@+id/pickers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/care_pick_bg"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center">
+
+
+        <!-- Month -->
+        <com.cappu.launcherwin.widget.CareNumberPicker
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dip"
+            android:layout_marginBottom="16dip"
+            android:layout_marginStart="8dip"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <!-- Day -->
+        <com.cappu.launcherwin.widget.CareNumberPicker
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dip"
+            android:layout_marginBottom="16dip"
+            android:layout_marginStart="8dip"
+            android:layout_marginEnd="8dip"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            />
+
+        <!-- Year -->
+        <com.cappu.launcherwin.widget.CareNumberPicker
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dip"
+            android:layout_marginBottom="16dip"
+            android:layout_marginStart="8dip"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="uu_download_front_color">#ff7c98b7</color>
+    <color name="uu_download_network_connect">#ff818181</color>
+    <color name="uu_download_no_data_link">#ffff9900</color>
+    <color name="uu_download_network_check">#ff9f9f9f</color>
+    <color name="uu_download_btn_text_blue">#ff6195ba</color>
+    <color name="uu_downlaod_white">#ffffffff</color>
+    <color name="uu_download_resource_item_title_color">#ff212421</color>
+    <color name="uu_folder_title_color">#ff010101</color>
+    <color name="uu_folder_more_color">#ffffffff</color>
+    <color name="uu_folder_app_title_color">#ffffffff</color>
+    <color name="uu_folder_app_size_color">#ff010101</color>
+    <color name="uu_folder_app_loading_color">#ff010101</color>
+    <color name="uu_folder_button_text_color">#ffffffff</color>
+    <color name="uu_folder_transparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="com_black">#ff000000</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="activication_bg_color">#FFF6F6F6</color>
+    <color name="expandable_title_text_color">#FF0A0A0A</color>
+    <color name="expandable_title_bg_color">#00FFFFFF</color>
+    <color name="expandable_title_divide_line_color">#FFE5E5E5</color>
+    <color name="expandable_list_bg_color">#00FFFFFF</color>
+    <color name="expandable_list_text_color">#FF656565</color>
+    
+    <color name="activication_notification_first_text">#FF505457</color>
+    <color name="activication_notification_second_text">#FFB7B7B7</color>
+    <color name="activication_notification_button_text">#FF505457</color>
+</resources>

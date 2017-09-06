@@ -1,0 +1,72 @@
+<resources>
+    <style name="Theme.Wallpaper">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+
+    <style name="Theme" parent="Theme.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="popdialogshow">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+    
+    <style name="TextAppearanceDialogWindowTitle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearanceDialogWindowTitle</item>
+    </style>
+    
+    <style name="DialogButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">75dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/care_dialog_button_text_color</item>
+    </style>
+    
+    <style name="ThemeDialogAlertCappu">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="textAppearanceListItem">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="textAppearanceListItemSmall">@android:style/TextAppearance.Large.Inverse</item>
+    </style>
+    
+    <style name="Scale" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+    
+    <style name="dialog_style" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/head_in</item>  <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/head_out</item>   <!-- 退出时的动画 -->
+    </style>
+    
+    <style name="LoadingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/care_dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="Theme.Holo.Translucent.NoActionBar"  parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+       <item name="android:windowIsTranslucent">true</item>
+        <!-- Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used. -->
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>

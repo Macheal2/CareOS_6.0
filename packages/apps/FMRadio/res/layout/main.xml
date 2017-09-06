@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.android.fmradio.views.FmScroller
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/multiscroller"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="afterDescendants" >
+
+    <LinearLayout
+        android:id="@+id/main_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_windowBackground"
+            android:elevation="@dimen/fm_middle_shadow"
+            android:id="@+id/main_header_parent">
+            <include layout="@layout/main_header" />
+        </FrameLayout>
+
+        <include layout="@layout/main_bottom" />
+
+    </LinearLayout>
+
+    <include layout="@layout/play_button" />
+
+    <include layout="@layout/no_headset" />
+    
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/fm_top_bar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/fm_background_top"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/fm_menu_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/fm_icon_search" />
+
+            <Button
+                android:id="@+id/fm_menu_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/fm_icon_list" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fm_background_chanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_top_bar_bg"
+            android:background="@drawable/fm_background_chanel_letter"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/fm_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/fm_status_not_inuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ear_phone_image"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/not_available"
+                    android:textColor="#000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/fm_status_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fm_status_not_inuse"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/fm_no_headset_text"
+                    android:textColor="#000"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fm_search_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/station_searching_tips"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/rl_middlepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/fm_number_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/fm_number_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/fm_number_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/fm_number_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fm_number_point" />
+
+                <ImageView
+                    android:id="@+id/fm_number_point_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fm_background_chanel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_background_chanel"
+            android:background="@drawable/fm_background_chanel_button"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <ImageButton
+                android:id="@+id/button_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/fm_btn_priver"
+                android:enabled="false" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/fm_btn_next"
+                    android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fm_background_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fm_background_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/button_prevstation"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_fm_decrease_frequency"
+                    android:enabled="false" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/button_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fm_switch_off_press"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/button_nextstation"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_fm_increase_frequency"
+                    android:enabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fm_background_speaker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fm_background_chanel_button"
+            android:layout_above="@id/fm_background_bottom"
+            android:background="@drawable/fm_background_speaker" />
+        <!-- middle part starts -->
+
+        <RelativeLayout
+            android:id="@+id/main_view_fm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_fm0"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/fm_speaker_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fm_speaker_icon_magintop"
+                android:src="@drawable/big_speaker" />
+
+            <!-- android:id="@+id/rl_middlepart" -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottombar_parent"
+                android:layout_below="@id/fm_speaker_icon" >
+
+                <TextView
+                    android:id="@+id/station_name"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/station_value"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:requiresFadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textSize="20dip"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text_fm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/station_name"
+                    android:layout_toLeftOf="@+id/station_value"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/station_value"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="#AA000000"
+                    android:textSize="40dip"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text_mhz"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/station_value"
+                    android:layout_below="@+id/station_name"
+                    android:layout_marginLeft="-65dp"
+                    android:layout_toRightOf="@+id/station_value"
+                    android:gravity="center_horizontal"
+                    android:textColor="#55000000"
+                    android:textSize="12dip"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text_rds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/station_value"
+                    android:ellipsize="marquee"
+                    android:gravity="center_horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="#BBBBBB"
+                    android:textSize="20dip"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/button_add_to_favorite"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@+id/text_mhz"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/station_value"
+                    android:adjustViewBounds="true"
+                    android:enabled="false"
+                    android:src="@drawable/btn_fm_favorite_off" >
+                </ImageButton>
+            </RelativeLayout>
+
+            <!-- middle part ends -->
+
+            <LinearLayout
+                android:id="@+id/bottombar_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/bottom_bar_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bottom_bar"
+                    android:background="@drawable/dialplate_bottom_arc" />
+
+                <LinearLayout
+                    android:id="@+id/bottom_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:splitMotionEvents="false" >
+
+                    <!-- Must set the background to "btn_pressed" which is the same with what is set in source code. -->
+                    <!-- Because if not set it, the button size will change when clicked. -->
+
+                    <ImageButton
+                        android:id="@+id/button_speaker_headset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/fm_btn_headset"
+                        android:enabled="false" />
+
+                    <ImageButton
+                        android:id="@+id/button_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fm_btn_more"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_bar_recorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom_bar"
+                    android:gravity="center_vertical"
+                    android:splitMotionEvents="false"
+                    android:visibility="gone"
+                    android:weightSum="3" >
+
+                    <!-- Must set the background to "btn_pressed" which is the same with what is set in source code. -->
+                    <!-- Because if not set it, the button size will change when clicked. -->
+
+                    <ImageButton
+                        android:id="@+id/btn_record"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:src="@drawable/btn_fm_record" />
+
+                    <ImageButton
+                        android:id="@+id/btn_stop"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:src="@drawable/btn_fm_rec_stop" />
+
+                    <ImageButton
+                        android:id="@+id/btn_playback"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:src="@drawable/btn_fm_rec_play" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_view_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_menu_background"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recinfo"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/bg_rec_infobar"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txtRecInfoLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/txtRecInfoRight"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtRecInfoRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dip"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/anim_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_recinfo" >
+
+            <ImageView
+                android:id="@+id/iv_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fm_anim"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+</com.android.fmradio.views.FmScroller>
+

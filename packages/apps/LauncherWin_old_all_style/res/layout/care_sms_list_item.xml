@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.mms.widget.CareConversationItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/care_margin_middle" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <android.widget.QuickContactBadge
+            android:id="@+id/avatar"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/care_margin_normal"
+            android:layout_centerVertical="true"
+            style="?android:attr/quickContactBadgeStyleWindowLarge" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/care_margin_normal"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="@dimen/care_margin_middle"
+            android:layout_marginRight="@dimen/care_margin_middle">
+
+            <TextView
+                android:id="@+id/care_sms_date"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/care_margin_middle"
+                android:textColor="#FFA2A2A2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/care_sms_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_toLeftOf="@id/care_sms_date"
+                android:layout_marginRight="@dimen/care_margin_normal"
+                android:singleLine="true"
+                android:textColor="@color/message_receiver_color"
+                android:textSize="@dimen/care_normal_topbar" />
+
+            <TextView
+                android:id="@+id/care_sms_snippet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/care_sms_receiver"
+                android:textColor="#FFA2A2A2"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/care_margin_normal"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/care_delte_check"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/care_margin_middle"
+        android:button="@drawable/care_sms_select"
+        android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="@dimen/care_margin_normal"
+        android:layout_marginLeft="@dimen/care_margin_normal"
+        android:layout_marginTop="-1px"
+        android:background="@color/care_divide_color" />
+
+</com.cappu.launcherwin.mms.widget.CareConversationItem>

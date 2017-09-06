@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <TextView android:textSize="20.0dip" android:gravity="center"
+			android:id="@+id/tv_dualmic_test_title" android:textColor="#000000"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="@string/dualmic_test_title"
+            android:layout_centerInParent="true" />
+
+		<TextView android:textSize="20.0dip" android:gravity="center"
+			android:id="@+id/tv_dualmic_test_text" android:textColor="#000000"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/dualmic_test_text"
+			android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/main_btn"
+            android:clickable="true"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dualmic_test_main" />
+ 
+        <Button
+            android:id="@+id/ref_btn"
+            android:clickable="true"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dualmic_test_ref" />
+
+    </LinearLayout>
+    
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+</RelativeLayout>

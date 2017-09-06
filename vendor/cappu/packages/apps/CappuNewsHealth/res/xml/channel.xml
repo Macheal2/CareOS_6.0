@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:cappu="http://schemas.android.com/apk/res/com.cappu.careoslauncher" >
+<!--         
+            /**
+     * 渠道号
+     *   laorenji02a 卡布老人机下载中心
+     *   careosdlcappu 卡布桌面公开下载中心
+     *   游戏圈 cxyxq0918
+     *   生活圈 cxshq0918
+     *   测试文件夹 onlinefoldertest
+     * */
+    public final static String DEFAULT_CHANNL = "laorenji02a"; -->
+    <ChannelType
+        Brands="cappu"
+        Category=""
+        Channel=""
+        Leaf="True"
+        Name="老人机"
+        Parent="cappu" >
+        <ChannelType
+            Brands=""
+            Category="news"
+            Channel="8e1302d3bf043608e975e48504a3668b"
+            Leaf="True"
+            Name="新闻健康"
+            Parent="cappu" />
+        <ChannelType
+            Brands=""
+            Category="download"
+            Channel="laorenji02a"
+            Leaf="True"
+            Name="下载中心"
+            Parent="cappu" />
+        <ChannelType
+            Brands=""
+            Category="living_area"
+            Channel="cxyxq0918"
+            Leaf="True"
+            Name="生活圈"
+            Parent="cappu" />
+    </ChannelType>
+
+</root>

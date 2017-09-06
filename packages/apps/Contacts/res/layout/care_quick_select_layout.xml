@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/care_window_background">
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:text="@string/i99_quick_select_title"
+        care:leftVisibility="gone"
+        care:rightVisibility="gone"/> 
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+        <!--1-->
+        <LinearLayout android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/care_item_bg">
+
+            <TextView
+                android:id="@+id/create_contact_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i99_create_contact"
+                style="@style/CareTextStyle.QuickContactTitle"/>
+
+            <TextView
+                android:id="@+id/create_contact_summery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i99_add_quick_contacts_summery"
+                android:padding="5dp"
+                style="@style/CareTextStyle.QuickContactSummery"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/select_contact"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/care_item_bg"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/select_contact_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i99_select"
+                style="@style/CareTextStyle.QuickContactTitle"/>
+
+            <TextView
+                android:id="@+id/select_contact_summery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i99_select_quick_contacts_summery"
+                android:padding="8dp"
+                style="@style/CareTextStyle.QuickContactSummery"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/add_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/i99_add_quick_info"
+            android:textSize="23sp"
+            android:padding="3dp"
+            android:layout_marginTop="8dp"
+            style="@style/CareTextStyle.QuickContactSummery"/>
+    </LinearLayout>
+</LinearLayout>

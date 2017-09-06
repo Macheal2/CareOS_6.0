@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.cappu.music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/inventory_batch_top"
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_bg_color" >
+
+<!--         <ImageView
+            android:id="@+id/inventory_batch_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/inventory_back" /> -->
+
+        <TextView
+            android:id="@+id/inventory_batch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/inventory_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+        
+        <CheckBox
+            android:id="@+id/all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:button="@drawable/checkbox_bg"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_h"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/inventory_batch_top"
+        android:background="@color/text_bg_color" />
+
+   <!--  <RelativeLayout
+        android:id="@+id/inventory_batch_option"
+        android:layout_width="match_parent"
+        android:layout_height="72dip"
+        android:visibility="gone"
+        android:layout_below="@id/divider_h" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/all_select"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+        
+         <CheckBox
+            android:id="@+id/all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:button="@drawable/checkbox_bg"
+            android:scaleType="center" /> 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_bg_color" />
+    </RelativeLayout> -->
+
+    <com.cappu.music.widget.Panel
+        android:id="@+id/option_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:maxHeight="200dip"
+        android:background="@color/text_bg_color"
+        android:paddingTop="4dip"
+        panel:animationDuration="200"
+        panel:content="@+id/panelContent"
+        panel:handle="@+id/panelHandle"
+        panel:position="bottom" >
+
+        <!-- <Button
+            android:id="@+id/panelHandle"
+            android:layout_width="fill_parent"
+            android:layout_height="33dip" /> -->
+
+        <RelativeLayout
+            android:id="@+id/panelContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/add_to_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dip"
+                android:layout_alignParentLeft="true"
+                android:drawableTop="@drawable/dialog_add_to_button"
+                android:gravity="center_horizontal"
+                android:text="@string/move_to"
+                android:textColor="@android:color/black" />
+            
+            <TextView
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/dialog_add_to_button"
+                android:gravity="center_horizontal"
+                android:text="@string/music_add"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dip"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/dialog_delete_button"
+                android:gravity="center_horizontal"
+                android:text="@string/delete_song"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+    </com.cappu.music.widget.Panel>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/option_layout"
+        android:layout_below="@id/divider_h" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/touchInterceptor_list_divider"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

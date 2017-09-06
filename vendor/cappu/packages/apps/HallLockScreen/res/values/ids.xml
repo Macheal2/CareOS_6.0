@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="time_digital">false</item>
+    <item type="id" name="bird_ampm">false</item>
+    <item type="id" name="bird_hour_high">false</item>
+    <item type="id" name="bird_hour_low">false</item>
+    <item type="id" name="bird_dot">false</item>
+    <item type="id" name="bird_minute_high">false</item>
+    <item type="id" name="bird_minute_low">false</item>
+    <item type="id" name="date">false</item>
+    <item type="id" name="weekday">false</item>
+    <item type="id" name="window_rolling_ring">false</item>
+    <item type="id" name="bird_hall_time_screen">false</item>
+    <item type="id" name="unread_container">false</item>
+    <item type="id" name="unread_sms">false</item>
+    <item type="id" name="unread_sms_num">false</item>
+    <item type="id" name="unread_call">false</item>
+    <item type="id" name="unread_call_num">false</item>
+    <item type="id" name="bird_time_container">false</item>
+    <item type="id" name="time_analog">false</item>
+    <item type="id" name="window_rolling_ring_stub">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="bird_lunar_container">false</item>
+    <item type="id" name="lunar">false</item>
+</resources>

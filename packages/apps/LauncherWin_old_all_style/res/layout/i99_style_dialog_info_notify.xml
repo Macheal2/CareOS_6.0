@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/i99_theme_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_title_height"
+        android:background="@drawable/dialog_top_bar_bg"
+        android:gravity="center"
+        android:paddingTop="360dp"
+        android:textColor="#FFF"
+        android:textSize="@dimen/i99dialog_title_textsize" />
+<!-- @dimen/i99_dialog_theme_width -->
+    <TextView
+        android:id="@+id/dialog_info_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i99_theme_dialog_title"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:maxHeight="200dp"
+        android:maxLines="5"
+        android:minHeight="110dip"
+        android:padding="5dip"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#FF404040"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_info_show"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/i99_dialog_content_only_one"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_below="@id/dialog_info_show"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/i99_dialog_only_one"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:layout_weight="1.0"
+                android:background="@drawable/i99_dialog_button_only_one"
+                android:gravity="center"
+                android:paddingBottom="@dimen/i99_dialog_text_padding"
+                android:text="@string/i99_dialog_left"
+                android:textColor="#000"
+                android:textSize="@dimen/i99dialog_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/i99_dialog_content_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_below="@id/dialog_info_show"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/i99_dialog_left"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:layout_weight="1.0"
+                android:background="@drawable/i99_dialog_button_left"
+                android:gravity="center"
+                android:paddingBottom="@dimen/i99_dialog_text_padding"
+                android:text="@string/i99_dialog_left"
+                android:textColor="#000"
+                android:textSize="@dimen/i99dialog_title_textsize" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:background="#FF929292" />
+
+            <Button
+                android:id="@+id/i99_dialog_middle"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:layout_weight="1.0"
+                android:background="@drawable/i99_dialog_button_middle"
+                android:gravity="center"
+                android:paddingBottom="@dimen/i99_dialog_text_padding"
+                android:text="@string/i99_dialog_middle"
+                android:textColor="#000"
+                android:textSize="@dimen/i99dialog_title_textsize" />
+
+            <View
+                android:id="@+id/second_divid"
+                android:layout_width="1dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:background="#FF929292" />
+
+            <Button
+                android:id="@+id/i99_dialog_right"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/detail_title_height"
+                android:layout_weight="1.0"
+                android:background="@drawable/i99_dialog_button_right"
+                android:gravity="center"
+                android:paddingBottom="@dimen/i99_dialog_text_padding"
+                android:text="@string/i99_dialog_right"
+                android:textColor="#000"
+                android:textSize="@dimen/i99dialog_title_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

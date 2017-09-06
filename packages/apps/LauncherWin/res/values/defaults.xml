@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 这个文件可以有几个类型定义
+    boolean   <bool name="def_dim_screen">true</bool>
+    int       <integer name="def_screen_off_timeout">60000</integer>
+    String    <string name="app_version_name">cell,bluetooth,wifi,nfc,wimax</string>
+    分数类型    <fraction name="def_window_animation_scale">0%</fraction>
+     -->
+
+    <!-- 当前应用版本号         修改者请只增不减-->
+    <string name="app_version_name">3.1.4</string>
+    <!-- 当前应用数据库版本号    修改者请只增不减-->
+    <integer name="app_database_version">15</integer>
+    
+    <!-- 短信语音播报  1 是打开  0 是关闭 -->
+    <integer name="mms_speech_status">1</integer>
+    
+    <!-- 桌面语音播报  1 是打开  0 是关闭 -->
+    <integer name="launcher_speech_status">1</integer>
+    
+    <!-- 联系人语音播报  1 是打开  0 是关闭 -->
+    <integer name="contacts_speech_status">1</integer>
+    
+    <!-- 拨号盘语音播报  1 是打开  0 是关闭 -->
+    <integer name="dialpad_speech_status">1</integer>
+    
+    <!-- 新闻语音播报  1 是打开  0 是关闭 -->
+    <integer name="netinfo_speech_status">1</integer>
+    
+    <!--桌面每个磁块的边距-->
+    <integer name="cell_padding">1</integer>
+    
+    <!--桌面锁  1 是打开  0 是关闭 -->
+    <integer name="workspace_lock">0</integer>
+    
+    <!-- 开机铃声 1 是打开  0 是关闭 -->
+    <integer name="bootaudio_setting">1</integer>
+    
+     <!-- back键切屏  1 是打开  0 是关闭 -->
+    <integer name="back_tuoch">0</integer>
+    
+    <!-- workspace无限滑动切屏  1 是打开  0 是关闭 -->
+    <integer name="workspace_tuoch">0</integer>
+    
+    <!-- 桌面背景 -->
+    <string name="launcher_background">#dddddd</string>
+    
+    <!-- 桌面天气播报时间设置 -->
+    <string name="launcher_weather_speech">7:00</string>
+    
+    <!-- 桌面天气语音播报  1 是打开  0 是关闭 -->
+    <integer name="weather_speech_status">1</integer>
+    
+    <!-- 新闻健康列表是否有显示 banner false不显示/反则 -->
+    <bool name="card_mode">true</bool>
+    
+    <!--launcher 模式选择  1表示默认模式(是四行 )  2 便是豪华模式模式(三行)    3 表示极简模式(三行)-->
+    <integer name="launcher_workspace_mode">2</integer>
+    
+    <!-- 版本选择 1 晨想老人机    2晨想老人机线上版本    3 派信老人机版本  4 这个是凯利通好易用手机-->
+    <integer name="launcher_version">1</integer>
+    
+    <bool name="isTablet">false</bool>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="@dimen/care_margin_normal"
+        android:layout_weight="1.0"
+        android:background="@drawable/care_mms_edit_bg"
+        android:gravity="start"
+        android:hint="@string/care_input_hint"
+        android:textSize="@dimen/care_normal_topbar" />
+
+    <Button
+        android:id="@+id/care_send_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_topbar_height"
+        android:alpha="0.6"
+        android:background="@drawable/care_new_send"
+        android:enabled="false"
+        android:text="@string/care_send"
+        android:textColor="#FFF"
+        android:textSize="@dimen/care_normal_topbar" />
+
+</LinearLayout>

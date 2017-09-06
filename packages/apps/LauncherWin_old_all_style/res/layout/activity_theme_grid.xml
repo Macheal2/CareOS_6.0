@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_below="@+id/topbar"
+        android:layout_above="@+id/lybtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:padding="7dip"
+        android:numColumns="2" >
+    </GridView>
+    <LinearLayout
+        android:id="@+id/lybtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#E5E5E5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1px"
+            android:text="@string/btn_camera"
+            android:background="@drawable/btn_while_bg"
+            android:textSize="26sp"
+            android:layout_weight="1" />
+		
+        <Button
+            android:id="@+id/btn_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1px"
+            android:text="@string/btn_gallery"
+            android:textSize="26sp"
+            android:background="@drawable/btn_while_bg"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

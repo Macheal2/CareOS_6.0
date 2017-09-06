@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="desktop_title_calendar">黄历</string>
+    <string name="app_name">黄历</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="Jump">跳转</string>
+    <string name="today">今天</string>
+    <string name="ganzhiyear">壬辰年</string>
+    <string name="ganzhiday">戊戌月丙寅日</string>
+    <string name="chongsha">冲煞</string>
+    <string name="wuxing">五行</string>
+    <string name="taishen">胎神</string>
+    <string name="number_picker_decrement_button">"减小"</string>
+    <string name="date_time_done">"完成"</string>
+    <string name="date_picker_dialog_title">"设置日期"</string>
+    <string name="date_picker_increment_day_button">"增大日期值"</string>
+    <string name="date_picker_decrement_day_button">"减小日期值"</string>
+    <string name="date_picker_increment_month_button">"增大月份值"</string>
+    <string name="date_picker_decrement_month_button">"减小月份值"</string>
+    <string name="date_picker_increment_year_button">"增大年份值"</string>
+    <string name="date_picker_decrement_year_button">"减小年份值"</string>
+    
+    <string name="menu_title">"启动模式"</string>
+    <string name="menu_moon">"黄历"</string>
+    <string name="menu_detail">"月历"</string>
+    <string name="menu_default">"(默认)"</string>
+</resources>

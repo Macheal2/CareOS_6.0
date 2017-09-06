@@ -1,0 +1,10 @@
+<resources>
+	<dimen name="advanced_padding_right">15dp</dimen>
+	<dimen name="advanced_padding_left">15dp</dimen>
+	<dimen name="simple_padding_right">15dp</dimen>
+	<dimen name="simple_padding_left">15dp</dimen>
+	<dimen name="display_edit_padding_right">23dp</dimen>
+	<dimen name="display_edit_padding_left">23dp</dimen>
+	<dimen name="display_edit_text_formula_top">48dp</dimen>
+	<dimen name="button_style_textsize">32.5dp</dimen>
+</resources>

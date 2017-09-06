@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<string-array name="CommonTestStrings">
+		<item>T card</item>
+		<item>Check UIM</item>
+		<item>Back camera testing</item>
+		<item>Charge testing</item>
+		<item>Sleep/Wake</item>
+		<item>LED testing</item>
+		<item>Microphone loop testing</item>
+		<item>Headset testing</item>
+		<item>Keyboard testing</item>
+		<item>Gravity sensor</item>
+		<item>Geomagnetic sensor</item>
+		<item>WLAN testing</item>
+		<item>BT testing</item>
+		<item>LCD testing</item>
+		<item>Flash light testing</item>
+		<item>Temperature</item>
+		<item>GPS testing</item>
+		<item>FM testing</item>
+		<item>Restore factory settings</item>
+		<item>Version</item>
+		<item>Light sensor</item>
+		<item>Proximity sensor</item>
+		<item>SIM card,Memory card,Vibration and Speaker</item>
+		<item>Front camera testing</item>
+		<item>Electronic compass</item>
+		<item>Compass</item>
+		<item>TP testing</item>
+		<item>Keyboard light testing</item>
+		<item>Touch panel</item>
+		<item>Backlight testing</item>
+		<item>REC testing</item>
+		<item>Compass testing</item>
+		<item>Vibration testing</item>
+		<item>Speaker testing</item>
+		<item>Hall element</item>
+		<item>Call flash testing</item>
+		<item>Dual Microphone testing</item>
+		<item>Dual speaker testing</item>
+		<item>Barometer testing</item>
+		<item>OTG testing</item>
+		<item>HDMI testing</item>
+		<item>Gyroscope testing</item>
+        	<item>Fingerprint identification</item>
+       <!-- dengying add heart rate -->
+       <item>Heart rate sensor</item>
+	</string-array>
+
+	<string-array name="MainTest">
+		<!-- <item>PCBA testing</item> -->
+		<item>Machine testing</item>
+		<item>Version</item>
+		<item>Battery information</item>
+	</string-array>
+
+	<string-array name="PCBATest">
+		<item>PCBA auto testing</item>
+		<item>PCBA sensor auto testing</item>
+		<item>PCBA item testing</item>
+	</string-array>
+
+	<string-array name="MachineTest">
+		<item>Machine auto testing</item>
+		<item>Machine sensor auto testing</item>
+		<item>Machine item testing</item>
+		<item>WBG testing</item>
+		<item>Run In testing</item>
+	</string-array>
+
+	<string-array name="PCBAAutoTestStrings">
+		<item>Version</item>
+		<item>SIM card,Memory card,Vibration and Speaker</item>
+		<item>LCD testing</item>
+		<!--item>Sleep/Wake</item>-->
+		<item>Backlight testing</item>
+		<item>Camera</item>
+		<item>Flash light testing</item>
+		<item>Microphone loop testing</item>
+		<item>Headset testing</item>
+		<item>Keyboard testing</item>
+		<item>Charge testing</item>
+		<!--<item>Front camera testing</item> 
+        	<item>FM testing</item> 
+        	<item>WLAN testing</item> 
+        	<item>BT testing</item>  
+        	<item>TP testing</item> 
+        	<item>Touch panel</item> -->
+	</string-array>
+
+	<string-array name="PCBAItemStrings">
+		<item>Gravity sensor</item>
+		<item>Proximity sensor</item>
+		<item>Light sensor</item>
+		<item>Version</item>
+		<item>LCD testing</item>
+		<item>Flash light testing</item>
+		<item>FM testing</item>
+		<!--
+		<item>WLAN testing</item>
+		<item>BT testing</item>
+		-->
+		<item>GPS testing</item>
+		<item>T card</item>
+		<item>Check UIM</item>
+		<item>Back camera testing</item>
+		<item>Front camera testing</item>
+		<item>Backlight testing</item>
+		<item>Charge testing</item>
+		<!--item>Sleep/Wake</item>-->
+		<item>Vibration testing</item>
+		<item>Microphone loop testing</item>
+		<item>Headset testing</item>
+		<item>Keyboard testing</item>
+		<item>Restore factory settings</item>
+		<item>Touch panel</item>
+		<item>TP testing</item>
+		<!--<item>Keyboard light testing</item>-->
+	</string-array>
+	
+	<string-array name="MachineItemStrings">
+		<item>Gravity sensor</item>
+		<item>Proximity sensor</item>
+		<item>Light sensor</item>
+		<!--<item>Geomagnetic sensor</item>-->
+        	<!--<item>Barometer testing</item>-->
+		<item>Version</item>
+		<item>LCD testing</item>
+		<item>TP testing</item>
+		<!--<item>Touch panel</item>-->
+		<!--<item>Keyboard light testing</item>-->
+		<item>Backlight testing</item>   
+		<item>Flash light testing</item>
+        	<item>LED testing</item>
+		<item>REC testing</item>
+        	<item>Speaker testing</item>
+        	<item>Microphone loop testing</item>
+		<item>Vibration testing</item>
+        	<item>Headset testing</item>
+		<item>Keyboard testing</item>
+		<item>Back camera testing</item>
+		<item>Front camera testing</item>
+		<item>FM testing</item>
+		<item>WLAN testing</item>
+		<item>BT testing</item>
+		<item>GPS testing</item>
+		<item>T card</item>
+		<item>Check UIM</item>
+		<item>Charge testing</item>
+		<!--item>Sleep/Wake</item>-->		             
+        	<!--<item>Restore factory settings</item>-->
+        	<!--<item>Fingerprint identification</item>-->
+       <!-- dengying add heart rate --> 
+       <item>Heart rate sensor</item>     	
+	</string-array>
+
+	<string-array name="MachineAutoTestStrings">
+		<item>Gravity sensor</item>
+		<item>Proximity sensor</item>
+		<item>Light sensor</item>
+       <!-- dengying add heart rate --> 
+       <item>Heart rate sensor</item>  
+		<!--<item>Geomagnetic sensor</item>-->
+        	<!--<item>Barometer testing</item>-->
+		<item>Version</item>
+		<item>LCD testing</item>
+		<item>TP testing</item>
+		<!--<item>Touch panel</item>-->
+		<!--<item>Keyboard light testing</item>-->
+		<item>Backlight testing</item>   
+		<item>Flash light testing</item>
+        	<item>LED testing</item>
+		<item>REC testing</item>
+        	<item>Speaker testing</item>
+        	<item>Microphone loop testing</item>
+		<item>Vibration testing</item>
+        	<item>Headset testing</item>
+		<item>Keyboard testing</item>
+		<item>Back camera testing</item>
+		<item>Front camera testing</item>
+		<item>FM testing</item>
+		<item>WLAN testing</item>
+		<item>BT testing</item>
+		<item>GPS testing</item>
+		<item>T card</item>
+		<item>Check UIM</item>
+		<item>Charge testing</item>
+		<!--item>Sleep/Wake</item>-->		             
+        	<!--<item>Restore factory settings</item>-->
+        	<!--<item>Fingerprint identification</item>-->
+	</string-array>
+
+	<string-array name="MachineSensorTestStrings">
+		<item>Gravity sensor</item>
+		<!--<item>Compass testing</item>-->
+		<item>Proximity sensor</item>
+		<item>Light sensor</item>
+        	<!--<item>Barometer testing</item>-->
+       <!-- dengying add heart rate --> 
+       <item>Heart rate sensor</item>          	
+	</string-array>
+
+	<string-array name="PCBASensorTestStrings">
+		<item>Gravity sensor</item>
+		<item>Geomagnetic sensor</item>
+		<item>Proximity sensor</item>
+		<item>Light sensor</item>
+	</string-array>
+
+	<string-array name="WBGTestStrings">
+		<item>WLAN testing</item>
+		<item>BT testing</item>
+		<item>GPS testing</item>
+	</string-array>
+
+	<string-array name="DeputyTestString">
+		<item>Microphone loop testing</item>
+		<item>Speaker testing</item>
+		<item>Vibration testing</item>
+	</string-array>
+
+	<string-array name="TestKeys">
+		<item>volume up</item>
+		<item>volume down</item>
+                <item>menu</item>	
+                <item>back</item>	
+                <item>home</item>
+                <item>torch</item><!--add by zxy for torch-->
+	</string-array>
+
+	<string-array name="AllKeys">
+		<!--<item>camera</item>-->
+		<item>volume up</item>
+		<item>volume down</item>
+		<item>menu</item>
+		<item>back</item>
+		<item>home</item>
+		<!--<item>search</item>-->
+		<!--<item>earPhone</item>-->
+                <item>torch</item><!--add by zxy for torch-->
+	</string-array>
+
+	<string-array name="runin_diruction">
+		<item>4</item>
+		<item>8</item>
+		<item>12</item>
+		<item>16</item>
+		<item>24</item>
+		<item>48</item>
+	</string-array>
+
+
+</resources>

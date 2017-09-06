@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#ffffffff</color>
+    <color name="clock_analog_silver_monthday_text_color">#ff000000</color>
+    <color name="clock_analog_blue_monthday_text_color">#ff1e4e8d</color>
+</resources>

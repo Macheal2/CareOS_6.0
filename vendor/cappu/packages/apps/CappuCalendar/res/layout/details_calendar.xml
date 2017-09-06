@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/huangli_bg"
+        android:orientation="vertical"
+        android:paddingBottom="40.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="15.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="40.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/LunarDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffc20d20"
+                    android:textSize="48.0sp" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/LunarDay"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Lunar"
+                        style="@style/huangli_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/Week"
+                        style="@style/huangli_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/LunarDay"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/dizhi"
+                        style="@style/huangli_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ganzhiyear"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dizhi_month_day"
+                        style="@style/huangli_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ganzhiday"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/jieqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#ffc20d20"
+            android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:background="@drawable/huangli_grid"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="7"
+                android:weightSum="2"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/Lunar_yi"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5.0dip"
+                    android:drawablePadding="4.0dip"
+                    android:drawableTop="@drawable/huangli_yi"
+                    android:gravity="top|left"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:textColor="@color/green"
+                    android:textSize="16.0sp"
+                    android:ellipsize="marquee" 
+                    android:maxLines="8"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true" 
+                    android:marqueeRepeatLimit="marquee_forever" />
+
+                <ImageView
+                    android:layout_width="2.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/huangli_line" />
+
+                <TextView
+                    android:id="@+id/Lunar_ji"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5.0dip"
+                    android:drawablePadding="4.0dip"
+                    android:drawableTop="@drawable/huangli_ji"
+                    android:gravity="top|left"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:textColor="@color/lunar_orange"
+                    android:textSize="16.0sp" 
+                    android:ellipsize="marquee" 
+                    android:maxLines="8"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true" 
+                    android:marqueeRepeatLimit="marquee_forever"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@color/huangli_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <TextView
+                    style="@style/huangli_title_style"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wuxing"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/Wuxing"
+                    style="@style/huangli_des_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/huangli_line" />
+                        
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <TextView
+                    style="@style/huangli_title_style"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chongsha"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/Ghosts"
+                    style="@style/huangli_des_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/huangli_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/huangli_title_style"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taishen"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/Tai_shen"
+                    style="@style/huangli_des_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:textSize="16.0sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

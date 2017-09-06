@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">CleanerManager</string>
+    <string name="str_cache_title">cleaner cache</string>
+    <string name="str_pic_title">cleaner photo</string>
+    <string name="str_wechat_title">cleaner wechat</string>
+    <string name="str_soft_title">cleaner software</string>
+    <string name="str_garbage">garbage</string>
+    <string name="str_finish">search complete</string>
+    <string name="str_clean_package">Package</string>
+    <string name="str_clean_wechat">wechat</string>
+    <string name="str_clean_ad_folder">Garbage folder</string>
+    <string name="str_cache_info">获取缓存信息</string>
+    <string name="str_cache_clear">清理缓存</string>
+    <string name="cleaned">cleaned (<xliff:g id="memory">%1$s</xliff:g>)</string>
+    <string name="str_optimization_cancel">cancel</string>
+    <string name="str_optimization_scheme">start</string>
+    <string name="str_clean">clean</string>
+    <string name="str_phone_cache">phone cache</string>
+    <string name="str_scanning">Scanning:</string>
+    <string name="str_health_great">That\'s great</string>
+    <string name="str_health_repeat">习惯很好哦！已经很干净啦，请稍后再试！</string>
+    <string name="str_clearing">clearing</string>
+    <string name="version">version</string>
+    <string name="update_version">update version</string>
+    <string name="copyright_notice">"上海卡布奇诺电子科技有限公司\u3000版权所有\nCopyright&#160;&#160;©&#160;&#160;2016&#160;&#160;Cappu.All&#160;Rights&#160;Reserved."</string>
+    <string name="about_us">About us</string>
+    <string name="update_dialog_content">检测到有新版本，是否更新？</string>
+    <string name="ok_action">确定</string>
+    <string name="cancel_action">取消</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="double_pressed">再次点击退出应用</string>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+
+    
+         <style name="Theme"  parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        
+        <!-- 下面这两个属性为true时状态栏透明可以动态改变颜色   有个缺陷就是activity顶部与状态栏重合   这两个属性必须做android 4.4以后才能使用-->
+         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        
+        <!-- <item name="android:colorPrimaryDark">#009dde</item> -->
+        <item name="android:windowNoTitle">true</item> 
+        
+       <!--  <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+
+</resources>

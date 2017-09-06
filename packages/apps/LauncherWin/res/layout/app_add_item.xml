@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="?attr/item_icon_width"
+        android:layout_height="?attr/item_icon_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" 
+        android:layout_marginLeft="10dp"
+         />
+    <!-- android:src="@drawable/ic_launcher" -->
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true" 
+        android:textColor="?attr/item_font_color"
+        android:textSize="?attr/item_font_size"
+        android:layout_marginLeft="10dp"
+         />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+		android:layout_centerVertical="true"  
+		android:layout_alignParentRight="true" 
+		android:layout_marginRight="5dp"
+		android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/butt_add"/>
+</RelativeLayout>

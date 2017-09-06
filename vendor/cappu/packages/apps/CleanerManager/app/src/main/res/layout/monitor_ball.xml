@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:id="@+id/wave_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/img_monitor_bg">
+
+        <com.cappu.cleaner.ui.ArcProgress
+            android:id="@+id/arc_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            custom:arc_max="100"
+            custom:arc_progress="100"
+            custom:arc_stroke_width="8dip"
+            custom:arc_text_color="#ffffff"
+            custom:arc_text_size="62sp" />
+
+        <com.cappu.cleaner.ui.WaveView
+            android:id="@+id/wave_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/view_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_monitor_scanning" />
+
+        <ImageView
+            android:id="@+id/health_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_monitor_finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/wave_tool"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dip">
+
+        <TextView
+            android:id="@+id/monitor_big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:paddingEnd="10dip"
+            android:paddingStart="10dip"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/monitor_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_main_button_bg"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="24dip"
+                android:paddingRight="24dip"
+                android:paddingTop="8dip"
+                android:text="@string/str_optimization_scheme"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/monitor_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxLines="1"
+                android:paddingEnd="10dip"
+                android:paddingStart="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

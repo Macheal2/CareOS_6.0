@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bird_hall_time_datevert_screen_top_padding">40.0dip</dimen>
+    <dimen name="bird_hall_time_screen_top_padding">90.0dip</dimen>
+    <dimen name="bird_hall_time_screen_horz_padding">20.0dip</dimen>
+    <dimen name="bird_hall_time_unread_top_margin">30.0dip</dimen>
+    <dimen name="bird_hall_time_unread_right_margin">20.0dip</dimen>
+    <dimen name="bird_hall_time_date_top_margin">10.0dip</dimen>
+    <dimen name="bird_hall_time_date_horz_padding">5.0dip</dimen>
+    <dimen name="bird_image_clock_number_height">54.0dip</dimen>
+    <dimen name="bird_image_clock_number_width">40.0dip</dimen>
+    <dimen name="bird_image_clock_dot_width">28.0dip</dimen>
+    <dimen name="bird_analog_clock_monthday_text_size">13.0sp</dimen>
+    <dimen name="bird_circular_clock_digital_top_padding">30.0dip</dimen>
+    <dimen name="bird_circular_window_top_padding">30.0dip</dimen>
+    <dimen name="bird_circular_window_diameter">260.0dip</dimen>
+    <dimen name="bird_circular_unread_top_padding">64.0dip</dimen>
+</resources>

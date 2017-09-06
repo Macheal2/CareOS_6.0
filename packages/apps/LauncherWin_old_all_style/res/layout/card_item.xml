@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/lunar_1"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+        
+        <ImageView
+            android:id="@+id/reading_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5sp"
+            android:src="@drawable/automatic_reading_button"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/card_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/titile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:contentDescription="@null"
+                android:background="#FFFFFF"
+                 />
+            <!-- android:contentDescription="@null" android:background="#c8c8c8" -->
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/card_title_bg_black"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/activity_not_found"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <com.cappu.launcherwin.netinfo.BobyListView
+            android:id="@+id/boby_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:divider="#c8c8c8"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none" />
+    </LinearLayout>
+
+</LinearLayout>

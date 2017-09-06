@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+<!--     <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_frame_title" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:maxLines="1"
+            android:text="@string/quickset_textsize"
+            android:textColor="@android:color/white"
+            android:textSize="35.0sp" />
+    </FrameLayout>
+ -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/favicons"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/favorites" />
+                <TextView
+                    android:id="@+id/favicons_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/favicons"
+                    android:textColor="@android:color/black"
+                    android:textSize="33.0sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+
+            <LinearLayout
+                android:id="@+id/delete"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@android:color/black"
+                    android:textSize="33.0sp" />
+                
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+            
+            <LinearLayout
+                android:id="@+id/shar"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/net_shar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/net_shar"
+                    android:textColor="@android:color/black"
+                    android:textSize="33.0sp" />
+                
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_a_2px" />
+            <!--modify by even 20161227-->
+            <LinearLayout
+                android:id="@+id/faviconslist"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+
+                android:gravity="center"
+                android:background="@drawable/listview_listitem_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/favorites_list" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/faviconslist"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="33.0sp" />
+                
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+
+                android:background="@drawable/line_a_2px" />
+        </LinearLayout>
+    </ScrollView>
+
+<!--     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/i99_dialog_bottom_bg" /> -->
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="care_normal_topbar">28sp</dimen>
+    <dimen name="care_normal_topbar_sub">16sp</dimen>
+    <dimen name="care_topbar_height">66dp</dimen>
+    <dimen name="care_option_dialog_item_height">58dp</dimen>
+
+    <dimen name="detail_backdrop_height">240dp</dimen>
+    <dimen name="fab_margin">6dp</dimen>
+    <dimen name="card_margin">0dp</dimen>
+
+    <dimen name="big_title_size">60sp</dimen>
+    <dimen name="mid_title_size">40sp</dimen>
+    <dimen name="small_title_size">20sp</dimen>
+    <dimen name="big_sub_size">40sp</dimen>
+    <dimen name="mid_sub_size">25sp</dimen>
+    <dimen name="small_sub_size">10sp</dimen>
+
+    <dimen name="notification_icon_margin_bottom">34dip</dimen>
+    <dimen name="notification_text_margin_bottom">4dip</dimen>
+    <dimen name="notification_firsh_text_size">20sp</dimen>
+    <dimen name="notification_second_text_size">16sp</dimen>
+
+    <dimen name="expandable_title_height">50dp</dimen>
+    <dimen name="expandable_title_margin">8dip</dimen>
+    <dimen name="expandable_title_text_padding">15dip</dimen>
+    <dimen name="expandable_title_text_size">22sp</dimen>
+
+    <dimen name="expandable_list_margin_top">4dip</dimen>
+    <dimen name="expandable_list_margin_bottom">10dip</dimen>
+    <dimen name="expandable_list_item_icon_margin_bottom">7dip</dimen>
+    <dimen name="expandable_list_item_main_title_text_size">16sp</dimen>
+    <dimen name="expandable_list_item_sub_title_text_size">16sp</dimen>
+    <dimen name="expandable_list_item_right_text_size">20sp</dimen>
+</resources>

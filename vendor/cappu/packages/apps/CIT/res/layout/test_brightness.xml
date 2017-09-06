@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/white">
+	<TextView android:id="@+id/MyBrightness" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="32dip"
+		android:textColor="#FF0000" />
+
+	<SeekBar android:layout_gravity="center_horizontal" android:id="@+id/BrightnessSeekBar"
+		android:paddingLeft="5.0dip" android:paddingRight="5.0dip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+
+		android:max="255">
+	</SeekBar>
+	<!-- <include android:id="@id/resultbutton" layout="@layout/button" /> -->
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_weight="1" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</LinearLayout>  

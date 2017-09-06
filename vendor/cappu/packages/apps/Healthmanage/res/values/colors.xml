@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <!-- Black -->
+    <color name="black">#ff000000</color>
+    <!-- White -->
+    <color name="white">#ffffffff</color>
+    <color name="color_gray">#cccccc</color>
+    <!-- A transparent black -->
+    <color name="transparent_black">#aa000000</color>
+    <color name="health_color">#00A9B4</color>
+    <color name="huayandan_color">#009EDE</color>
+    
+    <color name="drugsteward_main_bg">#F0F0F0</color>
+    <color name="title_bar_text">#FFFFFF</color>
+    
+    <color name="drug_title_bg">#FFEEEEEE</color>
+    <color name="drug_list_bg">#FFFFFFFF</color>
+    <color name="drug_text_bg">#FF6d6d6d</color>
+    
+    <!-- 删除按下时的颜色 -->
+    <color name="delete_press">#3399ff</color>
+    <color name="delete_notpress">#ffffff</color>
+    
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <drawable name="my_edittext_nomal">#00000000</drawable>
+</resources>

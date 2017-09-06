@@ -1,0 +1,38 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background"><!-- 这个是没有下载平静的时候的颜色值 -->
+        <shape>
+            <corners android:radius="14px" />
+            <gradient
+                android:angle="270"
+                android:centerY="0.75"
+                android:endColor="#e2e2e2"
+                android:startColor="#b2b2b2" />
+        </shape>
+    </item>
+ 
+    <item android:id="@android:id/secondaryProgress"><!-- 这个是进度条的背景色 -->
+        <clip>
+            <shape>
+                <corners android:radius="14px" />
+                <gradient
+                    android:angle="270"
+                    android:centerY="0.75"
+                    android:endColor="#c5c5c5"
+                    android:startColor="#c5c5c5" />
+            </shape>
+        </clip>
+    </item>
+ 
+    <item android:id="@android:id/progress"><!-- 这个是进度条的颜色 -->
+        <clip>
+            <shape>
+                <corners android:radius="14px" />
+                <gradient
+                    android:angle="270"
+                    android:centerY="0.75"
+                    android:endColor="#50a53f"
+                    android:startColor="#72ce62" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

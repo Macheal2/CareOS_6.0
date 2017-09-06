@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="@dimen/preview_view_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <ImageView 
+        android:id="@+id/framingrect"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_gravity="center"
+        android:background="@drawable/qrframe"/>
+    <com.cappu.drugsteward.example.xing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/camera_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/scannerview"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="@string/back"
+            android:background="@color/transparent"
+            android:textSize="@dimen/textsize"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+</FrameLayout>

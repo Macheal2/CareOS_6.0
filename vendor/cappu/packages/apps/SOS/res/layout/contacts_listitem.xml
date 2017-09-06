@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingLeft="5dip"
+    android:paddingRight="12dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="2dip"
+        android:paddingTop="6dip" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:paddingRight="2dip"
+        android:paddingTop="6dip"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"        
+        android:layout_below="@+id/name"
+        android:layout_marginRight="36dip"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"        
+        android:maxLines="2"
+        android:paddingRight="2dip" />
+    
+    <CheckBox
+        android:id="@+id/ck"
+        android:layout_width="wrap_content"
+        android:button="@drawable/care_checked_bg"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dip"
+        android:focusable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+        <include layout="@layout/titlelayout_style_cancel_title_option" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:dividerHeight="1px"
+            android:divider="#ffd4d4d4"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+             >
+        </ListView>
+
+        <com.cappu.widget.CareButton
+            android:id="@+id/addapp_button"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:drawableLeft="@drawable/icon_add"
+            android:layout_width="match_parent"
+            android:layout_height="66dip"
+            android:visibility="gone"
+            android:text="@string/more"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

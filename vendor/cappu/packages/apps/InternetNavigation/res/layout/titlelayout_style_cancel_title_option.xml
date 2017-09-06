@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ruyiui_tobbar_layout" >
+
+    <ImageButton
+        android:id="@+id/cancel"
+        style="@style/ruyiui_tobbar_imagebutton" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/topbar_middle"
+        android:text="@string/desktop_title_browser" />
+
+    <ImageButton
+        android:id="@+id/option"
+        style="@style/ruyiui_tobbar_imagebutton_right"
+        android:src="@drawable/icon_option" />
+
+</RelativeLayout>

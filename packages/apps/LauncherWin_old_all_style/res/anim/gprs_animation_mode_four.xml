@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/icon_3g_off_mode_4"
+        android:duration="250"/>
+    <item
+        android:drawable="@drawable/icon_3g_1_mode_4"
+        android:duration="250"/>
+    <item
+        android:drawable="@drawable/icon_3g_2_mode_4"
+        android:duration="250"/>
+    <item
+        android:drawable="@drawable/icon_3g_3_mode_4"
+        android:duration="250"/>
+    <item
+        android:drawable="@drawable/icon_3g_on_mode_4"
+        android:duration="250"/>
+
+</animation-list>

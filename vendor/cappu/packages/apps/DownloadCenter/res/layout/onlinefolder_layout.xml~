@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.magcomm"
+    android:id="@id/uu_folder_main_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activication_bg_color"
+    android:orientation="vertical" >
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:rightImage="@drawable/im_main_loadding"
+        care:rightVisibility="invisible" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar"
+        android:divider="@null"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+    
+    <LinearLayout
+        android:id="@+id/list_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal" >
+        
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/notification_icon_margin_bottom"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topbar"
+            android:textColor="@color/activication_notification_first_text"
+            android:textSize="@dimen/notification_firsh_text_size"
+            android:layout_marginBottom="@dimen/notification_text_margin_bottom" />
+
+        <TextView
+            android:id="@+id/empty_text_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topbar"
+            android:textColor="@color/activication_notification_second_text"
+            android:textSize="@dimen/notification_second_text_size"
+            android:layout_marginBottom="@dimen/notification_text_margin_bottom" />
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/notification_buttom_min_width"
+            android:minHeight="@dimen/notification_buttom_min_height"
+            android:textSize="@dimen/notification_buttom_text_size"
+            android:background="@drawable/btn_notification_bg"
+            android:layout_marginTop="@dimen/notification_buttom_margin_top"
+            android:layout_marginBottom="@dimen/notification_buttom_margin_bottom" />
+        
+        <Button
+            android:id="@+id/button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/notification_buttom_min_width"
+            android:minHeight="@dimen/notification_buttom_min_height"
+            android:textSize="@dimen/notification_buttom_text_size"
+            android:background="@drawable/btn_notification_bg" />
+</LinearLayout>
+
+</RelativeLayout>

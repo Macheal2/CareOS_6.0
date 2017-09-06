@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Speech Setting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Speech Settings</string>
+    
+    <string name="pu_tong_hua">Mandarin</string>
+    <string name="yue_yu">Cantonese</string>
+    <string name="dong_bei_hua">Northeast</string>
+    <string name="he_nan_hua">Henan</string>
+    <string name="hu_nan_hua">Hunan</string>
+    <string name="si_chuan_hua">Sichuan</string>
+    <string name="tai_wan_hua">Taiwan</string>
+    <string name="english">English</string>
+    <string name="logo">Cappu,endless love</string>
+    <string name="confirm_title">Notice</string>
+    <string name="confirm_message">Speech Setting changed, save it?</string>
+</resources>

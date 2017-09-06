@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inventory_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/inventory_top"
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_bg_color" >
+
+        <TextView
+            android:id="@+id/inventory_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/inventory_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/song_Batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawableLeft="@drawable/inventory_edit"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/divider_h"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:orientation="horizontal"
+        android:layout_below="@id/inventory_top"
+        android:background="@color/text_bg_color" />
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/divider_h" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/touchInterceptor_list_divider"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            android:textSize="18sp" />
+    
+
+    <RelativeLayout
+        android:id="@+id/inventory_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        >
+
+        <include layout="@layout/nowplaying" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

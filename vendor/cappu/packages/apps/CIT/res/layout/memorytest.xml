@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_centerInParent="true"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		>
+		
+				
+	<TextView 
+	android:id="@+id/tv_memory_test"
+		android:text="@string/memory_test" 
+		android:textSize="30.0dip" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		 />
+	<TextView 
+		android:id="@+id/tv_cycle_times"
+		android:text="@string/cycle_times" 
+		android:layout_width="match_parent"
+		android:textSize="25.0dip" 	
+		android:layout_height="wrap_content"
+		 />
+	<TextView 
+		android:id="@+id/tv_test_result"
+		android:text="@string/memory_test_result" 
+		android:textSize="25.0dip" 	
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		 />
+	</LinearLayout>
+

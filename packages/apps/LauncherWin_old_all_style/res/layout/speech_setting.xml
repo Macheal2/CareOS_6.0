@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EEE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+            android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ruyi_setting_margin_top" >
+			<!-- 桌面菜单播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/launcher_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/launcher_speech"
+                care:item_type="sw"
+                care:item_style="top"
+                />
+			<!-- 信息播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/mms_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/mms_speech"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            <!-- 天气播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/weather_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/weather_speech"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            <!--added by yzs for talktime begin -->
+            <!-- 整点播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/talktime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/talktime_speech"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            <!--added by yzs for talktime end -->
+             <!-- 拨号盘播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/dialpad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/dialpad_speech"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+			<!-- 来电播报 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/contacts_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/contacts_speech"
+                care:item_type="sw"
+                care:item_style="bottom"
+                />
+        </LinearLayout>
+
+          
+      <!--zhouhua by xunfei 20170223-->
+        <RelativeLayout
+            android:id="@+id/local_speech"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ruyi_setting_item_height"
+            android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+            android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+            android:layout_marginTop="@dimen/ruyi_setting_margin_left"
+            android:background="@drawable/bg_selector_top" >  
+
+               <TextView
+                    style="@style/ruyisetting_info_sytle"
+                    android:text="@string/local_speech_tital" />
+
+                <RelativeLayout style="@style/ruyisetting_rightlayout_sytle" >
+
+                   
+                </RelativeLayout>
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/care_div_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/dividing_h" />
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/xun_fei_hint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ruyi_setting_item_height"
+            android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+            android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/bg_selector_bottom" >
+
+            <TextView
+                    style="@style/ruyisetting_info_sytle"
+                    android:text="@string/xun_fei_hint" 
+                    android:textSize="18dip"
+                  android:layout_gravity="center"
+                      />
+
+                <RelativeLayout style="@style/ruyisetting_rightlayout_sytle" >
+
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+     <!--zhouhua by xunfei 20170223-->
+
+    </LinearLayout>
+
+</LinearLayout>

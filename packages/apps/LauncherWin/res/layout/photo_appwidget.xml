@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.cappu.launcherwin.lockscreen.PhotoWidgetView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5px"
+        android:scaleType="fitXY" >
+        <!-- android:background="@drawable/photo_widget_view" -->
+
+<!--         <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:layout_marginTop="48px"
+            android:src="@drawable/photo_widget_view_bg" /> -->
+    </com.cappu.launcherwin.lockscreen.PhotoWidgetView>
+
+</LinearLayout>

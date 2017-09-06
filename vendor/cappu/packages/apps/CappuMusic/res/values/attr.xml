@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BladeView">
+        <attr name="promptAnimationDuration" format="integer"></attr>
+        <attr name="bladeIndicatorWidth" format="dimension"></attr>
+        <attr name="bladeIndicatorHeight" format="dimension"></attr>
+        <attr name="promptHorzOffset" format="dimension"></attr>
+        <attr name="promptVertOffset" format="dimension">"145dip"</attr>
+        <attr name="sectionFontSize" format="dimension"></attr>
+        <attr name="fullSectionsId" format="reference"></attr>
+        <attr name="replacedSectionsId" format="reference">"@+array/blade_indicator_tops"</attr>
+        <attr name="sectionBaselinesId" format="reference">"@+array/blade_indicator_tops"</attr>
+        <attr name="bladeIndicator" format="reference"></attr>
+        <attr name="indicatorTopsId" format="reference">"@+array/blade_indicator_tops"</attr>
+        <attr name="enableSectionColor" format="color">"#000000"</attr>
+        <attr name="disableSectionColor" format="color">"#a5a5a5"</attr>
+        <attr name="enablePromptColor" format="color">"#a5a5a5"</attr>
+        <attr name="disablePromptColor" format="color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="Panel">
+        <!-- Defines panel animation duration in ms. -->
+        <attr name="animationDuration" format="integer" />
+        <!-- Defines panel position on the screen. -->
+        <attr name="position">
+            <!-- Panel placed at top of the screen. -->
+            <enum name="top" value="0" />
+            <!-- Panel placed at bottom of the screen. -->
+            <enum name="bottom" value="1" />
+            <!-- Panel placed at left of the screen. -->
+            <enum name="left" value="2" />
+            <!-- Panel placed at right of the screen. -->
+            <enum name="right" value="3" />
+        </attr>
+        <!-- Identifier for the child that represents the panel's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the panel's content. -->
+        <attr name="content" format="reference" />
+        <!-- Defines if flying gesture forces linear interpolator in animation. -->
+        <attr name="linearFlying" format="boolean" />
+        <!-- Defines size relative to parent (must be in form: nn%p). -->
+        <attr name="weight" format="fraction" />
+        <!-- Defines opened handle (drawable/color). -->
+        <attr name="openedHandle" format="reference|color" />
+        <!-- Defines closed handle (drawable/color). -->
+        <attr name="closedHandle" format="reference|color" />
+    </declare-styleable>
+    
+    <!-- The preferred TextAppearance for the primary text of list items. -->
+    <attr name="textAppearanceListItem" format="reference" />
+    <!-- The preferred TextAppearance for the primary text of small list items. -->
+    <attr name="textAppearanceListItemSmall" format="reference" />
+</resources>

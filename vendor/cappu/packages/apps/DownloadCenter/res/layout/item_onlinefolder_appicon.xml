@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/uu_folder_icon_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@id/uu_folder_icon_bg_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:background="@drawable/uu_item_click_selector"
+        android:hapticFeedbackEnabled="true" >
+
+        <ImageView
+            android:id="@id/uu_folder_icon_imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/uu_folder_delete_flag_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uu_folder_delete"
+        android:contentDescription="@null"
+        android:padding="3dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="60.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uu_folder_icon_bg_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-13.0dip"
+        android:background="@drawable/uu_item_click_shadow_selector"
+        android:hapticFeedbackEnabled="true" />
+
+    <TextView
+        android:id="@id/uu_folder_icon_title"
+        style="@style/UUFolder.AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uu_folder_icon_bg_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxEms="5"
+        android:paddingTop="5.0dip"
+        android:singleLine="true" />
+
+</RelativeLayout>

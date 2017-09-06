@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2014 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/mag_incall_screen_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content of the CallCard is either one or two "call info"
+         blocks, depending on whether one or two lines are in use.
+
+         The call_info blocks are stacked vertically inside a CallCard (LinearLayout),
+         each with layout_weight="1".  If only one line is in use (i.e. the
+         common case) then the 2nd call info will be GONE and thus the 1st one
+         will expand to fill the full height of the CallCard. -->
+
+    <!-- Primary "call card" block, for the foreground call. -->
+    <LinearLayout
+        android:id="@+id/primary_call_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="@dimen/primary_call_elevation"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/call_banner_primary_call_container_top_padding"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <include layout="@layout/mag_primary_call_info" />
+        <!--caiji remove for Care_OS-->
+        <!--fragment android:name="com.android.incallui.CallButtonFragment"
+            android:id="@+id/callButtonFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /-->
+
+        <TextView android:id="@+id/connectionServiceMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone"
+            android:padding="6dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+    <!-- M: ALPS01844813 primaryCallPhotoOrVideo id is used for RCSe plugin -->
+    <FrameLayout
+        android:id="@+id/primaryCallPhotoOrVideo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/primary_call_info_container">
+
+        <!-- Contact photo for primary call info -->
+        <!--<ImageView android:id="@+id/photo"
+            android:layout_below="@id/primary_call_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="top|center_horizontal"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no"
+            android:background="@android:color/white"
+            android:src="@drawable/img_no_image_automirrored" /-->
+
+         <!-- manage conference call button -->
+        <include layout="@layout/manage_conference_call_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/primary_call_info_container" />
+
+        <!-- M:[Voice Record]record icon -->
+        <!-- M:fix ALPS02297097,recording icon still at the right
+        side as Arabic,correct layout_gravity from right to end -->
+        <ImageView android:id="@+id/voiceRecorderIcon"
+            android:layout_width="@dimen/incall_record_icon_size"
+            android:layout_height="@dimen/incall_record_icon_size"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dip"
+            android:layout_marginTop="10dip"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- caiji modify for Care_OS -->
+    <!-- Contact photo for primary call info -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mag_incall_photo_margin_bottom"
+        android:gravity="center">
+
+        <ImageView android:id="@+id/photo"
+            android:layout_width="@dimen/mag_incall_photo_size"
+            android:layout_height="@dimen/mag_incall_photo_size"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/contactPhoto"
+            android:src="@drawable/img_no_image_automirrored" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mag_incall_photo_bg_margin_bottom"
+        android:gravity="center">
+
+        <ImageView android:id="@+id/photo_bg"
+            android:layout_width="@dimen/mag_incall_photo_bg_size"
+            android:layout_height="@dimen/mag_incall_photo_bg_size"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mag_incall_photo_bg" />
+    </RelativeLayout>
+
+    <!-- Progress spinner, useful for indicating pending operations such as upgrade to video. -->
+    <FrameLayout
+        android:id="@+id/progressSpinner"
+        android:layout_below="@id/primary_call_info_container"
+        android:background="#63000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+    <!-- Secondary "Call info" block, for the background ("on hold") call. -->
+    <include layout="@layout/mag_other_call_info" />
+
+    <!-- Placeholder for various fragments that are added dynamically underneath the caller info. -->
+    <FrameLayout
+        android:id="@+id/answer_and_dialpad_container"
+        android:layout_above="@+id/inCallButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mag_incall_dialpad_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mag_incall_dialpad_margin_bottom"
+        android:elevation="@dimen/dialpad_elevation" />
+    <!--caiji modify for Care_OS-->
+    <LinearLayout
+        android:id="@+id/inCallButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:background="@color/incall_call_banner_background_color"
+        android:orientation="vertical">
+    
+        <fragment android:name="com.android.incallui.CallButtonFragment"
+            android:id="@+id/callButtonFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            />
+
+        <FrameLayout
+            android:id="@+id/floating_end_call_action_button_container"
+            android:layout_width="@dimen/mag_end_call_floating_action_button_width"
+            android:layout_height="@dimen/end_call_floating_action_button_diameter"
+            android:layout_marginBottom="@dimen/all_call_button_margin_bottom"
+            android:layout_gravity="center_horizontal">
+            <ImageButton android:id="@+id/floating_end_call_action_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mag_end_call_background"
+                android:src="@drawable/mag_fab_ic_end_call"
+                android:scaleType="center"
+                android:contentDescription="@string/onscreenEndCallText"/>
+        </FrameLayout>
+        <include layout="@layout/secondary_call_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/secondary_callerinfo_bottom_margin"/>    
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/incomingCallButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mag_incoming_call_button_area_height"
+        android:layout_alignParentBottom="true" 
+        android:background="@color/incall_call_banner_background_color">
+    
+        <include android:id="@+id/incomingCallAnswer"
+            layout="@layout/mag_incoming_call_button_answer"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mag_incoming_call_button_horizontal_margin"
+            android:layout_width="@dimen/mag_incoming_call_button_width"
+            android:layout_height="@dimen/mag_incoming_call_button_height"/>
+
+        <include android:id="@+id/incomingCallEnd"
+            layout="@layout/mag_incoming_call_button_end"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" 
+            android:layout_marginRight="@dimen/mag_incoming_call_button_horizontal_margin"
+            android:layout_width="@dimen/mag_incoming_call_button_width"
+            android:layout_height="@dimen/mag_incoming_call_button_height"/>
+            
+    </RelativeLayout>
+
+</RelativeLayout>

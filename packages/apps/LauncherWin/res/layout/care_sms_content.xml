@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/care_content_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="true"
+    android:background="@drawable/care_sms_content_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/care_margin_normal"
+        android:padding="@dimen/care_margin_middle"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/care_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#C0000000"
+            android:textSize="@dimen/care_big_item_textsize"/>
+
+        <TextView
+            android:id="@+id/care_data"
+            android:layout_marginTop="@dimen/care_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#BB000000"
+            android:textSize="@dimen/care_text_small"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/care_margin_middle"
+        android:layout_marginRight="@dimen/care_margin_middle"
+        android:layout_marginTop="@dimen/care_margin_normal"
+        android:background="#ff333333"/>
+
+    <TextView
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:textColor="#C0000000"
+        android:clickable="false"
+        android:layout_margin="@dimen/care_margin_normal"
+        android:padding="@dimen/care_margin_normal"
+        android:textSize="@dimen/care_big_item_textsize"
+        android:layout_weight="1.0">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_sms_content_top_height"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/sms_delete"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:textColor="@color/text_color_red"
+            android:text="@string/care_sms_del"
+            android:background="@drawable/care_new_edit"
+            android:textSize="@dimen/care_middle_topbar"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/sms_forward"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:textColor="#FFFFFF"
+            android:text="@string/care_sms_forward"
+            android:background="@drawable/care_new_edit"
+            android:textSize="@dimen/care_middle_topbar"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

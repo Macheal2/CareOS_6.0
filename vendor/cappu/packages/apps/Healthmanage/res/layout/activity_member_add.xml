@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@android:style/Widget.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:rightVisibility="invisible" />
+    
+    <ListView
+        android:id="@+id/exist_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="visible" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/member_add_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/member_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="17sp" />
+
+</LinearLayout>

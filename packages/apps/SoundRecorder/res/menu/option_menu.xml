@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/record_format"
+          android:title="@string/voice_quality"
+          android:visible="false"/>
+    <item android:id="@+id/record_mode"
+          android:title="@string/recording_mode"
+          android:visible="false"/>
+    <item android:id="@+id/record_effect"
+          android:title="@string/recording_effect"
+          android:visible="false"/>
+	<!-- hejianfeng add -->
+    <item android:id="@+id/format_file"
+          android:title="@string/out_format_file"
+          android:visible="false"/>
+</menu>

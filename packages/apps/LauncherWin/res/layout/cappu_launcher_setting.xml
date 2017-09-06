@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+        android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+        android:fadingEdge="none"
+        android:paddingBottom="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ruyi_setting_margin_top"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ruyi_setting_margin_top" >
+
+            <!-- 无线局域网 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/wifi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/Wireless_local_area_network"
+                care:item_icon="@drawable/setting_icon_wifi"
+                care:item_type="more"
+                care:item_style="top"
+                />
+
+            <!-- 手机移动网络 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/gprs_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/Mobile_Internet"
+                care:item_icon="@drawable/setting_gprs_pwd"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+
+            <!-- 移动上网密码 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/gprs_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/gprs_on_pwd_title"
+                care:item_icon="@drawable/setting_icon_phone_3g"
+                care:item_type="more"
+                care:item_style="bottom"
+                />
+            
+            <!-- 文字大小 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/textsize_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                care:item_title="@string/textsize_title"
+                care:item_icon="@drawable/setting_icon_font_size"
+                care:item_type="mulitem"
+                care:item_style="top"
+                />
+            
+            <!-- 这个是主题选择 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/theme_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/theme_select"
+                care:item_icon="@drawable/setting_icon_theme"
+                care:item_type="mulitem"
+                care:item_style="mid"
+                />
+            
+             <!-- 壁纸设置-->
+             <com.cappu.widget.CareSettingItem
+			    android:id="@+id/wallpaper_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/setting_wallpaper"
+                care:item_icon="@drawable/setting_icon_wallpaper"
+                care:item_type="more"
+                care:item_style="mid"
+                />
+			
+            <!--主菜单设置-->
+ 			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/workspace_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/mian_menu_switch"
+                care:item_icon="@drawable/setting_workspace"
+                care:item_type="more"
+                care:item_style="mid"
+                />
+ 			
+ 			  <!--皮套时钟设置-->
+            <com.cappu.widget.CareSettingItem
+                android:id="@+id/clock_style_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/clock_setting"
+                care:item_icon="@drawable/setting_clock"
+                care:item_type="more"
+                care:item_style="bottom"
+                />
+            
+            <!-- 铃声设置 -->
+ 			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/common_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                care:item_title="@string/ring_setting"
+                care:item_icon="@drawable/setting_icon_sound"
+                care:item_type="more"
+                care:item_style="top"
+                />
+
+            <!--低电量提醒 -->
+            <com.cappu.widget.CareSettingItem
+			    android:id="@+id/setting_low_battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/low_battery_worring"
+                care:item_icon="@drawable/setting_low_battery"
+                care:item_type="more"
+                care:item_style="mid"
+                />
+            
+            <!-- 铃声开关 -->
+         <!--   <com.cappu.widget.CareSettingItem
+			    android:id="@+id/bootaudio_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/bootaudio_setting"
+                care:item_icon="@drawable/setting_icon_bootaudio_setting"
+                care:item_type="sw"
+                care:item_style="mid"
+                />-->
+
+            <!-- 语音 -->
+ 			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/voice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/voice"
+                care:item_icon="@drawable/setting_icon_speaker"
+                care:item_type="more"
+                care:item_style="mid"
+                />
+
+            <!--听筒增强 -->
+             <com.cappu.widget.CareSettingItem
+		android:id="@+id/speaker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                care:item_title="@string/speaker"
+                care:item_icon="@drawable/setting_icon_receiver"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            
+            <!--Home键亮屏 -->
+            <com.cappu.widget.CareSettingItem
+			    android:id="@+id/home_key_wake_up_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/home_key_wake_up"
+                care:item_icon="@drawable/setting_icon_home_key_wake_up"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+
+            <!--NotificationLight Switch -->
+            <com.cappu.widget.CareSettingItem
+                android:id="@+id/indicator_light_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/indicator_light"
+                care:item_icon="@drawable/setting_icon_indicator_light"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+
+            
+            <!-- 桌面锁 -->
+ 			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/workspace_lock_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/workspase_lock"
+                care:item_icon="@drawable/setting_icon_workspace_lock"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            
+            <!-- 卡布看护 -->
+ 			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/movement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/movement"
+                care:item_icon="@drawable/setting_icon_movement"
+                care:item_type="more"
+                care:item_style="bottom"
+                />
+            <!-- 关于卡布 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/about_care_os"
+                care:item_icon="@drawable/setting_about_careos"
+                care:item_type="sw"
+                care:item_style="single"
+                />
+
+            <!-- android设置 -->
+             <!--关于手机 by zhouhua-->
+             <com.cappu.widget.CareSettingItem
+			    android:id="@+id/about_phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                care:item_title="@string/about_phone"
+                care:item_icon="@drawable/about_phone_icon_update"
+                care:item_type="more"
+                care:item_style="top"
+                />
+            
+			<!-- 安卓设置 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/android_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/android_system"
+                care:item_icon="@drawable/setting_icon_android"
+                care:item_type="more"
+                care:item_style="bottom"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

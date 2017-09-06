@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/action_settings">
+  
+        <ListPreference
+            android:key="update_style"
+            android:title="@string/update_style"
+            android:dialogTitle="@string/update_style"
+            android:entries="@array/update_style_entries"
+            android:entryValues="@array/update_style_values"
+            android:defaultValue="1"/>
+ 
+        <Preference
+            android:key="start_update"
+            android:title="@string/start_update_time"
+            android:dialogTitle="@string/start_update_time"
+            android:summary="05:00"/>
+ 
+        <Preference
+            android:key="stop_update"
+            android:title="@string/stop_update_time"
+            android:dialogTitle="@string/stop_update_time" 
+            android:summary="20:00"/>
+      
+        <ListPreference
+            android:key="update_interval"
+            android:title="@string/update_interval_time"
+            android:dialogTitle="@string/update_interval_time"
+            android:entries="@array/update_interval_entries"
+            android:entryValues="@array/update_interval_values"
+            android:defaultValue="2"/>
+        
+        <Preference
+            android:key="speech_time"
+            android:title="@string/launcher_speech_time"
+            android:dialogTitle="@string/launcher_speech_time" 
+            android:summary="07:00"/>
+
+</PreferenceScreen>

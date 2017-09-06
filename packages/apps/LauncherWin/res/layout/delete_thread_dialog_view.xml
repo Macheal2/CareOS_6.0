@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      
+    <RelativeLayout
+        android:id="@+id/dialog_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">       
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_title_height"
+            android:background="@drawable/care_dialog_title_bg"
+            android:textSize="20sp"
+            android:textColor="@color/title_color"
+            android:gravity="center"/>
+    </RelativeLayout>
+     
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:textColor="@color/text_color_black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp" />
+
+    <CheckBox android:id="@+id/delete_locked"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/delete_unlocked" />
+
+    <LinearLayout
+       android:layout_width="match_parent" 
+       android:layout_height="@dimen/message_title_height"
+       android:orientation="horizontal"
+       android:background="@drawable/vivo_dialog_bottom_bg"
+       android:visibility="gone">    
+       <Button 
+           android:id="@+id/okcancel_ok"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:minHeight="2dp"
+           android:layout_weight="1.0"
+           android:text="@string/care_delete_ok"
+           android:textSize="20sp"
+           android:layout_marginLeft="6dp"
+           android:layout_marginRight="6dp"
+           android:layout_marginTop="6dp"
+           android:layout_marginBottom="6dp"
+           android:background="@drawable/care_button_bg" />
+       <Button 
+           android:id="@+id/okcancel_cancel"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:minHeight="2dp"
+           android:layout_weight="1.0"
+           android:text="@string/care_delete_cancel"
+           android:textSize="20sp"
+           android:layout_marginRight="6dp"
+           android:layout_marginLeft="6dp"
+           android:layout_marginTop="6dp"
+           android:layout_marginBottom="6dp"
+           android:background="@drawable/care_button_bg" />
+    </LinearLayout>
+</LinearLayout>

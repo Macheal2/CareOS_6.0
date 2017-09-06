@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/resultbutton"
+	android:background="@drawable/white" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/buttonlist"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentBottom="true">
+
+		<Button android:id="@+id/btn_success" android:layout_width="100dip"
+			android:layout_height="50dip" android:text="@string/success"
+			android:clickable="true">
+		</Button>
+		<Button android:id="@+id/btn_fail" android:layout_width="100dip"
+			android:layout_height="50dip" android:text="@string/fail"
+			android:clickable="true">
+		</Button>
+	</LinearLayout>
+</RelativeLayout>
+

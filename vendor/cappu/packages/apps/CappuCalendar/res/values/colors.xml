@@ -1,0 +1,8 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="green">#ff84aa00</color>
+    <color name="huangli_line">#ffe6b58a</color>
+    <color name="lunar_orange">#ffff7700</color>
+    <color name="care_dialog_text_color_disable">#909090</color>
+    <color name="care_dialog_text_color_normal">#303030</color>
+</resources>

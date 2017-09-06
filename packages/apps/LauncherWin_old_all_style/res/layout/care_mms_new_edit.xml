@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icare_sms_main_background_default"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_topbar_height"
+        android:background="@drawable/care_topbar_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/care_margin_normal" >
+
+        <com.cappu.launcherwin.mms.view.RecipientsEditor
+            android:id="@+id/care_recipent_edit"
+            android:inputType="textFilter"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:textSize="@dimen/care_normal_topbar"
+            android:textCursorDrawable="@null"
+            android:textColor="#FFF"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="@string/care_recipent_hint"
+            android:padding="@dimen/care_margin_normal"
+            android:singleLine="true"
+            android:textColorHint="#C0FFFFFF"/>
+
+        <View
+            android:layout_width="@dimen/care_divid_wof_hor_hof_ver"
+            android:layout_height="match_parent"
+            android:background="@drawable/care_topbar_line" />
+
+        <ImageButton
+            android:id="@+id/care_recipent_bt"
+            android:layout_width="@dimen/care_topbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/care_topbar_bg"
+            android:src="@drawable/care_topbar_recipent" />
+    </LinearLayout>
+
+    <include layout="@layout/care_sms_edit_layout" />
+
+</LinearLayout>

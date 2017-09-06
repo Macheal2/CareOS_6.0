@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#ff191919</color>
+    <color name="grid_dark_background">#eb191919</color>
+    <color name="bubble_dark_background">#b2191919</color>
+    <color name="delete_color_filter">#a5ff0000</color>
+    <color name="appwidget_error_color">#ffcccccc</color>
+    <color name="snag_callout_color">#ff444444</color>
+    <color name="gesture_color">#ff0563c1</color>
+    <color name="uncertain_gesture_color">#ff848484</color>
+    <color name="notification">#ffffff00</color>
+    <color name="normal">#ff666666</color>
+    <color name="bg_common">#ffbbbbbb</color>
+    <color name="bg_brown">#ff302215</color>
+    <color name="bg_gray">#ff373737</color>
+    <color name="bg_purple">#ff1f023a</color>
+    <color name="bg_red">#ff3c1212</color>
+    <color name="bg_blue">#ff122031</color>
+    <color name="bg_black">#ff191919</color>
+    <color name="bg_orange">#ff541901</color>
+    <color name="brown">#ff533624</color>
+    <color name="gray">#ff5c5c5c</color>
+    <color name="purple">#ff310060</color>
+    <color name="red">#ff950004</color>
+    <color name="blue">#ff00325f</color>
+    <color name="black">#ff383838</color>
+    <color name="orange">#ffa53000</color>
+    <color name="lunar_orange">#ffff7700</color>
+    <color name="apk_gray">#ffcccccc</color>
+    <color name="text_color_hint_b">#ffbbbbbb</color>
+    <color name="text_color_hint_c">#ffcccccc</color>
+    <color name="white">#ffffffff</color>
+    <color name="listview_top">#ff000000</color>
+    <color name="listview_bottom">#ff999999</color>
+    <color name="item_pressed">#ffcccccc</color>
+    <color name="white_b">#ffbbbbbb</color>
+    <color name="presssed_color">#fffd9e00</color>
+    <color name="magic_flame">#00ffffff</color>
+    <color name="button_text">#ffffffff</color>
+    <color name="translucent_background">#30000000</color>
+    <color name="lock_time_color">#fff0ede8</color>
+    <color name="lock_bg">#ffd9cdbf</color>
+    <color name="lock_nongli_date_color">#ff948274</color>
+    <color name="lock_date_bg_color">#fff2f1ee</color>
+    <color name="lock_date_color">#ff3e2c1e</color>
+    <color name="lock_day_color">#ff3e3128</color>
+    <color name="group_listview_color">#fff0f0f0</color>
+    <color name="friends_list_color">#fff0f0f0</color>
+    <color name="hint">#ff555555</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="disable">#ff666666</color>
+    <color name="color_b">#ffbbbbbb</color>
+    <color name="color_6">#ff666666</color>
+    <color name="color_0">#ff000000</color>
+    <color name="content_bg">#ffe3e3e3</color>
+    <color name="topbar_bg">#ff353535</color>
+    <color name="topbar_line_bg">#ffaa5000</color>
+    <color name="grey_5">#ff939598</color>
+    <color name="baijiaxing_blue">#ff0088cc</color>
+    <color name="symbolbutton_text">#fff59900</color>
+    <color name="ruyiweather_color">#ffffffff</color>
+    <color name="weatherAdd_color">#ffffffff</color>
+    <color name="reflash_color">#ffffffff</color>
+    <color name="weatherDate_color">#ffffffff</color>
+    <color name="today_color">#ffffffff</color>
+    <color name="duoyun_color">#ffffffff</color>
+    <color name="temp_color">#ffffffff</color>
+    <color name="wind_color">#ffffffff</color>
+    <color name="query_color">#ff000000</color>
+    <color name="dialog_title_color">#ffffffff</color>
+    <color name="dialog_replace_color">#ff000000</color>
+    <color name="dialog_remove_color">#ff000000</color>
+    <color name="calldail_editor_color">#ff368200</color>
+    <color name="listview_bottom_hint">#ff555555</color>
+    <color name="color_info">#ff696969</color>
+    <color name="single_red">#ffcf0000</color>
+    <color name="single_blue">#ff0088bc</color>
+    <color name="single_green">#ff398700</color>
+    <color name="color_tips_more">#ff0177bb</color>
+    <color name="unreadMms_number_color">#ffd20000</color>
+    <color name="weather_info">#ffdddddd</color>
+    <color name="btn_black_disable">#ffa5da90</color>
+    <color name="dark">#ff535353</color>
+    <color name="privacy_step_text_next">#ff9daeb5</color>
+    <color name="privacy_forget_normal">#ff8b99ac</color>
+    <color name="privacy_forget_pressed">#ff414142</color>
+    <color name="color_divider_line">#ffc7c7c7</color>
+    <color name="grey_1">#ffdfdfdf</color>
+    <color name="pressed_orange">#ffff7200</color>
+    
+    <color name="transparent">#00000000</color>
+     
+    <color name="about_text_color">#ff555555</color>
+    <color name="about_version_desc_color">#ffffff</color>
+    
+    
+    <!--add by hehangjun for i99 (start)-->
+    <color name="i99_test">#7700ff00</color>
+    <color name="i99_bg">#f5f5f5</color>
+    <color name="i99_line">#d7d7d7</color>
+    <color name="i99_black">#aa000000</color>
+    <color name="i99_gray_normal_color">#f5f5f5</color>
+    <color name="i99_gray_pressed_color">#d4d4d4</color>
+    <color name="i99_gray_text_color">#404040</color>
+    <color name="i99_gray_text_color_2">#707070</color>
+    <color name="i99_gray_more_text_color">#d4d4d4</color>
+    <color name="i99_semipermeable_color">#aa000000</color>
+    <color name="i99_group_family_normal">#4fa3bb</color>
+    <color name="i99_group_family_pressed">#377283</color>
+    <color name="i99_group_relative_normal">#c38dcb</color>
+    <color name="i99_group_relative_pressed">#89638e</color>
+    <color name="i99_group_friend_normal">#d18182</color>
+    <color name="i99_group_friend_pressed">#935b5b</color>
+    <color name="i99_group_community_normal">#538ac3</color>
+    <color name="i99_group_community_pressed">#3a6189</color>
+    <color name="i99_group_recent_normal">#49b25e</color>
+    <color name="i99_group_recent_pressed">#337d42</color>
+    <color name="i99_group_all_normal">#d5a249</color>
+    <color name="i99_group_all_pressed">#967233</color>
+    <color name="i99_dialpad_additional_bg">#d9d9d9</color>
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#33B5E5</color>
+    <!--add by hehangjun for i99 (end)-->
+    
+    <color name="care_text_color">#303030</color>
+    <color name="care_dialog_text_color_normal">#303030</color>
+    <color name="care_dialog_text_color_disable">#909090</color>
+    <color name="huangli_line">#ffe6b58a</color>
+    <color name="green">#ff84aa00</color>
+    
+    <color name="loading_text_color">#707070</color>
+    <color name="empty_text_color">#b8b8b8</color>
+    
+    <color name="title_color">#302e2e</color>
+    <color name="sub_title_color">#606060</color>
+    <color name="list_item_color">#302e2e</color>
+    <color name="list_item_sub_color">#606060</color>
+    <color name="list_item_unread_color">#c11414</color>
+    <color name="list_item_sub_unread_color">#c11414</color>
+    
+    <!-- 天气 -->
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="actionbar_background_start">#CD2626</color>
+    <color name="actionbar_background_end">#EB1818</color>
+    <color name="base_main_bg_color">#fff0f0f0</color>
+    <!-- 天气 end-->
+    
+    <!-- 短信 -->
+    <!-- added by yzs for CareSms begin 20150629 -->
+    <color name="text_color_red">#FFFF0000</color>
+    <!-- added by yzs for CareSms end 20150629 -->
+    <color name="icare_sms_main_background_default">#FFF7F7F7</color>
+    <color name="icare_sms_main_background_blue">#FF00FF00</color>
+    <color name="care_option_dialog_item_color">#595959</color>
+    <color name="care_divide_color">#C0999999</color>
+    <color name="care_button_pressed">#FFD5D5D5</color>
+
+    <color name="care_divider_gray">#C0F8F8F8</color>
+    <color name="care_divider_blue">#C08888AA</color>
+    <color name="care_black">#aa000000</color>
+    <color name="care_gray_text_color">#DD404040</color>
+    <color name="gay_color_light">#797979</color>
+    <color name="message_count_color">#66333333</color>
+    <color name="text_color_black">#ff000000</color>
+    <color name="message_receiver_color">#ff555555</color>
+    <color name="unread_bgcolor">#ffffffff</color>
+    <color name="read_bgcolor">#ffeeeeee</color>
+    <!-- 短信 end-->
+    
+    <color name="phone_info">#fd8c1b</color>
+    
+    <color name="text_bg_color">#e9e8e8</color>
+
+    <!--added by yzs for low battery begin -->
+    <color name="gay_color_dark">#595959</color>
+    <color name="gay_color">#696969</color>
+    <!--added by yzs for low battery end -->
+    <!-- hejianfeng add start -->
+       <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <declare-styleable name="SeekCircle">
+        <attr name="max" format="integer" value="100" />
+        <attr name="progress" format="integer" value="0" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="ringBias" format="float" />
+        <attr name="sectionRatio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CircularRing">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="circleRoundWidth" format="dimension" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleTextColor" format="color" />
+        <attr name="circleNumber" format="integer" />
+        <attr name="circleTextSize" format="dimension" />
+        <attr name="circleColor1" format="color" />
+        <attr name="circleColor2" format="color" />
+        <attr name="circleColor3" format="color" />
+        <attr name="circleColor4" format="color" />
+        <attr name="circleColor5" format="color" />
+    </declare-styleable>
+    <!-- hejianfeng add end -->
+</resources>

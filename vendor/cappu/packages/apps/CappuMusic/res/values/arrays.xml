@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="blade_replaced_sections">
+        <item>#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <integer-array name="blade_section_baselines">
+        <item>33</item>
+        <item>56</item>
+        <item>79</item>
+        <item>102</item>
+        <item>125</item>
+        <item>148</item>
+        <item>171</item>
+        <item>194</item>
+        <item>217</item>
+        <item>240</item>
+        <item>263</item>
+        <item>286</item>
+        <item>309</item>
+        <item>332</item>
+        <item>355</item>
+        <item>378</item>
+        <item>401</item>
+        <item>424</item>
+        <item>447</item>
+        <item>470</item>
+        <item>493</item>
+        <item>516</item>
+        <item>539</item>
+        <item>562</item>
+        <item>585</item>
+        <item>608</item>
+        <item>631</item>
+    </integer-array>
+    <integer-array name="blade_indicator_tops">
+        <item>14</item>
+        <item>37</item>
+        <item>60</item>
+        <item>83</item>
+        <item>106</item>
+        <item>129</item>
+        <item>152</item>
+        <item>175</item>
+        <item>198</item>
+        <item>221</item>
+        <item>244</item>
+        <item>267</item>
+        <item>290</item>
+        <item>313</item>
+        <item>336</item>
+        <item>359</item>
+        <item>382</item>
+        <item>405</item>
+        <item>428</item>
+        <item>451</item>
+        <item>474</item>
+        <item>497</item>
+        <item>520</item>
+        <item>543</item>
+        <item>566</item>
+        <item>589</item>
+        <item>612</item>
+    </integer-array>
+
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="sim.android.mtkcit" android:versionCode="1"
+	android:versionName="1.0" android:sharedUserId="android.uid.system">
+	<!--<uses-sdk android:minSdkVersion="14" />-->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURES" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.DEVICE_POWER" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.HARDWARE_TEST" />
+	<uses-permission android:name="android.permission.INJECT_EVENTS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCAION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:hardwareAccelerated="false">
+	
+	
+	
+		<activity android:label="@string/app_name" android:name="CITActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.DEFAULT" /> 
+				<!--<category android:name="android.intent.category.LAUNCHER" />-->
+			</intent-filter>
+		</activity>
+
+		<receiver android:name=".CITBroadcastReceiver">
+                        <!-- CIT Code-->
+            		<intent-filter>
+                 		<action android:name="android.provider.Telephony.SECRET_CODE" />
+                 		<data android:scheme="android_secret_code" android:host="66" />
+                	 	<data android:scheme="android_secret_code" android:host="33" />
+           		</intent-filter>
+		</receiver>
+       
+		<activity android:label="@string/app_name" android:name=".CITActivity" />
+
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name="DeputyTest"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".PCBAMain"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".AutoTestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".ItemTestActivity"
+			android:screenOrientation="portrait" />
+
+
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".PCBAItems"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".MachineMain"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".MachineItems"
+			android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name" android:name=".WBGAuto"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.KeyTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.Version"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.LCDTest" />
+		<activity android:label="@string/app_name" android:name=".testitem.MotionSenorTest"
+			android:screenOrientation="portrait" />
+		<!-- dengying add heart rate -->
+		<activity android:label="@string/app_name" android:name=".testitem.HeartRateSenor"
+			android:screenOrientation="portrait" />		
+		<activity android:label="@string/app_name" android:name=".testitem.LightSenor"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.MagneticTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.EarPhoneTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.MikeTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.GPSTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.ProximitySenor"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.CompassTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.TouchTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.TPTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.KeylightTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.ReciverLoopback"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.FlashTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.BrightnessTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.RECTest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.OrientationTest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.LEDVibraTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.ChargeTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.SIMSDTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.CameraTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:name=".testitem.ProximityCalibration_tmd2771"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.MultiTouchActivity"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.BatteryInfo"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:name=".testitem.ProximityCalibration_cm3623"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.FMTest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.Wifirssitest"
+			android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/app_name" android:name=".testitem.Bluetoothtest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.VibraTest"
+			android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/app_name" android:name=".testitem.HallTest"
+			android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/app_name" android:name=".testitem.TwinkleTest"
+			android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/app_name" android:name=".testitem.DualMicTest"
+			android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/app_name" android:name=".testitem.DualSpeakerTest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name" android:name=".testitem.BarometerTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.OTGTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.HDMITest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name" android:name=".testitem.GyroscopeTest"
+			android:screenOrientation="portrait" />
+		<!-- run in test -->
+		<activity android:label="@string/app_name" android:name=".RunInTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.MemoryTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.SpeakerReceiverTest"
+			android:screenOrientation="portrait" />
+
+        <!-- modify by even -->
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.MicrophoneCycleTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.VibratorTest"
+			android:screenOrientation="portrait" />
+
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.MainCameraTest"
+			android:screenOrientation="landscape" android:taskAffinity="android.task.camera" />
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.SubCameraTest"
+			android:screenOrientation="landscape" android:taskAffinity="android.task.camera" />
+
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.ScreenTest"
+			android:screenOrientation="portrait" />
+		<activity android:label="@string/app_name"
+			android:launchMode="singleTask" android:name=".runintest.MVPlayerTest"
+			android:screenOrientation="portrait" />
+
+                <!-- added by bruce for camera test begin -->
+                <activity
+                    android:name=".testitem.MainCamera"
+                    android:clearTaskOnLaunch="true"
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="@string/Camera"
+                    android:screenOrientation="landscape"
+                    android:taskAffinity="android.task.camera" />
+                <activity
+                    android:name=".testitem.SubCamera"
+                    android:clearTaskOnLaunch="true"
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="@string/Camera"
+                    android:screenOrientation="landscape"
+                    android:stateNotNeeded="true"
+                    android:taskAffinity="android.task.camera" />
+                <!-- added by bruce for camera test end -->
+	</application>
+
+</manifest>

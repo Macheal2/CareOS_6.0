@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/bird_hall_time_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/bird_circular_window_top_padding" >
+
+    <FrameLayout
+        android:id="@id/bird_time_container"
+        android:layout_width="@dimen/bird_circular_window_diameter"
+        android:layout_height="@dimen/bird_circular_window_diameter"
+        android:layout_gravity="center_horizontal" >
+ 
+        <com.cappu.halllockscreen.AnalogClock
+            android:id="@id/time_analog"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+
+        <com.cappu.halllockscreen.DigitalClock
+            android:id="@id/time_digital"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/circular_clock_digital_dial"
+            android:gravity="center" />
+
+        <ViewStub
+            android:id="@id/window_rolling_ring_stub"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout="@layout/circular_rolling_ring" />
+    </FrameLayout>
+</FrameLayout>

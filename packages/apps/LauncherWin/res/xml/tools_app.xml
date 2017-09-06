@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page>
+
+    <AppComponentName
+        className="com.android.settings.Settings"
+        packageName="com.android.settings" />
+    
+    <AppComponentName
+        className="com.android.calculator2.Calculator"
+        packageName="com.android.calculator2" />
+    
+    <AppComponentName
+        className="com.mediatek.filemanager.FileManagerOperationActivity"
+        packageName="com.mediatek.filemanager" />
+    
+    <AppComponentName
+        className="com.example.flashlight.FlashLight"
+        packageName="com.example.flashlight" />
+    
+</Page>

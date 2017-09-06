@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/test_result_all"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/white">
+	<TextView android:textSize="22sp" android:id="@+id/autotest_type_1"
+		style="@style/NormalText" android:text="@string/null_item" />
+
+	<TextView android:id="@+id/failitems_1" style="@style/NormalText"
+		android:text="@string/null_item" />
+
+	<TextView android:id="@+id/item1" style="@style/NormalText"
+		android:maxLines="18" android:text="@string/null_item" />
+
+	<TextView android:id="@+id/item1_1" style="@style/NormalText"
+		android:maxLines="18" android:text="@string/null_item" />
+
+</LinearLayout>

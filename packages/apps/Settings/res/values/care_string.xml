@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_magcomm">Up Unlock</string>
+    <string name="unlock_set_unlock_mode_cappu">Cappu Unlock</string>
+    <string name="unlock_set_unlock_mode_cappu_default">Default</string>
+    
+    <!-- begin: edit by hmq 20161108 Modify for cappu pictorial -->
+    <string name="auto_pictorial_title">"Lock screen pictorial"</string>
+    <string name="auto_pictorial_summary">"Need network support, in the data flow environment will generate tariffs, tariffs please consult operators"</string>
+    <string name="pictorial_enabled_summaryOn">pictorial enabled</string>
+    <string name="pictorial_enabled_summaryOff">pictorial disabled</string>
+    <string name="random_pictorial_title">Pictorial random display</string>
+    <string name="random_pictorial_enabled_summaryOn">Pictorial random enabled</string>
+    <string name="random_pictorial_enabled_summaryOff">Pictorial random disabled</string>
+    <!-- end: edit by hmq 20161108 Modify for cappu pictorial -->
+ <!-- hejianfeng add start for anti touch -->
+   <string name="anti_touch_mode_title">Anti touch mode</string>
+   <string name="hall_ui_title">"Holzer interface display"</string>
+   <string name="hall_ui_summary">"Turn on the display digital clock and turn off the display analog clock"</string>
+	<!-- hejianfeng add end -->
+   <!-- modify by even hejianfeng@20150601 start for hall_lock menu -->
+    <string name="unlock_set_unlock_hall_title">Hall</string>
+    <string name="hall_title">open hall</string>
+    <string name="hall_summary_on">Disable</string>
+    <string name="hall_summary_off">Enable</string>
+   <!-- modify by even hejianfeng@20150601 end for hall_lock menu -->
+</resources>

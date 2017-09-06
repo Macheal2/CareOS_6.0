@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_newstatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="0dip"
+    android:paddingLeft="0dip"
+    android:paddingTop="0dip" >
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+       
+        android:padding="2dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/albumart_mp_unknown" />
+     <!-- android:background="@drawable/stat_notify_albumart_frame" -->
+
+    <LinearLayout
+        android:id="@+id/trackinfo_layout"
+        android:layout_width="78dip"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_trackinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingTop="4dip"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingTop="4dip"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--
+         <ImageView android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:layout_below="@+id/txt_artist"
+        android:background="#c7c7c7"/>
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/trackinfo_layout">
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/stat_notif_prev" />
+
+        <ImageView
+            android:id="@+id/btn_pause"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+             />
+        <!-- android:background="@drawable/stat_notif_pause" -->
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/stat_notif_next" />
+    </RelativeLayout>
+
+</RelativeLayout>

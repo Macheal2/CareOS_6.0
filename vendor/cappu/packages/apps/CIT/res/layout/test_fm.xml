@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/fmtest"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Button android:id="@+id/btn_init" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_init"
+		android:clickable="true" android:layout_x="130dip" android:layout_y="2dip">
+	</Button>
+	<Button android:id="@+id/btn_get_freq" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_get_FREQ"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="51dip">
+	</Button>
+	<Button android:id="@+id/btn_channge_vol" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_change_VOL"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="105dip">
+	</Button>
+	<Button android:id="@+id/btn_mute" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_mute"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="159dip">
+	</Button>
+
+	<Button android:id="@+id/btn_rssi" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_rssi"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="213dip">
+	</Button>
+	<Button android:id="@+id/btn_seek" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_seek"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="267dip">
+	</Button>
+
+	<Button android:id="@+id/btn_close" android:layout_width="100dip"
+		android:layout_height="45dip" android:text="@string/fm_close"
+		android:clickable="false" android:layout_x="130dip" android:layout_y="321dip">
+	</Button>
+
+	<TextView android:id="@+id/fm_freq_input"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/fm_freqinputtext" android:layout_x="10dip"
+		android:layout_y="15dip">
+	</TextView>
+	<EditText android:id="@+id/fm_edit_test" android:layout_width="70dip"
+		android:layout_height="40dip" android:digits="0123456789"
+		android:gravity="center" android:text="@string/g_null_text"
+		android:textSize="18sp" android:layout_x="10dip" android:layout_y="40dip">
+	</EditText>
+	<TextView android:id="@+id/fm_hz" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/fm_khz"
+		android:layout_x="90dip" android:layout_y="55dip">
+	</TextView>
+	<Button android:id="@+id/fm_set_freq" android:layout_width="70dip"
+		android:layout_height="40dip" android:text="@string/fm_setfreqtext"
+		android:layout_x="8dip" android:layout_y="90dip">
+	</Button>
+
+	<TextView android:id="@+id/fm_state" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/fm_statetext"
+		android:layout_x="10dip" android:layout_y="150dip">
+	</TextView>
+
+	<TextView android:id="@+id/fm_freq_now" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/g_null_text"
+		android:layout_x="10dip" android:layout_y="180dip">
+	</TextView>
+
+</AbsoluteLayout>

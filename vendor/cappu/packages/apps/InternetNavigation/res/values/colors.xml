@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_common">#ffbbbbbb</color>
+    <color name="bg_brown">#ff302215</color>
+    <color name="bg_gray">#ff373737</color>
+    <color name="bg_purple">#ff1f023a</color>
+    <color name="bg_red">#ff3c1212</color>
+    <color name="bg_blue">#ff122031</color>
+    <color name="bg_black">#ff191919</color>
+    <color name="bg_orange">#ff541901</color>
+</resources>

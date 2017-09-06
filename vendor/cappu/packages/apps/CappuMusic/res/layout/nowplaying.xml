@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nowplaying_parent"
+    android:layout_width="match_parent"
+    android:layout_height="82dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/nowplaying_parent_bg"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:splitMotionEvents="false"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/nowplaying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/mini_player_thumbnail"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/music_albumart_default_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="2.0px"
+            android:src="@drawable/albumart_mp_unknown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dip"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/trackName"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/artistName"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:shadowColor="@android:color/black"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mini_player_prev_btn"
+                    android:layout_width="42dip"
+                    android:layout_height="42dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/music_mini_player_prev" />
+
+                <ImageView
+                    android:id="@+id/mini_player_play_pause_btn"
+                    android:layout_width="56dip"
+                    android:layout_height="56dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/music_mini_player_play" />
+
+                <ImageView
+                    android:id="@+id/mini_player_next_btn"
+                    android:layout_width="42dip"
+                    android:layout_height="42dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/music_mini_player_next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

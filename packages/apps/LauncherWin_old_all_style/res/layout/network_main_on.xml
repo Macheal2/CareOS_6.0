@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:fadingEdge="none"
+            android:paddingBottom="@dimen/title_layout_height" >
+
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/offLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Close_the_WLAN_network"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/offImg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/prompt"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Disconnect_the_wireless_network"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Specific_opening_way"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/onLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Turn_on_WLAN_switch"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/onImg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:scaleType="center"
+                        android:src="@drawable/pic_web_setting_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Connect_to_the_wireless_network"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Select_the_network"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+
+                    <ImageView
+                        android:id="@+id/onImg_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:scaleType="center"
+                        android:src="@drawable/pic_web_setting_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Enter_the_password"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+
+                    <ImageView
+                        android:id="@+id/onImg_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:scaleType="center"
+                        android:src="@drawable/pic_web_setting_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/connection_is_successful"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+
+                    <ImageView
+                        android:id="@+id/onImg_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:scaleType="center"
+                        android:src="@drawable/pic_web_setting_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/prompt"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/operation_of_the_network"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ruyi_margin_double"
+                        android:text="@string/Assist_complete"
+                        android:textColor="@android:color/black"
+                        android:textSize="30.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/network_01"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/network_02"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/network_01" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/network_02" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/network_03"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/network_04"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/network_03" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/network_05"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/network_04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/network_06"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/netwokSetLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_layout_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mms_detail_call_selector" >
+
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/network_00" />
+
+            <TextView
+                android:id="@+id/netwokSetInfo"
+                style="@style/shadow_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Enter_the_wireless_network_Settings"
+                android:textColor="@android:color/white"
+                android:textSize="28dip" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_gravity="center"
+	android:orientation="vertical" android:id="@+id/test_proximitysenor"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textSize="30.0dip" android:id="@+id/tv_proximitysenor_info"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/g_null_text" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" />
+		
+	<ImageView android:id="@+id/test_proximitysensor_gray"
+		android:visibility="invisible" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/test_red"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/tv_proximitysenor_info"
+		 />
+		
+	<ImageView android:id="@+id/test_proximitysensor_green"
+		android:visibility="invisible" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/test_green"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/tv_proximitysenor_info"
+		/>
+	<Button android:id="@+id/btn_Calibration" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/proximity_calibration"
+		android:clickable="true" android:layout_below="@id/test_proximitysensor_green"
+		android:layout_alignParentLeft="true" />
+
+	<Button android:id="@+id/btn_res_calibration"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/res_calibration" android:clickable="true"
+		android:layout_below="@id/test_proximitysensor_green"
+		android:layout_alignParentRight="true" />
+
+
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

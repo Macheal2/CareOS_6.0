@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/i99_bg">
+
+    <include layout="@layout/i99_topbar" />
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 姓名 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/i99_tip_name"
+                style="@style/i99TextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/i99_name" />
+
+            <EditText
+                android:id="@+id/i99_input_name"
+                style="@style/i99TextStyle_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/i99_input_bg"
+                android:paddingLeft="10dp" >
+            </EditText>
+        </LinearLayout>
+        
+        <!-- 电话 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/i99_tip_number"
+                style="@style/i99TextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/i99_phone" />
+
+            <EditText
+                android:id="@+id/i99_input_number"
+                style="@style/i99TextStyle_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+                android:numeric="integer"
+                android:layout_margin="3dp"
+                android:background="@drawable/i99_input_bg"
+                android:paddingLeft="10dp" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- 分组 -->
+
+        <LinearLayout
+            android:id="@+id/sect_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/i99_contacts_item_dis"
+            android:paddingTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/i99_tip"
+                style="@style/i99TextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/i99_group" />
+
+            <Button
+                android:id="@+id/group_list"
+                style="@style/i99TextStyle_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:background="@drawable/i99_select_bg"
+                android:focusable="true"
+                android:gravity="left|center_vertical"
+                android:minHeight="@dimen/i99_text_editor_min_height"
+                android:paddingLeft="12dip" />
+        </LinearLayout>
+
+        <!-- 头像 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/i99_tip_photo"
+                style="@style/i99TextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10px"
+                android:gravity="center_vertical"
+                android:text="@string/i99_photo" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/i99_photo_size"
+                android:layout_height="@dimen/i99_photo_size"
+                android:cropToPadding="true"
+                android:gravity="left"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_picture_holo_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

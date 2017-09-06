@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/recorder_bg_port" />
+    <TextView
+        android:id="@+id/timerView"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+	android:layout_marginTop="20dp"
+        android:textSize="125dip" />
+	<TextView android:id="@+id/stateMessage1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/timerView"/>
+	<!--这个 LinearLayout 里面的东西都不显示，都只是获取id防止空针-->
+	<LinearLayout
+		android:id="@+id/hideviews"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:orientation="vertical">
+		<!--********************************-->
+
+		<TextView android:id="@+id/stateMessage2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<TextView android:id="@+id/recordingFileName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:id="@+id/currState"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<LinearLayout android:id="@+id/exitButtons"
+			android:orientation="horizontal"
+			android:layout_width="0dp"
+			android:layout_height="0dp" >
+
+			<Button android:id="@+id/discardButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"/>
+			<Button android:id="@+id/acceptButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<ProgressBar android:id="@+id/stateProgressBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<FrameLayout
+			android:id="@+id/frameLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:splitMotionEvents="false"/>
+		<ImageView
+			android:id="@+id/firstLine"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<ImageView
+			android:id="@+id/secondLine"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<!--**********************-->
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/recorder_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/recorder_bar_port"
+        android:orientation="vertical" >
+        <Switch
+            android:id="@+id/switch_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/vivo_thumb_tone_quality"
+            android:thumbTextPadding="35dp"
+            android:track="@drawable/track" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp" >
+
+            <com.magcomm.soundrecorder.widget.VUMeter
+                android:id="@+id/uvMeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/window_power_off" />
+
+            <ImageView
+                android:id="@+id/stateLED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/uvMeter"
+                android:src="@drawable/light_gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/stopButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vivo_bn_stop" />
+
+            <ImageButton
+                android:id="@+id/recordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+                android:background="@drawable/vivo_bn_record" />
+			<ImageButton
+				android:id="@+id/pauseRecordingButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/vivo_bn_pause"/>
+			<!-- hide this button -->
+			 <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@drawable/vivo_bn_pause"/>
+
+			<ImageButton
+				android:id="@+id/fileListButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/vivo_bn_list" />
+
+			<ImageButton
+				android:id="@+id/cancelButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/vivo_bn_cancel" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

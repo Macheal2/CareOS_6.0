@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_background">
+
+    <!--<include layout="@layout/vivo_message_title" />-->
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@style/I99Style_TopBar"
+        care:rightImage="@drawable/i99_title_bt_select"
+        care:text="@string/app_label"/>
+
+    <LinearLayout
+    	  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+      <ListView style="?android:attr/listViewWhiteStyle"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transcriptMode="normal"
+        android:smoothScrollbar="false"
+        android:fadingEdge="none"
+        android:layout_marginBottom="1dip"
+        android:cacheColorHint="#00000000"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_weight="1" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/i99_line_h"/>
+
+    <LinearLayout
+    		android:id="@+id/layoutDelete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/vivo_gray_background"
+        android:layout_weight="6" >
+        <Button
+            android:id="@+id/bnForward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="6dip"
+            android:text="@string/menu_forward"
+            android:textSize="30sp"
+            android:textColor="@color/title_color"
+            android:background="@drawable/i99_btn_forwarding"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/bnEditDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="6dip"
+            android:text="@string/delete"
+            android:textSize="30sp"
+            android:textColor="@color/title_color"
+            android:background="@drawable/i99_message_del"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

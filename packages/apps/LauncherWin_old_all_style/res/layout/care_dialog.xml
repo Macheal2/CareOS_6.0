@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_circle_white_normal"
+    android:orientation="vertical">
+    <!-- android:background="@drawable/care_dialog_bg" -->
+
+    <LinearLayout android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View android:id="@+id/titleDividerTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_blue_normal" />
+
+        <LinearLayout android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|start"
+            android:minHeight="72dp"
+            >
+            <!-- android:background="@drawable/care_dialog_title_bg" -->
+
+            <ImageView android:id="@+id/icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@null" />
+
+            <com.cappu.launcherwin.widget.CareDialogTitle 
+                android:id="@+id/alertTitle"
+                style="?android:attr/windowTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textSize="28sp" />
+            <!-- 
+            这里不能设置背景  如果设置了主题里面的背景就被这里覆盖了
+            android:background="@drawable/care_dialog_title_bg" -->
+        </LinearLayout>
+
+        <View android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_blue_normal" />
+        <!-- If the client uses a customTitle, it will be added here. -->
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:minHeight="100dp">
+        <ScrollView android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false">
+            <TextView android:id="@+id/message"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dip"
+                android:paddingEnd="16dip"
+                android:paddingTop="8dip"
+                android:paddingBottom="8dip"
+                android:textColor="#606060"
+                android:textSize="28sp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/customPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="80dp">
+        <FrameLayout android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/alert_dialog_button_bar_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="locale"
+            android:divider="@drawable/care_line_v"
+            android:showDividers="middle"
+            android:dividerPadding="0dip"
+            android:measureWithLargestChild="true">
+
+            <Button android:id="@+id/button2"
+                style="@style/CareDialogButtonStyle" />
+
+            <Button android:id="@+id/button3"
+                style="@style/CareDialogButtonStyle" />
+
+            <Button android:id="@+id/button1"
+                style="@style/CareDialogButtonStyle" />
+
+        </LinearLayout>
+     </LinearLayout>
+
+     <View android:id="@+id/care_dialog_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@drawable/care_dialog_bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/test_light_sensor"
+	android:background="@drawable/white" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:textSize="30.0dip" android:id="@+id/tv_light_senor_info"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textColor="#000000" 
+		android:text="@string/g_null_text" />
+
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

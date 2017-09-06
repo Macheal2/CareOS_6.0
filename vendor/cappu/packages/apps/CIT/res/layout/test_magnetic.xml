@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical"
+	android:layout_gravity="center" android:id="@+id/aging_test"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textSize="24.0dip" android:id="@+id/mt_tv_magneticsensorinfo"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/test_magneticsensor_info"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+	<TextView android:textSize="24.0dip" android:id="@+id/mt_tv_x"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/mt_tv_magneticsensorinfo" android:text="@string/g_null_text" />
+	<TextView android:textSize="24.0dip" android:id="@+id/mt_tv_y"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/mt_tv_x" android:text="@string/g_null_text" />
+	<TextView android:textSize="24.0dip" android:id="@+id/mt_tv_z"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/mt_tv_y" android:text="@string/g_null_text" />
+
+	<include layout="@layout/pass_fail_buttons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" />
+</RelativeLayout>

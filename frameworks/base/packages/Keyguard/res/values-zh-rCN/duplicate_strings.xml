@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="cappu_slide_to_unlock">移动滑块解锁</string>  
+    <string name="cappu_month">"月"</string>  
+    <string name="lunar">农历</string>
+    <string name="i99_year">年</string>
+    <string name="i99_month">月</string>
+    <string name="i99_date">日</string>
+    <string name="i99_leap">闰</string>
+    <string name="i99_date_10">初十</string>
+    <string name="i99_date_20">二十</string>
+    <string name="i99_date_30">三十</string>
+    <string-array name="i99_lunar_month">
+       <!--  <item>正</item> -->
+        <item>正</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="i99_date_0">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+        <item> </item>
+    </string-array>
+    <string-array name="i99_date_1">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+    </string-array>
+    <string-array name="array_week">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    
+    <string name="i99_ok">确定</string>
+    <string name="i99_cancel">取消</string>
+   
+    <string name="magcomm_keyguard_alarm">"闹钟:"</string>
+    <string name="magcomm_keyguard_charge_charger">"已连接充电器"</string>
+    <string name="magcomm_keyguard_charge_usb">"已连接USB"</string>
+    <string name="magcomm_keyguard_charge_connect">"正在数据传输"</string>
+    <string name="magcomm_keyguard_charge_full">"已充满"</string>
+    <string name="magcomm_keyguard_charge_fell">"请连接充电器"</string>
+    <string name="magcomm_keyguard_charge_value">"当前电量"</string>
+    <string name="magcomm_keyguard_charge_health">"健康状况:"</string>
+    <string name="magcomm_keyguard_charge_health_unknow">"未知"</string>
+    <string name="magcomm_keyguard_charge_health_good">"健康"</string>
+    <string name="magcomm_keyguard_charge_health_subhealthy">"亚健康"</string>
+    <string name="magcomm_keyguard_charge_health_bad">"立即更换电池"</string>
+    <plurals name="magcomm_keyguard_unread_dial">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未接电话</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未接电话</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_msg">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读消息</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读消息</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_email">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读邮件</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读邮件</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_calendar">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读日历</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读日历</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_RCS">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读聊天</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读聊天</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_CTS">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读ANDROID CTS</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读ANDROID CTS</item>
+    </plurals>
+    <plurals name="magcomm_keyguard_unread_MTK_CTS">
+        <item quantity="one">您有<xliff:g id="NUMBER">%d</xliff:g>条未读MTK CTS</item>
+        <item quantity="other">您有<xliff:g id="NUMBER">%d</xliff:g>条未读MTK CTS</item>
+    </plurals>
+    <string name="magcomm_keyguard_notice_text">向上滑动解锁</string>
+
+    <string name="cappu_framework_unlock_set_unlock_title">卡布解锁</string>
+    <string name="cappu_framework_unlock_set_unlock_none_title">滑动</string>
+    
+    <string name="dismiss_power_on">"取消并开机"</string>
+    <string name="dismiss_power_off">"取消并关机"</string>
+    
+    <!-- dengying@20160816  -->
+    <string name="step">步</string>
+</resources>
+    

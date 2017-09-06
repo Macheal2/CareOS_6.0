@@ -1,0 +1,4 @@
+-libraryjars libs/baidumapapi_v2_4_2.jar
+-libraryjars libs/locSDK_3.1.jar
+-keep class com.baidu.**{*;}
+-keep class vi.com.gdi.bgl.**{*;}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/uu_download_progressbar_bg" />
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/uu_download_progressbaring" />
+    </item>
+</layer-list>

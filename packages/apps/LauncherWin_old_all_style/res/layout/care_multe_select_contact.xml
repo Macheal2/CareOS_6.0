@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.mms.widget.ContactSelectItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/care_margin_middle"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:orientation="vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/care_selected_name"
+                android:layout_width="match_parent"
+                android:textColor="@color/care_gray_text_color"
+                android:textSize="@dimen/care_text_size_default"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/care_selected_number"
+                android:layout_width="match_parent"
+                android:textColor="@color/gay_color_light"
+                android:textSize="@dimen/care_text_small"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/care_selected_checkbox"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:button="@drawable/checked_bg"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/care_divide_color" />
+</com.cappu.launcherwin.mms.widget.ContactSelectItem>

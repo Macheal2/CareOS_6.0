@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page defaultAppIcon="other_application_background.png" >
+
+    <!-- Camera -->
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.android.camera.CameraLauncher"
+        packageName="com.android.gallery3d"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.motorola.Camera.Camera"
+        packageName="com.motorola.Camera"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.android.camera.CameraEntry"
+        packageName="com.android.camera"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.sec.android.app.camera.Camera"
+        packageName="com.sec.android.app.camera"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.android.camera.Camera"
+        packageName="com.google.android.camera"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.android.camera.Camera"
+        packageName="com.android.camera"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.sonyericsson.android.camera.CameraActivity"
+        packageName="com.sonyericsson.android.camera"
+        type="Icon" />
+
+    <!-- Camera end -->
+    <AppIcon
+        background="other_application_background.png"
+        className="DefaultClassName"
+        packageName="DefaultPackageName"
+        type="DefaultIcon" />
+    <AppIcon
+        background="ic_application_dialpad.png"
+        className="com.android.contacts.activities.DialtactsActivity"
+        packageName="com.android.contacts"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_browser.png"
+        className="com.android.browser.BrowserActivity"
+        packageName="com.android.browser"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_file_manager.png"
+        className="net.micode.fileexplorer.FileExplorerTabActivity"
+        packageName="net.micode.fileexplorer"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_settings.png"
+        className="com.cappu.launcherwin.LauncherSettingActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_gallery.png"
+        className="com.android.gallery3d.app.Gallery"
+        packageName="com.android.gallery3d"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calculator.png"
+        className="com.android.calculator2.Calculator"
+        packageName="com.android.calculator2"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_light.png"
+        className="com.hongyu.android.torch.TorchActivity"
+        packageName="com.hongyu.android.torch"
+        type="Icon" />
+    <AppIcon
+        background="ic_fm_radio.png"
+        className="com.mediatek.FMRadio.FMRadioActivity"
+        packageName="com.mediatek.FMRadio"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_download.png"
+        className="com.android.providers.downloads.ui.DownloadList"
+        packageName="com.android.providers.downloads.ui"
+        type="Icon" />
+    <AppIcon
+        background="ic_local_search.png"
+        className="com.android.quicksearchbox.SearchActivity"
+        packageName="com.android.quicksearchbox"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_notepad.png"
+        className="com.mediatek.notebook.NotesList"
+        packageName="com.mediatek.notebook"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_gmaila.png"
+        className="com.google.android.gm.ConversationListActivityGmail"
+        packageName="com.google.android.gm"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_clock.png"
+        className="com.android.deskclock.DeskClock"
+        packageName="com.android.deskclock"
+        type="Icon" />
+    <AppIcon
+        background="ic_mediatek_video_player.png"
+        className="com.mediatek.videoplayer.MovieListActivity"
+        packageName="com.mediatek.videoplayer"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_speach_record.png"
+        className="com.android.soundrecorder.SoundRecorder"
+        packageName="com.android.soundrecorder"
+        type="Icon" />
+    <AppIcon
+        background="ic_voice_search.png"
+        className="com.elex.v9.activity.SearchActivity"
+        packageName="com.elex.v9"
+        type="Icon" />
+    <AppIcon
+        background="ic_mms_hotseat.png"
+        className="com.android.mms.ui.BootActivity"
+        packageName="com.android.mms"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_music.png"
+        className="com.android.music.MusicBrowserActivity"
+        packageName="com.android.music"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_weixin.png"
+        className="com.tencent.mm.ui.LauncherUI"
+        packageName="com.tencent.mm"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_clear.png"
+        className="com.cappu.launcherwin.clearmanage.AnimationActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_wifi_off.png"
+        className="com.cappu.launcherwin.network.NetworkActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_phone_head_default.png"
+        className="com.cappu.contacts.I99QuickContactActivity"
+        packageName="com.android.contacts"
+        type="Icon" />
+    <AppIcon
+        background="icon_3g_off.png"
+        className="com.cappu.launcherwin.network.GPRSActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <!-- <AppIcon
+        background="ic_application_allapp.png"
+        className="com.cappu.activity.GooduseActivity"
+        packageName="com.cappu.gooduse"
+        type="Icon" /> -->
+    <AppIcon
+        background="ic_application_allapp.png"
+        className="com.cappu.launcherwin.applicationList.activity.GooduseActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_camera.png"
+        className="com.android.camera.CameraLauncher"
+        packageName="com.android.gallery3d"
+        type="Icon" />
+    <!-- Gallery -->
+    <AppIcon
+        background="ic_application_photo.png"
+        className="com.android.gallery3d.app.Gallery"
+        packageName="com.android.gallery3d"
+        type="Icon" />
+    <!-- Gallery end -->
+
+
+    <!-- Calendar -->
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="cn.etouch.ecalendar.tools.almanac.AlmanacActivity"
+        packageName="cn.etouch.ecalendar.chenovo"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="com.cappu.launcherwin.calendar.DetailsCalendarActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="com.android.calendar.AllInOneActivity"
+        packageName="com.android.calendar"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="com.android.calendar.LaunchActivity"
+        packageName="com.android.calendar"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="com.htc.calendar.LaunchActivity"
+        packageName="com.htc.calendar"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_calendar.png"
+        className="com.android.calendar.LaunchActivity"
+        packageName="com.google.android.calendar"
+        type="Icon" />
+    <!-- Calendar end -->
+
+
+    <!-- 联系人 -->
+    <AppIcon
+        background="ic_application_contact.png"
+        className="com.android.contacts.activities.PeopleActivity"
+        packageName="com.android.contacts"
+        type="Icon" />
+    
+    <AppIcon
+        background="ic_application_contact.png"
+        className="com.cappu.launcherwin.contacts.ContactListMultiChoiceActivity"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <!-- 联系人 end -->
+
+
+    <!-- 计算器 -->
+    <AppIcon
+        background="ic_application_calculator.png"
+        className="jisuanqi"
+        packageName="jisuanqi"
+        type="Icon" />
+    <!-- 计算器 end -->
+
+
+    <!-- 拨号盘Dial -->
+    <AppIcon
+        background="ic_dialog_hotseat.png"
+        className="com.cappu.contacts.I99CallLogs"
+        packageName="com.android.contacts"
+        type="Icon" />
+
+    <!-- 拨号盘Dial end -->
+
+    <AppIcon
+        background="ic_application_fm.png"
+        className="com.mediatek.FMRadio.FMRadioActivity"
+        packageName="com.mediatek.FMRadio"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_webbrowser.png"
+        className="com.cappu.internet.BookMarkGridViewActivity"
+        packageName="com.cappu.internet"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_shenghuobaike.png"
+        className="com.mq.folder.context.MainActivity"
+        packageName="com.mq.folder"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_sos_cell.png"
+        className="com.cappu.sos.SOSMainActivity"
+        packageName="com.cappu.sos"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_playgame.png"
+        className="com.cappu.gamebox.gamebox"
+        packageName="com.cappu.gamebox"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_mediaplay.png"
+        className="com.cappu.media.VideoActivity"
+        packageName="com.cappu.media"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_backuprestore.png"
+        className="com.mediatek.datatransfer.BootActivity"
+        packageName="com.mediatek.datatransfer"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_baiduinput.png"
+        className="com.baidu.input.ImeMainConfigActivity"
+        packageName="com.baidu.input"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_baidumap.png"
+        className="com.baidu.BaiduMap.BaiduMap"
+        packageName="com.baidu.BaiduMap"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_browser.png"
+        className="com.android.browser.BrowserActivity"
+        packageName="com.android.browser"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_careos.png"
+        className="com.cappu.launcherwin.Launcher"
+        packageName="com.cappu.launcherwin"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_chess.png"
+        className="com.cnvcs.App"
+        packageName="com.cnvcs.xiangqi"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_colck.png"
+        className="com.android.deskclock.DeskClock"
+        packageName="com.android.deskclock"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_doudizhu.png"
+        className="com.kkkstudio.landlords.DDZ"
+        packageName="com.kkkstudio.doudizhu"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_downlaod.png"
+        className="com.android.providers.downloads.ui.DownloadList"
+        packageName="com.android.providers.downloads.ui"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_email.png"
+        className="com.android.email.activity.Welcome"
+        packageName="com.android.email"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_ensign.png"
+        className="com.cnvcs.App"
+        packageName="com.cnvcs.junqi"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_filemanage.png"
+        className="com.mediatek.filemanager.FileManagerOperationActivity"
+        packageName="com.mediatek.filemanager"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_flashlight.png"
+        className="com.chenxiang.flashlight.FlashLight"
+        packageName="com.chenxiang.flashlight"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_gobang.png"
+        className="game.winten.Gobang.WintenGobang"
+        packageName="game.winten.Gobang"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_magnifyingglass.png"
+        className="com.lx.camera.CameraAct"
+        packageName="com.lx.camera"
+        type="Icon" />
+
+    <!-- Music -->
+    <AppIcon
+        background="ic_application_music.png"
+        className="com.android.music.MusicBrowserActivity"
+        packageName="com.android.music"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_xqps.png"
+        className="com.cappu.activity.StrongMusicLoading"
+        packageName="com.cappu.strongmusic"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_xqps.png"
+        className="com.htc.music.HtcMusic"
+        packageName="com.htc.music"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_xqps.png"
+        className="com.sec.android.app.music.list.activity.MpMainTabActivity"
+        packageName="com.sec.android.app.music"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_xqps.png"
+        className="com.android.music.MusicBrowserActivity"
+        packageName="com.android.music"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_xqps.png"
+        className="com.android.music.list.activity.MpMainTabActivity"
+        packageName="com.android.music"
+        type="Icon" />
+
+    <!-- Music end -->
+
+    <AppIcon
+        background="ic_application_search.png"
+        className="com.android.quicksearchbox.SearchActivity"
+        packageName="com.android.quicksearchbox"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_soundrecorder.png"
+        className="com.android.soundrecorder.SoundRecorder"
+        packageName="com.android.soundrecorder"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_spreech.png"
+        className="com.iflytek.speechcloud.wxapi.WXEntryActivity"
+        packageName="com.iflytek.speechcloud"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_take.png"
+        className="com.mediatek.bluetooth.hid.BluetoothHidActivity"
+        packageName="com.mediatek.bluetooth"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_video.png"
+        className="com.mediatek.videoplayer.MovieListActivity"
+        packageName="com.mediatek.videoplayer"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_wearth.png"
+        className="com.metek.weather.activity.MainActivity"
+        packageName="com.metek.customzqWeather"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_simapp.png"
+        className="com.mediatek.StkSelection.StkSelection"
+        packageName="com.mediatek.StkSelection"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_wlan.png"
+        className="com.android.settings.Settings$WifiSettingsActivity"
+        packageName="com.android.settings"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_appsearch.png"
+        className="com.baidu.appsearch.LauncherActivity"
+        packageName="com.baidu.appsearch"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_todos.png"
+        className="com.mediatek.todos.TodosActivity"
+        packageName="com.mediatek.todos"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_systemicon.png"
+        className="com.android.settings.Settings"
+        packageName="com.android.settings"
+        type="Icon" />
+    <AppIcon
+        background="ic_application_helpnoters.png"
+        className="com.example.i99readme.ReadMeMainActivity"
+        packageName="com.example.i99readme"
+        type="Icon" />
+    
+    <AppIcon
+        background="ic_application_qq"
+        className="com.tencent.mobileqq.activity.SplashActivity"
+        packageName="com.tencent.mobileqq"
+        type="Icon" />
+    <!--
+    <AppIcon
+        background=""
+        className=""
+        packageName=""
+        type="Icon" />
+
+    -->
+
+</Page>

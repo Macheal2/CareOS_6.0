@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i99_bg"
+    android:orientation="vertical" >
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:text="@string/i99_remove_member_title"
+        care:rightImage="@drawable/i99_icon_ok" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/care_line_h" />
+
+    <include android:id="@android:id/empty"
+            layout="@layout/care_empty_view"/>
+
+</LinearLayout>

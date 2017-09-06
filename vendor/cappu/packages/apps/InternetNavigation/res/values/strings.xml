@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internet</string>
+    <string name="desktop_title_browser">Internet</string>
+    <string name="no_data">No Data</string>
+    <string name="bookmark_add">Add</string>
+    <string name="bookmark_add_name">BookMark Name:</string>
+    <string name="bookmark_add_url">BookMark URL:</string>
+    <string name="name_and_url_cannot_be_empty">The name and url can not be empty</string>
+    <string name="bookmark_del">Delete BookMark</string>
+    <string name="bookmark_option">Option</string>
+    <string name="bookmark_del_message">Delete custom bookmark:</string>
+    <string name="OK">OK</string> 
+    <string name="Cancel">Cancel</string> 	   
+    <string name="i99_dialog_left">Cancel</string>
+    <string name="i99_dialog_right">OK</string>
+    <string name="i99_dialog_middle">Not Sure</string>
+    <string name="i99_dialog_delete_title">delete</string>   
+</resources>

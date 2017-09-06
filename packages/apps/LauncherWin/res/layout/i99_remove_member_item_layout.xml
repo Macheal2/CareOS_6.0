@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/i99_item_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="@dimen/i99_photo_size"
+        android:layout_height="@dimen/i99_photo_size"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_contact_picture_180_holo_light" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_marginLeft="3dp"
+        style="@style/i99TextStyle_black"/>
+    <CheckBox
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="18dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:button="@drawable/i99_delete_bg"/>
+</LinearLayout>

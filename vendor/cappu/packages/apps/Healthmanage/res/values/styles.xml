@@ -1,0 +1,35 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="my_textview_style" parent="@android:style/Widget.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/drug_box_list_text_size</item>
+    </style>
+    
+    <style name="my_caredailog_style" parent="@android:style/Widget.EditText">
+        <item name="android:gravity">right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/care_text_size_large</item>
+        <item name="android:background">@drawable/search_edittext_bg</item>
+    </style>
+
+    <style name="CareTheme.Semipermeable" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

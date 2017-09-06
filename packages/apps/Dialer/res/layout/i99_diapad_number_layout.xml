@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<!--  键盘的布局1-9 -->
+    <!-- line 1  1-2-3 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/one"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_1" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/two"
+            style="@style/i99_dialpad_number_style"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/i99_number_2" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/three"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_3" />
+    </LinearLayout>
+    <!-- line 2  4-5-6 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/four"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_4" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/five"
+            style="@style/i99_dialpad_number_style"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/i99_number_5" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/six"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_6" />
+    </LinearLayout>
+    <!-- line 3  7-8-9 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/seven"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_7" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/eight"
+            style="@style/i99_dialpad_number_style"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/i99_number_8" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/nine"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_9" />
+    </LinearLayout>
+    <!-- line 4 *-0-# -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/star"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_star" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/zero"
+            style="@style/i99_dialpad_number_style"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/i99_number_0" />
+
+        <com.android.dialer.care_os.DialpadImageButton
+            android:id="@+id/pound"
+            style="@style/i99_dialpad_number_style"
+            android:src="@drawable/i99_number_pound" />
+    </LinearLayout>
+
+</LinearLayout>

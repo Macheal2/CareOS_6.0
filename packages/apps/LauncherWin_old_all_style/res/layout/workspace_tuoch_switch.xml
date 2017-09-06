@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlelayout_style_cancel_title_option" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EEE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+            android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ruyi_setting_margin_top" >
+
+            <!-- 主菜单无限滑动 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/workspace_tuoch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/mian_menu_infinite_loop"
+                care:item_type="sw"
+                care:item_style="top"
+                />
+            <!-- 主菜单back滑动 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/back_tuoch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/mian_menu_back_loop"
+                care:item_type="sw"
+                care:item_style="mid"
+                />
+            <!-- 主屏幕负二屏显示 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/negative_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                care:item_title="@string/negative_screen"
+                care:item_type="sw"
+                care:item_style="bottom"
+                />
+            <!-- 主屏幕管理 -->
+			<com.cappu.widget.CareSettingItem
+			    android:id="@+id/mian_screen_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                care:item_title="@string/launcher_screen_manager"
+                care:item_type="more"
+                care:item_style="single"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

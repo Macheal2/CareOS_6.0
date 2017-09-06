@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:careos="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability= "blocksDescendants"
+    android:orientation="vertical">
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    careos:rightImage="@*com.cappu:drawable/ic_ok"
+        careos:text="@string/low_battery_worring"
+        careos:textSize="28sp" />
+        
+    <LinearLayout
+        android:id="@+id/lowbattery_enable"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+        android:layout_height="@dimen/ruyi_setting_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/bg_selector_one">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            style="@style/ruyisetting_info_sytle"
+            android:text="@string/low_battery_enable" />
+        <ImageButton
+            android:id="@+id/lowbattery_state_switch"
+            style="@style/ruyisetting_openoff_sytle" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:divider="@drawable/line_h"
+        android:listSelector="@android:color/transparent"/>          
+</LinearLayout>

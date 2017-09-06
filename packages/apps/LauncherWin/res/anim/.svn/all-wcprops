@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim
+END
+fade_in_fast.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/fade_in_fast.xml
+END
+fade_out_fast.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/fade_out_fast.xml
+END
+all_apps_2d_fade_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/all_apps_2d_fade_in.xml
+END
+all_apps_2d_fade_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/all_apps_2d_fade_out.xml
+END
+fade_in_slow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/fade_in_slow.xml
+END
+fade_out_slow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/fade_out_slow.xml
+END
+bounce.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/MT15M_GB2/!svn/ver/195/trunk/alps/packages/apps/LauncherIceCream/res/anim/bounce.xml
+END

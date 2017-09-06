@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@android:style/Widget.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:rightImage="@drawable/care_ic_option" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/drug_title_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="7dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/heart_color"
+            android:paddingLeft="2dp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center_vertical|left"
+            android:text="@string/detail_list_name"
+            android:textSize="@dimen/yangxiang_title_text_size" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center_vertical|right"
+            android:text="@string/detail_list_number"
+            android:textSize="@dimen/yangxiang_title_text_size" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:gravity="center_vertical|right"
+            android:text="@string/detail_list_date"
+            android:textSize="@dimen/yangxiang_title_text_size" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingRight="2dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/drug_list_bg"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:transcriptMode="normal" >
+    </ListView>
+
+    <com.cappu.widget.CareButton
+        android:id="@+id/care_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="66dip"
+        android:drawableLeft="@drawable/add_item_icon"
+        android:paddingLeft="110dip"
+        android:paddingRight="90dip"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/care_text_size_large" />
+
+    <!--
+         <TextView
+        android:id="@+id/drug_add_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/member_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text=" + 添加药品"
+        android:textSize="17sp" />
+    -->
+
+</LinearLayout>

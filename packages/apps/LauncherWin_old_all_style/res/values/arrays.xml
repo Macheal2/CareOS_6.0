@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="weather_data_type">
+        <item>晴</item>
+        <item>夜晚</item>
+        <item>多云</item>
+        <item>多云</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>雨夹雪</item>
+        <item>雷雨</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>雾</item>
+        <item>阴</item>
+    </string-array>
+    
+    <array name="simple_buttons">
+        <item>@+id/digit0</item>
+        <item>@+id/digit1</item>
+        <item>@+id/digit2</item>
+        <item>@+id/digit3</item>
+        <item>@+id/digit4</item>
+        <item>@+id/digit5</item>
+        <item>@+id/digit6</item>
+        <item>@+id/digit7</item>
+        <item>@+id/digit8</item>
+        <item>@+id/digit9</item>
+        <item>@+id/dot</item>
+        <item>@+id/plus</item>
+        <item>@+id/minus</item>
+        <item>@+id/div</item>
+        <item>@+id/mul</item>
+        <item>@+id/equal</item>
+    </array>
+
+    <array name="advanced_buttons">
+        <item>@+id/leftParen</item>
+        <item>@+id/rightParen</item>
+        <item>@+id/sin</item>
+        <item>@+id/cos</item>
+        <item>@+id/tan</item>
+        <item>@+id/ln</item>
+        <item>@+id/lg</item>
+        <item>@+id/e</item>
+        <item>@+id/pi</item>
+        <item>@+id/power</item>
+        <item>@+id/factorial</item>
+        <item>@+id/sqrt</item>
+    </array>
+    
+    <array name="buttons">
+        <item>@+id/digit0</item>
+        <item>@+id/digit1</item>
+        <item>@+id/digit2</item>
+        <item>@+id/digit3</item>
+        <item>@+id/digit4</item>
+        <item>@+id/digit5</item>
+        <item>@+id/digit6</item>
+        <item>@+id/digit7</item>
+        <item>@+id/digit8</item>
+        <item>@+id/digit9</item>
+        <item>@+id/dot</item>
+        <item>@+id/plus</item>
+        <item>@+id/minus</item>
+        <item>@+id/div</item>
+        <item>@+id/mul</item>
+        <item>@+id/equal</item>
+        <item>@+id/leftParen</item>
+        <item>@+id/rightParen</item>
+        <item>@+id/sin</item>
+        <item>@+id/cos</item>
+        <item>@+id/tan</item>
+        <item>@+id/ln</item>
+        <item>@+id/lg</item>
+        <item>@+id/e</item>
+        <item>@+id/pi</item>
+        <item>@+id/power</item>
+        <item>@+id/factorial</item>
+        <item>@+id/sqrt</item>
+    </array>
+    
+    <!-- 天气 -->
+    <string-array name="update_style_entries">
+      <item>Manual update</item>
+      <item>Automatic updates</item>
+    </string-array>
+
+    <string-array name="update_style_values" translatable="false">
+      <item>0</item>
+      <item>1</item>
+    </string-array>
+    
+    <string-array name="update_interval_entries">
+      <item>30 minutes</item>
+      <item>1 hours</item>
+      <item>2 hours</item>
+      <item>3 hours</item>
+    </string-array>
+    
+    <string-array name="update_interval_values" translatable="false">
+      <item>1</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+    </string-array>
+    <!-- 天气 end-->
+
+</resources>

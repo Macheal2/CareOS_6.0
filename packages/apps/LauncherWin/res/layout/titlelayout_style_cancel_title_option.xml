@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.widget.TopBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/res/com.cappu.launcherwin"
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+<!-- 
+
+    care:secretable="true"
+    care:titleText="@string/call_log"  -->
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    style="@style/ruyiui_tobbar_layout" >
+
+    <ImageButton
+        android:id="@+id/cancel"
+        style="@style/ruyiui_tobbar_imagebutton" />
+
+    <View
+        android:id="@+id/divie"
+        android:layout_width="3px"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@id/cancel"
+        android:background="@drawable/dividing" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/title_layout_title_tv_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="@string/setting"
+        android:textColor="@android:color/white"
+        android:ellipsize="marquee" 
+        android:focusableInTouchMode="true"
+        android:focusable="true" 
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <ImageButton
+        android:id="@+id/option"
+        style="@style/ruyiui_tobbar_imagebutton_right"
+        android:src="@drawable/icon_option" />
+
+    <View
+        android:id="@+id/divie_o"
+        android:layout_width="3px"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@id/option"
+        android:background="@drawable/dividing"
+        android:visibility="invisible" />
+
+</RelativeLayout> -->

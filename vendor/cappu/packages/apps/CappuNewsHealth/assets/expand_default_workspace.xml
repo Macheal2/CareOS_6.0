@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites xmlns:cappu="http://schemas.android.com/apk/res/com.cappu.careoslauncher" >
+ <!-- 扩展 第四屏 -->
+    <favorite
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_sos"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_112"
+        cappu:cellDefImage=""
+        cappu:className="cappu.sos.SOSMainActivity"
+        cappu:container="1"
+        cappu:packageName="cappu.sos"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="0" 
+        
+        cappu:AppNameCN="安全求助"
+        cappu:AppName="SOS.apk"
+        cappu:AppIconName="ic_application_sos_cell_i.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_sos_cell_i.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/SOS.apk"
+        cappu:Version="1.0"
+        />
+    
+    <favorite
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_internet_navigation"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_104"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.internet.BookMarkGridViewActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.internet"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="0" 
+        
+        cappu:AppNameCN="上网导航"
+        cappu:AppName="InternetNavigation.apk"
+        cappu:AppIconName="ic_application_webbrowser_i.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_webbrowser_i.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/InternetNavigation.apk"
+        cappu:Version="1.0"
+        />
+    
+     <AppComponentName
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_music"
+        cappu:aliasTitleBackground=""
+        cappu:background=""
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.careoslauncher.kookview.MusicKookView"
+        cappu:container="1"
+        cappu:packageName="com.cappu.careoslauncher"
+        cappu:screen="3"
+        cappu:spanX="2"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="1" />
+     
+   <!--  <favorite
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_game"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_105"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.careoslauncher.applicationList.activity.PlayCenterActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.careoslauncher"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="2" /> -->
+        
+    <favorite
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_scan"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_105"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.xing.activity.CaptureActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.xing"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="2"
+        
+        cappu:AppNameCN="扫一扫"
+        cappu:AppName="ScanQRCode.apk"
+        cappu:AppIconName="application_scanqrcode_mode_3.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_Folder_i.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/ScanQRCode.apk"
+        cappu:Version="1.0"
+         />
+    
+    <favorite
+        cappu:modeSelect="2"
+        cappu:aliasTitle="app_name_downloadcenter"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_102"
+        cappu:cellDefImage=""
+        cappu:className="com.mq.folder.context.MainActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.downloadcenter"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="2" 
+        
+        cappu:AppNameCN="下载中心"
+        cappu:AppName="DownloadCenter.apk"
+        cappu:AppIconName="ic_application_Folder_i.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_Folder_i.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/DownloadCenter.apk"
+        cappu:Version="2.0"
+        />
+    
+    <favorite
+        cappu:modeSelect=""
+        cappu:aliasTitle=""
+        cappu:aliasTitleBackground=""
+        cappu:background=""
+        cappu:cellDefImage=""
+        cappu:className="com.iflytek.speechcloud.wxapi.WXEntryActivity"
+        cappu:container=""
+        cappu:packageName="com.iflytek.speechcloud"
+        cappu:screen=""
+        cappu:spanX=""
+        cappu:spanY=""
+        cappu:x=""
+        cappu:y="" 
+        
+        cappu:AppNameCN="语音播报"
+        cappu:AppName="SpeechService.apk"
+        cappu:AppIconName="ic_application_spreech_i.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_spreech_i.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/SpeechService.apk"
+        cappu:Version="1.0.1063"
+        />
+    
+    <favorite
+        cappu:modeSelect=""
+        cappu:aliasTitle=""
+        cappu:aliasTitleBackground=""
+        cappu:background=""
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.careoslauncher.Launcher"
+        cappu:container=""
+        cappu:packageName="com.cappu.careoslauncher"
+        cappu:screen=""
+        cappu:spanX=""
+        cappu:spanY=""
+        cappu:x=""
+        cappu:y="" 
+        
+        cappu:AppNameCN="关爱系统"
+        cappu:AppName="CareOs.apk"
+        cappu:AppIconName="ic_application_CareOs.png"
+        cappu:AppIconUrl="http://app.careos.cn/download/ic_application_CareOs.png"
+        cappu:DownloadUrl="http://app.careos.cn/download/cellLayout/CareOs.apk"
+        cappu:Version="3.1.5"/>
+</favorites>
+ 

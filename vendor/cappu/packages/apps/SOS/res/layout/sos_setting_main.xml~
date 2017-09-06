@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+   <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+    style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/main_setting_sos_title"
+    care:rightVisibility="invisible"/>        
+    
+<!--     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+	    
+            style="@style/ruyiui_tobbar_layout" >
+
+            <ImageButton
+                android:id="@+id/cancel"
+                style="@style/ruyiui_tobbar_imagebutton" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/topbar_middle"
+                android:text="@string/setting_sos_title" />
+        </RelativeLayout>
+    </RelativeLayout> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <!-- android:background="@drawable/bg_drawable_setting"  -->
+        <!-- android:background="#BEBEBE" -->
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="@dimen/ruyi_setting_margin_left"
+            android:layout_marginRight="@dimen/ruyi_setting_margin_left"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ruyi_setting_margin_top" >
+
+            <!-- web version  gone not web version visible-->
+            <LinearLayout
+                android:id="@+id/sos_key"
+                android:visibility="visible"  
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- 开启一键求救 -->
+                <RelativeLayout
+                    android:id="@+id/sos_key_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_one" >
+
+                    <TextView
+                        android:id="@+id/sos_key_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/sos_key" />
+
+                    <RelativeLayout
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <ImageButton
+                            android:id="@+id/sos_key_state_switch"
+                            style="@style/ruyisetting_openoff_sytle" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sos_phone_whole_info"
+                    style="@style/ruyisetting_content_sytle_1"
+                    android:text="@string/sos_key_info" />
+            </LinearLayout>             
+            
+            <LinearLayout
+                android:id="@+id/sos_sound"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                android:orientation="vertical" >
+                <!-- 开启警报音 -->
+                <RelativeLayout
+                    android:id="@+id/sos_sound_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_one" >
+
+                    <TextView
+                        android:id="@+id/sos_sound_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/sos_sound" />
+
+                    <RelativeLayout
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <ImageButton
+                            android:id="@+id/sos_sound_state_switch"
+                            style="@style/ruyisetting_openoff_sytle" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sos_phone_whole_info"
+                    style="@style/ruyisetting_content_sytle_1"
+                    android:text="@string/sos_sound_auto" />
+            </LinearLayout>            
+            
+            <LinearLayout
+                android:id="@+id/sos_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                android:orientation="vertical" >
+                <!-- 开启求救电话 -->
+                <RelativeLayout
+                    android:id="@+id/sos_phone_state_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_top" >
+
+                    <TextView
+                        android:id="@+id/sos_phone_state_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/Open_the_call" />
+
+                    <RelativeLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <ImageButton
+                            android:id="@+id/sos_phone_state_switch"
+                            style="@style/ruyisetting_openoff_sytle" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!-- 电话号码 -->
+                <RelativeLayout
+                    android:id="@+id/sos_phone_number_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_bottom" >
+
+                    <TextView
+                        android:id="@+id/sos_phone_number"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/phone" />
+
+                    <LinearLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <TextView
+                            android:id="@+id/sos_phone_number_info"
+                            style="@style/ruyisetting_content_sytle"/>
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            style="@style/ruyisetting_arrow_sytle" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sos_phone_whole_info"
+                    style="@style/ruyisetting_content_sytle_1"
+                    android:text="@string/SOS_Automatically_call" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sos_sms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ruyi_setting_margin_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/sos_sms_state_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_top" >
+
+                    <TextView
+                        android:id="@+id/sos_sms_state_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/message_for_help" />
+
+                    <RelativeLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <ImageButton
+                            android:id="@+id/sos_sms_state_switch"
+                            style="@style/ruyisetting_openoff_sytle" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sos_sms_number_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_middle" >
+
+                    <TextView
+                        android:id="@+id/sos_sms_number_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/number_title_mms" />
+
+                    <LinearLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <TextView
+                            android:id="@+id/sos_sms_number"
+                            style="@style/ruyisetting_content_sytle"
+                            android:text="@string/Message_content" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            style="@style/ruyisetting_arrow_sytle" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sos_sms_content_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_middle" >
+
+                    <TextView
+                        android:id="@+id/sos_sms_content"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/Message_content" />
+
+                    <LinearLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <TextView
+                            android:id="@+id/sos_sms_content_info"
+                            style="@style/ruyisetting_content_sytle"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/change" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            style="@style/ruyisetting_arrow_sytle" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sos_sms_location_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ruyi_setting_item_height"
+                    android:background="@drawable/bg_selector_bottom" >
+
+                    <TextView
+                        android:id="@+id/sos_sms_location_info"
+                        style="@style/ruyisetting_info_sytle"
+                        android:text="@string/Add_location_information" />
+
+                    <RelativeLayout
+                        android:id="@+id/Receive_setting_on_off_layout"
+                        style="@style/ruyisetting_rightlayout_sytle" >
+
+                        <ImageButton
+                            android:id="@+id/sos_sms_location_switch"
+                            style="@style/ruyisetting_openoff_sytle" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sos_sms_whole_info"
+                    style="@style/ruyisetting_content_sytle_1"
+                    android:text="@string/SOS_Automatically_send_SMS" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

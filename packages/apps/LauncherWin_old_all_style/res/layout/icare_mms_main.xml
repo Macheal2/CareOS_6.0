@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/res/com.cappu.launcherwin"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icare_sms_main_background_default"
+    android:orientation="vertical" >
+
+    <com.cappu.launcherwin.widget.TopBar
+        android:id="@+id/care_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:titleText="@string/caremms" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_topbar_height" >
+		<Button
+		    android:id="@+id/care_add_new"
+		    android:layout_width="match_parent"
+		    android:paddingLeft="120dip"
+		    android:paddingRight="100dip"
+		    android:text="@string/care_add_new_message"
+		    android:drawableLeft="@drawable/care_new_edit_icon"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/care_normal_topbar"
+		    android:layout_height="@dimen/care_topbar_height"
+		    android:background="@drawable/care_new_edit"/>
+    </RelativeLayout>
+
+</LinearLayout>

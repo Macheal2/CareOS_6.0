@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">播报设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">播报设置</string>    
+    <string name="pu_tong_hua">普通话</string>
+    <string name="yue_yu">粤语</string>
+    <string name="dong_bei_hua">东北话</string>
+    <string name="he_nan_hua">河南话</string>
+    <string name="hu_nan_hua">湖南话</string>
+    <string name="si_chuan_hua">四川话</string>
+    <string name="tai_wan_hua">台湾话</string>
+    <string name="english">英语</string>
+    <string name="logo">卡布奇诺,说不完的爱！</string>
+    <string name="confirm_title">警告</string>
+    <string name="confirm_message">播报语言已修改,是否保存?</string>
+</resources>

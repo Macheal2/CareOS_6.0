@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="music_player_played_time">#ffffff</color>
+    <color name="music_player_duration">#ffffff</color>
+    <color name="appwidget_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="ltgrey">#ffe0e0e0</color>
+    <color name="touchInterceptor_list_divider">#dedede</color>
+    <color name="touchInterceptor_list_item_bg">#fafafa</color>
+    <color name="text_bg_color">#e9e8e8</color>
+    
+    <color name="care_text_color">#303030</color>
+    <color name="care_dialog_text_color_normal">#303030</color>
+    <color name="care_dialog_text_color_disable">#909090</color>
+    <color name="green">#ff84aa00</color>
+    
+    <color name="loading_text_color">#707070</color>
+    <color name="gridview_item_press">#3399ff</color>
+    <color name="gridview_item_not_press">#66000000</color>
+    
+    
+</resources>
+

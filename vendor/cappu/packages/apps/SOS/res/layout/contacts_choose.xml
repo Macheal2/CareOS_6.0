@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/contact_back_button"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textAllCaps="false"
+            style="@style/topbar_middle"
+            android:text="@string/contact_choose_info" />
+
+        <ImageButton
+            android:id="@+id/contacts_done_button"
+            style="@style/ruyiui_tobbar_imagebutton_right"
+            android:src="@drawable/icon_save" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search_editor"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@drawable/edittext_selector"
+        android:hint="@string/Search_contacts"
+        android:paddingLeft="5.0dip"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_color_hint_c"
+        android:textSize="40.0sp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="3dp"
+        android:cacheColorHint="@null"
+        android:divider="@android:color/black"
+        android:drawSelectorOnTop="true"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+</LinearLayout>

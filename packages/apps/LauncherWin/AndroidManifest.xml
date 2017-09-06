@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    package="com.cappu.launcherwin"
+    android:versionCode="1"
+    android:versionName="@string/app_version_name"
+   >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <!-- 配置权限 比如默认让桌面中文-->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <!--
+    net 版本是不能放入systemapp所以不能用这个系统权限     -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- hehangjun -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- hehangjun -->
+
+    <!--added by yzs for Xunfei begin-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <!--added by yzs for Xunfei end-->
+    
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <!-- <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <!-- 预留权限 start -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" /> -->
+
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 预留权限 end -->
+
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+   <!--允许-->
+   <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    </uses-permission>
+
+    <application
+        android:name="com.cappu.launcherwin.LauncherApplication"
+        android:icon="@drawable/ic_launcher_home"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:label="@string/app_name" >
+    <!-- 
+    android:allowBackup="true"应用程序数据的备份和恢复功能
+     android:largeHeap="true" 设置largeHeap=true之后，可以使用的最大内存
+    android:persistent="true"  应用的持久性（persistent） 
+    android:hardwareAccelerated="true" 对程序硬件加速-->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar" -->
+        <activity
+            android:name=".Launcher"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="mcc|mnc|keyboardHidden|orientation"
+            android:stateNotNeeded="true"
+            >
+            <!-- android:theme="@style/Theme"  -->
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+        android:name=".wxapi.WXEntryActivity"  
+        android:exported="true"  
+        android:screenOrientation="portrait"   
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />  
+        
+        
+        <activity
+            android:name="com.cappu.launcherwin.AllApps"
+            android:screenOrientation="portrait"
+            android:label="@string/replace_app"
+            android:theme="@style/Theme" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.AboutCareOS"
+            android:screenOrientation="portrait">
+            <!-- android:theme="@style/Theme"  -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.LauncherSettingActivity"
+            android:icon="@drawable/application_settings"
+            android:label="@string/setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+            <intent-filter>
+                <action android:name="android.intent.cappu.LAUNCHER" />
+                <!--
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".network.NetworkActivity"
+            android:label="@string/free_internet"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/application_wifi_offon"
+             >
+            <!-- android:theme="@style/Theme"  -->
+            <intent-filter>
+                <action android:name="android.intent.cappu.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.network.GprsPwdActivity"
+            android:label="@string/gprs_on_pwd_title"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.speech.SpeechSetting"
+            android:label="@string/speech_setting"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.WorkapaceSettingActivity"
+            android:label="@string/mian_menu_switch"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.ScreenManagerActivity"
+            android:label="@string/launcher_screen_manager"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <!-- hejianfeng add start -->
+         <activity
+            android:name="com.cappu.launcherwin.NoNetActivity"
+            android:label="@string/no_net_title"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.ThemeGridActivity"
+            android:label="@string/launcher_backgroud_style"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.ThemePreviewActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <!-- hejianfeng add end -->
+        <activity
+            android:name="com.cappu.launcherwin.WeaterSpeechTimeActivity"
+            android:label="@string/launcher_speech_time"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+
+        <receiver android:name="com.cappu.launcherwin.speech.SceneMode" >
+            <intent-filter>
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.cappu.launcherwin.network.GprsPwdSettingActivity"
+            android:launchMode="singleTask"
+            android:label="@string/privacy_modify_password"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Theme" -->
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.clearmanage.AnimationActivity"
+            android:icon="@drawable/main_icon"
+            android:label="@string/pushtopass"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+
+        <provider
+            android:name="com.cappu.launcherwin.LauncherProvider"
+            android:authorities="com.cappu.launcherwin"
+            android:readPermission="com.android.launcher.permission.READ_SETTINGS"
+            android:writePermission="com.android.launcher.permission.WRITE_SETTINGS" />
+
+        <activity
+            android:name="com.cappu.launcherwin.netinfo.NetLookActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cappu.launcherwin.PUSH" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.netinfo.BrowserActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.downloadUI.DownloadCenter"
+            android:launchMode="singleTask"
+            android:label="@string/download_center"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+        
+        <activity
+            android:name="com.cappu.launcherwin.downloadUI.celllayout.DownloadCellLayoutMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/I99GroupActivityStyle" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.cappu.launcherwin.netinfo.FavoritesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/favicons_list"
+            android:theme="@style/Transparent" >
+        </activity>
+	<activity
+            android:name="com.cappu.launcherwin.netinfo.BaiduMSSPContentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.netinfo.HelpNotesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/help_notes"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.RingtoneActivity"
+            android:launchMode="singleTask"
+            android:label="@string/setting_ringtone"
+            android:screenOrientation="portrait" > <!-- android:theme="@style/Transparent" -->
+        </activity>
+
+        <!-- 应用 -->
+        <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.GooduseActivity"
+            android:label="@string/app_name_applications"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" > <!-- android:launchMode="singleInstance" -->
+        </activity>
+       <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.PlayCenterActivity"
+            android:label="@string/app_name_game"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" > <!-- android:launchMode="singleInstance" -->
+            <intent-filter>
+                <action android:name="android.intent.cappu.LAUNCHER" />
+                <!--
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.ToolActivity"
+            android:label="@string/tools"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.cappu.LAUNCHER" />
+                <!--
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.AppUninstallActivity"
+            android:label="@string/uninstall_app"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.AppAddActivity"
+            android:label="@string/total"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cappu.launcherwin.applicationList.activity.AllAppActivity"
+            android:label="@string/total"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <receiver android:name="com.cappu.launcherwin.applicationList.AppManagerReceiver">   
+            <intent-filter>  
+             <action android:name="android.intent.action.PACKAGE_ADDED" />  
+             <action android:name="android.intent.action.PACKAGE_REMOVED" />  
+              <data android:scheme="package" />  
+            </intent-filter>  
+        </receiver>
+        <!-- 应用 end -->
+
+
+        <!-- 话费查询  end -->
+        <activity
+            android:name=".phoneutils.PhoneUtilActivity"
+            android:icon="@drawable/phone_util"
+            android:label="@string/phone_util"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Default" >
+            <intent-filter>
+                <action android:name="android.intent.cappu.LAUNCHER" />
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+            </intent-filter>
+        </activity>
+
+
+        <receiver android:name=".phoneutils.SMSReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 话费查询  end -->
+
+        <!--added by yzs for LowBattery Warring begin-->
+         <activity
+            android:name="com.cappu.launcherwin.LowBatterySetting"
+            android:theme="@*com.cappu:style/CareTheme"
+            android:screenOrientation="portrait"/>
+
+        <!--added by yzs for LowBattery Warring end-->
+
+
+        <!--added by jiangyan start-->
+         <activity
+            android:name="com.cappu.launcherwin.ClockStyleChoiceSetting"
+            android:theme="@*com.cappu:style/CareTheme"
+            android:label="@string/clock_title"
+            android:screenOrientation="portrait"/>
+        <!--added by jiangyan end-->
+
+        <activity android:name="com.cappu.launcherwin.ThemeSelectActivity"
+            android:label="@string/disktop_theme"
+            android:screenOrientation="portrait"/>
+        
+        <activity android:name="com.cappu.launcherwin.About"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"/>        
+    </application>
+
+</manifest>

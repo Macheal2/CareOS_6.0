@@ -1,0 +1,179 @@
+<!--
+ * Copyright (C) 2015 The yuhaiyang Android Source Project
+ *
+ * Licensed under the yuhaiyang License, (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://coding.net/yuhaiyang/License.git
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @data: 2015年6月26日 下午4:59:16 
+ * @author: y.haiyang@qq.com
+-->
+<resources>
+    <style name="CareDialog"/>
+
+    <style name="CareDialog.Title">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">78dp</item>
+    <!--caiji modify for Care_OS shutdown screen(start)-->
+        <!--item name="android:background">@drawable/dialog_top</item-->    	
+        <item name="android:background">@drawable/i99_dialog_top_bg</item>
+    <!--caiji modify for Care_OS shutdown screen(end)-->	
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!-- <item name="android:textAppearance">@style/TextAppearance.DialogTitle</item> -->
+    </style>
+
+    <style name="CareDialog.Message">
+        <!-- <item name="android:textAppearance">@style/TextAppearance.DialogMessage</item> -->
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/gay_color_dark</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="CareDialog.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">58dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/gay_color_dark</item>
+    </style>
+
+    <style name="CareDialog.Button.Backgrounds">
+    <!--caiji modify for Care_OS shutdown screen(start)-->
+        <!--item name="leftBackground">@drawable/dialog_left_bg</item-->
+        <!--item name="rightBackground">@drawable/dialog_right_bg</item-->
+        <item name="leftBackground">@drawable/i99_bottom_left_bg</item>
+        <item name="rightBackground">@drawable/i99_bottom_right_bg</item>
+    <!--caiji modify for Care_OS shutdown screen(end)-->
+        <item name="middleBackground">@drawable/dialog_middle_bg</item>
+        <item name="wholeBackground">@drawable/dialog_whole_bg</item>
+    </style>
+
+    <style name="CareDialog.Anim">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_out</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/gay_color</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.DialogTitle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.DialogMessage">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/gay_color</item>
+    </style>
+
+    <style name="TextAppearance.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/gay_color</item>
+    </style>
+
+    <style name="TextAppearance.Button">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/right_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/right_anim_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_anim_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/left_anim_out</item>
+    </style>
+
+    <style name="CareWidget"/>
+
+    <style name="CareWidget.TextView" parent="@android:style/Widget.Material.TextView" >
+        <item name="android:textAppearance">@style/TextAppearance.TextView</item>
+        <!--
+        <item name="textSelectHandleLeft">?attr/textSelectHandleLeft</item>
+        <item name="textSelectHandleRight">?attr/textSelectHandleRight</item>
+        <item name="textSelectHandle">?attr/textSelectHandle</item>
+        <item name="textEditPasteWindowLayout">?attr/textEditPasteWindowLayout</item>
+        <item name="textEditNoPasteWindowLayout">?attr/textEditNoPasteWindowLayout</item>
+        <item name="textEditSidePasteWindowLayout">?attr/textEditSidePasteWindowLayout</item>
+        <item name="textEditSideNoPasteWindowLayout">?attr/textEditSideNoPasteWindowLayout</item>
+        <item name="textEditSuggestionItemLayout">?attr/textEditSuggestionItemLayout</item>
+        <item name="textCursorDrawable">?attr/textCursorDrawable</item>
+        -->
+    </style>
+
+    <style name="CareWidget.Button" parent="@android:style/Widget.Material.Button" >
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:textColor">@color/gay_color</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="CareMenuStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/care_menu_bg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="CareMenuAnim">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_out</item>
+    </style>
+
+    <!--caiji add for Care_OS shutdown screen(start)-->
+    <style name="I99DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+    <style name="I99VerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/i99_line_vertical</item>
+    </style>
+     <style name="i99TextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="i99TextStyle_black" parent="i99TextStyle">
+        <item name="android:textColor">@color/i99_gray_text_color</item>
+    </style>
+    <!--caiji add for Care_OS shutdown screen (end)-->
+    
+    <!--added by yzs for CareSetting begin -->
+    <style name="DefaultLayoutStyle">
+        <item name="android:background">@drawable/list_corner_round_bg</item>
+        <item name="android:layout_marginTop">@dimen/item_padding_left_right</item>
+        <item name="android:layout_marginLeft">@dimen/item_padding_left_right</item>
+        <item name="android:layout_marginRight">@dimen/item_padding_left_right</item>
+    </style>
+    <!--added by yzs for CareSettingItem end -->
+</resources>

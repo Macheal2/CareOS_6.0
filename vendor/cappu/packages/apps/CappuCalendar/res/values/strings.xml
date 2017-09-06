@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desktop_title_calendar">The Calendar </string>
+    <string name="app_name">CappuCalendar</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="number_picker_increment_button">"increment"</string>
+    <string name="year">year</string>
+    <string name="month">Month</string>
+    <string name="day">day</string>
+    <string name="Jump">Jump</string>
+    <string name="today">today</string>
+    <string name="ganzhiyear">壬辰年</string>
+    <string name="ganzhiday">戊戌月丙寅日</string>
+    <string name="chongsha">冲煞</string>
+    <string name="wuxing">五行</string>
+    <string name="taishen">胎神</string>
+    <string name="number_picker_decrement_button">"reducement"</string>
+    <string name="date_time_done">"完成"</string>
+    <string name="date_picker_dialog_title">"设置日期"</string>
+    <string name="date_picker_increment_day_button">"增大日期值"</string>
+    <string name="date_picker_decrement_day_button">"减小日期值"</string>
+    <string name="date_picker_increment_month_button">"增大月份值"</string>
+    <string name="date_picker_decrement_month_button">"减小月份值"</string>
+    <string name="date_picker_increment_year_button">"增大年份值"</string>
+    <string name="date_picker_decrement_year_button">"减小年份值"</string>
+    
+    <string name="menu_title">"Option"</string>
+    <string name="menu_moon">"Monthly calendar"</string>
+    <string name="menu_detail">"details calendar"</string>
+    <string name="menu_default">"(default)"</string>
+</resources>

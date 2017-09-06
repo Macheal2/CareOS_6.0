@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Help Instructions</string>
+    <string name="title_user_manual">User Manual</string>
+    <string name="title_weixin">We Chat</string>
+
+    <string-array name="user_manual_list">
+        <item>Telephone Messages</item>
+        <item>Common Tools</item>
+        <item>Mobile phone Internet</item>
+        <item>General Settings</item>
+        <item>Safety for help</item>
+        <item>Customer service phone</item>
+    </string-array>
+
+    <string-array name="user_manual_icons">
+        <item>ic_phone_mms</item>
+        <item>ic_tools</item>
+        <item>ic_gprs</item>
+        <item>ic_settings</item>
+        <item>ic_sos</item>
+        <item>ic_customer</item>
+    </string-array>
+
+    <string-array name="weixin_list">
+        <item>Login Interface</item>
+        <item>Chat Introduction</item>
+        <item>Find Introduction</item>
+        <item>Mail List Introduction</item>
+        <item>Chat Interface</item>
+        <item>Send Expression</item>
+        <item>Send Voice Messages</item>
+        <item>Send Photos and Videos</item>
+        <item>Circle of friends</item>
+        <item>Personal Photo Album(Personal Photo Share)</item>
+        <item>Add Friend</item>
+        <item>Set the font size</item>
+    </string-array>
+
+    <string-array name="weixin_icons">
+        <item>ic_weixin_login</item>
+        <item>ic_weixin_chat</item>
+        <item>ic_weixin_found</item>
+        <item>ic_weixin_contact</item>
+        <item>ic_weixin_chat_screen</item>
+        <item>ic_weixin_emo</item>
+        <item>ic_weixin_voice</item>
+        <item>ic_weixin_photo</item>
+        <item>ic_weixin_friends_circle</item>
+        <item>ic_weixin_gallery</item>
+        <item>ic_weixin_add_friends</item>
+        <item>ic_weixin_font</item>
+    </string-array>
+
+</resources>

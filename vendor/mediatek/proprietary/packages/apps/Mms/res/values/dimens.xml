@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc.
+All Rights Reserved. -->
+<resources>
+    <dimen name="message_item_avatar_on_right_text_indent">50dip</dimen>
+    <dimen name="message_item_text_padding_left_right">12dip</dimen>
+    <dimen name="message_item_text_padding_top">5dip</dimen>
+
+    <dimen name="avatar_width_height">64dip</dimen>
+
+    <dimen name="input_text_height">48dip</dimen>
+    <!--modified by yzs for I99_OS UI form 8 to 2-->
+    <dimen name="input_text_height_adjusted">2dip</dimen>
+    
+    <dimen name="mms_inline_attachment_size">178dip</dimen>
+
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_bottom">6dip</dimen>
+    <dimen name="banner_s_space">4dip</dimen>
+    <dimen name="banner_m_space">8dip</dimen>
+    <!-- IpMessage -->
+    <!--modified by yzs for I99_OS UI form 38 to 0-->
+    <dimen name="bottom_panel_min_height">0dip</dimen>
+    <dimen name="share_panel_lan_height">130dip</dimen>
+    <dimen name="share_panel_port_height">90dip</dimen>
+
+    <dimen name="shortcut_bound_size">48dip</dimen>
+    <dimen name="img_minwidth">100dip</dimen>
+
+    <!-- For Ip Message -->
+    <!--modified by yzs for I99_OS UI form 10 to 5-->
+    <dimen name="ipmsg_message_list_divier_height">5dip</dimen>
+
+    <!-- For Group Mms -->
+    <dimen name="group_photo_width">32dip</dimen>
+
+    <dimen name="share_panel_common_lan_height">100dip</dimen>
+<!--modified by yzs for I99_OS UI form 210 to 75-->
+    <dimen name="share_panel_common_port_height">75dip</dimen>
+    <!-- add by yzs for I99_OS UI-->
+    <dimen name="attchment_view_send_button_length">100dip</dimen>
+
+    <!-- add to fix bug ALPS00867457 -->
+    <dimen name="share_panel_lan_height_tablet">130dip</dimen>
+
+    <!-- For Ip Message add to fix bug ALPS01479831-->
+    <dimen name="popup_min_width">135dip</dimen>
+    <dimen name="atcionbar_size">48dp</dimen>
+
+    <!-- songkun add for care style -->
+    <dimen name="care_text_size_large">30sp</dimen>	
+    <dimen name="message_title_height">80dip</dimen>
+    <!--added by yzs for I99 UI Mms Dialog menus-->
+    <dimen name="i99_dialog_menu_list_margin">10dip</dimen>
+    <dimen name="detail_title_height">65dp</dimen>
+    <dimen name="i99dialog_title_textsize">30sp</dimen>
+    <dimen name="i99_dialog_theme_width">360dip</dimen>
+    <dimen name="i99_dialog_text_padding">10dip</dimen>
+    <dimen name="i99_dialog_list_menu_textsize">26sp</dimen>
+    <dimen name="i99_popu_menu_title">20sp</dimen>
+    <dimen name="i99_delivered_indicator_margintop">16dip</dimen>
+    <dimen name="i99_topbar_title_textsize">37sp</dimen>
+
+    <dimen name="care_mms_settings_item_height">90dip</dimen>
+
+    <dimen name="care_text_size_normal">27sp</dimen>
+
+    <dimen name="care_text_size_default">@dimen/care_text_size_normal</dimen>
+    <!--end-->
+</resources>

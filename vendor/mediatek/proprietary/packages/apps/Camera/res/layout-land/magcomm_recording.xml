@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true">
+
+<LinearLayout 
+    android:id="@+id/video_pause_resume"
+    style="@style/ShutterGroup"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:splitMotionEvents="false"><!--zhouhua android:layout_alignParentRight="true"-->
+
+
+    <com.android.camera.ui.ShutterButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_photo"
+        android:contentDescription="@string/accessibility_shutter_button"
+        android:layout_marginBottom="10dp"
+	android:visibility="invisible" />
+	
+    <com.android.camera.ui.ShutterButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"      
+        android:src="@drawable/magcomm_video_pause"
+        android:layout_marginBottom="130dp"
+	    android:visibility="invisible" />
+    
+    <com.android.camera.ui.ShutterButton
+        android:id="@+id/btn_pause_resume"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/magcomm_video_pause"
+        android:contentDescription="@string/accessibility_video_shutter_button" />
+</LinearLayout>
+
+<com.android.camera.ui.RotateLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/recording_time_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+            <TextView android:id="@+id/recording_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_item_text_color_normal"
+                android:singleLine="true"
+                android:background="@drawable/magcomm_vidio_time_bg"/>
+         
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/recording_size_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recording_time_group"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_indicator_background"
+            android:visibility="gone" >
+            <TextView android:id="@+id/recording_current"
+                style="@style/RecordingSizeText"
+                android:layout_alignParentLeft="true"/>
+            <SeekBar
+                android:id="@+id/recording_progress"
+                style="@style/RecordingSizeProgress"
+                android:layout_toRightOf="@id/recording_current"
+                android:layout_toLeftOf="@+id/recording_total"
+                android:focusable="false"
+                android:clickable="false"
+                android:thumb="@null" />
+             <TextView android:id="@+id/recording_total"
+                style="@style/RecordingSizeText"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    	</RelativeLayout>
+	</com.android.camera.ui.RotateLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <style name="CnextDialog"/>
+
+    <style name="CnextDialog.Title">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:background">@drawable/dialog_top</item>
+        <item name="android:textAppearance">@style/TextAppearance.DialogTitle</item>
+    </style>
+
+    <style name="CnextDialog.Message">
+        <item name="android:textAppearance">@style/TextAppearance.DialogMessage</item>
+        <item name="android:padding">15dp</item>
+    </style>
+ 
+    <style name="CnextDialog.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gay_color</item>
+    </style>
+
+    <style name="CnextDialog.Button.Backgrounds">
+        <item name="leftBackground">@drawable/dialog_left_bg</item>
+        <item name="rightBackground">@drawable/dialog_right_bg</item>
+        <item name="middleBackground">@drawable/dialog_middle_bg</item>
+        <item name="wholeBackground">@drawable/dialog_whole_bg</item>
+    </style>
+
+    <style name="CnextDialog.Anim">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_out</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/gay_color</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.DialogTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/gay_color_dark</item>
+    </style>
+
+    <style name="TextAppearance.DialogMessage">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gay_color</item>
+    </style>
+
+    <style name="TextAppearance.Button">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="OptionDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/window_background</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="OptionDialog"/>
+    <style name="OptionDialog.Anim">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_out</item>
+    </style>
+    
+</resources>

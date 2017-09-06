@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2012 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License
+-->
+<resources>
+
+    <!--
+         Do not translate. These are all of the drawable resources that should be preloaded by
+         the zygote process before it starts forking application processes.
+    -->
+    <array name="array_color_bg_drawables">
+        <item>@drawable/img_color_pink</item>
+        <item>@drawable/img_color_green</item>
+        <item>@drawable/img_color_violet</item>
+        <item>@drawable/img_color_blue</item>
+        <item>@drawable/img_color_darkgreen</item>
+        <item>@drawable/img_color_yellow</item>
+    </array>
+    <array name="array_color_point_drawables">
+        <item>@drawable/img_color_pink_point</item>
+        <item>@drawable/img_color_green_point</item>
+        <item>@drawable/img_color_violet_point</item>
+        <item>@drawable/img_color_blue_point</item>
+        <item>@drawable/img_color_darkgreen_point</item>
+        <item>@drawable/img_color_yellow_point</item>
+    </array>
+
+    <string-array name="unit_array">
+        <item>@string/unit_0</item>
+        <item>@string/unit_1</item>
+        <item>@string/unit_2</item>
+        <item>@string/unit_3</item>
+        <item>@string/unit_4</item>
+        <item>@string/unit_5</item>
+    </string-array>
+</resources>

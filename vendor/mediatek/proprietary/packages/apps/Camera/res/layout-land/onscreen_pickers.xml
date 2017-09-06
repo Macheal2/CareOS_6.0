@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--2016/07/01 begin add value_port-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/on_screen_pickers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:splitMotionEvents="false"><!--#20b2aa
+            android:background="#e9967a"
+           android:layout_width="match_parent"
+         android:layout_height="match_parent"-->
+    <LinearLayout 
+    	style="@style/OnScreenPickerGroup">
+    	<com.android.camera.ui.PickerButton
+        	android:id="@+id/onscreen_slow_motion_picker"
+        	style="@style/OnScreenPickerFixed"
+        	android:layout_width="0dip"
+    		android:layout_height="0dip"/>
+    	<com.android.camera.ui.PickerButton
+        	android:id="@+id/onscreen_gesture_shot_picker"
+        	style="@style/OnScreenPickerFixed"/>
+    	<com.android.camera.ui.PickerButton
+        	android:id="@+id/onscreen_smile_shot_picker"
+        	style="@style/OnScreenPickerFixed"/>
+    	<com.android.camera.ui.PickerButton
+        	android:id="@+id/onscreen_hdr_picker"
+        	style="@style/OnScreenPickerFixed"/>
+    	<com.android.camera.ui.PickerButton
+        	android:id="@+id/onscreen_stereo3d_picker"
+		style="@style/OnScreenPickerFixed"/>
+   </LinearLayout>
+    <!--zhouhua  begin (add Top Backgroung) 20160618 -->
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="58dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/magcomm_video_shots_bg"/>
+         <!--zhouhua end 20160618 -->
+         
+     <com.android.camera.ui.PickerButton
+        android:id="@+id/onscreen_flash_picker"
+        style="@style/MagcommOnScreenPickerFlash"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_flash_picker" />
+     
+<com.android.camera.ui.PickerButton
+    	android:id="@+id/onscreen_camera_picker"
+        style="@style/MagcommOnScreenPickerCamera"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/btn_camera_switch"/>
+  
+</RelativeLayout>
+

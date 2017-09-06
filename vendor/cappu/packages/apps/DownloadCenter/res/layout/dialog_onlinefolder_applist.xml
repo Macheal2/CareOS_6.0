@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/plus_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/plus_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:gravity="center"
+        android:text="@string/install_app_list"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <View
+        android:id="@id/plus_dialog_devider"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/plus_devider_line"
+        android:paddingTop="5.0dip" />
+
+    <GridView
+        android:id="@+id/uufolder_installed_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:scrollbarThumbVertical="@drawable/plus_scroll_bar"
+        android:scrollbars="vertical" />
+
+    <View
+        android:id="@id/plus_dialog_btn_devider"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/plus_devider_line"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" />
+
+    <LinearLayout
+        android:id="@+id/uufolder_install_set_container"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="2.0dip" >
+
+        <Button
+            android:id="@id/uufolder_plus_confirm"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/uu_plus_item_left_click_selector"
+            android:enabled="true"
+            android:text="@string/uu_folder_confirm_action"
+            android:textColor="@color/sdk_btn_text_gray_selector" />
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="@dimen/plus_btn_line_height"
+            android:src="@drawable/plus_btn_line" />
+
+        <Button
+            android:id="@id/uufolder_plus_cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/uu_plus_item_right_click_selector"
+            android:text="@string/uu_folder_cancel_action"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

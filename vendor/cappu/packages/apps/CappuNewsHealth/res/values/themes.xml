@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TopBarStlye" />
+    <style name="TopBarStlye.Default">
+        <!-- <item name="titleBackground">@drawable/topbar_bg</item> -->
+        <item name="titleBackground">@drawable/shape_blue</item>
+        <item name="titleColor">@android:color/white</item>
+        <item name="titleTextSize">@dimen/normal_topbar</item>
+        <item name="subTextSize">@dimen/normal_topbar_sub</item>
+        <item name="leftImage">@drawable/icon_back</item>
+        <item name="rightImage">@drawable/icon_option</item>
+    </style>
+
+</resources>

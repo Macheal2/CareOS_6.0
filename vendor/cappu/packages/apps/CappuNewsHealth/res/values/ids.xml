@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="topBar_title" type="id"/>
+    <item name="topBar_Top_Title" type="id"/>
+    <item name="topBar_Bottom_Title" type="id"/>
+    <item name="topBar_Left_ImageButton" type="id"/>
+    <item name="topBar_Right_ImageButton" type="id"/>
+
+</resources>

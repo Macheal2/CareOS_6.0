@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2015 The yuhaiyang Android Source Project
+ *
+ * Licensed under the yuhaiyang License, (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://coding.net/yuhaiyang/License.git
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @data: 2015年6月26日 下午4:59:16 
+ * @author: y.haiyang@qq.com                                                                                                           
+-->
+<resources>
+    
+    <dimen name="topbar_default_text_size">65px</dimen>
+    <dimen name="topbar_default_sub_text_size">41px</dimen>
+    <dimen name="care_menu_item_height">60dp</dimen>
+    <!--caiji add for Care_OS shutdown screen(start)-->       
+    <dimen name="alert_dialog_title_height">64dip</dimen>
+    <dimen name="alert_dialog_button_bar_height">48dip</dimen>
+    <dimen name="i99_topbar_height">75dp</dimen>
+    <dimen name="i99_dialog_content_mini_height">100dp</dimen>
+    <dimen name="i99_shut_down_item_height">80dp</dimen>
+    <!--caiji add for Care_OS shutdown screen(end)-->   
+
+    <!-- added by yzs for CareSettingItem begin -->
+    <dimen name="item_height_other">60dip</dimen>
+    <dimen name="item_height_check">66dip</dimen>
+    <dimen name="item_padding_left_right">10dp</dimen>
+    <dimen name="default_text_size">24sp</dimen>
+    <dimen name="tipview_size">30dip</dimen>
+    <dimen name="iconview_size">45dip</dimen>
+    <!-- added by yzs for CareSettingItem end -->
+</resources>

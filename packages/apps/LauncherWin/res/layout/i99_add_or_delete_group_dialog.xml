@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/I99DialogStyle_Title"
+        android:text="@string/i99_option" />
+    <!--
+    <Button
+        android:id="@+id/create"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_top_bg"
+        android:text="@string/i99_create_contact"/>
+    -->    
+    <Button
+        android:id="@+id/select"
+        android:text="@string/i99_add"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_top_bg"/>
+
+    <View style="@style/I99HorizontalLine"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:text="@string/i99_remove"
+        style="@style/I99DialogStyle_Button"
+        android:background="@drawable/i99_list_bottom_bg"
+        android:layout_marginBottom="3dp"/> 
+</LinearLayout>

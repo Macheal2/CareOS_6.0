@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Just fot cappu test -->
+    <string name="cappu">This is Cappu Resources!</string>
+
+    <!--add by y.haiyang for vivo_Ui (start)-->
+    <!-- label for item that turns off power in phone options dialog -->
+    <string name="global_action_reboot">重启</string>
+    <!-- Button to turn off the phone, within the Phone Options dialog -->
+    <string name="power_reboot">重启</string>
+    <!-- Shutdown Progress Dialog. This is shown if the user chooses to power off the phone. -->
+    <string name="reboot_progress">正在重启...</string>
+    <string name="reboot_confirm" product="tablet" >"您的平板电脑会重启。"</string>
+    <string name="reboot_confirm" product="default" >"您的手机将会重启。"</string>
+    <string name="reboot_confirm_question" >"您要重启吗？"</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <!--add by y.haiyang for vivo_Ui (end)-->
+    <!-- dengying@20140913 dataconn secretcode begin-->
+    <string name="dataconn_title">验证密码</string>
+    <string name="dataconn_ok">确认</string>
+    <string name="dataconn_cancel">取消</string>
+    <string name="dataconn_edit_hint">请输入密码</string>
+    <string name="dataconn_checkbox_txt">显示密码(出厂密码:9999)</string>
+    <string name="dataconn_password_error">密码不正确</string>
+    <!-- dengying@20140913 dat-->
+    <!-- added by yzs for CareSettingItem begin -->
+    <string name="default_string">默认菜单</string>
+    <!-- added by yzs for CareSettingItem end -->
+    </resources>

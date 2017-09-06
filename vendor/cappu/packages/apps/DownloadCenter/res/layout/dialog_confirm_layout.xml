@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/dialog_main_layout"
+    android:layout_width="@dimen/update_dialog_with"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_backgroud" >
+
+    <TextView
+        android:id="@id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/uu_folder_update_dialog_title"
+        android:textColor="#ff202020"
+        android:textSize="18.0sp" />
+
+    <View
+        android:id="@id/dialog_devider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/dialog_title"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="2.0dip"
+        android:background="@drawable/dialog_devider_line" />
+
+    <TextView
+        android:id="@id/dialog_content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_devider"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:lineSpacingExtra="3.0dip"
+        android:maxLines="4"
+        android:paddingLeft="17.0dip"
+        android:paddingRight="17.0dip"
+        android:paddingTop="17.0dip"
+        android:scrollbarThumbVertical="@drawable/dialog_scrollbar"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#ff454545"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_content_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="17.0dip" >
+
+        <Button
+            android:id="@id/dialog_cancel_button"
+            android:layout_width="fill_parent"
+            android:layout_height="33.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/dialog_cancel_selector"
+            android:gravity="center"
+            android:text="@string/uu_folder_cancel_action"
+            android:textColor="#ff6e6e6e"
+            android:textSize="15.0sp" />
+
+        <View
+            android:id="@id/dialog_button_center_view"
+            android:layout_width="0.0dip"
+            android:layout_height="38.0dip" />
+
+        <Button
+            android:id="@id/dialog_comfirm_button"
+            android:layout_width="fill_parent"
+            android:layout_height="33.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/dialog_confrim_selector"
+            android:gravity="center"
+            android:text="@string/uu_folder_update_dialog_confirm"
+            android:textColor="#ffffffff"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

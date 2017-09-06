@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">浏览器</string>
+    <string name="desktop_title_browser">上网导航</string>
+    <string name="no_data">无数据</string>
+    <string name="bookmark_add">添加书签</string>
+    <string name="bookmark_add_name">名称:</string>
+    <string name="bookmark_add_url">网址:</string>  
+    <string name="name_and_url_cannot_be_empty">名称和网址不能为空</string> 
+    <string name="bookmark_del">删除书签</string> 
+    <string name="bookmark_option">选项</string> 
+    <string name="bookmark_del_message">是否删除自定义书签：</string>
+	<string name="OK">确定</string> 
+	<string name="Cancel">取消</string>   
+    <string name="i99_dialog_left">取 消</string>
+    <string name="i99_dialog_right">确 定</string>
+    <string name="i99_dialog_middle">不确定</string>
+    <string name="i99_dialog_delete_title">删除记录</string>	
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#f5f5f5"  
+    android:orientation="vertical" >
+
+   <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+    style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/desktop_title_sosmain"
+    care:rightImage="@drawable/icon_save"/>      
+    
+<!--     <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_middle"
+            android:text="@string/contact_edit" />
+
+        button_edit icon_save
+        <ImageButton
+            android:id="@+id/save"
+            style="@style/ruyiui_tobbar_imagebutton_right"
+            android:src="@drawable/icon_save" />
+    </RelativeLayout> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/ruyi_margin"
+            android:paddingTop="@dimen/ruyi_margin" >
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/setting_name"
+                    android:textColor="@color/listview_bottom_hint" />
+
+                <EditText
+                    android:id="@+id/name_editor"
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/personal_setting_sex"
+                    android:textColor="@color/listview_bottom_hint" />
+
+				<RadioGroup 
+				        android:id="@+id/sex"
+				        android:orientation="horizontal"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content">
+				        <RadioButton 
+				            android:id="@+id/male"
+				            android:button= "@drawable/care_checked_bg"  
+				            style="@style/ruyiui_personal_info_key"
+				            android:textColor="@color/listview_bottom_hint"
+				            android:text="@string/male"/>
+				        <RadioButton 
+				            android:id="@+id/female"
+				            android:button= "@drawable/care_checked_bg"  
+				            style="@style/ruyiui_personal_info_key"
+				            android:textColor="@color/listview_bottom_hint"
+				            android:text="@string/female"/>
+				        
+				</RadioGroup>                
+                
+                <EditText
+                    android:id="@+id/sex_editor"
+                    android:visibility="gone"                    
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/age"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/age"
+                    android:textColor="@color/listview_bottom_hint" />
+
+                <EditText
+                    android:id="@+id/age_editor"
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout> 
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/The_phone"
+                    android:textColor="@color/listview_bottom_hint" />
+
+                <EditText
+                    android:id="@+id/mobile_editor"
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/address"
+                    android:textColor="@color/listview_bottom_hint" />
+
+                <EditText
+                    android:id="@+id/address_editor"
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ruyiui_personal_item_layout" >
+
+                <TextView
+                    android:id="@+id/note"
+                    style="@style/ruyiui_personal_info_key"
+                    android:text="@string/note"
+                    android:textColor="@color/listview_bottom_hint" />
+
+                <EditText
+                    android:id="@+id/note_editor"
+                    style="@style/ruyiui_personal_info_key"
+                    android:layout_weight="1.0"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_edit"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

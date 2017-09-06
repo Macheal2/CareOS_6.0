@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" 
+       xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu" >
+
+   <RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">	
+	<!-- @sk new add id:topbar -->        
+	<com.cappu.widget.TopBar
+            android:id="@+id/topbar"
+            style="@style/I99Style_TopBar"
+            care:clickable="true"
+            care:text="@string/new_message"/>
+        <ViewStub android:id="@+id/recipients_editor_stub"
+            android:layout="@layout/recipients_editor"
+	    android:layout_below="@id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <view class="com.android.mms.ui.MessageListView"
+            style="?android:attr/listViewWhiteStyle"
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:smoothScrollbar="true"
+            android:stackFromBottom="true"
+            android:visibility="gone"
+            android:background="#FFF0F0F0"			
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarStyle="insideOverlay"
+            android:paddingBottom="@dimen/input_text_height_adjusted"
+        android:transcriptMode="normal"/>    
+    <com.android.mms.ui.HeightChangedLinearLayout
+        android:id="@+id/msg_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/attachment_editor_scroll_view"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <view class="com.android.mms.ui.AttachmentEditor"
+                android:id="@+id/attachment_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ViewStub
+                    android:id="@+id/file_attachment_view_stub"
+                    android:layout="@layout/file_attachment_view"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginBottom="3dip"
+                    android:layout_height="wrap_content" />
+                <ViewStub android:id="@+id/image_attachment_view_stub"
+                    android:layout="@layout/image_attachment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <ViewStub android:id="@+id/video_attachment_view_stub"
+                    android:layout="@layout/video_attachment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <ViewStub android:id="@+id/audio_attachment_view_stub"
+                    android:layout="@layout/audio_attachment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <ViewStub android:id="@+id/slideshow_attachment_view_stub"
+                    android:layout="@layout/slideshow_attachment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </view>
+        </ScrollView>
+	<!--@sk new add LL1-->	
+	<LinearLayout
+    	   android:layout_width="match_parent"
+    	   android:layout_height="match_parent"
+    	   android:addStatesFromChildren="true"
+    	   android:layout_gravity="top"
+    	   android:orientation="vertical">
+           <!--@sk new add id:sms_editor_view-->
+	   <LinearLayout
+                android:id="@+id/sms_editor_view"
+    	        android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:visibility="gone"  >
+		<!--@sk new add from com.android.mms.ui.EnhanceEditText -->
+	   	<EditText
+               	    android:textColor="@android:color/black"
+                    android:id="@+id/embedded_text_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:autoText="true"
+                    android:textSize="32sp"
+                    android:textColorHint="#FFC0C0C0"
+                    android:hint="@string/sms_input_hint"
+                    android:maxLines="10"
+                    android:ellipsize="end"
+                    android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:maxLength="2048"
+                    android:background="@android:drawable/edit_text" />
+	   </LinearLayout><!--id:sms_editor_view-->
+	   <!--@sk new add id:mms_editor_view-->
+	   <LinearLayout
+            	android:id="@+id/mms_editor_view"
+            	android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:background="@android:drawable/edit_text"
+                android:visibility="gone">
+		<EditText 
+		    android:id="@+id/subject"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:capitalize="sentences"
+                    android:autoText="true"
+                    android:textSize="28sp"
+                    android:inputType="textFilter"
+                    android:singleLine="true"
+                    android:maxLength="40"
+                    android:hint="@string/subject_hint"
+                    android:background="@android:drawable/edit_text" />
+		<!--@sk new add tv-->		
+		<TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginBottom="1dip"
+                    android:background="@drawable/vivo_divider_horizontal" />
+		<!--@sk new add from com.android.mms.ui.EnhanceEditText -->
+	   	<EditText
+               	    android:textColor="@android:color/black"
+                    android:id="@+id/mms_embedded_text_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:autoText="true"
+                    android:textSize="32sp"
+                    android:gravity="start"
+                    android:nextFocusRight="@+id/send_button"
+                    android:hint="@string/sms_input_hint"
+                    android:maxLines="6"
+                    android:ellipsize="end"
+                    android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:maxLength="2048"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_weight="1.0" />
+	   </LinearLayout><!--id:mms_editor_view-->
+        </LinearLayout><!--id:LL1-->
+    </com.android.mms.ui.HeightChangedLinearLayout>	   
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/i99_btn_background"
+        android:padding="4dip"
+        android:layout_gravity="center_vertical">
+	<!--@sk new add id:call_button -->	
+	<Button
+            android:id="@+id/call_button"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:textSize="70px"
+            android:layout_marginRight="2dip"
+            android:textColor="@color/title_color"
+            android:text="@string/call_button_string"
+            android:background="@drawable/i99_btn_call"
+            android:adjustViewBounds="true"/>
+	<LinearLayout
+            android:id="@+id/button_with_counter"
+            android:orientation="vertical"
+	    android:layout_gravity="center_vertical"
+	    android:layout_width="0dip"
+	    android:layout_weight="0.7"
+            android:layout_height="wrap_content" >
+	    <TextView
+                android:id="@+id/text_counter"
+	        android:layout_width="0dip"
+	        android:layout_height="0dip"
+                android:gravity="center_horizontal"
+	        android:layout_gravity="center_vertical"
+                android:textColor="#5c5c5c"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:visibility="gone" />
+	    <!--@sk new add from ImageButton -->
+            <Button
+                android:id="@+id/send_button_sms"
+		android:layout_width="match_parent"
+		android:layout_height="60dip"
+		android:layout_gravity="right|center_vertical"
+		android:background="@drawable/i99_btn_send" 
+		android:text="@string/sms_send_button"
+		android:textSize="70px"
+	        android:layout_marginLeft="2dip"
+		android:textColor="@color/title_color"
+		android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/send_button_ipmsg"
+                style="?android:attr/borderlessButtonStyle"
+                android:src="@drawable/ic_send_ipmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/send"
+                android:nextFocusLeft="@+id/embedded_text_editor"
+                android:visibility="gone" />
+	</LinearLayout><!--id:button_with_counter-->
+	<ImageButton
+                android:id="@+id/share_button"
+		android:layout_width="0dip"
+		android:layout_weight="0.3"
+		android:layout_height="60dip"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/i99_btn_call"
+                android:layout_marginLeft="4dip"
+		android:src="@drawable/i99_btn_share_icon" />
+    </LinearLayout><!--id:bottom_panel-->    	
+    <LinearLayout
+         android:id="@+id/panel_container"
+	 android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+	<!-- hejianfeng delete 
+         <com.mediatek.ipmsg.ui.SharePanel
+             android:id="@+id/share_panel"
+	     android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             android:visibility="gone" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/delete_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:visibility="gone"
+        android:background="@drawable/cab_background_bottom_holo_dark">
+        <ImageButton
+            android:id="@+id/select_all"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_select_all"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/sim_sms_multidel_button_selector"></ImageButton>
+        <ImageButton
+            android:id="@+id/divider_1"
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_marginLeft="5dip"
+	    android:background="#00000000"></ImageButton>
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_clear_select"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/sim_sms_multidel_button_selector"></ImageButton>
+        <ImageButton
+	    android:id="@+id/divider_1"
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_marginLeft="5dip"
+	    android:background="#00000000"></ImageButton>
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_trash_holo_dark"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/sim_sms_multidel_button_selector"></ImageButton>
+	<ImageView
+            android:id="@+id/ip_message_thumbnail"
+	    android:layout_width="0dip"
+	    android:layout_height="0dip"
+            android:layout_gravity="bottom"
+            android:visibility="gone" />
+	<LinearLayout
+            android:id="@+id/recipients_subject_linear"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:paddingTop="0dip"
+            android:orientation="vertical" >
+	    <ViewStub 
+	        android:id="@+id/recipients_editor_stub"
+                android:layout="@layout/recipients_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />      
+	    <!--@sk new add id:view_message_stub -->
+	    <ViewStub android:id="@+id/view_message_stub"
+                android:layout="@layout/message_view_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout 
+	    android:id="@+id/ip_message_typing_status_view"
+	    android:layout_width="0dip"
+	    android:layout_height="0dip"
+            android:orientation="vertical"
+	    android:cacheColorHint="#00000000"
+	    android:background="@drawable/listitem_background_recv"
+            android:visibility="gone" >
+            <TextView android:id="@+id/ip_message_typing_status"
+	        android:layout_width="0dip"
+		android:layout_height="0dip"/>
+        </LinearLayout>
+    </LinearLayout><!--id:delete_panel-->
+</merge>

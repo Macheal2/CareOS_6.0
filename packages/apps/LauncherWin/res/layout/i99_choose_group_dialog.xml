@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/I99DialogStyle_Title"
+        android:text="@string/i99_select_group" />
+   
+    <ListView
+        android:id="@+id/i99_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/i99_line"/>
+
+    <Button
+        android:id="@+id/no_group"
+        style="@style/I99DialogStyle_Button"
+        android:text="@string/i99_no_group"
+        android:minHeight="@dimen/i99_dialog_item_height"
+        android:background="@drawable/i99_list_one_item_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    
+</LinearLayout>

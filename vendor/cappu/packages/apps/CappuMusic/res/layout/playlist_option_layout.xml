@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+    <!-- android:layout_alignParentBottom="true"  -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        
+        
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dip"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relative_back"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+<!-- 				 yuan tong qin update button wei textview -->
+                <TextView
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dip"
+                    android:gravity="center"
+                    android:background="@drawable/dialog_middle_button_bg"
+                    android:paddingLeft="36dip"
+                    android:paddingRight="36dip"
+                    android:text="@string/cancel_button"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_above="@id/relative_back"
+         >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="@color/text_bg_color"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/new_inventory"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:id="@+id/option_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/dialog_setting_ring_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/dialog_setting_ring_button"
+                android:gravity="center_horizontal"
+                android:text="@string/setting_ring"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_to_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dip"
+                android:layout_toLeftOf="@id/dialog_setting_ring_button"
+                android:drawableTop="@drawable/dialog_add_to_button"
+                android:gravity="center_horizontal"
+                android:text="@string/add_to"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/dialog_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@id/dialog_setting_ring_button"
+                android:drawableTop="@drawable/dialog_delete_button"
+                android:gravity="center_horizontal"
+                android:text="@string/delete_song"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+        
+        <ListView 
+            android:id="@+id/inventory_list"
+            android:layout_width="fill_parent"
+            android:dividerHeight="1px"
+            android:background="@android:color/white" 
+            android:divider="@color/text_bg_color"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_bg_color" />
+		
+<!--         <RelativeLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="72dip" -->
+<!--             android:background="@android:color/white" > -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="60dip" -->
+<!--                 android:layout_centerInParent="true" -->
+<!--                 android:orientation="horizontal" > -->
+				
+<!--                 <TextView -->
+<!--                     android:id="@+id/cancel_button" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="48dip" -->
+<!--                     android:gravity="center" -->
+<!--                     android:background="@drawable/dialog_middle_button_bg" -->
+<!--                     android:paddingLeft="36dip" -->
+<!--                     android:paddingRight="36dip" -->
+<!--                     android:text="@string/cancel_button" -->
+<!--                     android:textColor="@android:color/black" /> -->
+<!--             </LinearLayout> -->
+<!--         </RelativeLayout> -->
+    </LinearLayout>
+    
+    
+  </RelativeLayout>
+</RelativeLayout>

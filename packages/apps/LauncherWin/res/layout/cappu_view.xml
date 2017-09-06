@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cappu.launcherwin.WeatherTimeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weather_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="1dp"
+    android:gravity="top" >
+
+    <!-- android:background="@drawable/extended_function" -->
+
+    <TextView
+        android:id="@+id/am_or_pm"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/weather_time_am_pm_margin_left"
+        android:layout_marginTop="@dimen/weather_time_am_pm_margin_top"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- 时间天气widget -->
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/time_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/weather_time_layout_ll_relativelayout_t_marginleft"
+                    android:layout_marginRight="@dimen/weather_time_layout_ll_relativelayout_t_marginright"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/weather_time_layout_ll_relativelayout_t_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/time_widget_spot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/time_widget_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/weather_time_layout_ll_relativelayout_t_marginleft"
+                        android:layout_marginRight="@dimen/weather_time_layout_ll_relativelayout_t_marginright"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/weather_time_layout_ll_relativelayout_t_size" />
+
+                    <ImageView
+                        android:id="@+id/time_widget_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/time_spot_2" />
+
+                    <TextView
+                        android:id="@+id/time_widget_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/weather_time_layout_ll_relativelayout_t_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="2dip"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+                <!-- android:gravity="center_vertical" -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/alarm_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/black_bg"
+                android:gravity="center_vertical" >
+
+                <View
+                    android:id="@+id/center"
+                    android:layout_width="@dimen/weather_time_layout_alarm_layout_center_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/alarmImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_alarm_clock" />
+
+                <TextView
+                    android:id="@+id/Alarm_clock_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/center"
+                    android:maxLines="1"
+                    android:text="@string/alarm_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <!-- 当获取到天气数据后显示 -->
+
+            <LinearLayout
+                android:id="@+id/weather_layout_r"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/black_bg"
+                android:orientation="vertical"
+                android:weightSum="5" >
+
+                <ImageView
+                    android:id="@+id/image_widget"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_00_icon"
+                    android:scaleType="centerInside" />
+                <!-- centerCrop -->
+
+                <TextView
+                    android:id="@+id/temperature_widget"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1.0dip"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/city_widget"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/weather"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <!-- 当获没有取到天气数据显示 -->
+
+            <LinearLayout
+                android:id="@+id/weather_notify"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:weightSum="4" >
+
+                <!-- android:layout_weight="1.0" -->
+
+                <ImageView
+                    android:id="@+id/clues_widget"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_00" />
+
+                <TextView
+                    android:id="@+id/noweatherInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weather"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.cappu.launcherwin.netinfo.widget.CappuHorizontalScrollView
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+</com.cappu.launcherwin.WeatherTimeLayout>

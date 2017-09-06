@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- yuan tong qin add xml  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_log_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Day group heading. Used to show a "today", "yesterday", "last week" or "other" heading
+         above a group of call log entries. -->
+         <!--  这个是时间如：今天等-->
+         <!-- yuantongqin  -->
+         
+   <!--  <TextView
+        android:id="@+id/call_log_day_group_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/call_log_start_margin"
+        android:layout_marginEnd="@dimen/call_log_outer_margin"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="?attr/call_log_secondary_text_color"
+        android:textSize="@dimen/call_log_secondary_text_size"
+        android:paddingTop="@dimen/call_log_day_group_padding_top"
+        android:paddingBottom="@dimen/call_log_day_group_padding_bottom" /> -->
+        
+             
+    
+      
+        
+        
+         
+    <TextView
+        android:id="@+id/call_log_day_group_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="?attr/call_log_secondary_text_color"
+        android:textSize="@dimen/call_log_secondary_text_size"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/care_item_top_normal"
+         />
+      <View 
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:background="@drawable/care_line_h"
+          />
+      
+         
+
+    <!-- Linear layout to separate the primary area containing the contact badge and caller
+         information and the secondary action (call details / play voicemail). -->
+         <!-- 这个就是小布局   -->
+    <LinearLayout
+        android:id="@+id/call_log_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:gravity="center_vertical" >
+
+        <!-- Primary area containing the contact badge and caller information -->
+        <LinearLayout
+            android:id="@+id/primary_action_view"
+            android:background="@drawable/call_log_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:nextFocusRight="@+id/call_back_action"
+            android:nextFocusLeft="@+id/quick_contact_photo" >
+            <!-- M: [Multi-Delete] for CallLog multiple delete @{-->
+            <!-- 暂时隐藏的删除的checkbox  -->
+            <ViewStub android:id="@+id/checkbox_container"
+                android:layout="@layout/mtk_call_log_list_item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--@}-->
+            <!-- 头像 -->
+            
+            
+            <QuickContactBadge
+                android:id="@+id/quick_contact_photo"
+                android:layout_width="@dimen/contact_photo_size"
+                android:layout_height="@dimen/contact_photo_size"
+                android:paddingTop="2dp"
+                android:nextFocusRight="@id/primary_action_view"
+                android:layout_gravity="top"
+                android:focusable="true"
+                
+                android:visibility="gone"
+                />
+            <!-- 头像右边的布局  -->
+            <LinearLayout
+                android:id="@+id/calllog_item_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                
+              <!-- ytq add  -->  
+       <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/care_item_bottom_bg"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginTop="-1dp"
+          >
+          
+          <ImageView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/i99_call_outgoing_pressed"
+              />
+          
+          <TextView 
+              android:id="@+id/name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:textSize="28sp"
+              android:layout_marginLeft="10dp"
+              android:singleLine="true"
+              />
+          
+          <TextView 
+              android:id="@+id/call_location_and_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:layout_marginLeft="5dp"
+              android:layout_gravity="center_vertical"
+              />
+          
+      </LinearLayout>
+                
+                <!-- android:id="@+id/name" -->
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/call_log_name_margin_bottom"
+                    android:layout_marginEnd="@dimen/call_log_icon_margin"
+                    android:textColor="?attr/call_log_primary_text_color"
+                    android:textSize="@dimen/call_log_primary_text_size"
+                    android:singleLine="true"
+                    
+                     android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/voicemail_transcription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/call_log_icon_margin"
+                    android:textColor="?attr/call_log_secondary_text_color"
+                    android:textSize="@dimen/call_log_secondary_text_size"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:visibility="gone"
+                    
+                    />
+                <!--  电话类型 -->
+                <LinearLayout
+                    android:id="@+id/call_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    
+                     android:visibility="gone"
+                    >
+                    <!--几个小图片  -->
+                    <view
+                        class="com.android.dialer.calllog.CallTypeIconsView"
+                        android:id="@+id/call_type_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/call_log_icon_margin"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <!-- 时间 -->
+                    <!-- android:id="@+id/call_location_and_date" -->
+                    <TextView
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/call_log_icon_margin"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="?attr/call_log_secondary_text_color"
+                        android:textSize="@dimen/call_log_secondary_text_size"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/call_account_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/call_log_icon_margin"
+                    android:textColor="?attr/call_log_secondary_text_color"
+                    android:textSize="@dimen/call_log_secondary_text_size"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/call_indicator_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/call_log_icon_margin"
+                android:src="@drawable/ic_card_phone"
+                android:tint="@color/recent_call_log_item_phone_icon_tint"
+                android:alpha="0.3"
+                android:importantForAccessibility="no"
+                android:visibility="gone"
+                />
+            <!-- M: for CallLog LandScape UI @{-->
+            <ImageView
+                android:id="@+id/selected_icon"
+                android:layout_width="@dimen/call_log_call_action_width"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/call_log_inner_margin"
+                android:paddingTop="@dimen/call_log_inner_margin"
+                android:paddingBottom="@dimen/call_log_inner_margin"
+                android:paddingEnd="@dimen/call_log_inner_margin"
+                android:scaleType="center"
+                android:background="@drawable/mtk_item_select"
+                android:clickable = "false"
+                android:visibility = "gone"
+                />
+            <!--@}-->
+        </LinearLayout>
+
+        <!-- Viewstub with additional expandable actions for a call log entry -->
+        <!--重播 ip拨号 详情布局文件  -->
+        <ViewStub android:id="@+id/call_log_entry_actions_stub"
+                  android:inflatedId="@+id/call_log_entry_actions"
+                  android:layout="@layout/call_log_list_item_actions"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- Displays the extra link section -->
+    <ViewStub android:id="@+id/link_stub"
+              android:layout="@layout/call_log_list_item_extra"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+</LinearLayout>

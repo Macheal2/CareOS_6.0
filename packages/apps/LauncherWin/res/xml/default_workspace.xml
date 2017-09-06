@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites xmlns:cappu="http://schemas.android.com/apk/res/com.cappu.launcherwin" >
+<!-- 配置文件说明 
+        cappu:className=               磁块进入的的类名
+        cappu:container=               磁块进入的的正确参数
+        cappu:packageName=             磁块进入的的包名
+        cappu:screen=                  磁块所在第几屏    0表示第一屏
+        cappu:background=              磁块的背景颜色
+        cappu:x=                       磁块所在屏的横坐标
+        cappu:y=                       磁块所在屏的纵坐标
+        cappu:aliasTitle=              磁块的别名 当没有别名的时候将显示应用的名字（应用名字有包名类型确定）
+        cappu:cellDefImage=            磁块的默认图片/当没有默认图片显示应用的icon
+        cappu:aliasTitleBackground=    磁块的别名背景图片
+        cappu:spanX="1" 横向与纵向跨越的格数
+        cappu:spanY="1"
+        
+        
+        以下三项基本是正对同一个应用要做不同的定制  /比如联系人
+        aliasTitle  cellDefImage  aliasTitleBackground
+    -->
+    
+    <!-- 以上是普通模式的布局  /  以下是豪华模式的 -->
+    <!-- 第一屏 -->
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_001"
+        cappu:cellDefImage="contacts_18"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="0"
+        cappu:y="0" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_005"
+        cappu:cellDefImage="contacts_19"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="1"
+        cappu:y="0" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_007"
+        cappu:cellDefImage="contacts_24"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="0"
+        cappu:y="1" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_009"
+        cappu:cellDefImage="contacts_21"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="1"
+        cappu:y="1" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_006"
+        cappu:cellDefImage="contacts_22"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="0"
+        cappu:y="2" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_002"
+        cappu:cellDefImage="contacts_23"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="0"
+        cappu:x="1"
+        cappu:y="2" />
+    <!-- 第二屏 -->
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_006"
+        cappu:cellDefImage="contacts_25"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="1"
+        cappu:x="0"
+        cappu:y="2" />
+    <contacts
+        cappu:modeSelect="0"
+        cappu:aliasTitle="add"
+        cappu:aliasTitleBackground="shape_circle_blck_transparent"
+        cappu:background="bg_cell_002"
+        cappu:cellDefImage="contacts_24"
+        cappu:className="com.cappu.contacts.I99QuickContactActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.contacts"
+        cappu:screen="1"
+        cappu:x="1"
+        cappu:y="2" />
+    <!-- 第三屏 -->
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_game"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_009"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.applicationList.activity.PlayCenterActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="2"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="0" />
+     <favorite
+        cappu:aliasTitle="app_name_calendar"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_005"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.calendar.FirstActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.calendar"
+        cappu:screen="2"
+        cappu:modeSelect="0"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="0" />
+    
+    <AppComponentName
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_music"
+        cappu:aliasTitleBackground=""
+        cappu:background=""
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.kookview.MusicKookView"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="2"
+        cappu:spanX="2"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="1" />
+    
+    
+  <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_applications"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_002"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.applicationList.activity.GooduseActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="2"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="2" />
+
+
+    
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_wechart"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_006"
+        cappu:cellDefImage=""
+        cappu:className="com.tencent.mm.ui.LauncherUI"
+        cappu:container="1"
+        cappu:packageName="com.tencent.mm"
+        cappu:screen="2"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="2" />
+    
+    
+    <!-- 第四屏 -->
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_CaiYiDaDao"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_009"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.ishow.ui.activitys.BootpageActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.ishow"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="0" />
+    
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_internet_navigation"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_002"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.internet.BookMarkGridViewActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.internet"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="0" />
+     <AppComponentName
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_album"
+        cappu:aliasTitleBackground=""
+        cappu:background=""
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.kookview.AlbumsKookView"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="3"
+        cappu:spanX="2"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="1" />
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_album"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_005"
+        cappu:cellDefImage=""
+        cappu:className="com.android.gallery3d.app.GalleryActivity"
+        cappu:container="1"
+        cappu:packageName="com.android.gallery3d"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="2" />
+    
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="app_name_downloadcenter"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_008"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.downloadcenter.context.MainActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.downloadcenter"
+        cappu:screen="3"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="2" />
+    
+    <!-- 第五屏 -->
+    <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle="free_internet"
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_005"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.network.NetworkActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="4"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="0" />
+    
+    <AppComponentName
+        cappu:aliasTitle="phone_gprs"
+        cappu:background="bg_cell_008"
+        cappu:className="com.cappu.launcherwin.kookview.GPRSKookView"
+        cappu:modeSelect="0"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="4"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="0" />
+    
+     <favorite
+        cappu:modeSelect="0"
+        cappu:className="cappu.sos.SOSMainActivity"
+        cappu:container="1"
+        cappu:packageName="cappu.sos"
+        cappu:screen="4"
+        cappu:background="bg_cell_006"
+        cappu:x="0"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:y="1" 
+        cappu:aliasTitle="app_name_sos"
+        cappu:cellDefImage=""
+        cappu:aliasTitleBackground="" />
+     
+     <favorite
+        cappu:modeSelect="0"
+        cappu:className="com.cappu.launcherwin.applicationList.activity.ToolActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="4"
+        cappu:background="bg_cell_009"
+        cappu:x="1"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:y="1" 
+        cappu:aliasTitle="tools"
+        cappu:cellDefImage=""
+        cappu:aliasTitleBackground="" />
+     
+     
+     
+     <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle=""
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_007"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.launcherwin.LauncherSettingActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="4"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="0"
+        cappu:y="2" />
+     
+     <favorite
+        cappu:modeSelect="0"
+        cappu:aliasTitle=""
+        cappu:aliasTitleBackground=""
+        cappu:background="bg_cell_002"
+        cappu:cellDefImage=""
+        cappu:className="com.cappu.helper.ui.activity.StartActivity"
+        cappu:container="1"
+        cappu:packageName="com.cappu.helper"
+        cappu:screen="4"
+        cappu:spanX="1"
+        cappu:spanY="1"
+        cappu:x="1"
+        cappu:y="2" />
+    
+    <!-- 天气屏 -->
+    <AppComponentName
+        cappu:aliasTitle=""
+        cappu:background=""
+        cappu:className="com.cappu.launcherwin.kookview.CappuKookView"
+        cappu:modeSelect="0"
+        cappu:packageName="com.cappu.launcherwin"
+        cappu:screen="1"
+        cappu:spanX="2"
+        cappu:spanY="2"
+        cappu:x="0"
+        cappu:y="0" />
+</favorites>
+ 

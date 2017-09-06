@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/I99DialogStyle_Title"
+        android:text="@string/i99_clear_calllog_title" />
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/I99DialogStyle_Content"
+        android:layout_marginTop="5dp"
+        android:text="@string/i99_clear_calllog_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/I99DialogStyle_Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/i99_gray_button_bg"
+            android:text="@string/i99_cancel" />
+        <Button
+            android:id="@+id/ok"
+            style="@style/I99DialogStyle_Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/i99_gray_button_bg"
+            android:text="@string/i99_ok" />
+    </LinearLayout>
+
+</LinearLayout>

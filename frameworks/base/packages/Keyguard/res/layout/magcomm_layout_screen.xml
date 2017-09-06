@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/magcomm_lockscreen_background" >
+
+    <RelativeLayout
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.magcomm.keyguard.MagcommClockViewType
+            android:id="@+id/magcomm_clock_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/time_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="65sp"
+                        android:shadowColor="#56000000"
+                        android:shadowRadius="3"
+                        android:shadowDx="0"
+                        android:shadowDy="1"/>
+
+                    <ImageView
+                        android:id="@+id/time_colon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cappu_colon" />
+
+                    <TextView
+                        android:id="@+id/time_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="65sp"
+                        android:shadowColor="#56000000"
+                        android:shadowRadius="3"
+                        android:shadowDx="0"
+                        android:shadowDy="1" />
+
+                    <ImageView
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="6dip"
+                        android:paddingTop="15dip"
+                        android:paddingBottom="15dip"
+                        android:src="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/date_md"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:shadowColor="#56000000"
+                            android:shadowRadius="3"
+                            android:shadowDx="0"
+                            android:shadowDy="1" />
+
+                        <TextView
+                            android:id="@+id/date_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:shadowColor="#56000000"
+                            android:shadowRadius="3"
+                            android:shadowDx="0"
+                            android:shadowDy="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lunar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:layout_marginTop="7dip"
+                    android:shadowColor="#56000000"
+                    android:shadowRadius="3"
+                    android:shadowDx="0"
+                    android:shadowDy="1" />
+            </LinearLayout>
+                
+        </com.magcomm.keyguard.MagcommClockViewType>
+
+        <com.magcomm.keyguard.MonitorBall
+            android:id="@+id/monitor_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:layout_gravity="center"
+            android:gravity="center" />
+ 
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dip"
+        android:layout_marginTop="8dip" >
+        
+        <RelativeLayout
+            android:id="@+id/magcomm_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/magcomm_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/magcomm_phone_unread" />
+
+            <com.magcomm.keyguard.MagcommUnreadView
+                android:id="@+id/magcomm_left_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/magcomm_left_icon"
+                android:layout_alignRight="@id/magcomm_left_icon"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/magcomm_nub"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/magcomm_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:src="@drawable/magcomm_unlock"
+            android:layout_centerInParent="true" />
+        
+        <RelativeLayout
+            android:id="@+id/magcomm_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true" >
+            <ImageView
+                android:id="@+id/magcomm_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/magcomm_msg_unread" />
+
+            <com.magcomm.keyguard.MagcommUnreadView
+                android:id="@+id/magcomm_right_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/magcomm_right_icon"
+                android:layout_alignRight="@id/magcomm_right_icon"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4dip"
+                android:src="@drawable/magcomm_nub"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/magcomm_narrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerInParent="true" />
+    
+    <TextView
+        android:id="@+id/magcomm_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/magcomm_narrow"
+        android:textSize="25sp"
+        android:shadowColor="#56000000"
+        android:shadowRadius="3"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:layout_marginBottom="8dip"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:text="@string/magcomm_keyguard_notice_text"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff3c1212"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+
+        <TextView
+            android:id="@+id/bookmark"
+            style="@style/topbar_middle"
+            android:text="@string/desktop_title_browser" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/bookmark_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/ruyi_margin_double"
+        android:layout_marginRight="@dimen/ruyi_margin_double"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:dividerHeight="@dimen/ruyi_margin_double"
+        android:drawSelectorOnTop="true"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <TextView
+        android:id="@+id/no_datas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="20.0dip"
+        android:text="@string/no_data"
+        android:textSize="28.0sp" />
+
+</LinearLayout>

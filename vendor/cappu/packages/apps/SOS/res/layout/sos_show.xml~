@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+   <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+    style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/desktop_title_sos"
+    care:rightVisibility="invisible"/>     
+    
+    <!-- <include android:id="@+id/title_layout" layout="@layout/titlelayout_style_cancel_title"></include> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/call_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin"
+            android:layout_marginTop="@dimen/ruyi_margin_double"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_gray_selector" >
+
+            <ImageView
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/icon_main_phone"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/phone_title"
+                style="@style/shadow_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sos_phone"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/call_state"
+                android:textSize="@dimen/title_text_size"
+                android:text="@string/setting"                
+                style="@style/ruyiui_buttonbar_textview_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sms_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin"
+            android:layout_marginTop="@dimen/ruyi_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_gray_selector" >
+
+            <ImageView
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/icon_main_message"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/sms_title"
+                style="@style/shadow_white"
+                android:textSize="@dimen/title_text_size"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sos_sms"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sms_state"
+                android:text="@string/setting"                 
+                android:textSize="@dimen/title_text_size"                
+                style="@style/ruyiui_buttonbar_textview_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sound_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin"
+            android:layout_marginTop="@dimen/ruyi_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_gray_selector" >
+
+            <ImageView
+                android:id="@+id/sound_icon"
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/sound_info"
+                android:textSize="@dimen/title_text_size"                
+                style="@style/shadow_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/sound_icon"
+                android:text="@string/sos_alarm_open"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <LinearLayout
+	            android:id="@+id/other_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="100dip"           
+	            android:layout_marginTop="@dimen/ruyi_margin" >
+            <RelativeLayout
+	            android:id="@+id/cancel_layout"
+	            android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_bottom_gray_selector" >
+	
+             <TextView
+                android:id="@+id/cancel_title"
+                android:textSize="@dimen/title_text_size"                
+                style="@style/shadow_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sos_cancel"
+                android:textColor="@android:color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

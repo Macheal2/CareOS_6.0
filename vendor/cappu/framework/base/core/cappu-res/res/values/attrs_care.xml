@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2015 The yuhaiyang Android Source Project
+ *
+ * Licensed under the yuhaiyang License, (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://coding.net/yuhaiyang/License.git
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @data: 2015年6月26日 下午4:59:16 
+ * @author: y.haiyang@qq.com
+-->
+<resources>
+    
+    <attr name="background" format="reference" />
+
+    <attr name="clickable" format="boolean" />
+
+    <attr name="text" format="string" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="color" />
+
+    <attr name="subText" format="string" />
+    <attr name="subTextSize" format="dimension" />
+    <attr name="subTextColor" format="color" />
+
+    <attr name="dialogTitleStyle" format="reference" />
+    <attr name="dialogMessageStyle" format="reference" />
+    <attr name="dialogButtonStyle" format="reference" />
+
+    <attr name="dialogButtonBackgrounds" format="reference" />
+    <attr name="leftBackground" format="reference|color" />
+    <attr name="leftImage" format="reference" />
+    <attr name="rightBackground" format="reference|color" />
+    <attr name="rightImage" format="reference" />
+    <attr name="secretable" format="boolean" />
+    <attr name="middleBackground" format="reference|color" />
+    <attr name="wholeBackground" format="reference|color" />
+
+    <attr name="dialogLayouts" format="reference" />
+    <attr name="dialogMainLayout" format="reference" />
+    <attr name="dialogListLayout" format="reference" />
+    <attr name="dialogMultiChoiceItem" format="reference" />
+    <attr name="dialogSingleChoiceItem" format="reference" />
+    <attr name="dialogListItem" format="reference" />
+
+    <attr name="topbarStyle" format="reference" />
+
+    <attr name="leftVisibility">
+        <enum name="visible" value="0" />
+        <enum name="invisible" value="4" />
+        <enum name="gone" value="8" />
+    </attr>
+
+    <attr name="rightVisibility">
+        <enum name="visible" value="0" />
+        <enum name="invisible" value="4" />
+        <enum name="gone" value="8" />
+    </attr>
+
+    <declare-styleable name="DialogButtonBackground">
+        <attr name="leftBackground" />
+        <attr name="rightBackground" />
+        <attr name="middleBackground" />
+        <attr name="wholeBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="DialogLayouts">
+        <attr name="dialogMainLayout" />
+        <attr name="dialogListLayout" />
+        <attr name="dialogMultiChoiceItem" />
+        <attr name="dialogSingleChoiceItem" />
+        <attr name="dialogListItem" />
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+
+        <attr name="background" />
+
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="subText" />
+        <attr name="subTextSize"/>
+
+        <attr name="clickable" />
+        <attr name="secretable"/>
+
+        <attr name="leftImage" />
+        <attr name="rightImage" />
+
+        <attr name="leftVisibility" />
+        <attr name="rightVisibility" />
+    </declare-styleable>
+    <!--added by yzs for CareSettingItem begin -->
+    <attr name="item_icon" format="reference" />
+    <attr name="item_title" format="reference" />
+    <attr name="item_textcolor" format="color" />
+    <attr name="item_checked" format="boolean" />
+
+    <attr name="item_style">
+        <enum name="single" value="0" />
+        <enum name="top" value="1" />
+        <enum name="mid" value="2" />
+        <enum name="bottom" value="3" />
+    </attr>
+    <attr name="item_type">
+        <enum name="sw" value="0" />
+        <enum name="checkbox" value="1" />
+        <enum name="mulitem" value="2" />
+        <enum name="more" value="3" />
+    </attr>
+
+    <declare-styleable name="CareSettingItem">
+        <attr name="item_icon" />
+        <attr name="item_title" />
+        <attr name="item_textcolor" />
+        <attr name="item_checked" />
+        <attr name="item_type" />
+        <attr name="item_style" />
+    </declare-styleable>
+    <!--added by yzs for CareSettingItem end -->
+</resources>

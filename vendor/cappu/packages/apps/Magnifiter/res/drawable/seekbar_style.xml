@@ -1,0 +1,14 @@
+<!-- 多层显示 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/seekbar_bg">
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/seekbar_progress"/>
+    </item>
+
+</layer-list>

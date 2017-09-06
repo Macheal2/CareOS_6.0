@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/music_player_streaming_progressive_bg"/>
+    
+    <item android:id="@android:id/secondaryProgress">
+        <clip
+            android:drawable="@drawable/music_fullplayer_progress_secondary"
+            android:scaleWidth="100%" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip
+            android:drawable="@drawable/music_fullplayer_progress_primary"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

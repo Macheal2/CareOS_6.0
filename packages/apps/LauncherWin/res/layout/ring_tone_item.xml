@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:layout_margin="2px"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- android:background="#FFFFFF" 35-->
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:maxLines="1"
+        android:textSize="27dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ring_uncheck"
+        />
+
+</RelativeLayout>

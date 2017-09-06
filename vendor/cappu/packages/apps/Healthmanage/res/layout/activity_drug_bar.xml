@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.cappu.widget.TopBar
+        android:id="@+id/topbar"
+        style="@android:style/Widget.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:rightVisibility="invisible"
+        care:text="@string/drug_steward" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_date"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loding_error_please_again"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    
+    <TextView 
+        android:id="@+id/bar_code"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/bar_code_num"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       
+        >
+        <ImageView 
+            android:id="@+id/drug_bar_drugimage"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yaoimage"
+            />
+        <RelativeLayout 
+            android:layout_toRightOf="@id/drug_bar_drugimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            >
+        <TextView 
+            android:id="@+id/drug_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aaaaaaaaa"
+            />
+        <TextView 
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/drug_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drug_name"
+            
+            android:paddingLeft="5dp"
+            />
+        
+        <TextView 
+            android:id="@+id/drug_company_title"
+            android:layout_below="@id/drug_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bbbbbbbbb"
+            android:layout_marginTop="5dp"
+            
+            />
+        <TextView 
+            android:id="@+id/drug_company"
+            android:layout_below="@id/drug_company_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ccccccccc"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            />
+        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ddddddddd"
+        android:background="@drawable/button_bg_nor"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:textSize="17sp"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eeeeeeeee"
+         android:layout_margin="10dp"
+         android:textSize="16sp"
+        />
+    
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/fffffffff"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/drug_bar_text_selector"
+      android:textColor="#fff"
+      android:paddingLeft="8dp"
+      android:gravity="center_vertical"
+      android:textSize="17sp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ggggggggg"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/drug_bar_text_selector"
+        android:textColor="#fff"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+    
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    style="@style/option_dialog_layout" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/option_dialog_title"
+        android:text="@string/setting_sos_sensi" />
+
+    <TextView
+        android:id="@+id/currentValue"
+        style="@style/option_dialog_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_item_height" >
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        style="@style/option_dialog_editlayout" >
+
+        <Button
+            android:id="@+id/option1"
+            style="@style/option_dialog_button_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

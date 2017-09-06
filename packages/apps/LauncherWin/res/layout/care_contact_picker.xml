@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/res-auto"
+    style="@style/ContactPickerLayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.cappu.launcherwin.widget.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        care:titleText="@string/mult_contact"
+        care:rightImage="@drawable/care_ic_ok" />
+
+    <LinearLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/care_feature_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/care_gradual_gary_bg"
+        android:weightSum="7"
+        android:padding="7dp" >
+
+        <EditText
+            android:id="@+id/care_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/care_topbar_input"
+            android:hint="@string/care_search"
+            android:paddingLeft="@dimen/care_margin_normal"
+            style="@style/CareTextStyle_black" >
+        </EditText>
+
+        <Button
+            android:id="@+id/care_surnames"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/care_all_name"
+            style="@style/CareTextStyle"
+            android:layout_weight="2"
+            android:layout_marginLeft="7dp"
+            android:singleLine="true"
+            android:background="@drawable/i99_green_button_bg"/>
+        <!-- care_green_button_bg -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:divider="@null"/>
+</LinearLayout>

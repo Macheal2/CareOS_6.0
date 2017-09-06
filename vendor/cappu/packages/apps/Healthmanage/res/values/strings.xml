@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">healthmanage</string>
+    <string name="Search">Search</string>
+    <string name="no_query_results">"No query results"</string>
+    <string name="search_content">Search for content</string>
+    <string name="details">详情</string>
+    <string name="laboratory_analysis">Laboratory analysis</string>
+    <string name="health_services">健康服务</string>
+    <string name="drug_steward">药品管家</string>
+    <string name="family_medicine">药品索引</string>
+    <string name="back">back</string>
+    <string name="scanner_test">Scanner</string>
+    <string name="scannerview">Scanner View</string>
+    <string name="opencamera">Open Camera</string>
+    <string name="inputhint">Input defualt text</string>
+    <string name="createcode">Create qrcode</string>
+    <string name="result">Scan content:</string>
+    <string name="openstring">Open txt</string>
+    <string name="copystring">Copy</string>
+    <string name="sharestring">Share</string>
+    <string name="replicated">replicated</string>
+    <string name="nofindactivity">Browser application not found</string>
+    <string name="openuri">Open uri</string>
+    <string name="savebitmap">save bitmap</string>
+    <string name="input_text">input text</string>
+    <string name="query_hint_text">请输入条码数字</string>
+    <string name="query_text">query</string>
+    <string name="query_Toast_error">输入不正确或者包含非数字字符</string>
+    <string name="query_Toast_number_error">输入的长度错误，请输入中国药品电子监管码（20位）及商品条码（13位）</string>
+    <string name="username_hint_text">Input UserName</string>
+    <string name="drug_box_title">" 的药箱"</string>
+    <string name="drug_box_title_null">"Unknow Name"</string>
+    <string name="detail_list_name">"Name"</string>
+    <string name="detail_list_number">"Number"</string>
+    <string name="detail_list_date">"vld"</string>
+    <string name="drug_box_name_not_null">药品名称不能为空</string>
+    <string name="drug_box_number_not_null">药品数量不能为空</string>
+    <string name="drug_box_number_error">药品数量不可输入非数字的非法字符</string>
+    <string name="drug_box_number_limit">药品数量请在1与999之间</string>
+    <string name="drug_box_unit_not_null">药品单位不能为空</string>
+    <string name="drug_box_date_not_null">保质期不能为空</string>
+    <string name="drug_box_date_error">保质期不能小于当前日期</string>
+    <string name="details_add">添加详细</string>
+    <string name="add">add</string>
+    <string name="delete">delete</string>
+    <string name="delete_message">确定删除<xliff:g id="delete_num">%s</xliff:g>条记录?</string>
+    <string name="loding_error_please_again">加载失败，请重试</string>
+    <string name="bar_code_num">条形码数</string>
+    <string name="save">保存</string>
+    <string name="add_drug">添加药品</string>
+    <string name="input_title_name">Title Name</string>
+    <string name="input_hint_name">input Name</string>
+    <string name="input_hint_number">input Number</string>
+    <string name="input_hint_date">input validity period</string>
+    
+    <string name="unit_0">盒</string>
+    <string name="unit_1">支</string>
+    <string name="unit_2">瓶</string>
+    <string name="unit_3">板</string>
+    <string name="unit_4">粒</string>
+    <string name="unit_5">条</string>
+    
+    <string name="aaaaaaaaa">"【产品名词】"</string>
+    <string name="bbbbbbbbb">"【生产企业】"</string>
+    <string name="ccccccccc">"公司"</string>
+    <string name="ddddddddd">"附近药店"</string>
+    <string name="eeeeeeeee">"药品是指用于预防、治疗、诊断人的疾病，有目的地调节人的生理机能并规定有适应症或者功能主治、用法和用量的物质，包括血液制品和诊断药品等"</string>
+    <string name="fffffffff">"规格：120ml"</string>
+    <string name="ggggggggg">"批准文号：国药准字H11021837"</string>
+</resources>

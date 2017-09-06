@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:care="http://schemas.android.com/apk/prv/res/com.cappu"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+   <com.cappu.widget.TopBar
+    android:id="@+id/topbar"
+    style="@android:style/Widget.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    care:text="@string/desktop_title_sosmain"
+    care:rightVisibility="invisible"/>    
+    
+    <!-- <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/ruyiui_tobbar_layout" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/ruyiui_tobbar_imagebutton" />
+ 
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_middle"
+            android:text="@string/desktop_title_sosmain" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/location_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin"
+            android:layout_marginTop="@dimen/ruyi_margin_double"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_gray_selector" >
+
+            <ImageView
+                android:layout_width="@dimen/big_img_height"
+                android:layout_height="@dimen/big_img_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/icon_main_location"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/location_info"
+                style="@style/shadow_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:text="@string/desktop_title_location"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sos_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/ruyi_margin"
+            android:layout_marginRight="@dimen/ruyi_margin"
+            android:layout_marginTop="@dimen/ruyi_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_gray_selector" >
+
+            <ImageView
+                android:layout_width="@dimen/big_img_height"
+                android:layout_height="@dimen/big_img_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/icon_sos_main_sos"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/sos_info"
+                style="@style/shadow_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:text="@string/desktop_title_sos"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/other_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"           
+            android:layout_marginTop="@dimen/ruyi_margin"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sos_setting"
+                style="@style/shadow_white"
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_bottom_gray_selector"
+                android:text="@string/main_setting_sos_title"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+
+            <ImageView
+                android:layout_width="2dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_bottom_gray_over" />
+        
+            <Button
+                android:id="@+id/personal"
+                android:textAllCaps="false"
+                style="@style/shadow_white"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_bottom_gray_selector"
+                android:text="@string/edit_title"
+                android:textColor="@android:color/black"
+                android:textSize="30.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

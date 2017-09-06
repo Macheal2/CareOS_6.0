@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="key_hall_window" >
+
+    <PreferenceCategory
+        android:key="key_hall_window_category"
+        android:title="@string/hall_window_title" />
+    <PreferenceCategory
+        android:key="key_hall_window_settings_category"
+        android:title="@string/hall_window_settings" />
+
+</PreferenceScreen>
